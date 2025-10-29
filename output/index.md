@@ -7,12 +7,12 @@
 ```json
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "ths-greifswald.ttp-fhir-gw",
-  "url" : "https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw",
+  "id" : "ths-greifswald.ttp-fhir-gw.gics",
+  "url" : "https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics",
   "version" : "2025.1.0",
   "name" : "IGTTPFHIRGatewaygICS",
   "status" : "active",
-  "date" : "2025-10-29T10:53:37+01:00",
+  "date" : "2025-10-29T11:17:58+01:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [
     {
@@ -25,7 +25,7 @@
       ]
     }
   ],
-  "packageId" : "ths-greifswald.ttp-fhir-gw",
+  "packageId" : "ths-greifswald.ttp-fhir-gw.gics",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [

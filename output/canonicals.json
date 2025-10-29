@@ -532,9 +532,9 @@
     "name" : "Patienteneinwilligung MII"
   },
   {
-    "id" : "ths-greifswald.ttp-fhir-gw",
+    "id" : "ths-greifswald.ttp-fhir-gw.gics",
     "type" : "ImplementationGuide",
-    "url" : "https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw",
+    "url" : "https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics",
     "version" : "2025.1.0",
     "name" : "IGTTPFHIRGatewaygICS"
   },

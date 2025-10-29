@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "ths-greifswald.ttp-fhir-gw",
-  "url": "https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw",
+  "id": "ths-greifswald.ttp-fhir-gw.gics",
+  "url": "https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics",
   "version": "2025.1.0",
   "name": "IGTTPFHIRGatewaygICS",
   "status": "active",
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "packageId": "ths-greifswald.ttp-fhir-gw",
+  "packageId": "ths-greifswald.ttp-fhir-gw.gics",
   "fhirVersion": [
     "4.0.1"
   ],

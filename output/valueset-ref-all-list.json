@@ -283,8 +283,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.757"],
       "uses" : {
       },
-      "ValueSet-PolicyStatusVS.html" : "PolicyStatus",
-      "StructureDefinition-Consent.html" : "Einwilligungsinformationen"
+      "StructureDefinition-Consent.html" : "Einwilligungsinformationen",
+      "ValueSet-PolicyStatusVS.html" : "PolicyStatus"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-scope",
@@ -1291,8 +1291,8 @@
       "systems" : ["https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"],
       "uses" : {
       },
-      "OperationDefinition-GetAllConsentedIdsFor.html" : "Get all consented Identifiers for person and template",
       "OperationDefinition-IsConsented.html" : "Patient's consent status for a defined policy",
+      "OperationDefinition-GetAllConsentedIdsFor.html" : "Get all consented Identifiers for person and template",
       "StructureDefinition-ConsentPolicy.html" : "ConsentPolicy"
     },
     {

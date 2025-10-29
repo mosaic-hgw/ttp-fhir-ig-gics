@@ -25,7 +25,7 @@
   "name" : "MDAT_speichern_verarbeiten",
   "title" : "Medizinische Daten speichern",
   "status" : "active",
-  "date" : "2025-10-29T10:53:37+01:00",
+  "date" : "2025-10-29T11:17:58+01:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [
     {

@@ -1,5 +1,5 @@
 {
-  "package": "ths-greifswald.ttp-fhir-gw",
+  "package": "ths-greifswald.ttp-fhir-gw.gics",
   "version": "2025.1.0",
   "fhirVersion": "4.0.1",
   "extensions": [

@@ -3,7 +3,7 @@ IGTTPFHIRGatewaygICS : Validation Results
 
 err = 1017, warn = 319, info = 217
 IG Publisher Version: 2.0.21 Out of date - current version is 2.0.24
-Generated Wed Oct 29 10:55:32 CET 2025. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw#2025.1.0 (canonical = https://ths-greifswald.de/fhir/gics)
+Generated Wed Oct 29 11:19:50 CET 2025. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.gics#2025.1.0 (canonical = https://ths-greifswald.de/fhir/gics)
  Build Errors : 15 / 60 / 0
  /home/sl/devel/uni-greifswald/ttp-fhir-ig-gics/fsh-generated/resources/ActivityDefinition-ConsentPolicy-example-1 : 6 / 0 / 2
  /home/sl/devel/uni-greifswald/ttp-fhir-ig-gics/fsh-generated/resources/ActivityDefinition-ConsentPolicy-example-2 : 6 / 0 / 2
@@ -36,7 +36,7 @@ Generated Wed Oct 29 10:55:32 CET 2025. FHIR version 4.0.1 for ths-greifswald.tt
  /home/sl/devel/uni-greifswald/ttp-fhir-ig-gics/fsh-generated/resources/Consent-Consent-example-1 : 11 / 1 / 6
  /home/sl/devel/uni-greifswald/ttp-fhir-ig-gics/fsh-generated/resources/Consent-Consent-example-2 : 12 / 2 / 2
  /home/sl/devel/uni-greifswald/ttp-fhir-ig-gics/fsh-generated/resources/Consent-Consent-example-3 : 21 / 4 / 6
- /home/sl/devel/uni-greifswald/ttp-fhir-ig-gics/fsh-generated/resources/ImplementationGuide-ths-greifswald.ttp-fhir-gw : 0 / 5 / 3
+ /home/sl/devel/uni-greifswald/ttp-fhir-ig-gics/fsh-generated/resources/ImplementationGuide-ths-greifswald.ttp-fhir-gw.gics : 0 / 5 / 3
  /home/sl/devel/uni-greifswald/ttp-fhir-ig-gics/fsh-generated/resources/OperationDefinition-AddConsent : 2 / 0 / 1
  /home/sl/devel/uni-greifswald/ttp-fhir-ig-gics/fsh-generated/resources/OperationDefinition-AddConsentOptOut : 2 / 0 / 1
  /home/sl/devel/uni-greifswald/ttp-fhir-ig-gics/fsh-generated/resources/OperationDefinition-AllConsentsForDomain : 2 / 0 / 1
@@ -1409,14 +1409,14 @@ ERROR: Consent/Consent-example-3: Consent.category[1]: Slicing kann nicht ausgew
 ERROR: Consent/Consent-example-3: Consent.category[0]: Slicing kann nicht ausgewertet werden: Konnte nicht mit dem Diskriminator (1) für Slice $this in Profil Consent.category:templateType übereinstimmen - der Diskriminator http://fhir.de/ConsentManagement/StructureDefinition/Consent|2.0.0 hat keinen fixed Value, kein Binding oder existence assertions
 ERROR: Consent/Consent-example-3: Consent.category[1]: Slicing kann nicht ausgewertet werden: Konnte nicht mit dem Diskriminator (1) für Slice $this in Profil Consent.category:templateType übereinstimmen - der Diskriminator http://fhir.de/ConsentManagement/StructureDefinition/Consent|2.0.0 hat keinen fixed Value, kein Binding oder existence assertions
 INFORMATION: Consent/Consent-example-3: Consent: http://fhir.de/ConsentManagement/StructureDefinition/Consent|2.0.0: Kann das erforderliche Minimum (http://fhir.de/ConsentManagement/StructureDefinition/Consent|2.0.0) aufgrund fehlender Slicing-Validierung nicht überprüfen
-== fsh-generated/resources/ImplementationGuide-ths-greifswald.ttp-fhir-gw.json ==
-WARNING: ImplementationGuide/ths-greifswald.ttp-fhir-gw: ImplementationGuide.dependsOn[2].uri: Canonical URL 'http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement' kann nicht aufgelöst werden
-WARNING: ImplementationGuide/ths-greifswald.ttp-fhir-gw: ImplementationGuide.dependsOn[3].uri: Canonical URL 'http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.consent/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.consent' kann nicht aufgelöst werden
-INFORMATION: ImplementationGuide/ths-greifswald.ttp-fhir-gw: ImplementationGuide.definition.resource[0].name: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
-WARNING: ImplementationGuide/ths-greifswald.ttp-fhir-gw: ImplementationGuide.definition.resource[45].description: Wert sollte nicht mit Leerzeichen beginnen oder enden
-INFORMATION: ImplementationGuide/ths-greifswald.ttp-fhir-gw: ImplementationGuide.definition.resource[57].description: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
-WARNING: ImplementationGuide/ths-greifswald.ttp-fhir-gw: ImplementationGuide.dependsOn[2]: The canonical URL http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement doesn't point to an actual ImplementationGuide resource
-WARNING: ImplementationGuide/ths-greifswald.ttp-fhir-gw: ImplementationGuide.dependsOn[3]: The canonical URL http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.consent/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.consent doesn't point to an actual ImplementationGuide resource
+== fsh-generated/resources/ImplementationGuide-ths-greifswald.ttp-fhir-gw.gics.json ==
+WARNING: ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics: ImplementationGuide.dependsOn[2].uri: Canonical URL 'http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement' kann nicht aufgelöst werden
+WARNING: ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics: ImplementationGuide.dependsOn[3].uri: Canonical URL 'http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.consent/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.consent' kann nicht aufgelöst werden
+INFORMATION: ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics: ImplementationGuide.definition.resource[0].name: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+WARNING: ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics: ImplementationGuide.definition.resource[45].description: Wert sollte nicht mit Leerzeichen beginnen oder enden
+INFORMATION: ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics: ImplementationGuide.definition.resource[57].description: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+WARNING: ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics: ImplementationGuide.dependsOn[2]: The canonical URL http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement doesn't point to an actual ImplementationGuide resource
+WARNING: ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics: ImplementationGuide.dependsOn[3]: The canonical URL http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.consent/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.consent doesn't point to an actual ImplementationGuide resource
 == fsh-generated/resources/OperationDefinition-AddConsent.json ==
 ERROR: OperationDefinition.where(url = 'https://ths-greifswald.de/fhir/OperationDefinition/gics/addConsent'): Conformance resource /home/sl/devel/uni-greifswald/ttp-fhir-ig-gics/fsh-generated/resources/OperationDefinition-AddConsent.json - the canonical URL (https://ths-greifswald.de/fhir/gics/OperationDefinition/AddConsent) does not match the URL (https://ths-greifswald.de/fhir/OperationDefinition/gics/addConsent). Use the special-url parameter if you really mean for it not to match
 ERROR: /home/sl/devel/uni-greifswald/ttp-fhir-ig-gics/fsh-generated/resources/OperationDefinition-AddConsent: URL Mismatch https://ths-greifswald.de/fhir/gics/OperationDefinition/AddConsent vs https://ths-greifswald.de/fhir/OperationDefinition/gics/addConsent

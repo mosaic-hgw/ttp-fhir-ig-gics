@@ -1,23 +1,23 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-   <id value="ths-greifswald.ttp-fhir-gw"/>
+   <id value="ths-greifswald.ttp-fhir-gw.gics"/>
    <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <p class="res-header-id">
-            <b>Generated Narrative: ImplementationGuide ths-greifswald.ttp-fhir-gw</b>
+            <b>Generated Narrative: ImplementationGuide ths-greifswald.ttp-fhir-gw.gics</b>
          </p>
-         <a name="ths-greifswald.ttp-fhir-gw"> </a>
-         <a name="hcths-greifswald.ttp-fhir-gw"> </a>
+         <a name="ths-greifswald.ttp-fhir-gw.gics"> </a>
+         <a name="hcths-greifswald.ttp-fhir-gw.gics"> </a>
          <h2>IGTTPFHIRGatewaygICS</h2>
          <p>The official URL for this implementation guide is: </p>
-         <pre>https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw</pre>
+         <pre>https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics</pre>
       </div>
    </text>
-   <url value="https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw"/>
+   <url value="https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics"/>
    <version value="2025.1.0"/>
    <name value="IGTTPFHIRGatewaygICS"/>
    <status value="active"/>
-   <date value="2025-10-29T10:53:37+01:00"/>
+   <date value="2025-10-29T11:17:58+01:00"/>
    <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
    <contact>
       <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
@@ -26,7 +26,7 @@
          <value value="https://www.ths-greifswald.de/"/>
       </telecom>
    </contact>
-   <packageId value="ths-greifswald.ttp-fhir-gw"/>
+   <packageId value="ths-greifswald.ttp-fhir-gw.gics"/>
    <license value="CC0-1.0"/>
    <fhirVersion value="4.0.1"/>
    <dependsOn id="hl7tx">

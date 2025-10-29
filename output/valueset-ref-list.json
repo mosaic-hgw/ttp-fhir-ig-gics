@@ -269,8 +269,8 @@
       "systems" : ["https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"],
       "uses" : {
       },
-      "OperationDefinition-GetAllConsentedIdsFor.html" : "Get all consented Identifiers for person and template",
       "OperationDefinition-IsConsented.html" : "Patient's consent status for a defined policy",
+      "OperationDefinition-GetAllConsentedIdsFor.html" : "Get all consented Identifiers for person and template",
       "StructureDefinition-ConsentPolicy.html" : "ConsentPolicy"
     },
     {

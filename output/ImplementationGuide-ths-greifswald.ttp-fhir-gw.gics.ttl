@@ -6,18 +6,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw> a fhir:ImplementationGuide ;
+<https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "ths-greifswald.ttp-fhir-gw"] ; # 
+  fhir:id [ fhir:v "ths-greifswald.ttp-fhir-gw.gics"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ths-greifswald.ttp-fhir-gw</b></p><a name=\"ths-greifswald.ttp-fhir-gw\"> </a><a name=\"hcths-greifswald.ttp-fhir-gw\"> </a><h2>IGTTPFHIRGatewaygICS</h2><p>The official URL for this implementation guide is: </p><pre>https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw</pre></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ths-greifswald.ttp-fhir-gw.gics</b></p><a name=\"ths-greifswald.ttp-fhir-gw.gics\"> </a><a name=\"hcths-greifswald.ttp-fhir-gw.gics\"> </a><h2>IGTTPFHIRGatewaygICS</h2><p>The official URL for this implementation guide is: </p><pre>https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics</pre></div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "2025.1.0"] ; # 
   fhir:name [ fhir:v "IGTTPFHIRGatewaygICS"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-10-29T10:53:37+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-29T11:17:58+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald" ] ;
@@ -26,7 +26,7 @@
        fhir:value [ fhir:v "https://www.ths-greifswald.de/" ]
      ] )
   ] ) ; # 
-  fhir:packageId [ fhir:v "ths-greifswald.ttp-fhir-gw"] ; # 
+  fhir:packageId [ fhir:v "ths-greifswald.ttp-fhir-gw.gics"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
   fhir:dependsOn ( [
