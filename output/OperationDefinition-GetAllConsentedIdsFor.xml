@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="GetAllConsentedIdsFor"/>
+  <language value="de-DE"/>
+  <text>
+    <status value="generated"/><div xml:lang="de-DE" xmlns="http://www.w3.org/1999/xhtml" lang="de-DE"><p class="res-header-id"><b>Generated Narrative: OperationDefinition GetAllConsentedIdsFor</b></p><a name="GetAllConsentedIdsFor"> </a><a name="hcGetAllConsentedIdsFor"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: de-DE</p></div><p>URL: [base]/$getAllConsentedIdsFor</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>domain</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>Angabe der Einwilligungsdomaene</p>
+</div></td></tr><tr><td>IN</td><td>signerIdTypeName</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>Angabe des Signer-ID-Typs</p>
+</div></td></tr><tr><td>IN</td><td>policy</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td><a href="ValueSet-PolicyVS.html">Policy</a> (Extensible)</td><td/></tr><tr><td>IN</td><td>version</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>Version der Policy</p>
+</div></td></tr><tr><td>IN</td><td>config</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/parameters.html">Parameters</a></td><td/><td/></tr><tr><td>OUT</td><td>personIdentifier</td><td/><td>0..*</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td/></tr></table><div><p>Abruf aller Identifier eines bestimmten benannten Identifier-Typs (z.b. studyPsn) für eine bestimmte Policy (Coding) und Domäne. Zurück geliefert wird eine Liste von eingewilligten Identifiern in Bezug auf die spezifizierte Policy.</p>
+</div></div>
+  </text>
+  <url value="https://ths-greifswald.de/fhir/OperationDefinition/gics/getAllConsentedIdsFor"/>
+  <version value="2025.1.0"/>
+  <name value="GetAllConsentedIdsFor"/>
+  <title value="Get all consented Identifiers for person and template"/>
+  <status value="active"/>
+  <kind value="operation"/>
+  <date value="2025-06-12"/>
+  <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+  <contact>
+    <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ths-greifswald.de/"/>
+    </telecom>
+  </contact>
+  <description value="Abruf aller Identifier eines bestimmten benannten Identifier-Typs (z.b. studyPsn) für eine bestimmte Policy (Coding) und Domäne. Zurück geliefert wird eine Liste von eingewilligten Identifiern in Bezug auf die spezifizierte Policy."/>
+  <purpose value="Teil des FHIR Gateway für gICS. Weitere Infos unter https://ths-greifswald.de/gics"/>
+  <affectsState value="false"/>
+  <code value="getAllConsentedIdsFor"/>
+  <comment value="Abruf aller Identifier eines bestimmten benannten Identifier-Typs (z.b. studyPsn) für eine bestimmte Policy (Coding) und Domäne. Zurück geliefert wird eine Liste von eingewilligten Identifiern in Bezug auf die spezifizierte Policy."/>
+  <system value="true"/>
+  <type value="false"/>
+  <instance value="false"/>
+  <parameter>
+    <name value="domain"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Angabe der Einwilligungsdomaene"/>
+    <type value="string"/>
+  </parameter>
+  <parameter>
+    <name value="signerIdTypeName"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Angabe des Signer-ID-Typs"/>
+    <type value="string"/>
+  </parameter>
+  <parameter>
+    <name value="policy"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <type value="Coding"/>
+    <binding>
+      <strength value="extensible"/>
+      <valueSet value="https://ths-greifswald.de/fhir/ValueSet/gics/Policy"/>
+    </binding>
+  </parameter>
+  <parameter>
+    <name value="version"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Version der Policy"/>
+    <type value="string"/>
+  </parameter>
+  <parameter>
+    <name value="config"/>
+    <use value="in"/>
+    <min value="0"/>
+    <max value="1"/>
+    <type value="Parameters"/>
+  </parameter>
+  <parameter>
+    <name value="personIdentifier"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <type value="Identifier"/>
+  </parameter>
+</OperationDefinition>

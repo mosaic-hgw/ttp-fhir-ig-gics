@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="IsConsented-request-example-2"/>
+  <parameter>
+    <name value="personIdentifier"/>
+    <valueIdentifier>
+      <system value="https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"/>
+      <value value="dic_1H51T"/>
+    </valueIdentifier>
+  </parameter>
+  <parameter>
+    <name value="domain"/>
+    <valueString value="num"/>
+  </parameter>
+  <parameter>
+    <name value="policy"/>
+    <valueCoding>
+      <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.6"/>
+    </valueCoding>
+  </parameter>
+  <parameter>
+    <name value="version"/>
+    <valueString value="1.1"/>
+  </parameter>
+</Parameters>

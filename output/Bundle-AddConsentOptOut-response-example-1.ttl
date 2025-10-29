@@ -1,0 +1,115 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/gics/Bundle/AddConsentOptOut-response-example-1> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AddConsentOptOut-response-example-1"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:resource ( [
+       a fhir:Consent ;
+       fhir:id [ fhir:v "8821edd5-5bb7-11ef-9800-0242ac130002" ] ;
+       fhir:meta [
+         fhir:lastUpdated [ fhir:v "2024-08-16T12:08:49.282+02:00"^^xsd:dateTime ] ;
+         fhir:profile ( [
+           fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"^^xsd:anyURI ;
+           fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent>
+         ] [
+           fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/Consent"^^xsd:anyURI ;
+           fhir:link <http://fhir.de/ConsentManagement/StructureDefinition/Consent>
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "extensions" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Consent_8821edd5-5bb7-11ef-9800-0242ac130002\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Consent 8821edd5-5bb7-11ef-9800-0242ac130002</b></p><a name=\"8821edd5-5bb7-11ef-9800-0242ac130002\"> </a><a name=\"hc8821edd5-5bb7-11ef-9800-0242ac130002\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2024-08-16 12:08:49+0200</p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-Consent.html\">Einwilligungsinformationen</a>, <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent\">Consent Management: Consent</a></p></div><blockquote><p><b>Consent Management Domain Reference</b></p><ul><li>domain: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/ResearchStudy/7fca337a-e69c-11ee-943e-0242ac1c0002\">ResearchStudy/7fca337a-e69c-11ee-943e-0242ac1c0002</a></li><li>status: <a href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-active\">PublicationStatus active</a>: Active</li></ul></blockquote><p><b>status</b>: Active</p><p><b>scope</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/consentscope research}\">Research</span></p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 57016-8}\">Privacy policy acknowledgment Document</span>, <span title=\"Codes:{http://fhir.de/ConsentManagement/CodeSystem/ResultType document}\">Dokument</span>, <span title=\"Codes:{http://fhir.de/ConsentManagement/CodeSystem/TemplateType CONSENT-OPT-OUT}\">Einwilligung (Opt-out)</span></p><p><b>patient</b>: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/881fc35f-5bb7-11ef-9800-0242ac130002\">studyPSN fhir_1</a></p><p><b>dateTime</b>: 2024-08-16 12:08:49+0200</p><p><b>organization</b>: opt-out</p><p><b>source</b>: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/QuestionnaireResponse/8821edd5-5bb7-11ef-9800-0242ac130002\">QuestionnaireResponse/8821edd5-5bb7-11ef-9800-0242ac130002</a></p><h3>Policies</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Uri</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=urn:uuid:7cbe82e6-3886-11ef-8dbb-0242ac130002\">urn:uuid:7cbe82e6-3886-11ef-8dbb-0242ac130002</a></td></tr></table><blockquote><p><b>provision</b></p><p><b>type</b>: Opt In</p><p><b>period</b>: 2024-08-16 12:08:49+0200 --&gt; 3000-01-01 00:00:00+0100</p><h3>Provisions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Period</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2024-08-16 12:08:49+0200 --&gt; 3000-01-01 00:00:00+0100</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/opt-out p-opt-out}\">p-opt-out</span></td></tr></table></blockquote></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:extension ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "domain"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Reference ;
+             fhir:link <https://ths-greifswald.de/fhir/gics/ResearchStudy/7fca337a-e69c-11ee-943e-0242ac1c0002> ;
+             fhir:reference [ fhir:v "ResearchStudy/7fca337a-e69c-11ee-943e-0242ac1c0002" ]
+           ]
+         ] [
+           fhir:url [ fhir:v "status"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Coding ;
+             fhir:system [ fhir:v "http://hl7.org/fhir/publication-status"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "active" ]
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"^^xsd:anyURI ]
+       ] ) ;
+       fhir:status [ fhir:v "active" ] ;
+       fhir:scope [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "research" ]
+         ] )
+       ] ;
+       fhir:category ( [
+         fhir:coding ( [
+           a loinc:57016-8 ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "57016-8" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://fhir.de/ConsentManagement/CodeSystem/ResultType"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "document" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://fhir.de/ConsentManagement/CodeSystem/TemplateType"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "CONSENT-OPT-OUT" ]
+         ] )
+       ] ) ;
+       fhir:patient [
+         fhir:link <https://ths-greifswald.de/fhir/gics/Patient/881fc35f-5bb7-11ef-9800-0242ac130002> ;
+         fhir:reference [ fhir:v "Patient/881fc35f-5bb7-11ef-9800-0242ac130002" ] ;
+         fhir:display [ fhir:v "studyPSN fhir_1" ]
+       ] ;
+       fhir:dateTime [ fhir:v "2024-08-16T12:08:49+02:00"^^xsd:dateTime ] ;
+       fhir:organization ( [
+         fhir:display [ fhir:v "opt-out" ]
+       ] ) ;
+       fhir:source [
+         a fhir:Reference ;
+         fhir:link <https://ths-greifswald.de/fhir/gics/QuestionnaireResponse/8821edd5-5bb7-11ef-9800-0242ac130002> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/8821edd5-5bb7-11ef-9800-0242ac130002" ]
+       ] ;
+       fhir:policy ( [
+         fhir:uri [ fhir:v "urn:uuid:7cbe82e6-3886-11ef-8dbb-0242ac130002"^^xsd:anyURI ]
+       ] ) ;
+       fhir:provision [
+         fhir:type [ fhir:v "permit" ] ;
+         fhir:period [
+           fhir:start [ fhir:v "2024-08-16T12:08:49+02:00"^^xsd:dateTime ] ;
+           fhir:end [ fhir:v "3000-01-01T00:00:00+01:00"^^xsd:dateTime ]
+         ] ;
+         fhir:provision ( [
+           fhir:type [ fhir:v "permit" ] ;
+           fhir:period [
+             fhir:start [ fhir:v "2024-08-16T12:08:49+02:00"^^xsd:dateTime ] ;
+             fhir:end [ fhir:v "3000-01-01T00:00:00+01:00"^^xsd:dateTime ]
+           ] ;
+           fhir:code ( [
+             fhir:coding ( [
+               fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/opt-out"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "p-opt-out" ]
+             ] )
+           ] )
+         ] )
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

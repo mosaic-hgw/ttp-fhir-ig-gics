@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="AllConsentsForDomain-request-example-1"/>
+  <parameter>
+    <name value="template"/>
+    <valueString value="MII;Patienteneinwilligung MII;1.6.f"/>
+  </parameter>
+  <parameter>
+    <name value="domain"/>
+    <valueString value="MII"/>
+  </parameter>
+</Parameters>

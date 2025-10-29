@@ -1,0 +1,40 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/gics/Parameters/CurrentConsentForPersonAndTemplate-request-example-1> a fhir:Parameters ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CurrentConsentForPersonAndTemplate-request-example-1"] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "personIdentifier" ] ;
+     fhir:value [
+       a fhir:Identifier ;
+       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "dic_1H51T" ]
+     ]
+  ] [
+     fhir:name [ fhir:v "domain" ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "MII"
+     ]
+  ] [
+     fhir:name [ fhir:v "template" ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "MII;Patienteneinwilligung MII;1.6.f"
+     ]
+  ] [
+     fhir:name [ fhir:v "ignore-version-number" ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v false
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

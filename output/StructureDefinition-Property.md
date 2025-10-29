@@ -1,0 +1,153 @@
+# Property Element - v2025.1.0
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "Property",
+  "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/Property",
+  "version" : "2025.1.0",
+  "name" : "Property",
+  "title" : "Property Element",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-06-12",
+  "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact" : [
+    {
+      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://www.ths-greifswald.de/"
+        }
+      ]
+    }
+  ],
+  "description" : "Key Value Property Element für Properties zur Individualisierung von Domains, Policies, Modules und Templates",
+  "copyright" : "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [
+    {
+      "identity" : "rim",
+      "uri" : "http://hl7.org/v3",
+      "name" : "RIM Mapping"
+    }
+  ],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [
+    {
+      "type" : "element",
+      "expression" : "ResearchStudy"
+    },
+    {
+      "type" : "element",
+      "expression" : "Organization"
+    },
+    {
+      "type" : "element",
+      "expression" : "ActivityDefinition"
+    },
+    {
+      "type" : "element",
+      "expression" : "Questionnaire"
+    }
+  ],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "Extension",
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode" : "normative"
+          }
+        ],
+        "path" : "Extension",
+        "short" : "Property",
+        "definition" : "Property"
+      },
+      {
+        "id" : "Extension.extension",
+        "path" : "Extension.extension",
+        "min" : 2
+      },
+      {
+        "id" : "Extension.extension:key",
+        "path" : "Extension.extension",
+        "sliceName" : "key",
+        "label" : "Key",
+        "short" : "Property Key",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Extension.extension:key.extension",
+        "path" : "Extension.extension.extension",
+        "max" : "0"
+      },
+      {
+        "id" : "Extension.extension:key.url",
+        "path" : "Extension.extension.url",
+        "fixedUri" : "key"
+      },
+      {
+        "id" : "Extension.extension:key.value[x]",
+        "path" : "Extension.extension.value[x]",
+        "min" : 1,
+        "type" : [
+          {
+            "code" : "string"
+          }
+        ]
+      },
+      {
+        "id" : "Extension.extension:value",
+        "path" : "Extension.extension",
+        "sliceName" : "value",
+        "label" : "Value",
+        "short" : "Property Value",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Extension.extension:value.extension",
+        "path" : "Extension.extension.extension",
+        "max" : "0"
+      },
+      {
+        "id" : "Extension.extension:value.url",
+        "path" : "Extension.extension.url",
+        "fixedUri" : "value"
+      },
+      {
+        "id" : "Extension.extension:value.value[x]",
+        "path" : "Extension.extension.value[x]",
+        "type" : [
+          {
+            "code" : "string"
+          }
+        ]
+      },
+      {
+        "id" : "Extension.url",
+        "path" : "Extension.url",
+        "fixedUri" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/Property"
+      },
+      {
+        "id" : "Extension.value[x]",
+        "path" : "Extension.value[x]",
+        "max" : "0"
+      }
+    ]
+  }
+}
+
+```

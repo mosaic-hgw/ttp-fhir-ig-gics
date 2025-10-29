@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/gics/SearchParameter/ActivityDefinitionCode> a fhir:SearchParameter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ActivityDefinitionCode"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter ActivityDefinitionCode</b></p><a name=\"ActivityDefinitionCode\"> </a><a name=\"hcActivityDefinitionCode\"> </a><h2>activityDefinitionCode</h2><p>Parameter <code>code</code>:<code>token</code></p><div><p>Eindeutiger Code der Consent Policy (ActivityDefiniton)</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/activitydefinition.html\">ActivityDefinition</a></td></tr><tr><td>Expression</td><td><code>code</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may only appear once</li><li>multipleOr: The parameter may only have one value (no comma separators)</li></ul></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://ths-greifswald.de/fhir/SearchParameter/gics/activityDefinitionCode"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2025.1.0"] ; # 
+  fhir:name [ fhir:v "activityDefinitionCode"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-06-12"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ths-greifswald.de/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Eindeutiger Code der Consent Policy (ActivityDefiniton)"] ; # 
+  fhir:code [ fhir:v "code"] ; # 
+  fhir:base ( [ fhir:v "ActivityDefinition"] ) ; # 
+  fhir:type [ fhir:v "token"] ; # 
+  fhir:expression [ fhir:v "code"] ; # 
+  fhir:multipleOr [ fhir:v false] ; # 
+  fhir:multipleAnd [ fhir:v false] . # 
+
+# -------------------------------------------------------------------------------------
+

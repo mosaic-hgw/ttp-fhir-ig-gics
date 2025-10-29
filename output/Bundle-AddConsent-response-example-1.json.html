@@ -1,0 +1,1085 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>AddConsent-response-example-1 - JSON Representation -  v2025.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ttp-fhir-ig.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"10.78"}
+    h3,h4,h5,h6{--heading-prefix:"10.78"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="hl7-nav"> 
+    <a id="hl7-logo" no-external="true" href="index.html">
+        <img alt="THS Greifswald" src="assets/images/Design-Logo-THS-deutsch-271-padding.png"/>
+    </a>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">2025.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Allgemeines
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Beschreibung.html">Beschreibung</a>
+      </li>
+      <li>
+        <a href="KontextUndKonzept.html">Kontext und Konzept</a>
+      </li>
+      <li>
+        <a href="TechnischeGrundlagen.html">Technische Grundlagen</a>
+      </li>
+      <li>
+        <a href="Einwilligungsmanagement.html">Einwilligungsmanagement</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Profile
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="StructureDefinition-ConsentDomain.html">ConsentDomain</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-ConsentPolicy.html">ConsentPolicy</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-ConsentModule.html">ConsentModule</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-ConsentTemplate.html">ConsentTemplate</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-Consent.html">Consent</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-Provenance.html">Provenance</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-ConsentQualityControl.html">ConsentQualityControl</a>
+      </li>
+      <li>
+        <a href="StructureDefinition-ExchangeFormatDefinition.html">ExchangeFormatDefinition</a>
+      </li>
+      <li>
+        <a href="Questionnaire-Suche.html">Questionnaire-Suche</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Extensions.html">Extensions</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Operationen
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="OperationDefinition-AddConsent.html">addConsent</a>
+      </li>
+      <li>
+        <a href="OperationDefinition-AddConsentOptOut.html">addConsentOptOut</a>
+      </li>
+      <li>
+        <a href="OperationDefinition-AllConsentsForDomain.html">allConsentsForDomain</a>
+      </li>
+      <li>
+        <a href="OperationDefinition-AllConsentsForPerson.html">allConsentsForPerson</a>
+      </li>
+      <li>
+        <a href="OperationDefinition-AllConsentsForTemplate.html">allConsentsForTemplate</a>
+      </li>
+      <li>
+        <a href="OperationDefinition-CurrentConsentForPersonAndTemplate.html">currentConsentForPersonAndTemplate</a>
+      </li>
+      <li>
+        <a href="OperationDefinition-GetAllConsentedIdsFor.html">getAllConsentedIdsFor</a>
+      </li>
+      <li>
+        <a href="OperationDefinition-IsConsented.html">isConsented</a>
+      </li>
+      <li>
+        <a href="OperationDefinition-AllPolicyStatesForPerson.html">allPolicyStatesForPerson</a>
+      </li>
+      <li>
+        <a href="OperationDefinition-CurrentPolicyStatesForPerson.html">currentPolicyStatesForPerson</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>AddConsent-response-example-1</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">IGTTPFHIRGatewaygICS - Local Development build (v2025.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://ths-greifswald.de/fhir/gics/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-AddConsent-response-example-1.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-AddConsent-response-example-1.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-AddConsent-response-example-1.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: AddConsent-response-example-1 - JSON Representation</h2>
+
+
+<p><a href="Bundle-AddConsent-response-example-1.json" no-download="true">Raw json</a> | <a href="Bundle-AddConsent-response-example-1.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">resourceType</a>" : "Bundle",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a>" : "AddConsent-response-example-1",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a>" : "collection",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html">resourceType</a>" : "QuestionnaireResponse",
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.id">id</a>" : "bd56b7e3-336c-49a6-aa31-1987b02f26cf",
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2023-02-28T16:59:47.654+01:00",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse" style="color: Maroon">&#x1F517;</a> "http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.language">language</a>" : "de",
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; xml:lang=\&quot;de\&quot; lang=\&quot;de\&quot;&gt;&lt;a name=\&quot;QuestionnaireResponse_bd56b7e3-336c-49a6-aa31-1987b02f26cf\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: QuestionnaireResponse bd56b7e3-336c-49a6-aa31-1987b02f26cf&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;bd56b7e3-336c-49a6-aa31-1987b02f26cf\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcbd56b7e3-336c-49a6-aa31-1987b02f26cf\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Last updated: 2023-02-28 16:59:47+0100; Language: de&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse\&quot;&gt;Consent Management QuestionnaireResponse&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;table border=\&quot;1\&quot; cellpadding=\&quot;0\&quot; cellspacing=\&quot;0\&quot; style=\&quot;border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\&quot;&gt;&lt;tr style=\&quot;border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\&quot;&gt;&lt;th style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;The linkID for the item\&quot;&gt;LinkID&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;Text for the item\&quot;&gt;Text&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;Minimum and Maximum # of times the item can appear in the instance\&quot;&gt;Definition&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;The type of the item\&quot;&gt;Answer&lt;/a&gt;&lt;span style=\&quot;float: right\&quot;&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_q_root.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;QuestionnaireResponseRoot\&quot; class=\&quot;hierarchy\&quot;/&gt; bd56b7e3-336c-49a6-aa31-1987b02f26cf&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Questionnaire:https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.d&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-string.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Item\&quot; class=\&quot;hierarchy\&quot;/&gt; KKDAT_prospektiv_uebertragen_speichern_nutzen|1.8&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;a href=\&quot;https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2025.0.4&amp;amp;canonical=urn:oid:2.16.840.1.113883.3.1937.777.24.5.2#2.16.840.1.113883.3.1937.777.24.5.2--20210423105554-2.4616.46840.461.46113883.463.461937.46777.4624.465.462.462\&quot;&gt;MII Consent: Answer CodeSystem 2.16.840.1.113883.3.1937.777.24.5.2.2&lt;/a&gt;: ungültig&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-string.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Item\&quot; class=\&quot;hierarchy\&quot;/&gt; PATDAT_erheben_speichern_nutzen|1.8&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;a href=\&quot;https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2025.0.4&amp;amp;canonical=urn:oid:2.16.840.1.113883.3.1937.777.24.5.2#2.16.840.1.113883.3.1937.777.24.5.2--20210423105554-2.4616.46840.461.46113883.463.461937.46777.4624.465.462.461\&quot;&gt;MII Consent: Answer CodeSystem 2.16.840.1.113883.3.1937.777.24.5.2.1&lt;/a&gt;: gültig&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-string.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Item\&quot; class=\&quot;hierarchy\&quot;/&gt; BIOMAT_erheben_lagern_nutzen|1.8&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;a href=\&quot;https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2025.0.4&amp;amp;canonical=urn:oid:2.16.840.1.113883.3.1937.777.24.5.2#2.16.840.1.113883.3.1937.777.24.5.2--20210423105554-2.4616.46840.461.46113883.463.461937.46777.4624.465.462.462\&quot;&gt;MII Consent: Answer CodeSystem 2.16.840.1.113883.3.1937.777.24.5.2.2&lt;/a&gt;: ungültig&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-string.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Item\&quot; class=\&quot;hierarchy\&quot;/&gt; Rekontaktierung_Ergaenzungen|1.7&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;a href=\&quot;https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2025.0.4&amp;amp;canonical=urn:oid:2.16.840.1.113883.3.1937.777.24.5.2#2.16.840.1.113883.3.1937.777.24.5.2--20210423105554-2.4616.46840.461.46113883.463.461937.46777.4624.465.462.461\&quot;&gt;MII Consent: Answer CodeSystem 2.16.840.1.113883.3.1937.777.24.5.2.1&lt;/a&gt;: gültig&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-string.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Item\&quot; class=\&quot;hierarchy\&quot;/&gt; BIOMAT_Zusatzentnahme|1.8&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;a href=\&quot;https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2025.0.4&amp;amp;canonical=urn:oid:2.16.840.1.113883.3.1937.777.24.5.2#2.16.840.1.113883.3.1937.777.24.5.2--20210423105554-2.4616.46840.461.46113883.463.461937.46777.4624.465.462.462\&quot;&gt;MII Consent: Answer CodeSystem 2.16.840.1.113883.3.1937.777.24.5.2.2&lt;/a&gt;: ungültig&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-string.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Item\&quot; class=\&quot;hierarchy\&quot;/&gt; KKDAT_retrospektiv_uebertragen_speichern_nutzen|1.8&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;a href=\&quot;https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2025.0.4&amp;amp;canonical=urn:oid:2.16.840.1.113883.3.1937.777.24.5.2#2.16.840.1.113883.3.1937.777.24.5.2--20210423105554-2.4616.46840.461.46113883.463.461937.46777.4624.465.462.462\&quot;&gt;MII Consent: Answer CodeSystem 2.16.840.1.113883.3.1937.777.24.5.2.2&lt;/a&gt;: ungültig&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin_end.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-string.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Item\&quot; class=\&quot;hierarchy\&quot;/&gt; Rekontaktierung_Zusatzbefund|1.8&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;a href=\&quot;https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2025.0.4&amp;amp;canonical=urn:oid:2.16.840.1.113883.3.1937.777.24.5.2#2.16.840.1.113883.3.1937.777.24.5.2--20210423105554-2.4616.46840.461.46113883.463.461937.46777.4624.465.462.461\&quot;&gt;MII Consent: Answer CodeSystem 2.16.840.1.113883.3.1937.777.24.5.2.1&lt;/a&gt;: gültig&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr&gt;&lt;td colspan=\&quot;4\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;br/&gt;&lt;a href=\&quot;https://hl7.org/fhir/R4/formats.html#table\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.questionnaire">questionnaire</a>" : "https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.d",
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.status">status</a>" : "completed",
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.subject">subject</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/71e9be08-86ef-4403-9770-fbbfcdd3589c",
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Pseudonym studypsn1"
+        },
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.authored">authored</a>" : "2022-12-21T00:00:00+01:00",
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.author">author</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/71e9be08-86ef-4403-9770-fbbfcdd3589c",
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Pseudonym studypsn1"
+        },
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.source">source</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/71e9be08-86ef-4403-9770-fbbfcdd3589c",
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Pseudonym studypsn1"
+        },
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "KKDAT_prospektiv_uebertragen_speichern_nutzen|1.8",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.2.2",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "ungültig"
+                }
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "PATDAT_erheben_speichern_nutzen|1.8",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.2.1",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "gültig"
+                }
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "BIOMAT_erheben_lagern_nutzen|1.8",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.2.2",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "ungültig"
+                }
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "Rekontaktierung_Ergaenzungen|1.7",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.2.1",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "gültig"
+                }
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "BIOMAT_Zusatzentnahme|1.8",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.2.2",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "ungültig"
+                }
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "KKDAT_retrospektiv_uebertragen_speichern_nutzen|1.8",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.2.2",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "ungültig"
+                }
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "Rekontaktierung_Zusatzbefund|1.8",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.2.1",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "gültig"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/consent.html#Consent">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/consent.html">resourceType</a>" : "Consent",
+        "<a href="http://hl7.org/fhir/R4/consent.html#Consent.id">id</a>" : "538cdfee-dc99-4a2f-bacc-3144e57e811d",
+        "<a href="http://hl7.org/fhir/R4/consent.html#Consent.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2023-02-28T16:59:47.654+01:00",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-Consent.html" style="color: Maroon">&#x1F517;</a> "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/consent.html#Consent.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Consent_538cdfee-dc99-4a2f-bacc-3144e57e811d\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Consent 538cdfee-dc99-4a2f-bacc-3144e57e811d&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;538cdfee-dc99-4a2f-bacc-3144e57e811d\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hc538cdfee-dc99-4a2f-bacc-3144e57e811d\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Last updated: 2023-02-28 16:59:47+0100&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Consent.html\&quot;&gt;Einwilligungsinformationen&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Consent Management Domain Reference&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;domain: &lt;a href=\&quot;https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/ResearchStudy/627163a2-ed92-41c7-91e3-0b134127b47b\&quot;&gt;ResearchStudy/627163a2-ed92-41c7-91e3-0b134127b47b&lt;/a&gt;&lt;/li&gt;&lt;li&gt;status: &lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-active\&quot;&gt;PublicationStatus active&lt;/a&gt;: Active&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;scope&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/consentscope research}\&quot;&gt;Research&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 57016-8}\&quot;&gt;Privacy policy acknowledgment Document&lt;/span&gt;, &lt;span title=\&quot;Codes:{http://fhir.de/ConsentManagement/CodeSystem/ResultType document}\&quot;&gt;Dokument&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Bundle-AddConsent-response-example-1.html#Patient_71e9be08-86ef-4403-9770-fbbfcdd3589c\&quot;&gt;Pseudonym studypsn1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;dateTime&lt;/b&gt;: 2022-12-21 00:00:00+0100&lt;/p&gt;&lt;p&gt;&lt;b&gt;organization&lt;/b&gt;: MII&lt;/p&gt;&lt;p&gt;&lt;b&gt;source&lt;/b&gt;: &lt;a href=\&quot;Bundle-AddConsent-response-example-1.html#QuestionnaireResponse_bd56b7e3-336c-49a6-aa31-1987b02f26cf\&quot;&gt;Response to Questionnaire 'https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.d' about '-&amp;gt;Pseudonym studypsn1'&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Policies&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Uri&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;amp;canonical=urn:uuid:627163a2-ed92-41c7-91e3-0b134127b47b\&quot;&gt;urn:uuid:627163a2-ed92-41c7-91e3-0b134127b47b&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;provision&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Opt Out&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2022-12-21 00:00:00+0100 --&amp;gt; 2052-12-21 00:00:00+0100&lt;/p&gt;&lt;h3&gt;Provisions&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Period&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Opt In&lt;/td&gt;&lt;td&gt;2022-12-21 00:00:00+0100 --&amp;gt; 2052-12-21 00:00:00+0100&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://mii.de/fhir/CodeSystem/gics/Policy/MII IDAT_bereitstellen_EU_DSGVO_konform}\&quot;&gt;Herausgabe identifizierender Daten (IDAT) an unabhängige Treuhandstelle zur weiteren Verarbeitung&lt;/span&gt;, &lt;span title=\&quot;Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.5}\&quot;&gt;IDAT_bereitstellen_EU_DSGVO_NIVEAU&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Opt In&lt;/td&gt;&lt;td&gt;2022-12-21 00:00:00+0100 --&amp;gt; 2052-12-21 00:00:00+0100&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_erheben}\&quot;&gt;Erfassung neuer identifizierender Daten (IDAT)&lt;/span&gt;, &lt;span title=\&quot;Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.2}\&quot;&gt;IDAT_erheben&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Opt In&lt;/td&gt;&lt;td&gt;2022-12-21 00:00:00+0100 --&amp;gt; 2052-12-21 00:00:00+0100&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_speichern_verarbeiten}\&quot;&gt;Speicherung und Verarbeitung identifizierender Daten (IDAT) zu Zwecken med. Forschung in der verantwortlichen Stelle&lt;/span&gt;, &lt;span title=\&quot;Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.3}\&quot;&gt;IDAT_speichern_verarbeiten&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Opt In&lt;/td&gt;&lt;td&gt;2022-12-21 00:00:00+0100 --&amp;gt; 2052-12-21 00:00:00+0100&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_zusammenfuehren_Dritte}\&quot;&gt;Zusammenführung identifizierender Daten (IDAT) über die unabhängige Treuhandstelle mit Dritten Forschungspartnern, sofern dort eine Einwilligung vorliegt&lt;/span&gt;, &lt;span title=\&quot;Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.4}\&quot;&gt;IDAT_zusammenfuehren_Dritte&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Opt In&lt;/td&gt;&lt;td&gt;2022-12-21 00:00:00+0100 --&amp;gt; 2027-12-21 00:00:00+0100&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_erheben}\&quot;&gt;Erfassung medizinischer Daten (MDAT)&lt;/span&gt;, &lt;span title=\&quot;Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.6}\&quot;&gt;MDAT_erheben&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Opt In&lt;/td&gt;&lt;td&gt;2022-12-21 00:00:00+0100 --&amp;gt; 2052-12-21 00:00:00+0100&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_speichern_verarbeiten}\&quot;&gt;Speicherung und Verarbeitung von medizinischen codierten Daten zu Zwecken med. Forschung innerhalb der verantwortlichen Stelle (MDAT)&lt;/span&gt;, &lt;span title=\&quot;Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.7}\&quot;&gt;MDAT_speichern_verarbeiten&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Opt In&lt;/td&gt;&lt;td&gt;2022-12-21 00:00:00+0100 --&amp;gt; 2052-12-21 00:00:00+0100&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://mii.de/fhir/CodeSystem/gics/Policy/MII MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform}\&quot;&gt;Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher&lt;/span&gt;, &lt;span title=\&quot;Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.8}\&quot;&gt;MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Opt In&lt;/td&gt;&lt;td&gt;2022-12-21 00:00:00+0100 --&amp;gt; 2052-12-21 00:00:00+0100&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_zusammenfuehren_Dritte}\&quot;&gt;Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern, sofern dort eine Einwilligung vorliegt&lt;/span&gt;, &lt;span title=\&quot;Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.9}\&quot;&gt;MDAT_zusammenfuehren_Dritte&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Opt In&lt;/td&gt;&lt;td&gt;2022-12-21 00:00:00+0100 --&amp;gt; 2052-12-21 00:00:00+0100&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://mii.de/fhir/CodeSystem/gics/Policy/MII Rekontaktierung_Ergebnisse_erheblicher_Bedeutung}\&quot;&gt;Rekontaktierung des Betroffenen bei Ergebnissen von erheblicher Bedeutung&lt;/span&gt;, &lt;span title=\&quot;Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.37}\&quot;&gt;Rekontaktierung_Ergebnisse_erheblicher_Bedeutung&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Opt In&lt;/td&gt;&lt;td&gt;2022-12-21 00:00:00+0100 --&amp;gt; 2052-12-21 00:00:00+0100&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy Rekontaktierung_Verknuepfung_Datenbanken}\&quot;&gt;Rekontaktierung zur Verknüpfung von Patientendaten mit Daten anderer Datenbanken&lt;/span&gt;, &lt;span title=\&quot;Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.27}\&quot;&gt;Rekontaktierung_Verknuepfung_Datenbanken&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Opt In&lt;/td&gt;&lt;td&gt;2022-12-21 00:00:00+0100 --&amp;gt; 2052-12-21 00:00:00+0100&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy Rekontaktierung_weitere_Erhebung}\&quot;&gt;Rekontaktierung bezüglich Erhebung zusätzlicher Daten&lt;/span&gt;, &lt;span title=\&quot;Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.28}\&quot;&gt;Rekontaktierung_weitere_Erhebung&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Opt In&lt;/td&gt;&lt;td&gt;2022-12-21 00:00:00+0100 --&amp;gt; 2052-12-21 00:00:00+0100&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy Rekontaktierung_weitere_Studien}\&quot;&gt;Rekontaktierung bezüglich Information zu neuen Forschungsvorhaben oder Studien&lt;/span&gt;, &lt;span title=\&quot;Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.29}\&quot;&gt;Rekontaktierung_weitere_Studien&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Opt In&lt;/td&gt;&lt;td&gt;2022-12-21 00:00:00+0100 --&amp;gt; 2052-12-21 00:00:00+0100&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://mii.de/fhir/CodeSystem/gics/Policy/MII Rekontaktierung_Zusatzbefund}\&quot;&gt;Rekontaktierung bezüglich Zusatzbefund im Rahmen der am Standort dafür entwickelten Prozesse und der im Nutzungsantrag angegebenen Bedingungen&lt;/span&gt;, &lt;span title=\&quot;Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.31}\&quot;&gt;Rekontaktierung_Zusatzbefund&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/consent.html#Consent.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "domain",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ResearchStudy/627163a2-ed92-41c7-91e3-0b134127b47b"
+                }
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "status",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/publication-status",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "active"
+                }
+              }
+            ],
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/consent.html#Consent.status">status</a>" : "active",
+        "<a href="http://hl7.org/fhir/R4/consent.html#Consent.scope">scope</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/consentscope",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "research"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/consent.html#Consent.category">category</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "57016-8"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://fhir.de/ConsentManagement/CodeSystem/ResultType",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "document"
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/consent.html#Consent.patient">patient</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/71e9be08-86ef-4403-9770-fbbfcdd3589c",
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Pseudonym studypsn1"
+        },
+        "<a href="http://hl7.org/fhir/R4/consent.html#Consent.dateTime">dateTime</a>" : "2022-12-21T00:00:00+01:00",
+        "<a href="http://hl7.org/fhir/R4/consent.html#Consent.organization">organization</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "MII"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/consent.html#Consent.source[x]">sourceReference</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "QuestionnaireResponse/bd56b7e3-336c-49a6-aa31-1987b02f26cf"
+        },
+        "<a href="http://hl7.org/fhir/R4/consent.html#Consent.policy">policy</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/consent.html#Consent.policy.uri">uri</a>" : "urn:uuid:627163a2-ed92-41c7-91e3-0b134127b47b"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision">provision</a>" : {
+          "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a>" : "deny",
+          "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.period">period</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2022-12-21T00:00:00+01:00",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2052-12-21T00:00:00+01:00"
+          },
+          "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.provision">provision</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a>" : "permit",
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.period">period</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2022-12-21T00:00:00+01:00",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2052-12-21T00:00:00+01:00"
+              },
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://mii.de/fhir/CodeSystem/gics/Policy/MII",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "IDAT_bereitstellen_EU_DSGVO_konform",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Herausgabe identifizierender Daten (IDAT) an unabhängige Treuhandstelle zur weiteren Verarbeitung"
+                    }
+                  ]
+                },
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.3.5",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "IDAT_bereitstellen_EU_DSGVO_NIVEAU"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a>" : "permit",
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.period">period</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2022-12-21T00:00:00+01:00",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2052-12-21T00:00:00+01:00"
+              },
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "IDAT_erheben",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Erfassung neuer identifizierender Daten (IDAT)"
+                    }
+                  ]
+                },
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.3.2",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "IDAT_erheben"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a>" : "permit",
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.period">period</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2022-12-21T00:00:00+01:00",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2052-12-21T00:00:00+01:00"
+              },
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "IDAT_speichern_verarbeiten",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Speicherung und Verarbeitung identifizierender Daten (IDAT) zu Zwecken med. Forschung in der verantwortlichen Stelle"
+                    }
+                  ]
+                },
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.3.3",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "IDAT_speichern_verarbeiten"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a>" : "permit",
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.period">period</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2022-12-21T00:00:00+01:00",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2052-12-21T00:00:00+01:00"
+              },
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "IDAT_zusammenfuehren_Dritte",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Zusammenführung identifizierender Daten (IDAT) über die unabhängige Treuhandstelle mit Dritten Forschungspartnern, sofern dort eine Einwilligung vorliegt"
+                    }
+                  ]
+                },
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.3.4",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "IDAT_zusammenfuehren_Dritte"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a>" : "permit",
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.period">period</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2022-12-21T00:00:00+01:00",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2027-12-21T00:00:00+01:00"
+              },
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "MDAT_erheben",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Erfassung medizinischer Daten (MDAT)"
+                    }
+                  ]
+                },
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.3.6",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "MDAT_erheben"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a>" : "permit",
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.period">period</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2022-12-21T00:00:00+01:00",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2052-12-21T00:00:00+01:00"
+              },
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "MDAT_speichern_verarbeiten",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Speicherung und Verarbeitung von medizinischen codierten Daten zu Zwecken med. Forschung innerhalb der verantwortlichen Stelle (MDAT)"
+                    }
+                  ]
+                },
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.3.7",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "MDAT_speichern_verarbeiten"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a>" : "permit",
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.period">period</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2022-12-21T00:00:00+01:00",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2052-12-21T00:00:00+01:00"
+              },
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://mii.de/fhir/CodeSystem/gics/Policy/MII",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher"
+                    }
+                  ]
+                },
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.3.8",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a>" : "permit",
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.period">period</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2022-12-21T00:00:00+01:00",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2052-12-21T00:00:00+01:00"
+              },
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "MDAT_zusammenfuehren_Dritte",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern, sofern dort eine Einwilligung vorliegt"
+                    }
+                  ]
+                },
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.3.9",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "MDAT_zusammenfuehren_Dritte"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a>" : "permit",
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.period">period</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2022-12-21T00:00:00+01:00",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2052-12-21T00:00:00+01:00"
+              },
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://mii.de/fhir/CodeSystem/gics/Policy/MII",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "Rekontaktierung_Ergebnisse_erheblicher_Bedeutung",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Rekontaktierung des Betroffenen bei Ergebnissen von erheblicher Bedeutung"
+                    }
+                  ]
+                },
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.3.37",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Rekontaktierung_Ergebnisse_erheblicher_Bedeutung"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a>" : "permit",
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.period">period</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2022-12-21T00:00:00+01:00",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2052-12-21T00:00:00+01:00"
+              },
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "Rekontaktierung_Verknuepfung_Datenbanken",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Rekontaktierung zur Verknüpfung von Patientendaten mit Daten anderer Datenbanken"
+                    }
+                  ]
+                },
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.3.27",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Rekontaktierung_Verknuepfung_Datenbanken"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a>" : "permit",
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.period">period</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2022-12-21T00:00:00+01:00",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2052-12-21T00:00:00+01:00"
+              },
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "Rekontaktierung_weitere_Erhebung",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Rekontaktierung bezüglich Erhebung zusätzlicher Daten"
+                    }
+                  ]
+                },
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.3.28",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Rekontaktierung_weitere_Erhebung"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a>" : "permit",
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.period">period</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2022-12-21T00:00:00+01:00",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2052-12-21T00:00:00+01:00"
+              },
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "Rekontaktierung_weitere_Studien",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Rekontaktierung bezüglich Information zu neuen Forschungsvorhaben oder Studien"
+                    }
+                  ]
+                },
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.3.29",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Rekontaktierung_weitere_Studien"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a>" : "permit",
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.period">period</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2022-12-21T00:00:00+01:00",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2052-12-21T00:00:00+01:00"
+              },
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.code">code</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://mii.de/fhir/CodeSystem/gics/Policy/MII",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "Rekontaktierung_Zusatzbefund",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Rekontaktierung bezüglich Zusatzbefund im Rahmen der am Standort dafür entwickelten Prozesse und der im Nutzungsantrag angegebenen Bedingungen"
+                    }
+                  ]
+                },
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2.16.840.1.113883.3.1937.777.24.5.3.31",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Rekontaktierung_Zusatzbefund"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/provenance.html">resourceType</a>" : "Provenance",
+        "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.id">id</a>" : "bd56b7e3-336c-49a6-aa31-1987b02f26cf",
+        "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2022-12-21T00:00:00.000+01:00",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-Provenance.html" style="color: Maroon">&#x1F517;</a> "https://ths-greifswald.de/fhir/StructureDefinition/gics/Provenance"<a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Provenance" style="color: Maroon">&#x1F517;</a> ,
+            "http://fhir.de/ConsentManagement/StructureDefinition/Provenance"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Provenance_bd56b7e3-336c-49a6-aa31-1987b02f26cf\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Provenance bd56b7e3-336c-49a6-aa31-1987b02f26cf&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Last updated: 2022-12-21 00:00:00+0100&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profiles: &lt;a href=\&quot;StructureDefinition-Provenance.html\&quot;&gt;Herkunftsinformationen und Signatur&lt;/a&gt;, &lt;a href=\&quot;https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Provenance\&quot;&gt;Consent Management Provenance&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Provenance for &lt;a href=\&quot;Bundle-AddConsent-response-example-1.html#QuestionnaireResponse_bd56b7e3-336c-49a6-aa31-1987b02f26cf\&quot;&gt;Response to Questionnaire 'https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.d' about '-&amp;gt;Pseudonym studypsn1'&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Summary&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;Recorded&lt;/td&gt;&lt;td&gt;2023-02-28 16:59:47+0100&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Agents&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;who&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;https://ths-greifswald.de/gics&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.target">target</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "QuestionnaireResponse/bd56b7e3-336c-49a6-aa31-1987b02f26cf"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.recorded">recorded</a>" : "2023-02-28T16:59:47.654+01:00",
+        "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent">agent</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.who">who</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "https://ths-greifswald.de/gics"
+            }
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.entity">entity</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.entity.role">role</a>" : "source",
+            "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.entity.what">what</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "DocumentReference/bf61b464-aea9-48c9-9f6c-38afc3cc78e7"
+            }
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.signature">signature</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.extension">extension</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Greifswald"
+              }
+            ],
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.type">type</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso-astm:E1762-95:2013",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "1.2.840.10065.1.12.1.7",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Consent Signature"
+              }
+            ],
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.when">when</a>" : "2022-12-21T00:00:00.000+01:00",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.who">who</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/71e9be08-86ef-4403-9770-fbbfcdd3589c",
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Pseudonym studypsn1"
+            },
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.data">_data</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary#base64Binary.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "error"
+                }
+              ]
+            }
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.extension">extension</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Greifswald"
+              }
+            ],
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.type">type</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso-astm:E1762-95:2013",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "1.2.840.10065.1.12.1.5",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Verification Signature"
+              }
+            ],
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.when">when</a>" : "2022-12-21T00:00:00.000+01:00",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.who">who</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Dr. Stephen Strange"
+            },
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.data">_data</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary#base64Binary.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "error"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/documentreference.html">resourceType</a>" : "DocumentReference",
+        "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.id">id</a>" : "bf61b464-aea9-48c9-9f6c-38afc3cc78e7",
+        "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2023-02-28T16:59:47.635+01:00",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference" style="color: Maroon">&#x1F517;</a> "http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;DocumentReference_bf61b464-aea9-48c9-9f6c-38afc3cc78e7\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: DocumentReference bf61b464-aea9-48c9-9f6c-38afc3cc78e7&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;bf61b464-aea9-48c9-9f6c-38afc3cc78e7\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcbf61b464-aea9-48c9-9f6c-38afc3cc78e7\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Last updated: 2023-02-28 16:59:47+0100&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference\&quot;&gt;Consent Management DocumentReference&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Current&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-AddConsent-response-example-1.html#Patient_71e9be08-86ef-4403-9770-fbbfcdd3589c\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( Anonymous identifier: studypsn1)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: scan1.pdf&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Attachments&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;ContentType&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Data&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;application/pdf&lt;/td&gt;&lt;td&gt;&lt;code&gt;Zm9yIGRlbW8gcHVycG9zZSBvbmx5&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.status">status</a>" : "current",
+        "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.subject">subject</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/71e9be08-86ef-4403-9770-fbbfcdd3589c",
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.id">id</a>" : "71e9be08-86ef-4403-9770-fbbfcdd3589c",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "ANON",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Anonymous identifier"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "studypsn1"
+          }
+        },
+        "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.description">description</a>" : "scan1.pdf",
+        "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content">content</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content.attachment">attachment</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a>" : "application/pdf",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.data">data</a>" : "Zm9yIGRlbW8gcHVycG9zZSBvbmx5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/patient.html">resourceType</a>" : "Patient",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "71e9be08-86ef-4403-9770-fbbfcdd3589c",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2023-02-28T16:59:47.321+01:00",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Patient" style="color: Maroon">&#x1F517;</a> "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Patient_71e9be08-86ef-4403-9770-fbbfcdd3589c\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient 71e9be08-86ef-4403-9770-fbbfcdd3589c&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;71e9be08-86ef-4403-9770-fbbfcdd3589c\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hc71e9be08-86ef-4403-9770-fbbfcdd3589c\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Last updated: 2023-02-28 16:59:47+0100&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Patient\&quot;&gt;Consent Management: Patient&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( Anonymous identifier: studypsn1)&lt;/p&gt;&lt;hr/&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.id">id</a>" : "71e9be08-86ef-4403-9770-fbbfcdd3589c",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "ANON",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Anonymous identifier"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "studypsn1"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/verificationresult.html">resourceType</a>" : "VerificationResult",
+        "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.id">id</a>" : "ac53ca2a-4047-49c1-9250-126b2786fab7",
+        "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2023-02-28T16:59:47.654+01:00",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-ConsentQualityControl.html" style="color: Maroon">&#x1F517;</a> "https://ths-greifswald.de/fhir/StructureDefinition/gics/VerificationResult/ConsentQualityControl"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;VerificationResult_ac53ca2a-4047-49c1-9250-126b2786fab7\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: VerificationResult ac53ca2a-4047-49c1-9250-126b2786fab7&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ac53ca2a-4047-49c1-9250-126b2786fab7\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcac53ca2a-4047-49c1-9250-126b2786fab7\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Last updated: 2023-02-28 16:59:47+0100&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ConsentQualityControl.html\&quot;&gt;Consent Quality Control&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;target&lt;/b&gt;: &lt;a href=\&quot;Bundle-AddConsent-response-example-1.html#QuestionnaireResponse_bd56b7e3-336c-49a6-aa31-1987b02f26cf\&quot;&gt;Response to Questionnaire 'https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.d' about '-&amp;gt;Pseudonym studypsn1'&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Validated&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2023-02-28 16:59:47+0100&lt;/p&gt;&lt;p&gt;&lt;b&gt;validationType&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;not_checked&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.target">target</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "QuestionnaireResponse/bd56b7e3-336c-49a6-aa31-1987b02f26cf"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.status">status</a>" : "validated",
+        "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.statusDate">statusDate</a>" : "2023-02-28T16:59:47+01:00",
+        "<a href="http://hl7.org/fhir/R4/verificationresult.html#VerificationResult.validationType">validationType</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "not_checked"
+        }
+      }
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw#2025.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 29, 2025 10:54+0100">2025-10-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

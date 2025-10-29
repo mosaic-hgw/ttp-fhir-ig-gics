@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/gics/VerificationResult/ConsentQualityControl-example-1> a fhir:VerificationResult ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ConsentQualityControl-example-1"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:instant ;
+         fhir:v "2020-01-02T04:05:06+01:00"^^xsd:dateTime
+       ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/VerificationResult/ConsentQualityControl"^^xsd:anyURI ;
+       fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/gics/VerificationResult/ConsentQualityControl>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: VerificationResult ConsentQualityControl-example-1</b></p><a name=\"ConsentQualityControl-example-1\"> </a><a name=\"hcConsentQualityControl-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ConsentQualityControl.html\">Consent Quality Control</a></p></div><p><b>Comment</b>: Validated. No Errors found.</p><p><b>target</b>: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/QuestionnaireResponse/0f1ccc50-9b24-4f12-a998-49f80d5285c1\">QuestionnaireResponse/0f1ccc50-9b24-4f12-a998-49f80d5285c1</a></p><p><b>status</b>: Validated</p><p><b>statusDate</b>: 2021-12-10 16:16:13+0100</p><p><b>validationType</b>: <span title=\"Codes:\">checked_no_faults</span></p><h3>Attestations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Who</b></td></tr><tr><td style=\"display: none\">*</td><td>Auditor1</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/Comment"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Validated. No Errors found."
+     ]
+  ] ) ; # 
+  fhir:target ( [
+     fhir:link <https://ths-greifswald.de/fhir/gics/QuestionnaireResponse/0f1ccc50-9b24-4f12-a998-49f80d5285c1> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/0f1ccc50-9b24-4f12-a998-49f80d5285c1" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "validated"] ; # 
+  fhir:statusDate [ fhir:v "2021-12-10T16:16:13+01:00"^^xsd:dateTime] ; # 
+  fhir:validationType [
+     fhir:text [ fhir:v "checked_no_faults" ]
+  ] ; # 
+  fhir:attestation [
+     fhir:who [
+       fhir:display [ fhir:v "Auditor1" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

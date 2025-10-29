@@ -1,0 +1,347 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/gics/Bundle/example-BatchResponse-verify-consent-state> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-BatchResponse-verify-consent-state"] ; # 
+  fhir:type [ fhir:v "batch-response"] ; # 
+  fhir:entry ( [
+     fhir:resource ( [
+       a fhir:Bundle ;
+       fhir:id [ fhir:v "example-BatchResponse-verify-consent-state-searchset1" ] ;
+       fhir:type [ fhir:v "searchset" ] ;
+       fhir:total [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:entry ( [
+         fhir:fullUrl [ fhir:v "https://fhir-server.my-hospital.de/fhir/Consent/Consent-example-2"^^xsd:anyURI ] ;
+         fhir:resource ( <https://fhir-server.my-hospital.de/fhir/Consent/Consent-example-2> )
+       ] )
+     ] ) ;
+     fhir:response [
+       fhir:status [ fhir:v "200" ]
+     ]
+  ] [
+     fhir:resource ( [
+       a fhir:Bundle ;
+       fhir:id [ fhir:v "example-BatchResponse-verify-consent-state-searchset2" ] ;
+       fhir:type [ fhir:v "searchset" ] ;
+       fhir:total [ fhir:v "0"^^xsd:nonNegativeInteger ]
+     ] ) ;
+     fhir:response [
+       fhir:status [ fhir:v "200" ]
+     ]
+  ] ) . # 
+
+<https://fhir-server.my-hospital.de/fhir/Consent/Consent-example-2> a fhir:Consent ;
+  fhir:id [ fhir:v "Consent-example-2"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:instant ;
+         fhir:v "2020-01-02T04:05:06+01:00"^^xsd:dateTime
+       ]
+     ] ) ;
+     fhir:lastUpdated [ fhir:v "2021-10-29T11:00:08.695+02:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"^^xsd:anyURI ;
+       fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent>
+     ] )
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "domain"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <https://ths-greifswald.de/fhir/gics/ResearchStudy/b0b83c00-e230-4c52-8d3a-cbb882e0a72f> ;
+         fhir:reference [ fhir:v "ResearchStudy/b0b83c00-e230-4c52-8d3a-cbb882e0a72f" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "status"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/publication-status"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "active" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "key"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "mykey1"
+       ]
+     ] [
+       fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "myvalue1"
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "key"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "mykey2"
+       ]
+     ] [
+       fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "myvalue2"
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "key"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "EXPIRATION_DATE"
+       ]
+     ] [
+       fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Tue Nov 30 00:00:00 CET 2021"
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:scope [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "research" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:59284-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "59284-0" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.de/ConsentManagement/CodeSystem/ResultType"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "consent-status" ]
+     ] )
+  ] ) ; # 
+  fhir:patient [
+     fhir:link <https://ths-greifswald.de/fhir/gics/Patient/65d4cbf1-f20a-4fd0-9585-53be76416b02> ;
+     fhir:reference [ fhir:v "Patient/65d4cbf1-f20a-4fd0-9585-53be76416b02" ] ;
+     fhir:display [ fhir:v "Pseudonym aachen1" ]
+  ] ; # 
+  fhir:dateTime [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime] ; # 
+  fhir:organization ( [
+     fhir:display [ fhir:v "MII" ]
+  ] ) ; # 
+  fhir:source [
+     a fhir:Reference ;
+     fhir:link <https://ths-greifswald.de/fhir/gics/QuestionnaireResponse/0f1ccc50-9b24-4f12-a998-49f80d5285c1> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/0f1ccc50-9b24-4f12-a998-49f80d5285c1" ]
+  ] ; # 
+  fhir:policy ( [
+     fhir:uri [ fhir:v "urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:provision [
+     fhir:type [ fhir:v "deny" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+       fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+     ] ;
+     fhir:provision ( [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IDAT_bereitstellen_EU_DSGVO_NIVEAU" ] ;
+           fhir:display [ fhir:v "Herausgabe identifizierender Daten (IDAT) an verantwortliche Stelle zur weiteren Verarbeitung" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IDAT_erheben" ] ;
+           fhir:display [ fhir:v "Erfassung neuer identifizierender Daten (IDAT)" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IDAT_speichern_verarbeiten" ] ;
+           fhir:display [ fhir:v "Speicherung und Verarbeitung identifizierender Daten (IDAT) in der verantwortlichen Stelle" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IDAT_zusammenfuehren_Dritte" ] ;
+           fhir:display [ fhir:v "Zusammenführung identifizierender Daten (IDAT) mit Dritten Forschungspartnern" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "MDAT_erheben" ] ;
+           fhir:display [ fhir:v "Erfassung medizinischer Daten" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "MDAT_speichern_verarbeiten" ] ;
+           fhir:display [ fhir:v "Speicherung_Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU" ] ;
+           fhir:display [ fhir:v "Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung " ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "MDAT_zusammenfuehren_Dritte" ] ;
+           fhir:display [ fhir:v "Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Rekontaktierung_Verknuepfung_Datenbanken" ] ;
+           fhir:display [ fhir:v "Rekontaktierung zur Verknuepfung von PatDat mit Info anderer Dbs" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Rekontaktierung_weitere_Erhebung" ] ;
+           fhir:display [ fhir:v "Rekontaktierung bezüglich Erhebung zusätzlicher Daten" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Rekontaktierung_weitere_Studien" ] ;
+           fhir:display [ fhir:v "Rekontaktierung bezüglich Information zu neuen Forschungsvorhaben oder Studien" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "KDAT_retro_speichern_verarbeiten" ] ;
+           fhir:display [ fhir:v "Krankenkassendaten (KKDAT) für 5 Jahre retrospektiv speichern_verarbeiten in der verantwortlichen Stelle" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "KDAT_retro_uebertragen" ] ;
+           fhir:display [ fhir:v "Krankenkassendaten (KKDAT) für 5 Jahre retrospektiv übertragen" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "KDAT_retro_wissenschaftlich_nutzen" ] ;
+           fhir:display [ fhir:v "Krankenkassendaten (KKDAT) für 5 Jahre retrospektiv wissenschaftlich nutzen" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

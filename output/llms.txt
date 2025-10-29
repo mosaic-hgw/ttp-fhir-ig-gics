@@ -1,0 +1,160 @@
+# ths-greifswald.ttp-fhir-gw#2025.1.0: null
+
+## Pages
+
+* [Home](index.md)
+* [Einwilligungsmanagement](Einwilligungsmanagement.md)
+* [Extensions](Extensions.md)
+* [Beschreibung](Beschreibung.md)
+* [Kontext und Konzept](KontextUndKonzept.md)
+* [Beschreibung Ballot Gics](BeschreibungBallotGics.md)
+* [Questionnaire Suche](Questionnaire-Suche.md)
+* [Artifacts Summary](artifacts.md)
+* [Vorgehen](Vorgehen.md)
+* [Technische Grundlagen](TechnischeGrundlagen.md)
+
+## Resources
+
+### CodeSystems
+
+* [BloomfilterType](CodeSystem-BloomfilterTypeCS.md)
+* [ConsentComponentType](CodeSystem-ConsentComponentTypeCS.md)
+* [ConsentPolicyAction](CodeSystem-ConsentPolicyActionCS.md)
+* [ConsentPolicyActor](CodeSystem-ConsentPolicyActorCS.md)
+* [ConsentPolicyClass](CodeSystem-ConsentPolicyClassCS.md)
+* [ConsentPolicyPurpose](CodeSystem-ConsentPolicyPurposeCS.md)
+* [ConsentStatus](CodeSystem-ConsentStatusCS.md)
+* [DesignationUse](CodeSystem-DesignationUseCS.md)
+* [IdMatchingType](CodeSystem-IdMatchingTypeCS.md)
+* [IdatElements](CodeSystem-IdatElementsCS.md)
+* [MatchStatus](CodeSystem-MatchStatusCS.md)
+* [Policy](CodeSystem-PolicyCS.md)
+* [SaveAction](CodeSystem-SaveActionCS.md)
+
+### ValueSets
+
+* [BloomfilterType](ValueSet-BloomfilterTypeVS.md)
+* [ConsentComponentType](ValueSet-ConsentComponentTypeVS.md)
+* [ConsentPolicyAction](ValueSet-ConsentPolicyActionVS.md)
+* [ConsentPolicyActor](ValueSet-ConsentPolicyActorVS.md)
+* [ConsentPolicyClass](ValueSet-ConsentPolicyClassVS.md)
+* [ConsentPolicyPurpose](ValueSet-ConsentPolicyPurposeVS.md)
+* [ConsentStatusConsentFullValues](ValueSet-ConsentStatusConsentFullValuesVS.md)
+* [ConsentStatusConsentOptOutFullValues](ValueSet-ConsentStatusConsentOptOutFullValuesVS.md)
+* [ConsentStatusConsentOptOutShortValues](ValueSet-ConsentStatusConsentOptOutShortValuesVS.md)
+* [ConsentStatusConsentShortValues](ValueSet-ConsentStatusConsentShortValuesVS.md)
+* [ConsentStatusObjectionFullValues](ValueSet-ConsentStatusObjectionFullValuesVS.md)
+* [ConsentStatusObjectionShortValues](ValueSet-ConsentStatusObjectionShortValuesVS.md)
+* [ConsentStatusRefusalFullValues](ValueSet-ConsentStatusRefusalFullValuesVS.md)
+* [ConsentStatusRefusalShortValues](ValueSet-ConsentStatusRefusalShortValuesVS.md)
+* [ConsentStatus](ValueSet-ConsentStatusVS.md)
+* [ConsentStatusWithdrawalFullValues](ValueSet-ConsentStatusWithdrawalFullValuesVS.md)
+* [ConsentStatusWithdrawalShortValues](ValueSet-ConsentStatusWithdrawalShortValuesVS.md)
+* [IdMatchingType](ValueSet-IdMatchingTypeVS.md)
+* [IdatElements](ValueSet-IdatElementsVS.md)
+* [MatchStatus](ValueSet-MatchStatusVS.md)
+* [PolicyStatus](ValueSet-PolicyStatusVS.md)
+* [Policy](ValueSet-PolicyVS.md)
+* [SaveAction](ValueSet-SaveActionVS.md)
+
+### Complex-type Profiles
+
+* [Identifier-Profil für die Abbildung einer Bloomfilters](StructureDefinition-identifier-bloomfilter.md)
+
+### Resource Profiles
+
+* [Einwilligungsinformationen](StructureDefinition-Consent.md)
+* [Consent Domain](StructureDefinition-ConsentDomain.md)
+* [Consent Module](StructureDefinition-ConsentModule.md)
+* [ConsentPolicy](StructureDefinition-ConsentPolicy.md)
+* [Consent Quality Control](StructureDefinition-ConsentQualityControl.md)
+* [Consent Template](StructureDefinition-ConsentTemplate.md)
+* [ExchangeFormatDefinition](StructureDefinition-ExchangeFormatDefinition.md)
+* [Patient pseudonymisiert](StructureDefinition-PatientPseudonymized.md)
+* [Herkunftsinformationen und Signatur](StructureDefinition-Provenance.md)
+
+### Extensions
+
+* [Comment](StructureDefinition-Comment.md)
+* [ConfigurationProperties](StructureDefinition-ConfigurationProperties.md)
+* [Consent Policy Reference](StructureDefinition-ConsentPolicyReference.md)
+* [Created](StructureDefinition-Created.md)
+* [Expiration Property](StructureDefinition-ExpirationProperty.md)
+* [External Property Element](StructureDefinition-ExternalProperty.md)
+* [FreeTextDef Attributes](StructureDefinition-FreeTextDefAttributes.md)
+* [Module Version Format](StructureDefinition-ModuleVersionFormat.md)
+* [Policy Version Format](StructureDefinition-PolicyVersionFormat.md)
+* [Position](StructureDefinition-Position.md)
+* [Property Element](StructureDefinition-Property.md)
+* [Questionnaire Label](StructureDefinition-QuestionnaireLabel.md)
+* [Short Text](StructureDefinition-ShortText.md)
+* [SupportedVersion](StructureDefinition-SupportedVersion.md)
+* [Template Version Format](StructureDefinition-TemplateVersionFormat.md)
+* [ValidFromProperty](StructureDefinition-ValidFromProperty.md)
+* [Version Label](StructureDefinition-VersionLabel.md)
+
+### ImplementationGuides
+
+* [IGTTPFHIRGatewaygICS](index.md)
+
+### OperationDefinitions
+
+* [Add a consent related QuestionnaireResponse for a patient](OperationDefinition-AddConsent.md)
+* [Add a consent related QuestionnaireResponse for a patient in an opt-out context](OperationDefinition-AddConsentOptOut.md)
+* [All consents for domain](OperationDefinition-AllConsentsForDomain.md)
+* [All consents for person](OperationDefinition-AllConsentsForPerson.md)
+* [All consents for template](OperationDefinition-AllConsentsForTemplate.md)
+* [All policy states for person](OperationDefinition-AllPolicyStatesForPerson.md)
+* [Current consent for person and template](OperationDefinition-CurrentConsentForPersonAndTemplate.md)
+* [Current policy states for person](OperationDefinition-CurrentPolicyStatesForPerson.md)
+* [Get all consented Identifiers for person and template](OperationDefinition-GetAllConsentedIdsFor.md)
+* [Patient's consent status for a defined policy](OperationDefinition-IsConsented.md)
+
+### SearchParameters
+
+* [activityDefinitionCode](SearchParameter-ActivityDefinitionCode.md)
+* [domain](SearchParameter-domain.md)
+* [useContextIdentifier](SearchParameter-useContextIdentifier.md)
+
+### Examples
+
+* [Medizinische Daten erheben (ActivityDefinition)](ActivityDefinition-ConsentPolicy-example-1.md)
+* [Medizinische Daten nutzen (ActivityDefinition)](ActivityDefinition-ConsentPolicy-example-2.md)
+* [Medizinische Daten speichern (ActivityDefinition)](ActivityDefinition-ConsentPolicy-example-3.md)
+* [AddConsent-response-example-1 (Bundle)](Bundle-AddConsent-response-example-1.md)
+* [AddConsentOptOut-response-example-1 (Bundle)](Bundle-AddConsentOptOut-response-example-1.md)
+* [AllConsentsForDomain-response-example-1 (Bundle)](Bundle-AllConsentsForDomain-response-example-1.md)
+* [AllConsentsForPerson-response-example-1 (Bundle)](Bundle-AllConsentsForPerson-response-example-1.md)
+* [AllConsentsForTemplate-response-example-1 (Bundle)](Bundle-AllConsentsForTemplate-response-example-1.md)
+* [AllPolicyStatesForPerson-response-example-1 (Bundle)](Bundle-AllPolicyStatesForPerson-response-example-1.md)
+* [Consent-Bundle-example-1 (Bundle)](Bundle-Consent-Bundle-example-1.md)
+* [CurrentPolicyStatesForPerson-response-example-1 (Bundle)](Bundle-CurrentPolicyStatesForPerson-response-example-1.md)
+* [example-Batch-provideCD (Bundle)](Bundle-example-Batch-provideCD.md)
+* [example-Batch-verify-consent-state (Bundle)](Bundle-example-Batch-verify-consent-state.md)
+* [example-BatchResponse-provideCD (Bundle)](Bundle-example-BatchResponse-provideCD.md)
+* [example-BatchResponse-verify-consent-state (Bundle)](Bundle-example-BatchResponse-verify-consent-state.md)
+* [Consent-example-1 (Consent)](Consent-Consent-example-1.md)
+* [Consent-example-2 (Consent)](Consent-Consent-example-2.md)
+* [Consent-example-3 (Consent)](Consent-Consent-example-3.md)
+* [AllConsentsForDomain-request-example-1 (Parameters)](Parameters-AllConsentsForDomain-request-example-1.md)
+* [AllConsentsForPerson-request-example-1 (Parameters)](Parameters-AllConsentsForPerson-request-example-1.md)
+* [AllConsentsForTemplate-request-example-1 (Parameters)](Parameters-AllConsentsForTemplate-request-example-1.md)
+* [AllPolicyStatesForPerson-request-example-1 (Parameters)](Parameters-AllPolicyStatesForPerson-request-example-1.md)
+* [CurrentConsentForPersonAndTemplate-request-example-1 (Parameters)](Parameters-CurrentConsentForPersonAndTemplate-request-example-1.md)
+* [CurrentPolicyStatesForPerson-request-example-1 (Parameters)](Parameters-CurrentPolicyStatesForPerson-request-example-1.md)
+* [GetAllConsentedIdsFor-request-example-1 (Parameters)](Parameters-GetAllConsentedIdsFor-request-example-1.md)
+* [GetAllConsentedIdsFor-response-example-1 (Parameters)](Parameters-GetAllConsentedIdsFor-response-example-1.md)
+* [IsConsented-request-example-1 (Parameters)](Parameters-IsConsented-request-example-1.md)
+* [IsConsented-request-example-2 (Parameters)](Parameters-IsConsented-request-example-2.md)
+* [IsConsented-response-example-1 (Parameters)](Parameters-IsConsented-response-example-1.md)
+* [Parameters-AddConsent-request-example-1 (Parameters)](Parameters-Parameters-AddConsent-request-example-1.md)
+* [Parameters-AddConsentOptOut-request-example-1 (Parameters)](Parameters-Parameters-AddConsentOptOut-request-example-1.md)
+* [PatientPseudonymized-example-1 (Patient)](Patient-PatientPseudonymized-example-1.md)
+* [Provenance-example-1 (Provenance)](Provenance-Provenance-example-1.md)
+* [BIOMAT_erheben_lagern_nutzen (Questionnaire)](Questionnaire-ConsentModule-example-1.md)
+* [Verarbeitung und Nutzung von Patientendaten für die medizinische Forschung (Questionnaire)](Questionnaire-ConsentModule-example-2.md)
+* [<h1>Einwilligungserklärung</h1> (Questionnaire)](Questionnaire-ConsentTemplate-example-1.md)
+* [MIRACUM (ResearchStudy)](ResearchStudy-ConsentDomain-example-1.md)
+* [MII (ResearchStudy)](ResearchStudy-ConsentDomain-example-2.md)
+* [MIRACUM (ResearchStudy)](ResearchStudy-ConsentDomain-example-3.md)
+* [ConsentQualityControl-example-1 (VerificationResult)](VerificationResult-ConsentQualityControl-example-1.md)

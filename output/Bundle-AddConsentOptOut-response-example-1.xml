@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="AddConsentOptOut-response-example-1"/>
+  <type value="collection"/>
+  <entry>
+    <resource>
+      <Consent>
+        <id value="8821edd5-5bb7-11ef-9800-0242ac130002"/>
+        <meta>
+          <lastUpdated value="2024-08-16T12:08:49.282+02:00"/>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"/>
+          <profile value="http://fhir.de/ConsentManagement/StructureDefinition/Consent"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Consent_8821edd5-5bb7-11ef-9800-0242ac130002"> </a><p class="res-header-id"><b>Generated Narrative: Consent 8821edd5-5bb7-11ef-9800-0242ac130002</b></p><a name="8821edd5-5bb7-11ef-9800-0242ac130002"> </a><a name="hc8821edd5-5bb7-11ef-9800-0242ac130002"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2024-08-16 12:08:49+0200</p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-Consent.html">Einwilligungsinformationen</a>, <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent">Consent Management: Consent</a></p></div><blockquote><p><b>Consent Management Domain Reference</b></p><ul><li>domain: <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/ResearchStudy/7fca337a-e69c-11ee-943e-0242ac1c0002">ResearchStudy/7fca337a-e69c-11ee-943e-0242ac1c0002</a></li><li>status: <a href="http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-active">PublicationStatus active</a>: Active</li></ul></blockquote><p><b>status</b>: Active</p><p><b>scope</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/consentscope research}">Research</span></p><p><b>category</b>: <span title="Codes:{http://loinc.org 57016-8}">Privacy policy acknowledgment Document</span>, <span title="Codes:{http://fhir.de/ConsentManagement/CodeSystem/ResultType document}">Dokument</span>, <span title="Codes:{http://fhir.de/ConsentManagement/CodeSystem/TemplateType CONSENT-OPT-OUT}">Einwilligung (Opt-out)</span></p><p><b>patient</b>: <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/881fc35f-5bb7-11ef-9800-0242ac130002">studyPSN fhir_1</a></p><p><b>dateTime</b>: 2024-08-16 12:08:49+0200</p><p><b>organization</b>: opt-out</p><p><b>source</b>: <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/QuestionnaireResponse/8821edd5-5bb7-11ef-9800-0242ac130002">QuestionnaireResponse/8821edd5-5bb7-11ef-9800-0242ac130002</a></p><h3>Policies</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Uri</b></td></tr><tr><td style="display: none">*</td><td><a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=urn:uuid:7cbe82e6-3886-11ef-8dbb-0242ac130002">urn:uuid:7cbe82e6-3886-11ef-8dbb-0242ac130002</a></td></tr></table><blockquote><p><b>provision</b></p><p><b>type</b>: Opt In</p><p><b>period</b>: 2024-08-16 12:08:49+0200 --&gt; 3000-01-01 00:00:00+0100</p><h3>Provisions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Period</b></td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td>Opt In</td><td>2024-08-16 12:08:49+0200 --&gt; 3000-01-01 00:00:00+0100</td><td><span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/opt-out p-opt-out}">p-opt-out</span></td></tr></table></blockquote></div>
+        </text>
+        <extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+          <extension url="domain">
+            <valueReference>
+              <reference value="ResearchStudy/7fca337a-e69c-11ee-943e-0242ac1c0002"/>
+            </valueReference>
+          </extension>
+          <extension url="status">
+            <valueCoding>
+              <system value="http://hl7.org/fhir/publication-status"/>
+              <code value="active"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <status value="active"/>
+        <scope>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+            <code value="research"/>
+          </coding>
+        </scope>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="57016-8"/>
+          </coding>
+        </category>
+        <category>
+          <coding>
+            <system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType"/>
+            <code value="document"/>
+          </coding>
+        </category>
+        <category>
+          <coding>
+            <system value="http://fhir.de/ConsentManagement/CodeSystem/TemplateType"/>
+            <code value="CONSENT-OPT-OUT"/>
+          </coding>
+        </category>
+        <patient>
+          <reference value="Patient/881fc35f-5bb7-11ef-9800-0242ac130002"/>
+          <display value="studyPSN fhir_1"/>
+        </patient>
+        <dateTime value="2024-08-16T12:08:49+02:00"/>
+        <organization>
+          <display value="opt-out"/>
+        </organization>
+        <sourceReference>
+          <reference value="QuestionnaireResponse/8821edd5-5bb7-11ef-9800-0242ac130002"/>
+        </sourceReference>
+        <policy>
+          <uri value="urn:uuid:7cbe82e6-3886-11ef-8dbb-0242ac130002"/>
+        </policy>
+        <provision>
+          <type value="permit"/>
+          <period>
+            <start value="2024-08-16T12:08:49+02:00"/>
+            <end value="3000-01-01T00:00:00+01:00"/>
+          </period>
+          <provision>
+            <type value="permit"/>
+            <period>
+              <start value="2024-08-16T12:08:49+02:00"/>
+              <end value="3000-01-01T00:00:00+01:00"/>
+            </period>
+            <code>
+              <coding>
+                <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/opt-out"/>
+                <code value="p-opt-out"/>
+              </coding>
+            </code>
+          </provision>
+        </provision>
+      </Consent>
+    </resource>
+  </entry>
+</Bundle>

@@ -1,0 +1,27 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/gics/Parameters/AllConsentsForTemplate-request-example-1> a fhir:Parameters ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AllConsentsForTemplate-request-example-1"] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "template" ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "MII;Patienteneinwilligung MII;1.6.f"
+     ]
+  ] [
+     fhir:name [ fhir:v "domain" ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "MII"
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

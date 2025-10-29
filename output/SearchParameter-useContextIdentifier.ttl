@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/gics/SearchParameter/useContextIdentifier> a fhir:SearchParameter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "useContextIdentifier"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter useContextIdentifier</b></p><a name=\"useContextIdentifier\"> </a><a name=\"hcuseContextIdentifier\"> </a><h2>useContextIdentifier</h2><p>Parameter <code>useContextIdentifier</code>:<code>token</code></p><div><p>Eindeutiger Name (Identifikator) der referenzierten Consent Domain</p>\n</div><table class=\"grid\"><tr><td>Resources</td><td><a href=\"http://hl7.org/fhir/R4/activitydefinition.html\">ActivityDefinition</a>, <a href=\"http://hl7.org/fhir/R4/questionnaire.html\">Questionnaire</a></td></tr><tr><td>Expression</td><td><code>useContext.valueReference.identifier</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may only appear once</li><li>multipleOr: The parameter may only have one value (no comma separators)</li></ul></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://ths-greifswald.de/fhir/SearchParameter/gics/useContextIdentifier"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2025.1.0"] ; # 
+  fhir:name [ fhir:v "useContextIdentifier"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-06-12"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ths-greifswald.de/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Eindeutiger Name (Identifikator) der referenzierten Consent Domain"] ; # 
+  fhir:code [ fhir:v "useContextIdentifier"] ; # 
+  fhir:base ( [ fhir:v "ActivityDefinition"] [ fhir:v "Questionnaire"] ) ; # 
+  fhir:type [ fhir:v "token"] ; # 
+  fhir:expression [ fhir:v "useContext.valueReference.identifier"] ; # 
+  fhir:multipleOr [ fhir:v false] ; # 
+  fhir:multipleAnd [ fhir:v false] . # 
+
+# -------------------------------------------------------------------------------------
+

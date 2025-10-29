@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="GetAllConsentedIdsFor-response-example-1"/>
+  <parameter>
+    <name value="personIdentifier"/>
+    <valueIdentifier>
+      <system value="https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"/>
+      <value value="dic_1H51T"/>
+    </valueIdentifier>
+  </parameter>
+</Parameters>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="ActivityDefinitionCode"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SearchParameter ActivityDefinitionCode</b></p><a name="ActivityDefinitionCode"> </a><a name="hcActivityDefinitionCode"> </a><h2>activityDefinitionCode</h2><p>Parameter <code>code</code>:<code>token</code></p><div><p>Eindeutiger Code der Consent Policy (ActivityDefiniton)</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/activitydefinition.html">ActivityDefinition</a></td></tr><tr><td>Expression</td><td><code>code</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may only appear once</li><li>multipleOr: The parameter may only have one value (no comma separators)</li></ul></td></tr></table></div>
+  </text>
+  <url value="https://ths-greifswald.de/fhir/SearchParameter/gics/activityDefinitionCode"/>
+  <version value="2025.1.0"/>
+  <name value="activityDefinitionCode"/>
+  <status value="active"/>
+  <date value="2025-06-12"/>
+  <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+  <contact>
+    <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ths-greifswald.de/"/>
+    </telecom>
+  </contact>
+  <description value="Eindeutiger Code der Consent Policy (ActivityDefiniton)"/>
+  <code value="code"/>
+  <base value="ActivityDefinition"/>
+  <type value="token"/>
+  <expression value="code"/>
+  <multipleOr value="false"/>
+  <multipleAnd value="false"/>
+</SearchParameter>

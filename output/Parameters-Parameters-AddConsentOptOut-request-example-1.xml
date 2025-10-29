@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="Parameters-AddConsentOptOut-request-example-1"/>
+  <parameter>
+    <name value="patient"/>
+    <resource>
+      <Patient>
+        <id value="1"/>
+        <meta>
+          <lastUpdated value="2022-12-20T10:10:54.889+01:00"/>
+          <profile value="http://fhir.de/ConsentManagement/StructureDefinition/Patient"/>
+        </meta>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="ANON"/>
+              <display value="Anonymous identifier"/>
+            </coding>
+          </type>
+          <system value="https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"/>
+          <value value="studypsn1"/>
+        </identifier>
+      </Patient>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="domain"/>
+    <valueString value="MII"/>
+  </parameter>
+  <parameter>
+    <name value="questionnaire"/>
+    <valueCanonical value="https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.f"/>
+  </parameter>
+</Parameters>

@@ -1,0 +1,28 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "ActivityDefinitionCode",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter ActivityDefinitionCode</b></p><a name=\"ActivityDefinitionCode\"> </a><a name=\"hcActivityDefinitionCode\"> </a><h2>activityDefinitionCode</h2><p>Parameter <code>code</code>:<code>token</code></p><div><p>Eindeutiger Code der Consent Policy (ActivityDefiniton)</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/activitydefinition.html\">ActivityDefinition</a></td></tr><tr><td>Expression</td><td><code>code</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may only appear once</li><li>multipleOr: The parameter may only have one value (no comma separators)</li></ul></td></tr></table></div>"
+  },
+  "url" : "https://ths-greifswald.de/fhir/SearchParameter/gics/activityDefinitionCode",
+  "version" : "2025.1.0",
+  "name" : "activityDefinitionCode",
+  "status" : "active",
+  "date" : "2025-06-12",
+  "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
+  "description" : "Eindeutiger Code der Consent Policy (ActivityDefiniton)",
+  "code" : "code",
+  "base" : ["ActivityDefinition"],
+  "type" : "token",
+  "expression" : "code",
+  "multipleOr" : false,
+  "multipleAnd" : false
+}

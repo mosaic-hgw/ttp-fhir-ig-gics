@@ -1,0 +1,80 @@
+{
+  "resourceType" : "ResearchStudy",
+  "id" : "ConsentDomain-example-2",
+  "meta" : {
+    "extension" : [{
+      "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created",
+      "valueInstant" : "2020-01-02T04:05:06+01:00"
+    }],
+    "profile" : ["https://ths-greifswald.de/fhir/gics/StructureDefinition/ConsentDomain"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ResearchStudy ConsentDomain-example-2</b></p><a name=\"ConsentDomain-example-2\"> </a><a name=\"hcConsentDomain-example-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ConsentDomain.html\">Consent Domain</a></p></div><p><b>Policy Version Format</b>: major.minor</p><p><b>Module Version Format</b>: major.minor</p><p><b>Template Version Format</b>: major.minor.char</p><blockquote><p><b>Consent Management Kontext-Identifikatoren einer Domain</b></p><ul><li>resourceType: <a href=\"http://hl7.org/fhir/R4/codesystem-resource-types.html#resource-types-Patient\">ResourceType Patient</a>: Patient</li><li>system: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=https://ths-greifswald.de/fhir/gics/identifiers/caseId\">https://ths-greifswald.de/fhir/gics/identifiers/caseId</a></li></ul></blockquote><blockquote><p><b>Consent Management Kontext-Identifikatoren einer Domain</b></p><ul><li>resourceType: <a href=\"http://hl7.org/fhir/R4/codesystem-resource-types.html#resource-types-Patient\">ResourceType Patient</a>: Patient</li><li>system: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=https://ths-greifswald.de/fhir/gics/identifiers/patId\">https://ths-greifswald.de/fhir/gics/identifiers/patId</a></li></ul></blockquote><blockquote><p><b>Consent Management Kontext-Identifikatoren einer Domain</b></p><ul><li>resourceType: <a href=\"http://hl7.org/fhir/R4/codesystem-resource-types.html#resource-types-Patient\">ResourceType Patient</a>: Patient</li><li>system: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=https://ths-greifswald.de/fhir/gics/identifiers/studyPSN\">https://ths-greifswald.de/fhir/gics/identifiers/studyPSN</a></li></ul></blockquote><p><b>ConfigurationProperties</b>: <code>IDxxdWFsaXR5LWNvbnRyb2wgZGVmYXVsdC10eXBlPSJub3RfY2hlY2tlZCI+CiAgICAgICAgPHR5cGUgaWQ9Im5vdF9jaGVja2VkIiBzdGF0dXM9IlZBTElEIj4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImVuIiB2YWx1ZT0iTm90IHlldCBjaGVja2VkIi8+CiAgICAgICAgICAgIDxsYWJlbCBsYW5nPSJkZSIgdmFsdWU9Ik5vY2ggbmljaHQga29udHJvbGxpZXJ0Ii8+CiAgICAgICAgPC90eXBlPgogICAgICAgIDxwcm9ibGVtLXR5cGUgaWQ9InByb2JsZW0td2l0aC1uYW1lIiBlcnJvcj0iSU5DT05TSVNURU5UIiBmaWVsZD0iSURBVF9MQVNUTkFNRSIgb2NjdXJyZW5jZT0iQk9USCIgYWN0aW9uPSJmaXgtbm93Ij4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImRlIiB2YWx1ZT0iUHJvYmxlbSBtaXQgZGVtIE5hbWVuIi8+CiAgICAgICAgICAgIDxsYWJlbCBsYW5nPSJlbiIgdmFsdWU9IlByb2JsZW0gd2l0aCB0aGUgbmFtZSIvPgogICAgICAgIDwvcHJvYmxlbS10eXBlPgogICAgICAgIDxwcm9ibGVtLXR5cGUtYWN0aW9uIGlkPSJmaXgtbm93Ij4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImVuIiB2YWx1ZT0iRml4IHF1aWNrbHkiLz4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImRlIiB2YWx1ZT0iU2NobmVsbCBmaXhlbiIvPgogICAgICAgIDwvcHJvYmxlbS10eXBlLWFjdGlvbj4KICAgIDwvcXVhbGl0eS1jb250cm9sPgo=</code></p><p><b>identifier</b>: <code>https://ths-greifswald.de/fhir/gics/</code>/MII</p><p><b>title</b>: MII</p><p><b>status</b>: Active</p><p><b>description</b>: </p><div><p>Medizininformatik Initiative</p>\n</div></div>"
+  },
+  "extension" : [{
+    "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/PolicyVersionFormat",
+    "valueString" : "major.minor"
+  },
+  {
+    "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/ModuleVersionFormat",
+    "valueString" : "major.minor"
+  },
+  {
+    "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/TemplateVersionFormat",
+    "valueString" : "major.minor.char"
+  },
+  {
+    "extension" : [{
+      "url" : "resourceType",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/resource-types",
+        "code" : "Patient"
+      }
+    },
+    {
+      "url" : "system",
+      "valueUri" : "https://ths-greifswald.de/fhir/gics/identifiers/caseId"
+    }],
+    "url" : "http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier"
+  },
+  {
+    "extension" : [{
+      "url" : "resourceType",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/resource-types",
+        "code" : "Patient"
+      }
+    },
+    {
+      "url" : "system",
+      "valueUri" : "https://ths-greifswald.de/fhir/gics/identifiers/patId"
+    }],
+    "url" : "http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier"
+  },
+  {
+    "extension" : [{
+      "url" : "resourceType",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/resource-types",
+        "code" : "Patient"
+      }
+    },
+    {
+      "url" : "system",
+      "valueUri" : "https://ths-greifswald.de/fhir/gics/identifiers/studyPSN"
+    }],
+    "url" : "http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier"
+  },
+  {
+    "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/ConfigurationProperties",
+    "valueBase64Binary" : "IDxxdWFsaXR5LWNvbnRyb2wgZGVmYXVsdC10eXBlPSJub3RfY2hlY2tlZCI+CiAgICAgICAgPHR5cGUgaWQ9Im5vdF9jaGVja2VkIiBzdGF0dXM9IlZBTElEIj4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImVuIiB2YWx1ZT0iTm90IHlldCBjaGVja2VkIi8+CiAgICAgICAgICAgIDxsYWJlbCBsYW5nPSJkZSIgdmFsdWU9Ik5vY2ggbmljaHQga29udHJvbGxpZXJ0Ii8+CiAgICAgICAgPC90eXBlPgogICAgICAgIDxwcm9ibGVtLXR5cGUgaWQ9InByb2JsZW0td2l0aC1uYW1lIiBlcnJvcj0iSU5DT05TSVNURU5UIiBmaWVsZD0iSURBVF9MQVNUTkFNRSIgb2NjdXJyZW5jZT0iQk9USCIgYWN0aW9uPSJmaXgtbm93Ij4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImRlIiB2YWx1ZT0iUHJvYmxlbSBtaXQgZGVtIE5hbWVuIi8+CiAgICAgICAgICAgIDxsYWJlbCBsYW5nPSJlbiIgdmFsdWU9IlByb2JsZW0gd2l0aCB0aGUgbmFtZSIvPgogICAgICAgIDwvcHJvYmxlbS10eXBlPgogICAgICAgIDxwcm9ibGVtLXR5cGUtYWN0aW9uIGlkPSJmaXgtbm93Ij4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImVuIiB2YWx1ZT0iRml4IHF1aWNrbHkiLz4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImRlIiB2YWx1ZT0iU2NobmVsbCBmaXhlbiIvPgogICAgICAgIDwvcHJvYmxlbS10eXBlLWFjdGlvbj4KICAgIDwvcXVhbGl0eS1jb250cm9sPgo="
+  }],
+  "identifier" : [{
+    "system" : "https://ths-greifswald.de/fhir/gics/",
+    "value" : "MII"
+  }],
+  "title" : "MII",
+  "status" : "active",
+  "description" : "Medizininformatik Initiative"
+}

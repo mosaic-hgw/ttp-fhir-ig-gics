@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="domain"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SearchParameter domain</b></p><a name="domain"> </a><a name="hcdomain"> </a><h2>domain</h2><p>Parameter <code>domain</code>:<code>reference</code></p><div><p>Eindeutiger Name (Identifikator) der referenzierten Consent Domain</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/consent.html">Consent</a></td></tr><tr><td>Expression</td><td><code>extension('http://fhir.de/ConsentManagement/StructureDefinition/DomainReference').extension('domain').valueReference</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may only appear once</li><li>multipleOr: The parameter may only have one value (no comma separators)</li></ul></td></tr></table></div>
+  </text>
+  <url value="https://ths-greifswald.de/fhir/SearchParameter/gics/domain"/>
+  <version value="2025.1.0"/>
+  <name value="domain"/>
+  <status value="active"/>
+  <date value="2025-06-12"/>
+  <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+  <contact>
+    <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ths-greifswald.de/"/>
+    </telecom>
+  </contact>
+  <description value="Eindeutiger Name (Identifikator) der referenzierten Consent Domain"/>
+  <code value="domain"/>
+  <base value="Consent"/>
+  <type value="reference"/>
+  <expression value="extension('http://fhir.de/ConsentManagement/StructureDefinition/DomainReference').extension('domain').valueReference"/>
+  <multipleOr value="false"/>
+  <multipleAnd value="false"/>
+</SearchParameter>

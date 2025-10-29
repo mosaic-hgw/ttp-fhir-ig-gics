@@ -1,0 +1,604 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/gics/Bundle/AllConsentsForDomain-response-example-1> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AllConsentsForDomain-response-example-1"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:dfd5edc6-3a8a-4796-a9bb-f9572cf15c96"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:dfd5edc6-3a8a-4796-a9bb-f9572cf15c96> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:d72bc4dc-1f2b-4c5d-8f3c-51fe6a9a5d90"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:d72bc4dc-1f2b-4c5d-8f3c-51fe6a9a5d90> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:ab52ee3d-0616-4b07-8449-65264f97e5ad"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:ab52ee3d-0616-4b07-8449-65264f97e5ad> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1> )
+  ] ) . # 
+
+<urn:uuid:dfd5edc6-3a8a-4796-a9bb-f9572cf15c96> a fhir:QuestionnaireResponse ;
+  fhir:id [ fhir:v "dfd5edc6-3a8a-4796-a9bb-f9572cf15c96"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2021-05-19T17:50:23.000+02:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse"^^xsd:anyURI ;
+       fhir:link <http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "de"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"de\" lang=\"de\"><a name=\"QuestionnaireResponse_dfd5edc6-3a8a-4796-a9bb-f9572cf15c96\"> </a><p class=\"res-header-id\"><b>Generated Narrative: QuestionnaireResponse dfd5edc6-3a8a-4796-a9bb-f9572cf15c96</b></p><a name=\"dfd5edc6-3a8a-4796-a9bb-f9572cf15c96\"> </a><a name=\"hcdfd5edc6-3a8a-4796-a9bb-f9572cf15c96\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2021-05-19 17:50:23+0200; Language: de</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse\">Consent Management QuestionnaireResponse</a></p></div><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The linkID for the item\">LinkID</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the item can appear in the instance\">Definition</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Answer</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireResponseRoot\" class=\"hierarchy\"/> dfd5edc6-3a8a-4796-a9bb-f9572cf15c96</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire:https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.f</td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> PATDAT_erheben_speichern_nutzen|1.6</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2025.0.4&amp;canonical=urn:oid:2.16.840.1.113883.3.1937.777.24.5.2#2.16.840.1.113883.3.1937.777.24.5.2--20210423105554-2.4616.46840.461.46113883.463.461937.46777.4624.465.462.461\">MII Consent: Answer CodeSystem 2.16.840.1.113883.3.1937.777.24.5.2.1</a>: gültig</span></span></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> KKDAT_retrospektiv_uebertragen_speichern_nutzen|1.6</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2025.0.4&amp;canonical=urn:oid:2.16.840.1.113883.3.1937.777.24.5.2#2.16.840.1.113883.3.1937.777.24.5.2--20210423105554-2.4616.46840.461.46113883.463.461937.46777.4624.465.462.462\">MII Consent: Answer CodeSystem 2.16.840.1.113883.3.1937.777.24.5.2.2</a>: ungültig</span></span></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> KKDAT_prospektiv_uebertragen_speichern_nutzen|1.6</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2025.0.4&amp;canonical=urn:oid:2.16.840.1.113883.3.1937.777.24.5.2#2.16.840.1.113883.3.1937.777.24.5.2--20210423105554-2.4616.46840.461.46113883.463.461937.46777.4624.465.462.462\">MII Consent: Answer CodeSystem 2.16.840.1.113883.3.1937.777.24.5.2.2</a>: ungültig</span></span></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> BIOMAT_erheben_lagern_nutzen|1.6</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2025.0.4&amp;canonical=urn:oid:2.16.840.1.113883.3.1937.777.24.5.2#2.16.840.1.113883.3.1937.777.24.5.2--20210423105554-2.4616.46840.461.46113883.463.461937.46777.4624.465.462.462\">MII Consent: Answer CodeSystem 2.16.840.1.113883.3.1937.777.24.5.2.2</a>: ungültig</span></span></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> BIOMAT_Zusatzentnahme|1.6</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2025.0.4&amp;canonical=urn:oid:2.16.840.1.113883.3.1937.777.24.5.2#2.16.840.1.113883.3.1937.777.24.5.2--20210423105554-2.4616.46840.461.46113883.463.461937.46777.4624.465.462.462\">MII Consent: Answer CodeSystem 2.16.840.1.113883.3.1937.777.24.5.2.2</a>: ungültig</span></span></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> Rekontaktierung_Ergaenzungen|1.6</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2025.0.4&amp;canonical=urn:oid:2.16.840.1.113883.3.1937.777.24.5.2#2.16.840.1.113883.3.1937.777.24.5.2--20210423105554-2.4616.46840.461.46113883.463.461937.46777.4624.465.462.461\">MII Consent: Answer CodeSystem 2.16.840.1.113883.3.1937.777.24.5.2.1</a>: gültig</span></span></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> Rekontaktierung_Zusatzbefund|1.6</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2025.0.4&amp;canonical=urn:oid:2.16.840.1.113883.3.1937.777.24.5.2#2.16.840.1.113883.3.1937.777.24.5.2--20210423105554-2.4616.46840.461.46113883.463.461937.46777.4624.465.462.461\">MII Consent: Answer CodeSystem 2.16.840.1.113883.3.1937.777.24.5.2.1</a>: gültig</span></span></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> Z1_GECCO83_Nutzung_NUM_CODEX|1.0</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2025.0.4&amp;canonical=urn:oid:2.16.840.1.113883.3.1937.777.24.5.2#2.16.840.1.113883.3.1937.777.24.5.2--20210423105554-2.4616.46840.461.46113883.463.461937.46777.4624.465.462.461\">MII Consent: Answer CodeSystem 2.16.840.1.113883.3.1937.777.24.5.2.1</a>: gültig</span></span></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> Z1_GECCO83_Weitergabe_NUM_CODEX_EU_DSGVO_nonkonform|1.0</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2025.0.4&amp;canonical=urn:oid:2.16.840.1.113883.3.1937.777.24.5.2#2.16.840.1.113883.3.1937.777.24.5.2--20210423105554-2.4616.46840.461.46113883.463.461937.46777.4624.465.462.462\">MII Consent: Answer CodeSystem 2.16.840.1.113883.3.1937.777.24.5.2.2</a>: ungültig</span></span></td></tr>#xD;\n<tr><td colspan=\"4\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:questionnaire [
+     fhir:v "https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.f"^^xsd:anyURI ;
+     fhir:link <https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.f>
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:subject [
+     fhir:link <https://ths-greifswald.de/fhir/gics/Patient/d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1> ;
+     fhir:reference [ fhir:v "Patient/d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1" ] ;
+     fhir:display [ fhir:v "Pseudonym dic_1H51T" ]
+  ] ; # 
+  fhir:authored [ fhir:v "2021-05-19T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:author [
+     fhir:link <https://ths-greifswald.de/fhir/gics/Patient/d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1> ;
+     fhir:reference [ fhir:v "Patient/d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1" ] ;
+     fhir:display [ fhir:v "Pseudonym dic_1H51T" ]
+  ] ; # 
+  fhir:source [
+     fhir:link <https://ths-greifswald.de/fhir/gics/Patient/d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1> ;
+     fhir:reference [ fhir:v "Patient/d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1" ] ;
+     fhir:display [ fhir:v "Pseudonym dic_1H51T" ]
+  ] ; # 
+  fhir:item ( [
+     fhir:linkId [ fhir:v "PATDAT_erheben_speichern_nutzen|1.6" ] ;
+     fhir:answer ( [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.2.1" ] ;
+         fhir:display [ fhir:v "gültig" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "KKDAT_retrospektiv_uebertragen_speichern_nutzen|1.6" ] ;
+     fhir:answer ( [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.2.2" ] ;
+         fhir:display [ fhir:v "ungültig" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "KKDAT_prospektiv_uebertragen_speichern_nutzen|1.6" ] ;
+     fhir:answer ( [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.2.2" ] ;
+         fhir:display [ fhir:v "ungültig" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "BIOMAT_erheben_lagern_nutzen|1.6" ] ;
+     fhir:answer ( [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.2.2" ] ;
+         fhir:display [ fhir:v "ungültig" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "BIOMAT_Zusatzentnahme|1.6" ] ;
+     fhir:answer ( [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.2.2" ] ;
+         fhir:display [ fhir:v "ungültig" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "Rekontaktierung_Ergaenzungen|1.6" ] ;
+     fhir:answer ( [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.2.1" ] ;
+         fhir:display [ fhir:v "gültig" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "Rekontaktierung_Zusatzbefund|1.6" ] ;
+     fhir:answer ( [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.2.1" ] ;
+         fhir:display [ fhir:v "gültig" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "Z1_GECCO83_Nutzung_NUM_CODEX|1.0" ] ;
+     fhir:answer ( [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.2.1" ] ;
+         fhir:display [ fhir:v "gültig" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "Z1_GECCO83_Weitergabe_NUM_CODEX_EU_DSGVO_nonkonform|1.0" ] ;
+     fhir:answer ( [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.2.2" ] ;
+         fhir:display [ fhir:v "ungültig" ]
+       ]
+     ] )
+  ] ) . # 
+
+<urn:uuid:d72bc4dc-1f2b-4c5d-8f3c-51fe6a9a5d90> a fhir:Consent ;
+  fhir:id [ fhir:v "d72bc4dc-1f2b-4c5d-8f3c-51fe6a9a5d90"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2021-05-19T17:50:23.000+02:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"^^xsd:anyURI ;
+       fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent>
+     ] [
+       fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/Consent"^^xsd:anyURI ;
+       fhir:link <http://fhir.de/ConsentManagement/StructureDefinition/Consent>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Consent_d72bc4dc-1f2b-4c5d-8f3c-51fe6a9a5d90\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Consent d72bc4dc-1f2b-4c5d-8f3c-51fe6a9a5d90</b></p><a name=\"d72bc4dc-1f2b-4c5d-8f3c-51fe6a9a5d90\"> </a><a name=\"hcd72bc4dc-1f2b-4c5d-8f3c-51fe6a9a5d90\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2021-05-19 17:50:23+0200</p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-Consent.html\">Einwilligungsinformationen</a>, <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent\">Consent Management: Consent</a></p></div><blockquote><p><b>Consent Management Domain Reference</b></p><ul><li>domain: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/ResearchStudy/593d66f3-3654-4e8a-9524-3bcd78a363bb\">ResearchStudy/593d66f3-3654-4e8a-9524-3bcd78a363bb</a></li><li>status: <a href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-active\">PublicationStatus active</a>: Active</li></ul></blockquote><p><b>status</b>: Active</p><p><b>scope</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/consentscope research}\">Research</span></p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 57016-8}\">Privacy policy acknowledgment Document</span>, <span title=\"Codes:{http://fhir.de/ConsentManagement/CodeSystem/ResultType document}\">Dokument</span></p><p><b>patient</b>: <a href=\"Bundle-AllConsentsForDomain-response-example-1.html#Patient_d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1\">Pseudonym dic_1H51T</a></p><p><b>dateTime</b>: 2021-05-19 00:00:00+0200</p><p><b>organization</b>: MII</p><p><b>source</b>: <a href=\"Bundle-AllConsentsForDomain-response-example-1.html#QuestionnaireResponse_dfd5edc6-3a8a-4796-a9bb-f9572cf15c96\">Response to Questionnaire 'https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.f' about '-&gt;Pseudonym dic_1H51T'</a></p><h3>Policies</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Uri</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=urn:oid:2.16.840.1.113883.3.1937.777.24.2.184\">urn:oid:2.16.840.1.113883.3.1937.777.24.2.184</a></td></tr></table><blockquote><p><b>provision</b></p><p><b>type</b>: Opt Out</p><p><b>period</b>: 2021-05-19 17:50:22+0200 --&gt; 2051-05-19 17:50:23+0200</p><h3>Provisions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Period</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-05-19 17:50:22+0200 --&gt; 2051-05-19 17:50:23+0200</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_bereitstellen_EU_DSGVO_NIVEAU}\">Herausgabe identifizierender Daten (IDAT)[...]</span>, <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.5}\">IDAT bereitstellen EU DSGVO NIVEAU</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-05-19 17:50:22+0200 --&gt; 2051-05-19 17:50:23+0200</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_erheben}\">Erfassung neuer identifizierender Daten (IDAT)</span>, <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.2}\">IDAT erheben</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-05-19 17:50:22+0200 --&gt; 2051-05-19 17:50:23+0200</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_speichern_verarbeiten}\">Speicherung und Verarbeitung identifizierender Daten (IDAT)[...]</span>, <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.3}\">IDAT speichern, verarbeiten</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-05-19 17:50:22+0200 --&gt; 2051-05-19 17:50:23+0200</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_zusammenfuehren_Dritte}\">Zusammenführung identifizierender Daten (IDAT)[...]</span>, <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.4}\">IDAT zusammenfuehren Dritte</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-05-19 17:50:22+0200 --&gt; 2051-05-19 17:50:23+0200</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_erheben}\">Erfassung medizinischer Daten</span>, <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.6}\">MDAT erheben</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-05-19 17:50:22+0200 --&gt; 2051-05-19 17:50:23+0200</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_speichern_verarbeiten}\">Speicherung_Verarbeitung von medizinischen Daten[...]</span>, <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.7}\">MDAT speichern, verarbeiten</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-05-19 17:50:22+0200 --&gt; 2051-05-19 17:50:23+0200</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU}\">Bereitstellung medizinischer Daten (MDAT)[...]</span>, <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.8}\">MDAT wissenschaftlich nutzen EU DSGVO NIVEAU</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-05-19 17:50:22+0200 --&gt; 2051-05-19 17:50:23+0200</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_zusammenfuehren_Dritte}\">Zusammenführung medizinischer Daten (MDAT)[...]</span>, <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.9}\">MDAT zusammenfuehren Dritte</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-05-19 17:50:22+0200 --&gt; 2051-05-19 17:50:23+0200</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy Rekontaktierung_Verknuepfung_Datenbanken}\">Rekontaktierung zur Verknüpfung[...]</span>, <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.27}\">Rekontaktierung Verknüpfung Datenbanken</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-05-19 17:50:22+0200 --&gt; 2051-05-19 17:50:23+0200</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy Rekontaktierung_weitere_Erhebung}\">Rekontaktierung bezüglich Erhebung zusätzlicher Daten</span>, <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.28}\">Rekontaktierung weitere Erhebung</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-05-19 17:50:22+0200 --&gt; 2051-05-19 17:50:23+0200</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy Rekontaktierung_weitere_Studien}\">Rekontaktierung bezüglich Information[...]</span>, <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.29}\">Rekontaktierung weitere Studien</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-05-19 17:50:22+0200 --&gt; 2051-05-19 17:50:23+0200</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_GECCO83_bereitstellen_NUM_CODEX}\">Medizinische Daten des GECCO83 Datensatz[...]</span>, <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.33}\">MDAT GECCO83 bereitstellen NUM/CODEX</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-05-19 17:50:22+0200 --&gt; 2051-05-19 17:50:23+0200</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_GECCO83_speichern_verarbeiten_NUM_CODEX}\">Medizinische Daten des GECCO83 Datensatz[...]</span>, <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.34}\">MDAT GECCO83 speichern verarbeiten NUM/CODEX</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-05-19 17:50:22+0200 --&gt; 2051-05-19 17:50:23+0200</td><td><span title=\"Codes:{https://mii.de/fhir/CodeSystem/gics/Policy/MII MDAT_GECCO83_wissenschaftlich_nutzen_COVID_19_Forschung_EU_DSGVO_konform}\">Nutzung des Covid-19-Datensatzes[...]</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-05-19 17:50:22+0200 --&gt; 2051-05-19 17:50:23+0200</td><td><span title=\"Codes:{https://mii.de/fhir/CodeSystem/gics/Policy/MII MDAT_GECCO83_wissenschaftlich_nutzen_Pandemie_Forschung_EU_DSGVO_konform}\">Nutzung des Covid-19-Datensatzes[...]</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-05-19 17:50:22+0200 --&gt; 2051-05-19 17:50:23+0200</td><td><span title=\"Codes:{https://mii.de/fhir/CodeSystem/gics/Policy/MII Rekontaktierung_Zusatzbefund}\">Rekontaktierung bezüglich Zusatzbefund</span>, <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.31}\">Rekontaktierung Zusatzbefund</span></td></tr></table></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "domain"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <https://ths-greifswald.de/fhir/gics/ResearchStudy/593d66f3-3654-4e8a-9524-3bcd78a363bb> ;
+         fhir:reference [ fhir:v "ResearchStudy/593d66f3-3654-4e8a-9524-3bcd78a363bb" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "status"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/publication-status"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "active" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:scope [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "research" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:57016-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "57016-8" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.de/ConsentManagement/CodeSystem/ResultType"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "document" ]
+     ] )
+  ] ) ; # 
+  fhir:patient [
+     fhir:link <https://ths-greifswald.de/fhir/gics/Patient/d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1> ;
+     fhir:reference [ fhir:v "Patient/d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1" ] ;
+     fhir:display [ fhir:v "Pseudonym dic_1H51T" ]
+  ] ; # 
+  fhir:dateTime [ fhir:v "2021-05-19T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:organization ( [
+     fhir:display [ fhir:v "MII" ]
+  ] ) ; # 
+  fhir:source [
+     a fhir:Reference ;
+     fhir:link <https://ths-greifswald.de/fhir/gics/QuestionnaireResponse/dfd5edc6-3a8a-4796-a9bb-f9572cf15c96> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/dfd5edc6-3a8a-4796-a9bb-f9572cf15c96" ]
+  ] ; # 
+  fhir:policy ( [
+     fhir:uri [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.2.184"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:provision [
+     fhir:type [ fhir:v "deny" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2021-05-19T17:50:22+02:00"^^xsd:dateTime ] ;
+       fhir:end [ fhir:v "2051-05-19T17:50:23+02:00"^^xsd:dateTime ]
+     ] ;
+     fhir:provision ( [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-05-19T17:50:22+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2051-05-19T17:50:23+02:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IDAT_bereitstellen_EU_DSGVO_NIVEAU" ] ;
+           fhir:display [ fhir:v "Herausgabe identifizierender Daten (IDAT)[...]" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.3.5" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-05-19T17:50:22+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2051-05-19T17:50:23+02:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IDAT_erheben" ] ;
+           fhir:display [ fhir:v "Erfassung neuer identifizierender Daten (IDAT)" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.3.2" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-05-19T17:50:22+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2051-05-19T17:50:23+02:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IDAT_speichern_verarbeiten" ] ;
+           fhir:display [ fhir:v "Speicherung und Verarbeitung identifizierender Daten (IDAT)[...]" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.3.3" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-05-19T17:50:22+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2051-05-19T17:50:23+02:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IDAT_zusammenfuehren_Dritte" ] ;
+           fhir:display [ fhir:v "Zusammenführung identifizierender Daten (IDAT)[...]" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.3.4" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-05-19T17:50:22+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2051-05-19T17:50:23+02:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "MDAT_erheben" ] ;
+           fhir:display [ fhir:v "Erfassung medizinischer Daten" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.3.6" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-05-19T17:50:22+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2051-05-19T17:50:23+02:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "MDAT_speichern_verarbeiten" ] ;
+           fhir:display [ fhir:v "Speicherung_Verarbeitung von medizinischen Daten[...]" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.3.7" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-05-19T17:50:22+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2051-05-19T17:50:23+02:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU" ] ;
+           fhir:display [ fhir:v "Bereitstellung medizinischer Daten (MDAT)[...]" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.3.8" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-05-19T17:50:22+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2051-05-19T17:50:23+02:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "MDAT_zusammenfuehren_Dritte" ] ;
+           fhir:display [ fhir:v "Zusammenführung medizinischer Daten (MDAT)[...]" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.3.9" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-05-19T17:50:22+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2051-05-19T17:50:23+02:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Rekontaktierung_Verknuepfung_Datenbanken" ] ;
+           fhir:display [ fhir:v "Rekontaktierung zur Verknüpfung[...]" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.3.27" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-05-19T17:50:22+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2051-05-19T17:50:23+02:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Rekontaktierung_weitere_Erhebung" ] ;
+           fhir:display [ fhir:v "Rekontaktierung bezüglich Erhebung zusätzlicher Daten" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.3.28" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-05-19T17:50:22+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2051-05-19T17:50:23+02:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Rekontaktierung_weitere_Studien" ] ;
+           fhir:display [ fhir:v "Rekontaktierung bezüglich Information[...]" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.3.29" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-05-19T17:50:22+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2051-05-19T17:50:23+02:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "MDAT_GECCO83_bereitstellen_NUM_CODEX" ] ;
+           fhir:display [ fhir:v "Medizinische Daten des GECCO83 Datensatz[...]" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.3.33" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-05-19T17:50:22+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2051-05-19T17:50:23+02:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "MDAT_GECCO83_speichern_verarbeiten_NUM_CODEX" ] ;
+           fhir:display [ fhir:v "Medizinische Daten des GECCO83 Datensatz[...]" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.3.34" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-05-19T17:50:22+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2051-05-19T17:50:23+02:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://mii.de/fhir/CodeSystem/gics/Policy/MII"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "MDAT_GECCO83_wissenschaftlich_nutzen_COVID_19_Forschung_EU_DSGVO_konform" ] ;
+           fhir:display [ fhir:v "Nutzung des Covid-19-Datensatzes[...]" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-05-19T17:50:22+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2051-05-19T17:50:23+02:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://mii.de/fhir/CodeSystem/gics/Policy/MII"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "MDAT_GECCO83_wissenschaftlich_nutzen_Pandemie_Forschung_EU_DSGVO_konform" ] ;
+           fhir:display [ fhir:v "Nutzung des Covid-19-Datensatzes[...]" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-05-19T17:50:22+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2051-05-19T17:50:23+02:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://mii.de/fhir/CodeSystem/gics/Policy/MII"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Rekontaktierung_Zusatzbefund" ] ;
+           fhir:display [ fhir:v "Rekontaktierung bezüglich Zusatzbefund" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.3.31" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+<urn:uuid:ab52ee3d-0616-4b07-8449-65264f97e5ad> a fhir:Provenance ;
+  fhir:id [ fhir:v "ab52ee3d-0616-4b07-8449-65264f97e5ad"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2021-05-19T17:50:23.000+02:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/Provenance"^^xsd:anyURI ;
+       fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/gics/Provenance>
+     ] [
+       fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/Provenance"^^xsd:anyURI ;
+       fhir:link <http://fhir.de/ConsentManagement/StructureDefinition/Provenance>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Provenance_ab52ee3d-0616-4b07-8449-65264f97e5ad\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Provenance ab52ee3d-0616-4b07-8449-65264f97e5ad</b></p><a name=\"ab52ee3d-0616-4b07-8449-65264f97e5ad\"> </a><a name=\"hcab52ee3d-0616-4b07-8449-65264f97e5ad\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2021-05-19 17:50:23+0200</p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-Provenance.html\">Herkunftsinformationen und Signatur</a>, <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Provenance\">Consent Management Provenance</a></p></div><p>Provenance for <a href=\"Bundle-AllConsentsForDomain-response-example-1.html#Consent_d72bc4dc-1f2b-4c5d-8f3c-51fe6a9a5d90\">Consent: extension = ; status = active; scope = Research; category = Privacy policy acknowledgment Document,Dokument; dateTime = 2021-05-19 00:00:00+0200; source[x] = -&gt;Response to Questionnaire 'https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.f' about '-&gt;Pseudonym dic_1H51T'</a></p><p>Summary</p><table class=\"grid\"><tr><td>Recorded</td><td>2021-05-19 17:50:23+0200</td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>who</b></td></tr><tr><td>https://ths-greifswald.de/gics</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:target ( [
+     fhir:link <https://ths-greifswald.de/fhir/gics/Consent/d72bc4dc-1f2b-4c5d-8f3c-51fe6a9a5d90> ;
+     fhir:reference [ fhir:v "Consent/d72bc4dc-1f2b-4c5d-8f3c-51fe6a9a5d90" ]
+  ] ) ; # 
+  fhir:recorded [ fhir:v "2021-05-19T17:50:23.000+02:00"^^xsd:dateTime] ; # 
+  fhir:agent ( [
+     fhir:who [
+       fhir:display [ fhir:v "https://ths-greifswald.de/gics" ]
+     ]
+  ] ) ; # 
+  fhir:signature ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Erlangen"
+       ]
+     ] ) ;
+     fhir:type ( [
+       fhir:system [ fhir:v "urn:iso-astm:E1762-95:2013"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1.2.840.10065.1.12.1.7" ] ;
+       fhir:display [ fhir:v "Consent Signature" ]
+     ] ) ;
+     fhir:when [ fhir:v "2021-05-19T00:00:00.000+02:00"^^xsd:dateTime ] ;
+     fhir:who [
+       fhir:link <https://ths-greifswald.de/fhir/gics/Patient/d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1> ;
+       fhir:reference [ fhir:v "Patient/d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1" ] ;
+       fhir:display [ fhir:v "Pseudonym dic_1H51T" ]
+     ] ;
+     fhir:data [ fhir:v "ZHVtbXky"^^xsd:base64Binary ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Erlangen"
+       ]
+     ] ) ;
+     fhir:type ( [
+       fhir:system [ fhir:v "urn:iso-astm:E1762-95:2013"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1.2.840.10065.1.12.1.5" ] ;
+       fhir:display [ fhir:v "Verification Signature" ]
+     ] ) ;
+     fhir:when [ fhir:v "2021-05-19T00:00:00.000+02:00"^^xsd:dateTime ] ;
+     fhir:who [
+       fhir:display [ fhir:v "arzt_12345" ]
+     ] ;
+     fhir:data [ fhir:v "ZHVtbXk="^^xsd:base64Binary ]
+  ] ) . # 
+
+<urn:uuid:d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1> a fhir:Patient ;
+  fhir:id [ fhir:v "d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2021-05-19T17:50:23.000+02:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/Patient"^^xsd:anyURI ;
+       fhir:link <http://fhir.de/ConsentManagement/StructureDefinition/Patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1</b></p><a name=\"d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1\"> </a><a name=\"hcd4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2021-05-19 17:50:23+0200</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Patient\">Consent Management: Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( Anonymous identifier: dic_1H51T)</p><hr/></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ANON" ] ;
+         fhir:display [ fhir:v "Anonymous identifier" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "dic_1H51T" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

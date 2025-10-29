@@ -1,0 +1,128 @@
+# ValidFromProperty - v2025.1.0
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "ValidFromProperty",
+  "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/ValidFromProperty",
+  "version" : "2025.1.0",
+  "name" : "ValidFromProperty",
+  "title" : "ValidFromProperty",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-06-12",
+  "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact" : [
+    {
+      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://www.ths-greifswald.de/"
+        }
+      ]
+    }
+  ],
+  "description" : "Specifies the point in time from which the domain is valid.",
+  "copyright" : "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [
+    {
+      "identity" : "rim",
+      "uri" : "http://hl7.org/v3",
+      "name" : "RIM Mapping"
+    }
+  ],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [
+    {
+      "type" : "element",
+      "expression" : "ResearchStudy"
+    },
+    {
+      "type" : "element",
+      "expression" : "Organization"
+    }
+  ],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "Extension",
+        "path" : "Extension",
+        "short" : "ValidFromProperty",
+        "definition" : "Specifies the point in time from which the domain is valid."
+      },
+      {
+        "id" : "Extension.extension",
+        "path" : "Extension.extension",
+        "max" : "0"
+      },
+      {
+        "id" : "Extension.url",
+        "path" : "Extension.url",
+        "fixedUri" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/ValidFromProperty"
+      },
+      {
+        "id" : "Extension.value[x]",
+        "path" : "Extension.value[x]",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        },
+        "min" : 1,
+        "type" : [
+          {
+            "code" : "date"
+          },
+          {
+            "code" : "Duration"
+          }
+        ]
+      },
+      {
+        "id" : "Extension.value[x]:valueDuration",
+        "path" : "Extension.value[x]",
+        "sliceName" : "valueDuration",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Duration"
+          }
+        ]
+      },
+      {
+        "id" : "Extension.value[x]:valueDuration.value",
+        "path" : "Extension.value[x].value",
+        "min" : 1
+      },
+      {
+        "id" : "Extension.value[x]:valueDuration.system",
+        "path" : "Extension.value[x].system",
+        "min" : 1,
+        "patternUri" : "http://unitsofmeasure.org"
+      },
+      {
+        "id" : "Extension.value[x]:valueDuration.code",
+        "path" : "Extension.value[x].code",
+        "min" : 1
+      }
+    ]
+  }
+}
+
+```

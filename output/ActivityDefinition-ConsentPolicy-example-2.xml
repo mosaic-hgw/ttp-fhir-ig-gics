@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="ConsentPolicy-example-2"/>
+  <meta>
+    <lastUpdated value="2020-11-04T19:13:32.449+00:00"/>
+    <profile value="https://ths-greifswald.de/fhir/StructureDefinition/gics/ActivityDefinition/ConsentPolicy"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+<div>
+    <table class="grid dict">
+
+        
+        <tr>
+            <th scope="row"><b>Title: </b></th>
+            <td style="padding-left: 4px;">Medizinische Daten nutzen</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Id: </b></th>
+            <td style="padding-left: 4px;">ConsentPolicy-example-2</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Version: </b></th>
+            <td style="padding-left: 4px;">2025.1.0</td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Date (date last changed): </b></th>
+            <td style="padding-left: 4px;">2025-10-29 10:53:37+0100</td>
+        </tr>
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Publisher (steward): </b></th>
+            <td style="padding-left: 4px;">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</td>
+        </tr>
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Description: </b></th>
+            <td style="padding-left: 4px;"><div><p>Beispiel Consent Policy für die Nutzung medizinischer Daten im Rahmen eines Forschungsprojektes</p>
+</div></td>
+        </tr>
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Use Context: </b></th>
+            <td style="padding-left: 4px;">
+                <table class="grid-dict">
+                    <tr>
+                        <th><b>code</b></th>
+                        <th><b>value</b></th>
+                    </tr>
+                    
+                        <tr>
+                            <td>program</td>
+                            <td/>
+                        </tr>
+                    
+                </table>
+            </td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        
+        
+
+        
+        <tr>
+            <th scope="row"><b>Code: </b></th>
+            <td style="padding-left: 4px;">
+                
+                    
+                        
+                            <p><b>system: </b><span><a href="CodeSystem-PolicyCS.html">https://ths-greifswald.de/fhir/CodeSystem/gics/Policy</a></span></p>
+                        
+                        
+                            <p><b>code: </b><span>MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU</span></p>
+                        
+                        
+                    
+                
+                
+            </td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+    </table>
+</div>
+</div>
+  </text>
+  <extension url="https://ths-greifswald.de/fhir/StructureDefinition/gics/Created">
+    <valueInstant value="2020-01-02T04:05:06+01:00"/>
+  </extension>
+  <url value="https://ths-greifswald.de/fhir/gics/ActivityDefinition/ConsentPolicy-example-2"/>
+  <version value="2025.1.0"/>
+  <name value="MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
+  <title value="Medizinische Daten nutzen"/>
+  <status value="active"/>
+  <date value="2025-10-29T10:53:37+01:00"/>
+  <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+  <contact>
+    <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ths-greifswald.de/"/>
+    </telecom>
+  </contact>
+  <description value="Beispiel Consent Policy für die Nutzung medizinischer Daten im Rahmen eines Forschungsprojektes"/>
+  <useContext>
+    <code>
+      <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+      <code value="program"/>
+    </code>
+    <valueReference>
+      <reference value="d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
+    </valueReference>
+  </useContext>
+  <code>
+    <coding>
+      <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+      <code value="MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
+    </coding>
+  </code>
+</ActivityDefinition>

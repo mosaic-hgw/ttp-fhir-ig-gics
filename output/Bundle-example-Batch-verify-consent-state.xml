@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="example-Batch-verify-consent-state"/>
+  <type value="batch"/>
+  <entry>
+    <request>
+      <method value="GET"/>
+      <url value="https://fhir-server.my-hospital.de/fhir/Consent?domain:identifier=MII&amp;patient.identifier=https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym|dic_810MT&amp;mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8&amp;mii-provision-provision-type=permit"/>
+    </request>
+  </entry>
+  <entry>
+    <request>
+      <method value="GET"/>
+      <url value="https://fhir-server.my-hospital.de/fhir/Consent?domain:identifier=MII&amp;patient.identifier=https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym|dic_811MT&amp;mii-provision-provision-code=MDAT_erheben&amp;mii-provision-provision-type=permit"/>
+    </request>
+  </entry>
+</Bundle>

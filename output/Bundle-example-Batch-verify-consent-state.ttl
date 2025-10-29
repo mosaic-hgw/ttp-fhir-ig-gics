@@ -1,0 +1,26 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/gics/Bundle/example-Batch-verify-consent-state> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-Batch-verify-consent-state"] ; # 
+  fhir:type [ fhir:v "batch"] ; # 
+  fhir:entry ( [
+     fhir:request [
+       fhir:method [ fhir:v "GET" ] ;
+       fhir:url [ fhir:v "https://fhir-server.my-hospital.de/fhir/Consent?domain:identifier=MII&patient.identifier=https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym|dic_810MT&mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8&mii-provision-provision-type=permit"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:request [
+       fhir:method [ fhir:v "GET" ] ;
+       fhir:url [ fhir:v "https://fhir-server.my-hospital.de/fhir/Consent?domain:identifier=MII&patient.identifier=https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym|dic_811MT&mii-provision-provision-code=MDAT_erheben&mii-provision-provision-type=permit"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

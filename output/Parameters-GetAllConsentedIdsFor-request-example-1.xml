@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="GetAllConsentedIdsFor-request-example-1"/>
+  <parameter>
+    <name value="signerIdTypeName"/>
+    <valueString value="Pseudonym"/>
+  </parameter>
+  <parameter>
+    <name value="domain"/>
+    <valueString value="MII"/>
+  </parameter>
+  <parameter>
+    <name value="policy"/>
+    <valueCoding>
+      <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+      <code value="MDAT_erheben"/>
+    </valueCoding>
+  </parameter>
+  <parameter>
+    <name value="version"/>
+    <valueString value="1.1"/>
+  </parameter>
+  <parameter>
+    <name value="config"/>
+    <resource>
+      <Parameters>
+        <parameter>
+          <name value="idMatchingType"/>
+          <valueCoding>
+            <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/IdMatchingType"/>
+            <code value="EXACT"/>
+          </valueCoding>
+        </parameter>
+        <parameter>
+          <name value="ignoreVersionNumber"/>
+          <valueBoolean value="false"/>
+        </parameter>
+        <parameter>
+          <name value="unknownStateIsConsideredAsDecline"/>
+          <valueBoolean value="false"/>
+        </parameter>
+        <parameter>
+          <name value="requestDate"/>
+          <valueDate value="2021-06-18"/>
+        </parameter>
+      </Parameters>
+    </resource>
+  </parameter>
+</Parameters>

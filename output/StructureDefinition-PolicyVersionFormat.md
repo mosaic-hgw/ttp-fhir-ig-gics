@@ -1,0 +1,94 @@
+# Policy Version Format - v2025.1.0
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "PolicyVersionFormat",
+  "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/PolicyVersionFormat",
+  "version" : "2025.1.0",
+  "name" : "PolicyVersionFormat",
+  "title" : "Policy Version Format",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-06-12",
+  "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact" : [
+    {
+      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://www.ths-greifswald.de/"
+        }
+      ]
+    }
+  ],
+  "description" : "Versionierungsformat der Policies einer Consent Domain, basierend auf Vorarbeiten der AG Einwilligungsmanagement des InteropForums",
+  "copyright" : "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [
+    {
+      "identity" : "rim",
+      "uri" : "http://hl7.org/v3",
+      "name" : "RIM Mapping"
+    }
+  ],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [
+    {
+      "type" : "element",
+      "expression" : "ResearchStudy"
+    },
+    {
+      "type" : "element",
+      "expression" : "Organization"
+    }
+  ],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "Extension",
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode" : "normative"
+          }
+        ],
+        "path" : "Extension",
+        "short" : "Format von Policyversionsangaben",
+        "definition" : "Format von Versionsangaben für Policies",
+        "comment" : "Werden sowohl formatString als auch formatExpression angegeben, müssen diese synonym sein."
+      },
+      {
+        "id" : "Extension.extension",
+        "path" : "Extension.extension",
+        "max" : "0"
+      },
+      {
+        "id" : "Extension.url",
+        "path" : "Extension.url",
+        "fixedUri" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/PolicyVersionFormat"
+      },
+      {
+        "id" : "Extension.value[x]",
+        "path" : "Extension.value[x]",
+        "min" : 1,
+        "type" : [
+          {
+            "code" : "string"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+```

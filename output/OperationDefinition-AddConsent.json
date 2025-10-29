@@ -1,0 +1,88 @@
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "AddConsent",
+  "language" : "de-DE",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"de-DE\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"de-DE\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition AddConsent</b></p><a name=\"AddConsent\"> </a><a name=\"hcAddConsent\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: de-DE</p></div><p>URL: [base]/$addConsent</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>patient</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>Patient-Ressource, entsprechend dem Profil http://fhir.de/ConsentManagement/StructureDefinition/Patient. Für Identifier in dieser Ressource muss der Namensraum (identifier.system) mit der Zeichenfolge 'https://ths-greifswald.de/fhir/gics/identifiers/' beginnen. Angehängt hieran wird der Bezeichner eines im System konfigurierten SignerIDTypes. Abweichungen hiervon führen zu einem Fehler, indiziert durch HTTP Status 422.</p>\n</div></td></tr><tr><td>IN</td><td>domain</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Angabe der Einwilligungsdomaene</p>\n</div></td></tr><tr><td>IN</td><td>questionnaireResponse</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/questionnaireresponse.html\">QuestionnaireResponse</a></td><td/><td><div><p>QuestionnaireResponse-Ressource zum Patienten, die sich auf ein entsprechendes QuestionnaireComposed bezieht. Entsprechend dem Profil http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireComposed.</p>\n</div></td></tr><tr><td>IN</td><td>documentReference</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/documentreference.html\">DocumentReference</a></td><td/><td><div><p>unstrukturiertes Originaldokument (entsprechend dem Profil http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference)</p>\n</div></td></tr><tr><td>IN</td><td>provenance</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/provenance.html\">Provenance</a></td><td/><td><div><p>Herkunftsinformationen (entsprechend dem Profil http://fhir.de/ConsentManagement/StructureDefinition/Provenance). Umsetzungshinweis: mehrere Unterschriften für ein Dokument sind ggf. als mehrere signature-Elemente in der selben Provenance-Ressource abzubilden.</p>\n</div></td></tr><tr><td>IN</td><td>_profile</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#canonical\">canonical</a></td><td/><td><div><p>Angabe um Ausgabeprofil festzulegen.\nDefault ist die gics-Variante; alternativ das Profil aus dem IG Einwilligungsmanagement.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></td><td/><td><div><p>Bundle vom Typ collection, das die errechneten Consent-Ressourcen enthält.</p>\n</div></td></tr></table><div><p>Liefert alle Consente einer Person einer spezifischen Einwilligungsdomaene, die sich aus den übermittelten Informationen ergeben. Die Rückgabe erfolgt als Bundle vom Typ &quot;collection&quot;. Das Bundle enthält je Consent einen BundleEntry, der alle für den spezifischen Consent relevanten Ressourcen (z.B. TemplateFrame, QuestionnaireComposed, QuestionnaireResponse, Provenance) enthält. Details zu den verwendeten Profilen unterhttps://ig.fhir.de/einwilligungsmanagement/stable/Home.html . Hinweis: gICS verwirft eventuell in den übermittelten Ressourcen gesetzte id-Werte und ersetzt sie durch eigene.</p>\n</div></div>"
+  },
+  "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gics/addConsent",
+  "version" : "2025.1.0",
+  "name" : "AddConsent",
+  "title" : "Add a consent related QuestionnaireResponse for a patient",
+  "status" : "active",
+  "kind" : "operation",
+  "date" : "2025-06-12",
+  "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
+  "description" : "Nimmt die Einwilligungsinformationen einschließlich Nebeninformationen (Unterschrift, Scan) für einen (ggf. neuen) Patienten entgegen, um auf dieser Basis eine neue Einwilligung im gICS zu erzeugen. Liefert Bundle vom Typ \"collection\". Das Bundle enthält die errechnete FHIR Consent-Resource, sowie alle für diesen spezifischen Consent relevanten Ressourcen (z.B. QuestionnaireComposed, QuestionnaireResponse, Provenance, Patient). ",
+  "purpose" : "Teil des FHIR Gateway für gICS. Weitere Infos unter https://ths-greifswald.de/gics",
+  "affectsState" : true,
+  "code" : "addConsent",
+  "comment" : "Liefert alle Consente einer Person einer spezifischen Einwilligungsdomaene, die sich aus den übermittelten Informationen ergeben. Die Rückgabe erfolgt als Bundle vom Typ \"collection\". Das Bundle enthält je Consent einen BundleEntry, der alle für den spezifischen Consent relevanten Ressourcen (z.B. TemplateFrame, QuestionnaireComposed, QuestionnaireResponse, Provenance) enthält. Details zu den verwendeten Profilen unterhttps://ig.fhir.de/einwilligungsmanagement/stable/Home.html . Hinweis: gICS verwirft eventuell in den übermittelten Ressourcen gesetzte id-Werte und ersetzt sie durch eigene.",
+  "system" : true,
+  "type" : false,
+  "instance" : false,
+  "parameter" : [{
+    "name" : "patient",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Patient-Ressource, entsprechend dem Profil http://fhir.de/ConsentManagement/StructureDefinition/Patient. Für Identifier in dieser Ressource muss der Namensraum (identifier.system) mit der Zeichenfolge 'https://ths-greifswald.de/fhir/gics/identifiers/' beginnen. Angehängt hieran wird der Bezeichner eines im System konfigurierten SignerIDTypes. Abweichungen hiervon führen zu einem Fehler, indiziert durch HTTP Status 422.",
+    "type" : "Patient"
+  },
+  {
+    "name" : "domain",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Angabe der Einwilligungsdomaene",
+    "type" : "string"
+  },
+  {
+    "name" : "questionnaireResponse",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "QuestionnaireResponse-Ressource zum Patienten, die sich auf ein entsprechendes QuestionnaireComposed bezieht. Entsprechend dem Profil http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireComposed.",
+    "type" : "QuestionnaireResponse"
+  },
+  {
+    "name" : "documentReference",
+    "use" : "in",
+    "min" : 0,
+    "max" : "*",
+    "documentation" : "unstrukturiertes Originaldokument (entsprechend dem Profil http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference)",
+    "type" : "DocumentReference"
+  },
+  {
+    "name" : "provenance",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Herkunftsinformationen (entsprechend dem Profil http://fhir.de/ConsentManagement/StructureDefinition/Provenance). Umsetzungshinweis: mehrere Unterschriften für ein Dokument sind ggf. als mehrere signature-Elemente in der selben Provenance-Ressource abzubilden.",
+    "type" : "Provenance"
+  },
+  {
+    "name" : "_profile",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Angabe um Ausgabeprofil festzulegen.\r\nDefault ist die gics-Variante; alternativ das Profil aus dem IG Einwilligungsmanagement.",
+    "type" : "canonical"
+  },
+  {
+    "name" : "return",
+    "use" : "out",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Bundle vom Typ collection, das die errechneten Consent-Ressourcen enthält.",
+    "type" : "Bundle"
+  }]
+}
