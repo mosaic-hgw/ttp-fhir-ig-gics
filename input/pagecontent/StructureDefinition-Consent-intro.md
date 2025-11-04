@@ -119,7 +119,16 @@ Beispiel:
 ```
 GET [base]/Consent?domain:identifier=MII&mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791&_revinclude=Provenance:target
 ```
+##### Inkludieren der Provenance-Information für Consent-Ressourcen vom Typ `Consent-Status`
+Das Inkludieren der Herkunftsinformationen zu einer Consent-Ressource vom Typ `Consent-Status` ist mittels reverse Include der entsprechenden Provenance-Ressource ebenfalls möglich.
+Die in diesem Kontext verwendeten UUIDs der Ressourcen sind volatil (flüchtig), d.h. es wird nicht garantiert, dass die entsprechenden Ressourcen im Anschluss an die Response unter Verwendung der betreffenden UUID abrufbar sind.
+Vgl. auch entsprechendes Response-Beispiel unten.
 
+Beispiel:
+```
+GET [base]/Consent?domain:identifier=MII&mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791&category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|consent-status&_revinclude=Provenance:target
+```
+**ACHTUNG**: Provenance-Ressourcen, die sich auf Consent-Ressourcen vom Typ "Consent-Status" beziehen werden in Echtzeit erzeugt und nicht persistiert. Daher ist die verwendete Ressourcen-Id (UUID der Provenance-Ressource) in diesem konkreten Fall *flüchtig*.
 
 ##### Komplexere Beispiele
 
