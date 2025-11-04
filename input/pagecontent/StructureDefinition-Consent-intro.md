@@ -10,8 +10,8 @@ Suchanfragen werden ausschließlich als GET-Requests akzeptiert. Bezüglich des 
 
 Unterstützt wird die logische UND-Verknüpfung der einzelnen Parameter gemäß [FHIR Search API](http://hl7.org/fhir/r4/search.html), nicht jedoch das logische ODER.
 
-**Die Ergebnisse der FHIR Consent Suche sind nicht dokumenten-spezifisch**, da ein Patient unterschiedliche Einwilligungen und auch Widerrufe zu unterschiedlichen Zeitpunkten unterzeichnet haben kann. Somit ändert sich das Set von zulässigen Policies des Patienten ('Signed Policies') über die Zeit regelhaft.
-**Je Signed Policy im gICS wird somit eine FHIR Consent Resource erzeugt** und dem SearchSet-Bundle beigefügt. Somit repräsentiert die **Bundle.Total**-Angabe nicht die Anzahl der vorhandenen Einwilligungen, sondern die **Anzahl der jeweiligen SignedPolicies mit Status `permit`.**
+**Die Ergebnisse der FHIR Consent Suche sind per DEFAULT nicht dokumenten-spezifisch**, da ein Patient unterschiedliche Einwilligungen und auch Widerrufe zu unterschiedlichen Zeitpunkten unterzeichnet haben kann. Somit ändert sich das Set von zulässigen Policies des Patienten ('Signed Policies') über die Zeit regelhaft.
+**Je Signed Policy im gICS wird somit eine FHIR Consent Resource erzeugt** und dem SearchSet-Bundle beigefügt. Somit repräsentiert die **Bundle.Total**-Angabe nicht die Anzahl der vorhandenen Einwilligungen, sondern die **Anzahl der jeweiligen SignedPolicies mit Status `permit`.** Dieses Verhalten ist konfigurierbar (Details unten im *Abschnitt Änderungen mit dem Release 2024.3.0*).
 
 Paging entsprechend der [FHIR Search API](http://hl7.org/fhir/r4/search.html) wird ab TTP-FHIR Gateway Version 2023.1.1 unterstützt, namentlich die Parameter
 * _count: (maximale) Anzahl der im Bundle enthaltenen Ressourcen
@@ -43,11 +43,12 @@ Beispiel 2:
 ```
 GET [base]/Consent?domain:identifier=MIRACUM&category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|consent-status
 ```
-findet Consent-Ressourcen des (ggf. aus mehreren Einwilligungs-Fragebögen errechneten) Consent-Status-Typs.
+findet Consent-Ressourcen des (ggf. aus mehreren Einwilligungs-Fragebögen errechneten) Consent-Status-Typs. 
+**ACHTUNG**: Consent-Ressourcen vom Typ "Consent-Status" werden in Echtzeit erzeugt und nicht persistiert. Daher ist die verwendete Ressourcen-Id (UUID der Consent-Ressource) in diesem konkreten Fall *flüchtig*.
 
 ##### Änderungen mit dem Release 2024.3.0 
-- Es wird Consent.Category *ResultType" unterstützt. Dies ist abwärtskompatibel. Default ist  *ResultType.POLICY*.
-- Umstellung internes *DEFAULT-CONSENT-Profile* ist das [Consent-Profil der HL7-D AG Einwilligungsmanagement](https://simplifier.net/guide/Einwilligungsmanagement/Consent?version=current). Bisheriger Default war das gICS-Consent-Profil.
+- Es wird Consent.Category *ResultType" unterstützt. Dies ist abwärtskompatibel. Default ist  *ResultType.POLICY*. Unterstützt werden zum *ResultType.DOCUMENT* und *ResultType.CONSENT-STATUS*.
+- Umstellung internes *DEFAULT-CONSENT-Profile* ist das [Consent-Profil der HL7-D AG Einwilligungsmanagement](https://simplifier.net/guide/Einwilligungsmanagement/Consent?version=current). Bisheriger Default war bislang das gICS-Consent-Profil.
 - Das gewünschte Ausgabe-Profil für Consent-Resourcen kann auf Domain und Template-Ebene mittels externalProperty *fhirForceProfileConsent* forciert werden. Mehr dazu in der dem Release beiliengenden ReadMe.
 
 ##### Provision-Code
