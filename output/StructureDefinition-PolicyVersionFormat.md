@@ -1,4 +1,4 @@
-# Policy Version Format - v2025.1.0
+# Policy Version Format - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "PolicyVersionFormat",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/PolicyVersionFormat",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "PolicyVersionFormat",
   "title" : "Policy Version Format",
   "status" : "active",

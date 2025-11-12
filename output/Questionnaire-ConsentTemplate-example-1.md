@@ -1,4 +1,4 @@
-# <h1>Einwilligungserklärung</h1> - v2025.1.0
+# <h1>Einwilligungserklärung</h1> - v2025.2.0
 
 
 
@@ -200,7 +200,7 @@
       "value" : "MII;Patienteneinwilligung MII;1.6.f"
     }
   ],
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "Patienteneinwilligung MII",
   "title" : "<h1>Einwilligungserklärung</h1>",
   "status" : "active",

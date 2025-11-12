@@ -1,4 +1,4 @@
-# Current policy states for person - v2025.1.0
+# Current policy states for person - v2025.2.0
 
 
 
@@ -10,7 +10,7 @@
   "id" : "CurrentPolicyStatesForPerson",
   "language" : "de-DE",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gics/currentPolicyStatesForPerson",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "CurrentPolicyStatesForPerson",
   "title" : "Current policy states for person",
   "status" : "active",

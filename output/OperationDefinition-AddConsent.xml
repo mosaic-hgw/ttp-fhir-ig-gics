@@ -16,7 +16,7 @@ Default ist die gics-Variante; alternativ das Profil aus dem IG Einwilligungsman
 </div></div>
   </text>
   <url value="https://ths-greifswald.de/fhir/OperationDefinition/gics/addConsent"/>
-  <version value="2025.1.0"/>
+  <version value="2025.2.0"/>
   <name value="AddConsent"/>
   <title value="Add a consent related QuestionnaireResponse for a patient"/>
   <status value="active"/>

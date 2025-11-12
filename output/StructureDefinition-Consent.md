@@ -1,4 +1,4 @@
-# Einwilligungsinformationen - v2025.1.0
+# Einwilligungsinformationen - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "Consent",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "Consent",
   "title" : "Einwilligungsinformationen",
   "status" : "active",

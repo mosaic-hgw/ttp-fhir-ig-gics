@@ -1,4 +1,4 @@
-# Consent Quality Control - v2025.1.0
+# Consent Quality Control - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "ConsentQualityControl",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/VerificationResult/ConsentQualityControl",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "ConsentQualityControl",
   "title" : "Consent Quality Control",
   "status" : "active",

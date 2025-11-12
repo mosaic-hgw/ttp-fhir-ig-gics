@@ -1,4 +1,4 @@
-# Get all consented Identifiers for person and template - v2025.1.0
+# Get all consented Identifiers for person and template - v2025.2.0
 
 
 
@@ -10,7 +10,7 @@
   "id" : "GetAllConsentedIdsFor",
   "language" : "de-DE",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gics/getAllConsentedIdsFor",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "GetAllConsentedIdsFor",
   "title" : "Get all consented Identifiers for person and template",
   "status" : "active",

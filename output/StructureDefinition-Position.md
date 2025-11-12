@@ -1,4 +1,4 @@
-# Position - v2025.1.0
+# Position - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "Position",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/Position",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "Position",
   "title" : "Position",
   "status" : "active",

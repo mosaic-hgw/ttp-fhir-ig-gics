@@ -1,4 +1,4 @@
-# Medizinische Daten erheben - v2025.1.0
+# Medizinische Daten erheben - v2025.2.0
 
 
 
@@ -34,11 +34,11 @@
     }
   ],
   "url" : "https://ths-greifswald.de/fhir/gics/ActivityDefinition/ConsentPolicy-example-1",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "MDAT_erheben",
   "title" : "Medizinische Daten erheben",
   "status" : "active",
-  "date" : "2025-10-29T11:17:58+01:00",
+  "date" : "2025-11-12T12:08:03+01:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [
     {

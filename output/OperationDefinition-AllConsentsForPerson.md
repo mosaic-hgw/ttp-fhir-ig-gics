@@ -1,4 +1,4 @@
-# All consents for person - v2025.1.0
+# All consents for person - v2025.2.0
 
 
 
@@ -10,7 +10,7 @@
   "id" : "AllConsentsForPerson",
   "language" : "de-DE",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gics/allConsentsForPerson",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "AllConsentsForPerson",
   "title" : "All consents for person",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Herkunftsinformationen und Signatur - v2025.1.0
+# Herkunftsinformationen und Signatur - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "Provenance",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/Provenance",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "Provenance",
   "title" : "Herkunftsinformationen und Signatur",
   "status" : "active",

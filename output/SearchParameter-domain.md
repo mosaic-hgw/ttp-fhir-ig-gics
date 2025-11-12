@@ -1,4 +1,4 @@
-# domain - v2025.1.0
+# domain - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "SearchParameter",
   "id" : "domain",
   "url" : "https://ths-greifswald.de/fhir/SearchParameter/gics/domain",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "domain",
   "status" : "active",
   "date" : "2025-06-12",

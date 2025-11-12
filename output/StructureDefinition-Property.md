@@ -1,4 +1,4 @@
-# Property Element - v2025.1.0
+# Property Element - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "Property",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/Property",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "Property",
   "title" : "Property Element",
   "status" : "active",

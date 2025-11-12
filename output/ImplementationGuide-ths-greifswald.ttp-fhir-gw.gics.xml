@@ -6,10 +6,10 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ths-greifswald.ttp-fhir-gw.gics</b></p><a name="ths-greifswald.ttp-fhir-gw.gics"> </a><a name="hcths-greifswald.ttp-fhir-gw.gics"> </a><h2>IGTTPFHIRGatewaygICS</h2><p>The official URL for this implementation guide is: </p><pre>https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics</pre></div>
   </text>
   <url value="https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics"/>
-  <version value="2025.1.0"/>
+  <version value="2025.2.0"/>
   <name value="IGTTPFHIRGatewaygICS"/>
   <status value="active"/>
-  <date value="2025-10-29T11:17:58+01:00"/>
+  <date value="2025-11-12T12:08:03+01:00"/>
   <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
   <contact>
     <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
@@ -40,7 +40,7 @@
   <dependsOn id="de_einwilligungsmanagement">
     <uri value="http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement"/>
     <packageId value="de.einwilligungsmanagement"/>
-    <version value="2.0.0"/>
+    <version value="2.0.2"/>
   </dependsOn>
   <dependsOn id="de_medizininformatikinitiative_kerndatensatz_consent">
     <uri value="http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.consent/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.consent"/>
@@ -1680,30 +1680,6 @@
       <generation value="html"/>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="Beschreibung.html"/>
-        </extension>
-        <nameUrl value="Beschreibung.html"/>
-        <title value="Beschreibung"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="BeschreibungBallotGics.html"/>
-        </extension>
-        <nameUrl value="BeschreibungBallotGics.html"/>
-        <title value="Beschreibung Ballot Gics"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="Einwilligungsmanagement.html"/>
-        </extension>
-        <nameUrl value="Einwilligungsmanagement.html"/>
-        <title value="Einwilligungsmanagement"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="Extensions.html"/>
         </extension>
         <nameUrl value="Extensions.html"/>
@@ -1715,15 +1691,7 @@
           <valueUrl value="index.html"/>
         </extension>
         <nameUrl value="index.html"/>
-        <title value="Home"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="KontextUndKonzept.html"/>
-        </extension>
-        <nameUrl value="KontextUndKonzept.html"/>
-        <title value="Kontext und Konzept"/>
+        <title value="Implementation Guide gICS"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -1736,18 +1704,18 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="TechnischeGrundlagen.html"/>
+          <valueUrl value="Allgemein.html"/>
         </extension>
-        <nameUrl value="TechnischeGrundlagen.html"/>
-        <title value="Technische Grundlagen"/>
+        <nameUrl value="Allgemein.html"/>
+        <title value="Allgemein"/>
         <generation value="markdown"/>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="Vorgehen.html"/>
+          <valueUrl value="Mitgeltend.html"/>
         </extension>
-        <nameUrl value="Vorgehen.html"/>
-        <title value="Vorgehen"/>
+        <nameUrl value="Mitgeltend.html"/>
+        <title value="Mitgeltende Profile"/>
         <generation value="markdown"/>
       </page>
     </page>

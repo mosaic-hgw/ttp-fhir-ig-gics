@@ -1,4 +1,4 @@
-# Template Version Format - v2025.1.0
+# Template Version Format - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "TemplateVersionFormat",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/TemplateVersionFormat",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "TemplateVersionFormat",
   "title" : "Template Version Format",
   "status" : "active",

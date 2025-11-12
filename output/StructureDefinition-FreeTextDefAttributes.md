@@ -1,4 +1,4 @@
-# FreeTextDef Attributes - v2025.1.0
+# FreeTextDef Attributes - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "FreeTextDefAttributes",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/FreeTextDefAttributes",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "FreeTextDefAttributes",
   "title" : "FreeTextDef Attributes",
   "status" : "active",

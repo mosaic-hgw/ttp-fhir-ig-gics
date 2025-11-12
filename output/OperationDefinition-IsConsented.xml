@@ -11,7 +11,7 @@ Bei Angabe von mehreren Identifikatoren werden diese ODER-verknüpft.</p>
 </div></div>
   </text>
   <url value="https://ths-greifswald.de/fhir/OperationDefinition/gics/isConsented"/>
-  <version value="2025.1.0"/>
+  <version value="2025.2.0"/>
   <name value="IsConsented"/>
   <title value="Patient's consent status for a defined policy"/>
   <status value="active"/>

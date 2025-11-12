@@ -12,7 +12,7 @@
 </div></div>
   </text>
   <url value="https://ths-greifswald.de/fhir/OperationDefinition/gics/currentPolicyStatesForPerson"/>
-  <version value="2025.1.0"/>
+  <version value="2025.2.0"/>
   <name value="CurrentPolicyStatesForPerson"/>
   <title value="Current policy states for person"/>
   <status value="active"/>

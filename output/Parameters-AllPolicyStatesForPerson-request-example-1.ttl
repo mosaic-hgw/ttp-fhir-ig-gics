@@ -13,13 +13,16 @@
      fhir:name [ fhir:v "personIdentifier" ] ;
      fhir:value [
        a fhir:Identifier ;
-       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ;
+         fhir:l <https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym>
+       ] ;
        fhir:value [ fhir:v "dic_GCC83" ]
      ]
   ] [
      fhir:name [ fhir:v "domain" ] ;
      fhir:value [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "MII"
      ]
   ] ) . # 

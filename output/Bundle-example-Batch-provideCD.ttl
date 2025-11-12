@@ -18,21 +18,27 @@
        fhir:meta [
          fhir:profile ( [
            fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized"^^xsd:anyURI ;
-           fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized>
+           fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized>
          ] )
        ] ;
        fhir:text [
          fhir:status [ fhir:v "generated" ] ;
-         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_example-provideCD-patient1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient example-provideCD-patient1</b></p><a name=\"example-provideCD-patient1\"> </a><a name=\"hcexample-provideCD-patient1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PatientPseudonymized.html\">Patient pseudonymisiert</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( http://my-hospital.de/sid/psn#dic1_PSN1)</p><hr/></div>"^^rdf:XMLLiteral
+         fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_example-provideCD-patient1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient example-provideCD-patient1</b></p><a name=\"example-provideCD-patient1\"> </a><a name=\"hcexample-provideCD-patient1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PatientPseudonymized.html\">Patient pseudonymisiert</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( http://my-hospital.de/sid/psn#dic1_PSN1)</p><hr/></div>"^^rdf:XMLLiteral ]
        ] ;
        fhir:identifier ( [
-         fhir:system [ fhir:v "http://my-hospital.de/sid/psn"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://my-hospital.de/sid/psn"^^xsd:anyURI ;
+           fhir:l <http://my-hospital.de/sid/psn>
+         ] ;
          fhir:value [ fhir:v "dic1_PSN1" ]
        ] )
      ] ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [ fhir:v "https://fhir-server.my-hospital.de/fhir/Patient"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "https://fhir-server.my-hospital.de/fhir/Patient"^^xsd:anyURI ;
+         fhir:l <https://fhir-server.my-hospital.de/fhir/Patient>
+       ]
      ]
   ] [
      fhir:resource ( [
@@ -41,21 +47,27 @@
        fhir:meta [
          fhir:profile ( [
            fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized"^^xsd:anyURI ;
-           fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized>
+           fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized>
          ] )
        ] ;
        fhir:text [
          fhir:status [ fhir:v "generated" ] ;
-         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_example-provideCD-patient2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient example-provideCD-patient2</b></p><a name=\"example-provideCD-patient2\"> </a><a name=\"hcexample-provideCD-patient2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PatientPseudonymized.html\">Patient pseudonymisiert</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( http://my-hospital.de/sid/psn#dic2_PSN2)</p><hr/></div>"^^rdf:XMLLiteral
+         fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_example-provideCD-patient2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient example-provideCD-patient2</b></p><a name=\"example-provideCD-patient2\"> </a><a name=\"hcexample-provideCD-patient2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PatientPseudonymized.html\">Patient pseudonymisiert</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( http://my-hospital.de/sid/psn#dic2_PSN2)</p><hr/></div>"^^rdf:XMLLiteral ]
        ] ;
        fhir:identifier ( [
-         fhir:system [ fhir:v "http://my-hospital.de/sid/psn"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://my-hospital.de/sid/psn"^^xsd:anyURI ;
+           fhir:l <http://my-hospital.de/sid/psn>
+         ] ;
          fhir:value [ fhir:v "dic2_PSN2" ]
        ] )
      ] ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [ fhir:v "https://fhir-server.my-hospital.de/fhir/Patient"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "https://fhir-server.my-hospital.de/fhir/Patient"^^xsd:anyURI ;
+         fhir:l <https://fhir-server.my-hospital.de/fhir/Patient>
+       ]
      ]
   ] [
      fhir:resource ( [
@@ -64,21 +76,27 @@
        fhir:meta [
          fhir:profile ( [
            fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized"^^xsd:anyURI ;
-           fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized>
+           fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized>
          ] )
        ] ;
        fhir:text [
          fhir:status [ fhir:v "generated" ] ;
-         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_example-provideCD-patient3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient example-provideCD-patient3</b></p><a name=\"example-provideCD-patient3\"> </a><a name=\"hcexample-provideCD-patient3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PatientPseudonymized.html\">Patient pseudonymisiert</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( http://my-hospital.de/sid/psn#dic3_PSN3)</p><hr/></div>"^^rdf:XMLLiteral
+         fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_example-provideCD-patient3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient example-provideCD-patient3</b></p><a name=\"example-provideCD-patient3\"> </a><a name=\"hcexample-provideCD-patient3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PatientPseudonymized.html\">Patient pseudonymisiert</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( http://my-hospital.de/sid/psn#dic3_PSN3)</p><hr/></div>"^^rdf:XMLLiteral ]
        ] ;
        fhir:identifier ( [
-         fhir:system [ fhir:v "http://my-hospital.de/sid/psn"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://my-hospital.de/sid/psn"^^xsd:anyURI ;
+           fhir:l <http://my-hospital.de/sid/psn>
+         ] ;
          fhir:value [ fhir:v "dic3_PSN3" ]
        ] )
      ] ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [ fhir:v "https://fhir-server.my-hospital.de/fhir/Patient"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "https://fhir-server.my-hospital.de/fhir/Patient"^^xsd:anyURI ;
+         fhir:l <https://fhir-server.my-hospital.de/fhir/Patient>
+       ]
      ]
   ] [
      fhir:resource ( [
@@ -87,57 +105,81 @@
        fhir:meta [
          fhir:profile ( [
            fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"^^xsd:anyURI ;
-           fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent>
+           fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent>
          ] )
        ] ;
        fhir:text [
          fhir:status [ fhir:v "extensions" ] ;
-         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Consent_example-provideCD-consent1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Consent example-provideCD-consent1</b></p><a name=\"example-provideCD-consent1\"> </a><a name=\"hcexample-provideCD-consent1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Consent.html\">Einwilligungsinformationen</a></p></div><blockquote><p><b>Consent Management Domain Reference</b></p><ul><li>domain: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/ResearchStudy/REGISTERA\">ResearchStudy/REGISTERA</a></li><li>status: <a href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-active\">PublicationStatus active</a>: Active</li></ul></blockquote><p><b>status</b>: Active</p><p><b>scope</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/consentscope research}\">Research</span></p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 59284-0}\">Consent Document</span>, <span title=\"Codes:{http://fhir.de/ConsentManagement/CodeSystem/ResultType document}\">Dokument</span>, <span title=\"Codes:{http://fhir.de/ConsentManagement/CodeSystem/TemplateType CONSENT-OPT-IN}\">Einwilligung (Opt-in)</span></p><p><b>patient</b>: <a href=\"Bundle-example-Batch-provideCD.html#Patient_example-provideCD-patient1\">Anonymous Patient (no stated gender), DoB Unknown ( http://my-hospital.de/sid/psn#dic1_PSN1)</a></p><p><b>dateTime</b>: 2025-06-26 13:14:15+0200</p><p><b>organization</b>: Testorganisation</p><h3>Policies</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Uri</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f\">urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f</a></td></tr></table><blockquote><p><b>provision</b></p><p><b>type</b>: Opt Out</p><p><b>period</b>: 2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</p><h3>Provisions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Period</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_bereitstellen_EU_DSGVO_NIVEAU}\">Herausgabe identifizierender Daten (IDAT) an verantwortliche Stelle zur weiteren Verarbeitung</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_erheben}\">Erfassung neuer identifizierender Daten (IDAT)</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_speichern_verarbeiten}\">Speicherung und Verarbeitung identifizierender Daten (IDAT) in der verantwortlichen Stelle</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_zusammenfuehren_Dritte}\">Zusammenführung identifizierender Daten (IDAT) mit Dritten Forschungspartnern</span></td></tr></table></blockquote></div>"^^rdf:XMLLiteral
+         fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Consent_example-provideCD-consent1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Consent example-provideCD-consent1</b></p><a name=\"example-provideCD-consent1\"> </a><a name=\"hcexample-provideCD-consent1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Consent.html\">Einwilligungsinformationen</a></p></div><blockquote><p><b>Consent Management Domain Reference</b></p><ul><li>domain: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.2&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/ResearchStudy/REGISTERA\">ResearchStudy/REGISTERA</a></li><li>status: <a href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-active\">PublicationStatus: active</a> (Active)</li></ul></blockquote><p><b>status</b>: Active</p><p><b>scope</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/consentscope research}\">Research</span></p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 59284-0}\">Consent Document</span>, <span title=\"Codes:{http://fhir.de/ConsentManagement/CodeSystem/ResultType document}\">Dokument</span>, <span title=\"Codes:{http://fhir.de/ConsentManagement/CodeSystem/TemplateType CONSENT-OPT-IN}\">Einwilligung (Opt-in)</span></p><p><b>patient</b>: <a href=\"Bundle-example-Batch-provideCD.html#Patient_example-provideCD-patient1\">Anonymous Patient (no stated gender), DoB Unknown ( http://my-hospital.de/sid/psn#dic1_PSN1)</a></p><p><b>dateTime</b>: 2025-06-26 13:14:15+0200</p><p><b>organization</b>: Testorganisation</p><h3>Policies</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Uri</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.2&amp;canonical=urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f\">urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f</a></td></tr></table><blockquote><p><b>provision</b></p><p><b>type</b>: Opt Out</p><p><b>period</b>: 2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</p><h3>Provisions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Period</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_bereitstellen_EU_DSGVO_NIVEAU}\">Herausgabe identifizierender Daten (IDAT) an verantwortliche Stelle zur weiteren Verarbeitung</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_erheben}\">Erfassung neuer identifizierender Daten (IDAT)</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_speichern_verarbeiten}\">Speicherung und Verarbeitung identifizierender Daten (IDAT) in der verantwortlichen Stelle</span></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td>2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_zusammenfuehren_Dritte}\">Zusammenführung identifizierender Daten (IDAT) mit Dritten Forschungspartnern</span></td></tr></table></blockquote></div>"^^rdf:XMLLiteral ]
        ] ;
        fhir:extension ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "domain"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "domain"^^xsd:anyURI ;
+             fhir:l fhir:domain
+           ] ;
            fhir:value [
              a fhir:Reference ;
-             fhir:link <https://ths-greifswald.de/fhir/gics/ResearchStudy/REGISTERA> ;
+             fhir:l <https://ths-greifswald.de/fhir/gics/ResearchStudy/REGISTERA> ;
              fhir:reference [ fhir:v "ResearchStudy/REGISTERA" ]
            ]
          ] [
-           fhir:url [ fhir:v "status"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "status"^^xsd:anyURI ;
+             fhir:l fhir:status
+           ] ;
            fhir:value [
              a fhir:Coding ;
-             fhir:system [ fhir:v "http://hl7.org/fhir/publication-status"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://hl7.org/fhir/publication-status"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/publication-status>
+             ] ;
              fhir:code [ fhir:v "active" ]
            ]
          ] ) ;
-         fhir:url [ fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"^^xsd:anyURI ]
+         fhir:url [
+           fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"^^xsd:anyURI ;
+           fhir:l <http://fhir.de/ConsentManagement/StructureDefinition/DomainReference>
+         ]
        ] ) ;
        fhir:status [ fhir:v "active" ] ;
        fhir:scope [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/consentscope>
+           ] ;
            fhir:code [ fhir:v "research" ]
          ] )
        ] ;
        fhir:category ( [
          fhir:coding ( [
            a loinc:59284-0 ;
-           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://loinc.org"^^xsd:anyURI ;
+             fhir:l <http://loinc.org>
+           ] ;
            fhir:code [ fhir:v "59284-0" ]
          ] )
        ] [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://fhir.de/ConsentManagement/CodeSystem/ResultType"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://fhir.de/ConsentManagement/CodeSystem/ResultType"^^xsd:anyURI ;
+             fhir:l <http://fhir.de/ConsentManagement/CodeSystem/ResultType>
+           ] ;
            fhir:code [ fhir:v "document" ]
          ] )
        ] [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://fhir.de/ConsentManagement/CodeSystem/TemplateType"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://fhir.de/ConsentManagement/CodeSystem/TemplateType"^^xsd:anyURI ;
+             fhir:l <http://fhir.de/ConsentManagement/CodeSystem/TemplateType>
+           ] ;
            fhir:code [ fhir:v "CONSENT-OPT-IN" ]
          ] )
        ] ) ;
        fhir:patient [
-         fhir:link <https://ths-greifswald.de/fhir/gics/Patient/example-provideCD-patient1> ;
+         fhir:l <https://ths-greifswald.de/fhir/gics/Patient/example-provideCD-patient1> ;
          fhir:reference [ fhir:v "Patient/example-provideCD-patient1" ]
        ] ;
        fhir:dateTime [ fhir:v "2025-06-26T13:14:15+02:00"^^xsd:dateTime ] ;
@@ -145,7 +187,10 @@
          fhir:display [ fhir:v "Testorganisation" ]
        ] ) ;
        fhir:policy ( [
-         fhir:uri [ fhir:v "urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f"^^xsd:anyURI ]
+         fhir:uri [
+           fhir:v "urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f"^^xsd:anyURI ;
+           fhir:l <urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f>
+         ]
        ] ) ;
        fhir:provision [
          fhir:type [ fhir:v "deny" ] ;
@@ -161,7 +206,10 @@
            ] ;
            fhir:code ( [
              fhir:coding ( [
-               fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+               fhir:system [
+                 fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
+                 fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
+               ] ;
                fhir:code [ fhir:v "IDAT_bereitstellen_EU_DSGVO_NIVEAU" ] ;
                fhir:display [ fhir:v "Herausgabe identifizierender Daten (IDAT) an verantwortliche Stelle zur weiteren Verarbeitung" ]
              ] )
@@ -174,7 +222,10 @@
            ] ;
            fhir:code ( [
              fhir:coding ( [
-               fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+               fhir:system [
+                 fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
+                 fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
+               ] ;
                fhir:code [ fhir:v "IDAT_erheben" ] ;
                fhir:display [ fhir:v "Erfassung neuer identifizierender Daten (IDAT)" ]
              ] )
@@ -187,7 +238,10 @@
            ] ;
            fhir:code ( [
              fhir:coding ( [
-               fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+               fhir:system [
+                 fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
+                 fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
+               ] ;
                fhir:code [ fhir:v "IDAT_speichern_verarbeiten" ] ;
                fhir:display [ fhir:v "Speicherung und Verarbeitung identifizierender Daten (IDAT) in der verantwortlichen Stelle" ]
              ] )
@@ -200,7 +254,10 @@
            ] ;
            fhir:code ( [
              fhir:coding ( [
-               fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+               fhir:system [
+                 fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
+                 fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
+               ] ;
                fhir:code [ fhir:v "IDAT_zusammenfuehren_Dritte" ] ;
                fhir:display [ fhir:v "Zusammenführung identifizierender Daten (IDAT) mit Dritten Forschungspartnern" ]
              ] )
@@ -210,7 +267,10 @@
      ] ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [ fhir:v "https://fhir-server.my-hospital.de/fhir/Consent"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "https://fhir-server.my-hospital.de/fhir/Consent"^^xsd:anyURI ;
+         fhir:l <https://fhir-server.my-hospital.de/fhir/Consent>
+       ]
      ]
   ] [
      fhir:resource ( [
@@ -219,57 +279,81 @@
        fhir:meta [
          fhir:profile ( [
            fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"^^xsd:anyURI ;
-           fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent>
+           fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent>
          ] )
        ] ;
        fhir:text [
          fhir:status [ fhir:v "extensions" ] ;
-         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Consent_example-provideCD-consent2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Consent example-provideCD-consent2</b></p><a name=\"example-provideCD-consent2\"> </a><a name=\"hcexample-provideCD-consent2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Consent.html\">Einwilligungsinformationen</a></p></div><blockquote><p><b>Consent Management Domain Reference</b></p><ul><li>domain: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/ResearchStudy/REGISTERA\">ResearchStudy/REGISTERA</a></li><li>status: <a href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-active\">PublicationStatus active</a>: Active</li></ul></blockquote><p><b>status</b>: Active</p><p><b>scope</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/consentscope research}\">Research</span></p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 59284-0}\">Consent Document</span>, <span title=\"Codes:{http://fhir.de/ConsentManagement/CodeSystem/ResultType document}\">Dokument</span>, <span title=\"Codes:{http://fhir.de/ConsentManagement/CodeSystem/TemplateType WITHDRAWAL}\">Widerrufsvorlage</span></p><p><b>patient</b>: <a href=\"Bundle-example-Batch-provideCD.html#Patient_example-provideCD-patient2\">Anonymous Patient (no stated gender), DoB Unknown ( http://my-hospital.de/sid/psn#dic2_PSN2)</a></p><p><b>dateTime</b>: 2025-06-26 13:14:15+0200</p><p><b>organization</b>: Testorganisation</p><h3>Policies</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Uri</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f\">urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f</a></td></tr></table><h3>Provisions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td>Opt Out</td><td>2021-11-01 13:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</td></tr></table></div>"^^rdf:XMLLiteral
+         fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Consent_example-provideCD-consent2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Consent example-provideCD-consent2</b></p><a name=\"example-provideCD-consent2\"> </a><a name=\"hcexample-provideCD-consent2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Consent.html\">Einwilligungsinformationen</a></p></div><blockquote><p><b>Consent Management Domain Reference</b></p><ul><li>domain: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.2&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/ResearchStudy/REGISTERA\">ResearchStudy/REGISTERA</a></li><li>status: <a href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-active\">PublicationStatus: active</a> (Active)</li></ul></blockquote><p><b>status</b>: Active</p><p><b>scope</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/consentscope research}\">Research</span></p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 59284-0}\">Consent Document</span>, <span title=\"Codes:{http://fhir.de/ConsentManagement/CodeSystem/ResultType document}\">Dokument</span>, <span title=\"Codes:{http://fhir.de/ConsentManagement/CodeSystem/TemplateType WITHDRAWAL}\">Widerrufsvorlage</span></p><p><b>patient</b>: <a href=\"Bundle-example-Batch-provideCD.html#Patient_example-provideCD-patient2\">Anonymous Patient (no stated gender), DoB Unknown ( http://my-hospital.de/sid/psn#dic2_PSN2)</a></p><p><b>dateTime</b>: 2025-06-26 13:14:15+0200</p><p><b>organization</b>: Testorganisation</p><h3>Policies</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Uri</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.2&amp;canonical=urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f\">urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f</a></td></tr></table><h3>Provisions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td>Opt Out</td><td>2021-11-01 13:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</td></tr></table></div>"^^rdf:XMLLiteral ]
        ] ;
        fhir:extension ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "domain"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "domain"^^xsd:anyURI ;
+             fhir:l fhir:domain
+           ] ;
            fhir:value [
              a fhir:Reference ;
-             fhir:link <https://ths-greifswald.de/fhir/gics/ResearchStudy/REGISTERA> ;
+             fhir:l <https://ths-greifswald.de/fhir/gics/ResearchStudy/REGISTERA> ;
              fhir:reference [ fhir:v "ResearchStudy/REGISTERA" ]
            ]
          ] [
-           fhir:url [ fhir:v "status"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "status"^^xsd:anyURI ;
+             fhir:l fhir:status
+           ] ;
            fhir:value [
              a fhir:Coding ;
-             fhir:system [ fhir:v "http://hl7.org/fhir/publication-status"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://hl7.org/fhir/publication-status"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/publication-status>
+             ] ;
              fhir:code [ fhir:v "active" ]
            ]
          ] ) ;
-         fhir:url [ fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"^^xsd:anyURI ]
+         fhir:url [
+           fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"^^xsd:anyURI ;
+           fhir:l <http://fhir.de/ConsentManagement/StructureDefinition/DomainReference>
+         ]
        ] ) ;
        fhir:status [ fhir:v "active" ] ;
        fhir:scope [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/consentscope>
+           ] ;
            fhir:code [ fhir:v "research" ]
          ] )
        ] ;
        fhir:category ( [
          fhir:coding ( [
            a loinc:59284-0 ;
-           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://loinc.org"^^xsd:anyURI ;
+             fhir:l <http://loinc.org>
+           ] ;
            fhir:code [ fhir:v "59284-0" ]
          ] )
        ] [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://fhir.de/ConsentManagement/CodeSystem/ResultType"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://fhir.de/ConsentManagement/CodeSystem/ResultType"^^xsd:anyURI ;
+             fhir:l <http://fhir.de/ConsentManagement/CodeSystem/ResultType>
+           ] ;
            fhir:code [ fhir:v "document" ]
          ] )
        ] [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://fhir.de/ConsentManagement/CodeSystem/TemplateType"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://fhir.de/ConsentManagement/CodeSystem/TemplateType"^^xsd:anyURI ;
+             fhir:l <http://fhir.de/ConsentManagement/CodeSystem/TemplateType>
+           ] ;
            fhir:code [ fhir:v "WITHDRAWAL" ]
          ] )
        ] ) ;
        fhir:patient [
-         fhir:link <https://ths-greifswald.de/fhir/gics/Patient/example-provideCD-patient2> ;
+         fhir:l <https://ths-greifswald.de/fhir/gics/Patient/example-provideCD-patient2> ;
          fhir:reference [ fhir:v "Patient/example-provideCD-patient2" ]
        ] ;
        fhir:dateTime [ fhir:v "2025-06-26T13:14:15+02:00"^^xsd:dateTime ] ;
@@ -277,7 +361,10 @@
          fhir:display [ fhir:v "Testorganisation" ]
        ] ) ;
        fhir:policy ( [
-         fhir:uri [ fhir:v "urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f"^^xsd:anyURI ]
+         fhir:uri [
+           fhir:v "urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f"^^xsd:anyURI ;
+           fhir:l <urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f>
+         ]
        ] ) ;
        fhir:provision [
          fhir:type [ fhir:v "deny" ] ;
@@ -289,7 +376,10 @@
      ] ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [ fhir:v "https://fhir-server.my-hospital.de/fhir/Consent"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "https://fhir-server.my-hospital.de/fhir/Consent"^^xsd:anyURI ;
+         fhir:l <https://fhir-server.my-hospital.de/fhir/Consent>
+       ]
      ]
   ] [
      fhir:resource ( [
@@ -298,57 +388,81 @@
        fhir:meta [
          fhir:profile ( [
            fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"^^xsd:anyURI ;
-           fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent>
+           fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent>
          ] )
        ] ;
        fhir:text [
          fhir:status [ fhir:v "extensions" ] ;
-         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Consent_example-provideCD-consent3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Consent example-provideCD-consent3</b></p><a name=\"example-provideCD-consent3\"> </a><a name=\"hcexample-provideCD-consent3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Consent.html\">Einwilligungsinformationen</a></p></div><blockquote><p><b>Consent Management Domain Reference</b></p><ul><li>domain: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/ResearchStudy/EPA\">ResearchStudy/EPA</a></li><li>status: <a href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-active\">PublicationStatus active</a>: Active</li></ul></blockquote><p><b>status</b>: Active</p><p><b>scope</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/consentscope treatment}\">Treatment</span></p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 59284-0}\">Consent Document</span>, <span title=\"Codes:{http://fhir.de/ConsentManagement/CodeSystem/ResultType document}\">Dokument</span>, <span title=\"Codes:{http://fhir.de/ConsentManagement/CodeSystem/TemplateType CONSENT-OPT-OUT}\">Einwilligung (Opt-out)</span></p><p><b>patient</b>: <a href=\"Bundle-example-Batch-provideCD.html#Patient_example-provideCD-patient3\">Anonymous Patient (no stated gender), DoB Unknown ( http://my-hospital.de/sid/psn#dic3_PSN3)</a></p><p><b>dateTime</b>: 2025-06-26 13:14:15+0200</p><p><b>organization</b>: EPA</p><h3>Policies</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Uri</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=https://www.gesetze-im-internet.de/sgb_5/__342.html\">https://www.gesetze-im-internet.de/sgb_5/__342.html</a></td></tr></table><blockquote><p><b>provision</b></p><p><b>type</b>: Opt In</p><p><b>period</b>: 2025-03-04 15:16:17+0200 --&gt; (ongoing)</p><blockquote><p><b>provision</b></p><h3>Actors</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Role</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor TTP}\">TTP</span></td><td>TTP Greifswald</td></tr></table><p><b>action</b>: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction collect}\">collect</span></p><p><b>class</b>: <a href=\"CodeSystem-ConsentPolicyClassCS.html#ConsentPolicyClassCS-PII\">ConsentPolicyClass PII</a>: PII</p></blockquote><blockquote><p><b>provision</b></p><h3>Actors</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Role</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor DIC}\">DIC</span></td><td>Datenintegrationszentrum Greifswald</td></tr></table><p><b>action</b>: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction collect}\">collect</span></p><p><b>class</b>: <a href=\"CodeSystem-ConsentPolicyClassCS.html#ConsentPolicyClassCS-MDAT\">ConsentPolicyClass MDAT</a>: MDAT</p></blockquote><blockquote><p><b>provision</b></p><h3>Actors</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Role</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor DTU}\">DTU</span></td><td>Transferstelle der Universitätsmedizin Greifswald</td></tr></table><p><b>action</b>: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction provide}\">provide</span></p><p><b>purpose</b>: <a href=\"CodeSystem-ConsentPolicyPurposeCS.html#ConsentPolicyPurposeCS-EU_GDPR_LEVEL\">ConsentPolicyPurpose EU_GDPR_LEVEL</a>: EU_GDPR_LEVEL, <a href=\"CodeSystem-ConsentPolicyPurposeCS.html#ConsentPolicyPurposeCS-timely_unrestricted\">ConsentPolicyPurpose timely_unrestricted</a>: timely_unrestricted </p><p><b>class</b>: <a href=\"CodeSystem-ConsentPolicyClassCS.html#ConsentPolicyClassCS-MDAT\">ConsentPolicyClass MDAT</a>: MDAT</p></blockquote></blockquote></div>"^^rdf:XMLLiteral
+         fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Consent_example-provideCD-consent3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Consent example-provideCD-consent3</b></p><a name=\"example-provideCD-consent3\"> </a><a name=\"hcexample-provideCD-consent3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Consent.html\">Einwilligungsinformationen</a></p></div><blockquote><p><b>Consent Management Domain Reference</b></p><ul><li>domain: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.2&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/ResearchStudy/EPA\">ResearchStudy/EPA</a></li><li>status: <a href=\"http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-active\">PublicationStatus: active</a> (Active)</li></ul></blockquote><p><b>status</b>: Active</p><p><b>scope</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/consentscope treatment}\">Treatment</span></p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 59284-0}\">Consent Document</span>, <span title=\"Codes:{http://fhir.de/ConsentManagement/CodeSystem/ResultType document}\">Dokument</span>, <span title=\"Codes:{http://fhir.de/ConsentManagement/CodeSystem/TemplateType CONSENT-OPT-OUT}\">Einwilligung (Opt-out)</span></p><p><b>patient</b>: <a href=\"Bundle-example-Batch-provideCD.html#Patient_example-provideCD-patient3\">Anonymous Patient (no stated gender), DoB Unknown ( http://my-hospital.de/sid/psn#dic3_PSN3)</a></p><p><b>dateTime</b>: 2025-06-26 13:14:15+0200</p><p><b>organization</b>: EPA</p><h3>Policies</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Uri</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.2&amp;canonical=https://www.gesetze-im-internet.de/sgb_5/__342.html\">https://www.gesetze-im-internet.de/sgb_5/__342.html</a></td></tr></table><blockquote><p><b>provision</b></p><p><b>type</b>: Opt In</p><p><b>period</b>: 2025-03-04 15:16:17+0200 --&gt; (ongoing)</p><blockquote><p><b>provision</b></p><h3>Actors</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Role</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor TTP}\">TTP</span></td><td>TTP Greifswald</td></tr></table><p><b>action</b>: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction collect}\">collect</span></p><p><b>class</b>: <a href=\"CodeSystem-ConsentPolicyClassCS.html#ConsentPolicyClassCS-PII\">ConsentPolicyClass: PII</a> (PII)</p></blockquote><blockquote><p><b>provision</b></p><h3>Actors</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Role</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor DIC}\">DIC</span></td><td>Datenintegrationszentrum Greifswald</td></tr></table><p><b>action</b>: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction collect}\">collect</span></p><p><b>class</b>: <a href=\"CodeSystem-ConsentPolicyClassCS.html#ConsentPolicyClassCS-MDAT\">ConsentPolicyClass: MDAT</a> (MDAT)</p></blockquote><blockquote><p><b>provision</b></p><h3>Actors</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Role</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor DTU}\">DTU</span></td><td>Transferstelle der Universitätsmedizin Greifswald</td></tr></table><p><b>action</b>: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction provide}\">provide</span></p><p><b>purpose</b>: <a href=\"CodeSystem-ConsentPolicyPurposeCS.html#ConsentPolicyPurposeCS-EU_GDPR_LEVEL\">ConsentPolicyPurpose: EU_GDPR_LEVEL</a> (EU_GDPR_LEVEL), <a href=\"CodeSystem-ConsentPolicyPurposeCS.html#ConsentPolicyPurposeCS-timely_unrestricted\">ConsentPolicyPurpose: timely_unrestricted</a> (timely_unrestricted )</p><p><b>class</b>: <a href=\"CodeSystem-ConsentPolicyClassCS.html#ConsentPolicyClassCS-MDAT\">ConsentPolicyClass: MDAT</a> (MDAT)</p></blockquote></blockquote></div>"^^rdf:XMLLiteral ]
        ] ;
        fhir:extension ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "domain"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "domain"^^xsd:anyURI ;
+             fhir:l fhir:domain
+           ] ;
            fhir:value [
              a fhir:Reference ;
-             fhir:link <https://ths-greifswald.de/fhir/gics/ResearchStudy/EPA> ;
+             fhir:l <https://ths-greifswald.de/fhir/gics/ResearchStudy/EPA> ;
              fhir:reference [ fhir:v "ResearchStudy/EPA" ]
            ]
          ] [
-           fhir:url [ fhir:v "status"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "status"^^xsd:anyURI ;
+             fhir:l fhir:status
+           ] ;
            fhir:value [
              a fhir:Coding ;
-             fhir:system [ fhir:v "http://hl7.org/fhir/publication-status"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://hl7.org/fhir/publication-status"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/publication-status>
+             ] ;
              fhir:code [ fhir:v "active" ]
            ]
          ] ) ;
-         fhir:url [ fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"^^xsd:anyURI ]
+         fhir:url [
+           fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"^^xsd:anyURI ;
+           fhir:l <http://fhir.de/ConsentManagement/StructureDefinition/DomainReference>
+         ]
        ] ) ;
        fhir:status [ fhir:v "active" ] ;
        fhir:scope [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/consentscope>
+           ] ;
            fhir:code [ fhir:v "treatment" ]
          ] )
        ] ;
        fhir:category ( [
          fhir:coding ( [
            a loinc:59284-0 ;
-           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://loinc.org"^^xsd:anyURI ;
+             fhir:l <http://loinc.org>
+           ] ;
            fhir:code [ fhir:v "59284-0" ]
          ] )
        ] [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://fhir.de/ConsentManagement/CodeSystem/ResultType"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://fhir.de/ConsentManagement/CodeSystem/ResultType"^^xsd:anyURI ;
+             fhir:l <http://fhir.de/ConsentManagement/CodeSystem/ResultType>
+           ] ;
            fhir:code [ fhir:v "document" ]
          ] )
        ] [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://fhir.de/ConsentManagement/CodeSystem/TemplateType"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://fhir.de/ConsentManagement/CodeSystem/TemplateType"^^xsd:anyURI ;
+             fhir:l <http://fhir.de/ConsentManagement/CodeSystem/TemplateType>
+           ] ;
            fhir:code [ fhir:v "CONSENT-OPT-OUT" ]
          ] )
        ] ) ;
        fhir:patient [
-         fhir:link <https://ths-greifswald.de/fhir/gics/Patient/example-provideCD-patient3> ;
+         fhir:l <https://ths-greifswald.de/fhir/gics/Patient/example-provideCD-patient3> ;
          fhir:reference [ fhir:v "Patient/example-provideCD-patient3" ]
        ] ;
        fhir:dateTime [ fhir:v "2025-06-26T13:14:15+02:00"^^xsd:dateTime ] ;
@@ -356,7 +470,10 @@
          fhir:display [ fhir:v "EPA" ]
        ] ) ;
        fhir:policy ( [
-         fhir:uri [ fhir:v "https://www.gesetze-im-internet.de/sgb_5/__342.html"^^xsd:anyURI ]
+         fhir:uri [
+           fhir:v "https://www.gesetze-im-internet.de/sgb_5/__342.html"^^xsd:anyURI ;
+           fhir:l <https://www.gesetze-im-internet.de/sgb_5/__342.html>
+         ]
        ] ) ;
        fhir:provision [
          fhir:type [ fhir:v "permit" ] ;
@@ -367,7 +484,10 @@
            fhir:actor ( [
              fhir:role [
                fhir:coding ( [
-                 fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor"^^xsd:anyURI ] ;
+                 fhir:system [
+                   fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor"^^xsd:anyURI ;
+                   fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor>
+                 ] ;
                  fhir:code [ fhir:v "TTP" ]
                ] )
              ] ;
@@ -377,19 +497,28 @@
            ] ) ;
            fhir:action ( [
              fhir:coding ( [
-               fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction"^^xsd:anyURI ] ;
+               fhir:system [
+                 fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction"^^xsd:anyURI ;
+                 fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction>
+               ] ;
                fhir:code [ fhir:v "collect" ]
              ] )
            ] ) ;
            fhir:class ( [
-             fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass"^^xsd:anyURI ;
+               fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass>
+             ] ;
              fhir:code [ fhir:v "PII" ]
            ] )
          ] [
            fhir:actor ( [
              fhir:role [
                fhir:coding ( [
-                 fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor"^^xsd:anyURI ] ;
+                 fhir:system [
+                   fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor"^^xsd:anyURI ;
+                   fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor>
+                 ] ;
                  fhir:code [ fhir:v "DIC" ]
                ] )
              ] ;
@@ -399,19 +528,28 @@
            ] ) ;
            fhir:action ( [
              fhir:coding ( [
-               fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction"^^xsd:anyURI ] ;
+               fhir:system [
+                 fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction"^^xsd:anyURI ;
+                 fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction>
+               ] ;
                fhir:code [ fhir:v "collect" ]
              ] )
            ] ) ;
            fhir:class ( [
-             fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass"^^xsd:anyURI ;
+               fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass>
+             ] ;
              fhir:code [ fhir:v "MDAT" ]
            ] )
          ] [
            fhir:actor ( [
              fhir:role [
                fhir:coding ( [
-                 fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor"^^xsd:anyURI ] ;
+                 fhir:system [
+                   fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor"^^xsd:anyURI ;
+                   fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor>
+                 ] ;
                  fhir:code [ fhir:v "DTU" ]
                ] )
              ] ;
@@ -421,19 +559,31 @@
            ] ) ;
            fhir:action ( [
              fhir:coding ( [
-               fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction"^^xsd:anyURI ] ;
+               fhir:system [
+                 fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction"^^xsd:anyURI ;
+                 fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction>
+               ] ;
                fhir:code [ fhir:v "provide" ]
              ] )
            ] ) ;
            fhir:purpose ( [
-             fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyPurpose"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyPurpose"^^xsd:anyURI ;
+               fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyPurpose>
+             ] ;
              fhir:code [ fhir:v "EU_GDPR_LEVEL" ]
            ] [
-             fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyPurpose"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyPurpose"^^xsd:anyURI ;
+               fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyPurpose>
+             ] ;
              fhir:code [ fhir:v "timely_unrestricted" ]
            ] ) ;
            fhir:class ( [
-             fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass"^^xsd:anyURI ;
+               fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass>
+             ] ;
              fhir:code [ fhir:v "MDAT" ]
            ] )
          ] )
@@ -441,7 +591,10 @@
      ] ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
-       fhir:url [ fhir:v "https://fhir-server.my-hospital.de/fhir/Consent"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "https://fhir-server.my-hospital.de/fhir/Consent"^^xsd:anyURI ;
+         fhir:l <https://fhir-server.my-hospital.de/fhir/Consent>
+       ]
      ]
   ] ) . # 
 

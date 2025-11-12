@@ -1,4 +1,4 @@
-# ConfigurationProperties - v2025.1.0
+# ConfigurationProperties - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "ConfigurationProperties",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/ConfigurationProperties",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "ConfigurationProperties",
   "title" : "ConfigurationProperties",
   "status" : "active",

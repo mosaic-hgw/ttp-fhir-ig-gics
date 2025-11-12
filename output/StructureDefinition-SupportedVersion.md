@@ -1,4 +1,4 @@
-# SupportedVersion - v2025.1.0
+# SupportedVersion - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "SupportedVersion",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/SupportedVersion",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "SupportedVersion",
   "title" : "SupportedVersion",
   "status" : "active",

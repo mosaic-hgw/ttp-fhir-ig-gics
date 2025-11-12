@@ -1,17 +1,13 @@
-# ths-greifswald.ttp-fhir-gw.gics#2025.1.0: null
+# ths-greifswald.ttp-fhir-gw.gics#2025.2.0: null
 
 ## Pages
 
-* [Home](index.md)
-* [Einwilligungsmanagement](Einwilligungsmanagement.md)
-* [Extensions](Extensions.md)
-* [Beschreibung](Beschreibung.md)
-* [Kontext und Konzept](KontextUndKonzept.md)
-* [Beschreibung Ballot Gics](BeschreibungBallotGics.md)
-* [Questionnaire Suche](Questionnaire-Suche.md)
+* [Implementation Guide gICS](index.md)
+* [Allgemein](Allgemein.md)
 * [Artifacts Summary](artifacts.md)
-* [Vorgehen](Vorgehen.md)
-* [Technische Grundlagen](TechnischeGrundlagen.md)
+* [Extensions](Extensions.md)
+* [Mitgeltende Profile](Mitgeltend.md)
+* [Questionnaire Suche](Questionnaire-Suche.md)
 
 ## Resources
 

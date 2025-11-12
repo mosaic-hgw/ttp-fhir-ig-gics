@@ -1,4 +1,4 @@
-# Version Label - v2025.1.0
+# Version Label - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "VersionLabel",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/VersionLabel",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "VersionLabel",
   "title" : "Version Label",
   "status" : "active",

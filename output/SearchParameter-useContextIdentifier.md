@@ -1,4 +1,4 @@
-# useContextIdentifier - v2025.1.0
+# useContextIdentifier - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "SearchParameter",
   "id" : "useContextIdentifier",
   "url" : "https://ths-greifswald.de/fhir/SearchParameter/gics/useContextIdentifier",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "useContextIdentifier",
   "status" : "active",
   "date" : "2025-06-12",

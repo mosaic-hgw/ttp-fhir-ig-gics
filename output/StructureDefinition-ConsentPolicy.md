@@ -1,4 +1,4 @@
-# ConsentPolicy - v2025.1.0
+# ConsentPolicy - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "ConsentPolicy",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/ActivityDefinition/ConsentPolicy",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "ConsentPolicy",
   "status" : "active",
   "experimental" : false,

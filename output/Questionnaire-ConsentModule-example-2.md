@@ -1,4 +1,4 @@
-# Verarbeitung und Nutzung von Patientendaten für die medizinische Forschung - v2025.1.0
+# Verarbeitung und Nutzung von Patientendaten für die medizinische Forschung - v2025.2.0
 
 
 
@@ -23,11 +23,11 @@
   },
   "language" : "de",
   "url" : "https://ths-greifswald.de/fhir/gics/Questionnaire/ConsentModule-example-2",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "MDAT_ErhebenSpeichernNutzen",
   "title" : "Verarbeitung und Nutzung von Patientendaten für die medizinische Forschung",
   "status" : "active",
-  "date" : "2025-10-29T11:17:58+01:00",
+  "date" : "2025-11-12T12:08:03+01:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [
     {

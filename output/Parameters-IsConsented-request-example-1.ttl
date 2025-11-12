@@ -13,26 +13,32 @@
      fhir:name [ fhir:v "personIdentifier" ] ;
      fhir:value [
        a fhir:Identifier ;
-       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ;
+         fhir:l <https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym>
+       ] ;
        fhir:value [ fhir:v "dic_1H51T" ]
      ]
   ] [
      fhir:name [ fhir:v "domain" ] ;
      fhir:value [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "num"
      ]
   ] [
      fhir:name [ fhir:v "policy" ] ;
      fhir:value [
        a fhir:Coding ;
-       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
+         fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
+       ] ;
        fhir:code [ fhir:v "MDAT_erheben" ]
      ]
   ] [
      fhir:name [ fhir:v "version" ] ;
      fhir:value [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "1.1"
      ]
   ] [
@@ -43,25 +49,28 @@
          fhir:name [ fhir:v "idMatchingType" ] ;
          fhir:value [
            a fhir:Coding ;
-           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/IdMatchingType"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/IdMatchingType"^^xsd:anyURI ;
+             fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/IdMatchingType>
+           ] ;
            fhir:code [ fhir:v "AT_LEAST_ONE" ]
          ]
        ] [
          fhir:name [ fhir:v "ignoreVersionNumber" ] ;
          fhir:value [
-           a fhir:boolean ;
+           a fhir:Boolean ;
            fhir:v false
          ]
        ] [
          fhir:name [ fhir:v "unknownStateIsConsideredAsDecline" ] ;
          fhir:value [
-           a fhir:boolean ;
+           a fhir:Boolean ;
            fhir:v false
          ]
        ] [
          fhir:name [ fhir:v "requestDate" ] ;
          fhir:value [
-           a fhir:date ;
+           a fhir:Date ;
            fhir:v "2019-06-30"^^xsd:date
          ]
        ] )

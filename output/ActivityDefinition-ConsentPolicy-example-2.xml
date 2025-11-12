@@ -28,7 +28,7 @@
         
         <tr>
             <th scope="row"><b>Version: </b></th>
-            <td style="padding-left: 4px;">2025.1.0</td>
+            <td style="padding-left: 4px;">2025.2.0</td>
         </tr>
         
 
@@ -43,7 +43,7 @@
         
         <tr>
             <th scope="row"><b>Date (date last changed): </b></th>
-            <td style="padding-left: 4px;">2025-10-29 11:17:58+0100</td>
+            <td style="padding-left: 4px;">2025-11-12 12:08:03+0100</td>
         </tr>
         
 
@@ -161,11 +161,11 @@
     <valueInstant value="2020-01-02T04:05:06+01:00"/>
   </extension>
   <url value="https://ths-greifswald.de/fhir/gics/ActivityDefinition/ConsentPolicy-example-2"/>
-  <version value="2025.1.0"/>
+  <version value="2025.2.0"/>
   <name value="MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
   <title value="Medizinische Daten nutzen"/>
   <status value="active"/>
-  <date value="2025-10-29T11:17:58+01:00"/>
+  <date value="2025-11-12T12:08:03+01:00"/>
   <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
   <contact>
     <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>

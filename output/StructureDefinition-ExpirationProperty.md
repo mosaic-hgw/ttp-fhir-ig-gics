@@ -1,4 +1,4 @@
-# Expiration Property - v2025.1.0
+# Expiration Property - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "ExpirationProperty",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExpirationProperty",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "ExpirationProperty",
   "title" : "Expiration Property",
   "status" : "active",

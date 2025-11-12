@@ -1,4 +1,4 @@
-# Created - v2025.1.0
+# Created - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "Created",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "Created",
   "title" : "Created",
   "status" : "active",

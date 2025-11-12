@@ -1,4 +1,4 @@
-# Identifier-Profil für die Abbildung einer Bloomfilters - v2025.1.0
+# Identifier-Profil für die Abbildung einer Bloomfilters - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "identifier-bloomfilter",
   "url" : "https://ths-greifswald.de/fhir/gics/StructureDefinition/identifier-bloomfilter",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "IdentifierBloomfilter",
   "title" : "Identifier-Profil für die Abbildung einer Bloomfilters",
   "status" : "draft",

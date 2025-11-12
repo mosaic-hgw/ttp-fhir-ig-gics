@@ -1,4 +1,4 @@
-# ActivityDefinitionCode - v2025.1.0
+# ActivityDefinitionCode - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "SearchParameter",
   "id" : "ActivityDefinitionCode",
   "url" : "https://ths-greifswald.de/fhir/SearchParameter/gics/activityDefinitionCode",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "activityDefinitionCode",
   "status" : "active",
   "date" : "2025-06-12",

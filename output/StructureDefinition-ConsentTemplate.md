@@ -1,4 +1,4 @@
-# Consent Template - v2025.1.0
+# Consent Template - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "ConsentTemplate",
   "url" : "https://ths-greifswald.de/fhir/gics/StructureDefinition/ConsentTemplate",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "ConsentTemplate",
   "title" : "Consent Template",
   "status" : "active",

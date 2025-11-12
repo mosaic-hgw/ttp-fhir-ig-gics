@@ -1,4 +1,4 @@
-# Home - v2025.1.0
+# Implementation Guide gICS - v2025.2.0
 
 
 
@@ -9,10 +9,10 @@
   "resourceType" : "ImplementationGuide",
   "id" : "ths-greifswald.ttp-fhir-gw.gics",
   "url" : "https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "IGTTPFHIRGatewaygICS",
   "status" : "active",
-  "date" : "2025-10-29T11:17:58+01:00",
+  "date" : "2025-11-12T12:08:03+01:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [
     {
@@ -57,7 +57,7 @@
       "id" : "de_einwilligungsmanagement",
       "uri" : "http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement",
       "packageId" : "de.einwilligungsmanagement",
-      "version" : "2.0.0"
+      "version" : "2.0.2"
     },
     {
       "id" : "de_medizininformatikinitiative_kerndatensatz_consent",
@@ -2308,39 +2308,6 @@
           "extension" : [
             {
               "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "Beschreibung.html"
-            }
-          ],
-          "nameUrl" : "Beschreibung.html",
-          "title" : "Beschreibung",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "BeschreibungBallotGics.html"
-            }
-          ],
-          "nameUrl" : "BeschreibungBallotGics.html",
-          "title" : "Beschreibung Ballot Gics",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "Einwilligungsmanagement.html"
-            }
-          ],
-          "nameUrl" : "Einwilligungsmanagement.html",
-          "title" : "Einwilligungsmanagement",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
               "valueUrl" : "Extensions.html"
             }
           ],
@@ -2356,18 +2323,7 @@
             }
           ],
           "nameUrl" : "index.html",
-          "title" : "Home",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "KontextUndKonzept.html"
-            }
-          ],
-          "nameUrl" : "KontextUndKonzept.html",
-          "title" : "Kontext und Konzept",
+          "title" : "Implementation Guide gICS",
           "generation" : "markdown"
         },
         {
@@ -2385,22 +2341,22 @@
           "extension" : [
             {
               "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "TechnischeGrundlagen.html"
+              "valueUrl" : "Allgemein.html"
             }
           ],
-          "nameUrl" : "TechnischeGrundlagen.html",
-          "title" : "Technische Grundlagen",
+          "nameUrl" : "Allgemein.html",
+          "title" : "Allgemein",
           "generation" : "markdown"
         },
         {
           "extension" : [
             {
               "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "Vorgehen.html"
+              "valueUrl" : "Mitgeltend.html"
             }
           ],
-          "nameUrl" : "Vorgehen.html",
-          "title" : "Vorgehen",
+          "nameUrl" : "Mitgeltend.html",
+          "title" : "Mitgeltende Profile",
           "generation" : "markdown"
         }
       ]

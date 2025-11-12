@@ -1,4 +1,4 @@
-# Consent Module - v2025.1.0
+# Consent Module - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "ConsentModule",
   "url" : "https://ths-greifswald.de/fhir/gics/StructureDefinition/ConsentModule",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "ConsentModule",
   "title" : "Consent Module",
   "status" : "active",
@@ -142,6 +142,42 @@
           }
         ],
         "mustSupport" : true
+      },
+      {
+        "id" : "Questionnaire.item.text.extension:renderingMarkdown",
+        "path" : "Questionnaire.item.text.extension",
+        "sliceName" : "renderingMarkdown"
+      },
+      {
+        "id" : "Questionnaire.item.text.extension:renderingMarkdown.value[x]",
+        "path" : "Questionnaire.item.text.extension.value[x]",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "Questionnaire.item.text.extension:renderingXhtml",
+        "path" : "Questionnaire.item.text.extension",
+        "sliceName" : "renderingXhtml"
+      },
+      {
+        "id" : "Questionnaire.item.text.extension:renderingXhtml.value[x]",
+        "path" : "Questionnaire.item.text.extension.value[x]",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "rules" : "open"
+        }
       }
     ]
   }

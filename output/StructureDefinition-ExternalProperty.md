@@ -1,4 +1,4 @@
-# External Property Element - v2025.1.0
+# External Property Element - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "ExternalProperty",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "ExternalProperty",
   "title" : "External Property Element",
   "status" : "active",

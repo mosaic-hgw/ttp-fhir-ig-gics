@@ -1,4 +1,4 @@
-# Module Version Format - v2025.1.0
+# Module Version Format - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "ModuleVersionFormat",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/ModuleVersionFormat",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "ModuleVersionFormat",
   "title" : "Module Version Format",
   "status" : "active",

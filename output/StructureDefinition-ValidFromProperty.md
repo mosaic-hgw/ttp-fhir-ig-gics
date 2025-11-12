@@ -1,4 +1,4 @@
-# ValidFromProperty - v2025.1.0
+# ValidFromProperty - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "ValidFromProperty",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/ValidFromProperty",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "ValidFromProperty",
   "title" : "ValidFromProperty",
   "status" : "active",

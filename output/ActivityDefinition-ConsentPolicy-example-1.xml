@@ -28,7 +28,7 @@
         
         <tr>
             <th scope="row"><b>Version: </b></th>
-            <td style="padding-left: 4px;">2025.1.0</td>
+            <td style="padding-left: 4px;">2025.2.0</td>
         </tr>
         
 
@@ -43,7 +43,7 @@
         
         <tr>
             <th scope="row"><b>Date (date last changed): </b></th>
-            <td style="padding-left: 4px;">2025-10-29 11:17:58+0100</td>
+            <td style="padding-left: 4px;">2025-11-12 12:08:03+0100</td>
         </tr>
         
 
@@ -169,11 +169,11 @@
     </extension>
   </extension>
   <url value="https://ths-greifswald.de/fhir/gics/ActivityDefinition/ConsentPolicy-example-1"/>
-  <version value="2025.1.0"/>
+  <version value="2025.2.0"/>
   <name value="MDAT_erheben"/>
   <title value="Medizinische Daten erheben"/>
   <status value="active"/>
-  <date value="2025-10-29T11:17:58+01:00"/>
+  <date value="2025-11-12T12:08:03+01:00"/>
   <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
   <contact>
     <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>

@@ -1,4 +1,4 @@
-# Current consent for person and template - v2025.1.0
+# Current consent for person and template - v2025.2.0
 
 
 
@@ -10,7 +10,7 @@
   "id" : "CurrentConsentForPersonAndTemplate",
   "language" : "de-DE",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gics/currentConsentForPersonAndTemplate",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "CurrentConsentForPersonAndTemplate",
   "title" : "Current consent for person and template",
   "status" : "active",

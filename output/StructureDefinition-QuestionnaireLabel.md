@@ -1,4 +1,4 @@
-# Questionnaire Label - v2025.1.0
+# Questionnaire Label - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "QuestionnaireLabel",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/QuestionnaireLabel",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "QuestionnaireLabel",
   "title" : "Questionnaire Label",
   "status" : "active",
