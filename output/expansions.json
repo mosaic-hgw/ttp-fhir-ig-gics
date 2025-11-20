@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "cc068903-a054-49d9-893e-951ad9996f20",
+  "id" : "7a8629ca-4634-4bfe-b5c8-737df79370da",
   "meta" : {
-    "lastUpdated" : "2025-11-12T12:08:03.415+01:00"
+    "lastUpdated" : "2025-11-20T15:33:41.800+01:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -20,8 +20,8 @@
       "experimental" : false,
       "date" : "2025-06-12",
       "expansion" : {
-        "identifier" : "urn:uuid:974b893c-95d2-4742-8f44-937a93154c6d",
-        "timestamp" : "2025-11-12T12:09:54+01:00",
+        "identifier" : "urn:uuid:f64a30cf-8729-43d1-a8c7-84a386dcd7af",
+        "timestamp" : "2025-11-20T15:35:26+01:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -883,7 +883,7 @@
       "id" : "PolicyStatusVS",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-PolicyStatusVS-http://hl7.org/fhir/consent-provision-type-deny\"> </a><code>http://hl7.org/fhir/consent-provision-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-consent-provision-type.html#consent-provision-type-deny\">deny</a></td><td>Opt Out</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/consent-provision-type&quot;, &quot;code&quot;: &quot;deny&quot;, &quot;display&quot;: &quot;Opt Out&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/consent-provision-type&quot;&gt;&lt;code value=&quot;deny&quot;&gt;&lt;display value=&quot;Opt Out&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-PolicyStatusVS-http://hl7.org/fhir/consent-provision-type-permit\"> </a><code>http://hl7.org/fhir/consent-provision-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-consent-provision-type.html#consent-provision-type-permit\">permit</a></td><td>Opt In</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/consent-provision-type&quot;, &quot;code&quot;: &quot;permit&quot;, &quot;display&quot;: &quot;Opt In&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/consent-provision-type&quot;&gt;&lt;code value=&quot;permit&quot;&gt;&lt;display value=&quot;Opt In&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-PolicyStatusVS-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-UNK\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK\">UNK</a></td><td>unknown</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;code&quot;: &quot;UNK&quot;, &quot;display&quot;: &quot;unknown&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;code value=&quot;UNK&quot;&gt;&lt;display value=&quot;unknown&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-PolicyStatusVS-http://hl7.org/fhir/consent-provision-type-deny\"> </a><code>http://hl7.org/fhir/consent-provision-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-consent-provision-type.html#consent-provision-type-deny\">deny</a></td><td>Opt Out</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/consent-provision-type&quot;, &quot;code&quot;: &quot;deny&quot;, &quot;display&quot;: &quot;Opt Out&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/consent-provision-type&quot;&gt;&lt;code value=&quot;deny&quot;&gt;&lt;display value=&quot;Opt Out&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-PolicyStatusVS-http://hl7.org/fhir/consent-provision-type-permit\"> </a><code>http://hl7.org/fhir/consent-provision-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-consent-provision-type.html#consent-provision-type-permit\">permit</a></td><td>Opt In</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/consent-provision-type&quot;, &quot;code&quot;: &quot;permit&quot;, &quot;display&quot;: &quot;Opt In&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/consent-provision-type&quot;&gt;&lt;code value=&quot;permit&quot;&gt;&lt;display value=&quot;Opt In&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-PolicyStatusVS-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-UNK\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK\">UNK</a></td><td>unknown</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;code&quot;: &quot;UNK&quot;, &quot;display&quot;: &quot;unknown&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;code value=&quot;UNK&quot;&gt;&lt;display value=&quot;unknown&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
       },
       "url" : "https://ths-greifswald.de/fhir/ValueSet/gics/PolicyStatus",
       "version" : "2025.2.0",
@@ -936,8 +936,8 @@
       "experimental" : false,
       "date" : "2025-06-12",
       "expansion" : {
-        "identifier" : "urn:uuid:6de3ae26-c5cf-48cb-ab6d-658eb52ef1a3",
-        "timestamp" : "2025-11-12T12:09:56+01:00",
+        "identifier" : "urn:uuid:9643a891-2c4c-48cd-b2a3-9dc00a72d139",
+        "timestamp" : "2025-11-20T15:35:28+01:00",
         "total" : 75,
         "offset" : 0,
         "parameter" : [{

@@ -6,6 +6,7 @@
 * [Allgemein](Allgemein.md)
 * [Artifacts Summary](artifacts.md)
 * [Extensions](Extensions.md)
+* [Konfigurationshinweise](konfig.md)
 * [Mitgeltende Profile](Mitgeltend.md)
 * [Questionnaire Suche](Questionnaire-Suche.md)
 

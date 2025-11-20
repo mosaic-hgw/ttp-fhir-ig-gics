@@ -46,6 +46,8 @@ pages:
   Allgemein.md:
   Mitgeltend.md:
     title: Mitgeltende Profile
+  konfig.md:
+    title: Konfigurationshinweise
   ### automatisch generierte Pages müssen hier nicht gelistet werden
 
 
@@ -88,7 +90,7 @@ menu:
     ConsentQualityControl: StructureDefinition-ConsentQualityControl.html
     ExchangeFormatDefinition: StructureDefinition-ExchangeFormatDefinition.html
     Questionnaire-Suche: Questionnaire-Suche.html
-    Mitgeltende Profile: Mitgeltend.html
+
   ##### Extensions #############################################################
   Extensions: Extensions.html
   ##### Operationen ############################################################
@@ -103,9 +105,10 @@ menu:
     isConsented: OperationDefinition-IsConsented.html
     allPolicyStatesForPerson: OperationDefinition-AllPolicyStatesForPerson.html
     currentPolicyStatesForPerson: OperationDefinition-CurrentPolicyStatesForPerson.html
-  
 
-
+  ### MISC
+  Mitgeltende Profile: Mitgeltend.html
+  Konfigurationshinweise: Konfig.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

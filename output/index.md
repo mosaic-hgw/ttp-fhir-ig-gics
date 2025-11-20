@@ -12,7 +12,7 @@
   "version" : "2025.2.0",
   "name" : "IGTTPFHIRGatewaygICS",
   "status" : "active",
-  "date" : "2025-11-12T12:08:03+01:00",
+  "date" : "2025-11-20T15:33:41+01:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [
     {
@@ -39,7 +39,7 @@
       ],
       "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId" : "hl7.terminology.r4",
-      "version" : "6.5.0"
+      "version" : "7.0.0"
     },
     {
       "id" : "hl7ext",
@@ -2357,6 +2357,17 @@
           ],
           "nameUrl" : "Mitgeltend.html",
           "title" : "Mitgeltende Profile",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "konfig.html"
+            }
+          ],
+          "nameUrl" : "konfig.html",
+          "title" : "Konfigurationshinweise",
           "generation" : "markdown"
         }
       ]

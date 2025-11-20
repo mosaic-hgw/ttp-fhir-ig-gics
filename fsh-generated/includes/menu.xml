@@ -48,9 +48,6 @@
       <li>
         <a href="Questionnaire-Suche.html">Questionnaire-Suche</a>
       </li>
-      <li>
-        <a href="Mitgeltend.html">Mitgeltende Profile</a>
-      </li>
     </ul>
   </li>
   <li>
@@ -92,5 +89,11 @@
         <a href="OperationDefinition-CurrentPolicyStatesForPerson.html">currentPolicyStatesForPerson</a>
       </li>
     </ul>
+  </li>
+  <li>
+    <a href="Mitgeltend.html">Mitgeltende Profile</a>
+  </li>
+  <li>
+    <a href="Konfig.html">Konfigurationshinweise</a>
   </li>
 </ul>

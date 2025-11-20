@@ -939,6 +939,11 @@
           "nameUrl": "Mitgeltend.html",
           "title": "Mitgeltende Profile",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "konfig.html",
+          "title": "Konfigurationshinweise",
+          "generation": "markdown"
         }
       ]
     },
