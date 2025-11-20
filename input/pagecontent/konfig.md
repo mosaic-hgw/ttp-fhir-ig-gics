@@ -1,4 +1,4 @@
-#### Overview of FHIR Extern Properties for gICS
+### Overview of FHIR Extern Properties for gICS
 
 By default, when gICS content is provided in the form of FHIR resources by the TTP-FHIR Gateway, gICS-specific references and codings are used for e.g. answer options in
 questionnaires, references to questions in consent modules (TemplateFrame) and policy semantics (ConsentFrame).
@@ -36,10 +36,10 @@ allowUpdates)
 | Template       | **fhirForceProfileProvenance**        |`fhirForceProfileProvenance=https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance`| Force default export of provenance resources (e.g. signatures or references on scans) **based on the specific template** in MII KDS Consent-specific Profile for provenance                                                                                                                                                                                                                                                                                                                                                                   |
 | Module                 | **fhirQuestionCode**                  |`fhirQuestionCode=2.16.840.1.113883.3.1937.777.24.2.1594`| Individualisation of FHIR Questionnaire.Item.linkId through selected external properties. Consideration for FHIR Element TemplateFrame (Questionnaire.Item.Code and linkId) and QuestionnaireComposed.Item.Code                                                                                                                                                                                                                                                                                                                               |
 
-#### Supported profiles for **fhirForceProfileConsent**
+### Supported profiles for **fhirForceProfileConsent**
 
-- **DEFFAULT**: HL7 Germany Working Group Consent Management profile (as of Dec. 2024 ) : http://fhir.de/ConsentManagement/StructureDefinition/Consent
-  Details from  https://simplifier.net/guide/Einwilligungsmanagement/Consent?version=current
+- **DEFFAULT**: HL7 Germany Working Group Consent Management profile (as of Dec. 2025 ) : http://fhir.de/ConsentManagement/StructureDefinition/Consent
+  Details from  https://ig.fhir.de/einwilligungsmanagement/stable/IGEinwilligungsmanagement.html
 
 - MII Core Data Set Consent profile: https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung ,
   Details from https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-FHIRProfile-Consent.html
