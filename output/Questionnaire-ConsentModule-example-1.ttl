@@ -31,7 +31,7 @@
   fhir:version [ fhir:v "2025.2.0"] ; # 
   fhir:name [ fhir:v "BIOMAT_erheben_lagern_nutzen"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-25T13:12:55+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-25T13:28:41+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald" ] ;

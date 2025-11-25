@@ -3,7 +3,7 @@ IGTTPFHIRGatewaygICS : Validation Results
 
 err = 1021, warn = 422, info = 217
 IG Publisher Version: 2.0.21 Out of date - current version is 2.0.26
-Generated Tue Nov 25 13:14:58 CET 2025. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.gics#2025.2.0 (canonical = https://ths-greifswald.de/fhir/gics)
+Generated Tue Nov 25 13:30:35 CET 2025. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.gics#2025.2.0 (canonical = https://ths-greifswald.de/fhir/gics)
  Build Errors : 746 / 60 / 0
  /home/sl/devel/uni-greifswald/ttp-fhir-ig-gics/fsh-generated/resources/ActivityDefinition-ConsentPolicy-example-1 : 6 / 0 / 2
  /home/sl/devel/uni-greifswald/ttp-fhir-ig-gics/fsh-generated/resources/ActivityDefinition-ConsentPolicy-example-2 : 6 / 0 / 2

@@ -34,7 +34,7 @@
   fhir:name [ fhir:v "MDAT_ErhebenSpeichernNutzen"] ; # 
   fhir:title [ fhir:v "Verarbeitung und Nutzung von Patientendaten für die medizinische Forschung"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-11-25T13:12:55+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-25T13:28:41+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald" ] ;
