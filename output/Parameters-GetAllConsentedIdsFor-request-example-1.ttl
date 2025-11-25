@@ -12,29 +12,26 @@
   fhir:parameter ( [
      fhir:name [ fhir:v "signerIdTypeName" ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "Pseudonym"
      ]
   ] [
      fhir:name [ fhir:v "domain" ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "MII"
      ]
   ] [
      fhir:name [ fhir:v "policy" ] ;
      fhir:value [
        a fhir:Coding ;
-       fhir:system [
-         fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
-         fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
-       ] ;
+       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "MDAT_erheben" ]
      ]
   ] [
      fhir:name [ fhir:v "version" ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "1.1"
      ]
   ] [
@@ -45,28 +42,25 @@
          fhir:name [ fhir:v "idMatchingType" ] ;
          fhir:value [
            a fhir:Coding ;
-           fhir:system [
-             fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/IdMatchingType"^^xsd:anyURI ;
-             fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/IdMatchingType>
-           ] ;
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/IdMatchingType"^^xsd:anyURI ] ;
            fhir:code [ fhir:v "EXACT" ]
          ]
        ] [
          fhir:name [ fhir:v "ignoreVersionNumber" ] ;
          fhir:value [
-           a fhir:Boolean ;
+           a fhir:boolean ;
            fhir:v false
          ]
        ] [
          fhir:name [ fhir:v "unknownStateIsConsideredAsDecline" ] ;
          fhir:value [
-           a fhir:Boolean ;
+           a fhir:boolean ;
            fhir:v false
          ]
        ] [
          fhir:name [ fhir:v "requestDate" ] ;
          fhir:value [
-           a fhir:Date ;
+           a fhir:date ;
            fhir:v "2021-06-18"^^xsd:date
          ]
        ] )

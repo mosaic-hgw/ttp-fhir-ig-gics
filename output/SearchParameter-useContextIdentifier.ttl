@@ -11,12 +11,9 @@
   fhir:id [ fhir:v "useContextIdentifier"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter useContextIdentifier</b></p><a name=\"useContextIdentifier\"> </a><a name=\"hcuseContextIdentifier\"> </a><h2>useContextIdentifier</h2><p>Parameter <code>useContextIdentifier</code>:<code>token</code></p><div><p>Eindeutiger Name (Identifikator) der referenzierten Consent Domain</p>\n</div><table class=\"grid\"><tr><td>Resources</td><td><a href=\"http://hl7.org/fhir/R4/activitydefinition.html\">ActivityDefinition</a>, <a href=\"http://hl7.org/fhir/R4/questionnaire.html\">Questionnaire</a></td></tr><tr><td>Expression</td><td><code>useContext.valueReference.identifier</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may only appear once</li><li>multipleOr: The parameter may only have one value (no comma separators)</li></ul></td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter useContextIdentifier</b></p><a name=\"useContextIdentifier\"> </a><a name=\"hcuseContextIdentifier\"> </a><h2>useContextIdentifier</h2><p>Parameter <code>useContextIdentifier</code>:<code>token</code></p><div><p>Eindeutiger Name (Identifikator) der referenzierten Consent Domain</p>\n</div><table class=\"grid\"><tr><td>Resources</td><td><a href=\"http://hl7.org/fhir/R4/activitydefinition.html\">ActivityDefinition</a>, <a href=\"http://hl7.org/fhir/R4/questionnaire.html\">Questionnaire</a></td></tr><tr><td>Expression</td><td><code>useContext.valueReference.identifier</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may only appear once</li><li>multipleOr: The parameter may only have one value (no comma separators)</li></ul></td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [
-     fhir:v "https://ths-greifswald.de/fhir/SearchParameter/gics/useContextIdentifier"^^xsd:anyURI ;
-     fhir:l <https://ths-greifswald.de/fhir/SearchParameter/gics/useContextIdentifier>
-  ] ; # 
+  fhir:url [ fhir:v "https://ths-greifswald.de/fhir/SearchParameter/gics/useContextIdentifier"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "2025.2.0"] ; # 
   fhir:name [ fhir:v "useContextIdentifier"] ; # 
   fhir:status [ fhir:v "active"] ; # 

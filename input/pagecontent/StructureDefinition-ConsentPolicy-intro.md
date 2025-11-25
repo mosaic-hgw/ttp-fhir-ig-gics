@@ -1,4 +1,4 @@
-#### Suchparameter
+### Suchparameter
 
 |Name|Typ|Beschreibung|Pfad|
 |-

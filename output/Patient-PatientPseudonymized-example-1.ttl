@@ -12,33 +12,24 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized"^^xsd:anyURI ;
-       fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized>
+       fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient PatientPseudonymized-example-1</b></p><a name=\"PatientPseudonymized-example-1\"> </a><a name=\"hcPatientPseudonymized-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PatientPseudonymized.html\">Patient pseudonymisiert</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( http://fhir.de/sid/gkv/kvid-10#A123456789)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">Dummy-Bloomfilter A/SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg==</td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient PatientPseudonymized-example-1</b></p><a name=\"PatientPseudonymized-example-1\"> </a><a name=\"hcPatientPseudonymized-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PatientPseudonymized.html\">Patient pseudonymisiert</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( http://fhir.de/sid/gkv/kvid-10#A123456789)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">Dummy-Bloomfilter A/SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg==</td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [
-       fhir:v "http://fhir.de/sid/gkv/kvid-10"^^xsd:anyURI ;
-       fhir:l <http://fhir.de/sid/gkv/kvid-10>
-     ] ;
+     fhir:system [ fhir:v "http://fhir.de/sid/gkv/kvid-10"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "A123456789" ]
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType"^^xsd:anyURI ;
-           fhir:l <https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType>
-         ] ;
+         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "A" ]
        ] )
      ] ;
-     fhir:system [
-       fhir:v "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType"^^xsd:anyURI ;
-       fhir:l <https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType>
-     ] ;
+     fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg==" ]
   ] ) . # 
 

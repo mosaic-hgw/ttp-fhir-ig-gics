@@ -1,4 +1,4 @@
-#### Suchparameter
+### Suchparameter
 
 **Unterstützt ab TTP-FHIR Gateway Version 2023.1.0**
 
@@ -25,12 +25,12 @@ Die Suche erfolgt auf dem Consent-Endpoint mittels der nachfolgend beschriebenen
 
 **Hinweis: Die Angabe des Suchparameters "domain" ist optional. Gleichzeitig empfehlen wir die Nutzung dieses Parameters. Existiert dieser nicht im Request, werden ALLE im gICS vorhandenen Domänen durchsucht, was sich erheblich auf Laufzeiten auswirken kann.**
 
-##### Domäne
+#### Domäne
 Zum Suchparameter **domain** vgl. die [entsprechende Seite](SearchParameter-domain.html).
 
 Er wird in der Regel gemeinsam mit weiteren Suchparametern verwendet.
 
-##### Kategorie
+#### Kategorie
 Der Standard-Suchparameter **category** wird unterstützt (vgl. http://www.hl7.org/fhir/consent.html#search)
 
 Beispiel 1:
@@ -46,12 +46,12 @@ GET [base]/Consent?domain:identifier=MIRACUM&category=http://fhir.de/ConsentMana
 findet Consent-Ressourcen des (ggf. aus mehreren Einwilligungs-Fragebögen errechneten) Consent-Status-Typs. 
 **ACHTUNG**: Consent-Ressourcen vom Typ "Consent-Status" werden in Echtzeit erzeugt und nicht persistiert. Daher ist die verwendete Ressourcen-Id (UUID der Consent-Ressource) in diesem konkreten Fall *flüchtig*.
 
-##### Änderungen mit dem Release 2024.3.0 
+#### Änderungen mit dem Release 2024.3.0 
 - Es wird Consent.Category *ResultType" unterstützt. Dies ist abwärtskompatibel. Default ist  *ResultType.POLICY*. Unterstützt werden zum *ResultType.DOCUMENT* und *ResultType.CONSENT-STATUS*.
 - Umstellung internes *DEFAULT-CONSENT-Profile* ist das [Consent-Profil der HL7-D AG Einwilligungsmanagement](https://simplifier.net/guide/Einwilligungsmanagement/Consent?version=current). Bisheriger Default war bislang das gICS-Consent-Profil.
 - Das gewünschte Ausgabe-Profil für Consent-Resourcen kann auf Domain und Template-Ebene mittels externalProperty *fhirForceProfileConsent* forciert werden. Mehr dazu in der dem Release beiliengenden ReadMe.
 
-##### Provision-Code
+#### Provision-Code
 Der Suchparameter **mii-provision-provision-code**, definiert im [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
 *Hinweis: Die Verundung von multiplen mii-provision-provision-code-Parametern ist im Release 2023.1.0 noch nicht möglich.*                   
@@ -61,7 +61,7 @@ Beispiel:
 GET [base]/Consent?domain:identifier=MIRACUM&mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8
 ```
 
-##### Typ der Provision (permit)
+#### Typ der Provision (permit)
 Der Suchparameter **mii-provision-provision-type**, definiert im Rahmen des [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
 Beispiel:
@@ -69,7 +69,7 @@ Beispiel:
 GET [base]/Consent?domain:identifier=MIRACUM&mii-provision-provision-type=permit
 ```
 
-##### Typ der Provision einer bestimmten, durch einen Code definierten, Provision
+#### Typ der Provision einer bestimmten, durch einen Code definierten, Provision
 Der [composite Suchparameter](http://www.hl7.org/fhir/r4/search.html#combining) **mii-provision-provision-code-type**, definiert im Rahmen des [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
 Beispiel:
@@ -77,7 +77,7 @@ Beispiel:
 GET [base]/Consent?domain:identifier=MIRACUM&mii-provision-provision-code-type=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8$permit
 ```
 
-##### Provisions-Zeitraum
+#### Provisions-Zeitraum
 Der Suchparameter **mii-provision-provision-period**, definiert im Rahmen des [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
 Bezüglich des Verhaltens bei der Suche in Elementen vom Datentyp period sei ausdrücklich auf den entsprechenden Abschnitt der FHIR-Spezifikation und die dortigen Beispiele zur Inklusion bzw. Exklusion von Suchergebnissen verwiesen: http://hl7.org/fhir/r4/search.html#date .
@@ -94,7 +94,7 @@ Unterstützt werden bei der Suche nach FHIR Consent-Ressourcen die folgenden Per
 
 *Hinweis: Die Verundung von multiplen mii-provision-provision-period-Parametern ist im Release 2023.1.0 noch nicht möglich.*
 
-##### Provisions-Zeitraum einer bestimmten, durch einen Code definierten, Provision
+#### Provisions-Zeitraum einer bestimmten, durch einen Code definierten, Provision
 Der [composite Suchparameter](http://www.hl7.org/fhir/r4/search.html#combining) **mii-provision-provision-code-period**, definiert im Rahmen des [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
 Beispiel:
@@ -102,7 +102,7 @@ Beispiel:
 GET [base]/Consent?mii-provision-provision-code-period=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8$2020-12-15
 ```
 
-##### Policy URI (versionsspezifischer MII Broad Consent)
+#### Policy URI (versionsspezifischer MII Broad Consent)
 Der Suchparameter **mii-policy-uri**, definiert im [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
 Beispiel:
@@ -110,7 +110,7 @@ Beispiel:
 GET [base]/Consent?domain:identifier=MII&mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791
 ```
 
-##### Inkludieren der Provenance-Information
+#### Inkludieren der Provenance-Information
 Das Inkludieren der Herkunftsinformationen zu einer Consent-Ressource ist mittels reverse Include der entsprechenden Provenance-Ressource möglich.
 Die in diesem Kontext verwendeten UUIDs der Ressourcen sind volatil, d.h. es wird nicht garantiert, dass die entsprechenden Ressourcen im Anschluss an die Response unter Verwendung der betreffenden UUID abrufbar sind.
 Vgl. auch entsprechendes Response-Beispiel unten.
@@ -119,7 +119,7 @@ Beispiel:
 ```
 GET [base]/Consent?domain:identifier=MII&mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791&_revinclude=Provenance:target
 ```
-##### Inkludieren der Provenance-Information für Consent-Ressourcen vom Typ `Consent-Status`
+#### Inkludieren der Provenance-Information für Consent-Ressourcen vom Typ `Consent-Status`
 Das Inkludieren der Herkunftsinformationen zu einer Consent-Ressource vom Typ `Consent-Status` ist mittels reverse Include der entsprechenden Provenance-Ressource ebenfalls möglich.
 Die in diesem Kontext verwendeten UUIDs der Ressourcen sind volatil (flüchtig), d.h. es wird nicht garantiert, dass die entsprechenden Ressourcen im Anschluss an die Response unter Verwendung der betreffenden UUID abrufbar sind.
 Vgl. auch entsprechendes Response-Beispiel unten.
@@ -130,7 +130,7 @@ GET [base]/Consent?domain:identifier=MII&mii-policy-uri=urn:oid:2.16.840.1.11388
 ```
 **ACHTUNG**: Provenance-Ressourcen, die sich auf Consent-Ressourcen vom Typ "Consent-Status" beziehen werden in Echtzeit erzeugt und nicht persistiert. Daher ist die verwendete Ressourcen-Id (UUID der Provenance-Ressource) in diesem konkreten Fall *flüchtig*.
 
-##### Komplexere Beispiele
+#### Komplexere Beispiele
 
 Hinweis: die Pipe '|' wird HTML-codiert als '%7C' verwendet.
 
@@ -139,7 +139,7 @@ GET [base]/Consent?domain:identifier=MII&mii-provision-provision-type=permit&mii
 ```
 findet alle Consent-Ressourcen einer Einwilligungsdomäne 'MII' mit Permit-Provision, bei denen der Provision-Code 2.16.840.1.113883.3.1937.777.24.5.3.8 (entspricht der [TFCU-Policy](https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-Terminologien.html) 'MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU') gesetzt ist. Eine Beispiel-Response ist weiter unten dargestellt.
 
-##### Abfrage von Einwilligungsständen zu unterschiedlichen Zeitpunkten unter Verwendung von Period-Komparatoren
+#### Abfrage von Einwilligungsständen zu unterschiedlichen Zeitpunkten unter Verwendung von Period-Komparatoren
 
 Nachfolgende Darstellung zeigt die Abfrage von dokumentierten Einwilligungspolicies (A-E), die zu unterschiedlichen Zeitpunkten beginnen und enden.
 

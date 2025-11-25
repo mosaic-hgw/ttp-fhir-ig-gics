@@ -13,28 +13,25 @@
      fhir:name [ fhir:v "personIdentifier" ] ;
      fhir:value [
        a fhir:Identifier ;
-       fhir:system [
-         fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ;
-         fhir:l <https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym>
-       ] ;
+       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ] ;
        fhir:value [ fhir:v "dic_1H51T" ]
      ]
   ] [
      fhir:name [ fhir:v "domain" ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "MII"
      ]
   ] [
      fhir:name [ fhir:v "template" ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "MII;Patienteneinwilligung MII;1.6.f"
      ]
   ] [
      fhir:name [ fhir:v "ignore-version-number" ] ;
      fhir:value [
-       a fhir:Boolean ;
+       a fhir:boolean ;
        fhir:v false
      ]
   ] ) . # 

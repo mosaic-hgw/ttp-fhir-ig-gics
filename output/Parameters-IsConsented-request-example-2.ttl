@@ -13,32 +13,26 @@
      fhir:name [ fhir:v "personIdentifier" ] ;
      fhir:value [
        a fhir:Identifier ;
-       fhir:system [
-         fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ;
-         fhir:l <https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym>
-       ] ;
+       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ] ;
        fhir:value [ fhir:v "dic_1H51T" ]
      ]
   ] [
      fhir:name [ fhir:v "domain" ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "num"
      ]
   ] [
      fhir:name [ fhir:v "policy" ] ;
      fhir:value [
        a fhir:Coding ;
-       fhir:system [
-         fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ;
-         fhir:l <urn:oid:2.16.840.1.113883.3.1937.777.24.5.3>
-       ] ;
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.3.6" ]
      ]
   ] [
      fhir:name [ fhir:v "version" ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "1.1"
      ]
   ] ) . # 

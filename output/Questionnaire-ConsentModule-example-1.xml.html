@@ -1,60 +1,58 @@
-
-
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>ConsentModule-example-1 - XML Representation -  v2025.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link href="fhir.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="fhir.css"/>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
-    <!-- Project extras -->
-    <link href="assets/css/project.css" rel="stylesheet"/>
-    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
-    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-  	<link href="assets/css/prism.css" rel="stylesheet" />
-  	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/ttp-fhir-ig.css" rel="stylesheet"/>
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/ttp-fhir-ig.css"/>
 
 
-    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+    <![endif] -->
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
     <style type="text/css">h2{--heading-prefix:"7.92"}
     h3,h4,h5,h6{--heading-prefix:"7.92"}</style>
-    <div id="segment-header" class="segment">  <!-- segment-header -->
-      <div class="container">  <!-- container -->
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
 
-        <!-- Placeholder for child template header declarations -->
+          <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav"> 
-    <a id="hl7-logo" no-external="true" href="index.html">
-        <img alt="THS Greifswald" src="assets/images/Design-Logo-THS-deutsch-271-padding.png"/>
+    <a no-external="true" id="hl7-logo" href="index.html">
+        <img src="assets/images/Design-Logo-THS-deutsch-271-padding.png" alt="THS Greifswald"/>
     </a>
 
 
@@ -67,27 +65,27 @@
             </span>
           </p>
         </div>
-      </div> <!-- /container -->
-    </div>  <!-- /segment-header -->
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">  <!-- container -->
-        <!-- HEADER CONTENT -->
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-          <!--status-bar-->
+            <!-- status-bar -->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <!-- menu.xml  -->
+                <!-- menu.xml -->
 
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+<ul class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
@@ -171,35 +169,35 @@
   <li>
     <a href="Mitgeltend.html">Mitgeltende Profile</a>
   </li>
-  <li>
+  <li><a name="l305">​</a>
     <a href="Konfig.html">Konfigurationshinweise</a>
   </li>
 </ul>
-            </div>  <!-- /.nav-collapse -->
-          </div>  <!-- /.container -->
-        </nav>  <!-- /.navbar -->
-      <!-- /HEADER CONTENT -->
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-navbar -->
-    <!--status-bar-->
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
 
-    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
-      <div class="container">  <!-- container -->
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ConsentModule-example-1</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>ConsentModule-example-1</b></li>
 
         </ul>
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-breadcrumb -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">  <!-- segment-content -->
-      <div class="container">  <!-- container -->
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">IGTTPFHIRGatewaygICS - Local Development build (v2025.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://ths-greifswald.de/fhir/gics/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!-- ReleaseHeader --><p id="publish-box">IGTTPFHIRGatewaygICS - Local Development build (v2025.2.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://ths-greifswald.de/fhir/gics/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
 
 
@@ -254,7 +252,7 @@
         
           Draft
           
-            as of 2025-11-20
+            as of 2025-11-25
           
         
       </td>
@@ -263,155 +261,155 @@
   </table>
 
 
-<p><a href="Questionnaire-ConsentModule-example-1.xml" no-download="true">Raw xml</a> | <a href="Questionnaire-ConsentModule-example-1.xml" download>Download</a></p>
+<p><a href="Questionnaire-ConsentModule-example-1.xml" no-download="true">Raw xml</a> | <a download="null" href="Questionnaire-ConsentModule-example-1.xml">Download</a></p>
 
-  <!-- insert intro if present -->
+    <!-- insert intro if present -->
   
 
 
 
-  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
-&lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire">Questionnaire</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ConsentModule-example-1&quot;/&gt;
+  <pre style="white-space: pre; text-wrap: nowrap; width: auto;" class="xml" data-fhir="generated"><code style="white-space: pre; text-wrap: nowrap;" class="language-xml">
+&lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire">Questionnaire</a> xmlns="http://hl7.org/fhir"&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>="ConsentModule-example-1"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.meta">meta</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://ths-greifswald.de/fhir/StructureDefinition/gics/Created&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueInstant</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2020-01-02T04:05:06+01:00&quot;/&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="https://ths-greifswald.de/fhir/StructureDefinition/gics/Created"&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueInstant</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>="2020-01-02T04:05:06+01:00"/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://ths-greifswald.de/fhir/gics/StructureDefinition/ConsentModule&quot;/&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="https://ths-greifswald.de/fhir/gics/StructureDefinition/ConsentModule"/&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.meta">meta</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="de"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
-    &lt;div xml:lang=&quot;de&quot; xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;de&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Questionnaire ConsentModule-example-1&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;ConsentModule-example-1&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcConsentModule-example-1&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Language: de&lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-ConsentModule.html&quot;&gt;Consent Module&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;&quot;&gt;&lt;tr style=&quot;border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top&quot;&gt;&lt;th style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://hl7.org/fhir/R4/formats.html#table&quot; title=&quot;The linkID for the item&quot;&gt;LinkID&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://hl7.org/fhir/R4/formats.html#table&quot; title=&quot;Text for the item&quot;&gt;Text&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://hl7.org/fhir/R4/formats.html#table&quot; title=&quot;Minimum and Maximum # of times the item can appear in the instance&quot;&gt;Cardinality&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://hl7.org/fhir/R4/formats.html#table&quot; title=&quot;The type of the item&quot;&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://hl7.org/fhir/R4/formats.html#table&quot; title=&quot;Additional information about the item&quot;&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style=&quot;float: right&quot;&gt;&lt;a href=&quot;https://hl7.org/fhir/R4/formats.html#table&quot; title=&quot;Legend for this format&quot;&gt;&lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC&quot; alt=&quot;doco&quot; style=&quot;background-color: inherit&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_q_root.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;QuestionnaireRoot&quot; class=&quot;hierarchy&quot;/&gt; BIOMAT_erheben_lagern_nutzen&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;Questionnaire&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;https://ths-greifswald.de/fhir/gics/Questionnaire/ConsentModule-example-1#2025.2.0&lt;/td&gt;&lt;/tr&gt;
-&lt;tr style=&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)&quot; id=&quot;item.BIOMAT_erheben_lagern_nutzen|1.6&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin_end.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon-q-coding.png&quot; alt=&quot;.&quot; style=&quot;background-color: #F7F7F7; background-color: inherit&quot; title=&quot;coding&quot; class=&quot;hierarchy&quot;/&gt; BIOMAT_erheben_lagern_nutzen|1.6&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;null&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice&quot;&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td colspan=&quot;5&quot; class=&quot;hierarchy&quot;&gt;&lt;br/&gt;&lt;a href=&quot;https://hl7.org/fhir/R4/formats.html#table&quot; title=&quot;Legend for this format&quot;&gt;&lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC&quot; alt=&quot;doco&quot; style=&quot;background-color: inherit&quot;/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="extensions"/&gt;
+    &lt;div xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de"&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: Questionnaire ConsentModule-example-1&lt;/b&gt;&lt;/p&gt;&lt;a name="ConsentModule-example-1"&gt; &lt;/a&gt;&lt;a name="hcConsentModule-example-1"&gt; &lt;/a&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Language: de&lt;/p&gt;&lt;p style="margin-bottom: 0px"&gt;Profile: &lt;a href="StructureDefinition-ConsentModule.html"&gt;Consent Module&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"&gt;&lt;tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"&gt;&lt;th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="The linkID for the item"&gt;LinkID&lt;/a&gt;&lt;/th&gt;&lt;th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="Text for the item"&gt;Text&lt;/a&gt;&lt;/th&gt;&lt;th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the item can appear in the instance"&gt;Cardinality&lt;/a&gt;&lt;/th&gt;&lt;th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="The type of the item"&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item"&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style="float: right"&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"&gt;&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/&gt; BIOMAT_erheben_lagern_nutzen&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Questionnaire&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;https://ths-greifswald.de/fhir/gics/Questionnaire/ConsentModule-example-1#2025.2.0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" id="item.BIOMAT_erheben_lagern_nutzen|1.6" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/&gt; BIOMAT_erheben_lagern_nutzen|1.6&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;null&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;0..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan="5" class="hierarchy"&gt;&lt;br/&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"&gt;&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.text">text</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.url">url</a>
-       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://ths-greifswald.de/fhir/gics/Questionnaire/ConsentModule-example-1&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2025.2.0&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BIOMAT_erheben_lagern_nutzen&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-11-20T15:33:41+01:00&quot;/&gt;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://ths-greifswald.de/fhir/gics/Questionnaire/ConsentModule-example-1"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="2025.2.0"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="BIOMAT_erheben_lagern_nutzen"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="draft"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2025-11-25T13:12:55+01:00"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.publisher">publisher</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unabhängige Treuhandstelle der Universitätsmedizin Greifswald&quot;/&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>
-          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unabhängige Treuhandstelle der Universitätsmedizin Greifswald&quot;/&gt;
+          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://www.ths-greifswald.de/&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="url"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="https://www.ths-greifswald.de/"/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.contact">contact</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.useContext">useContext</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext#UsageContext.code">code</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;TemplateModule&quot;/&gt;
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="TemplateModule"/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext#UsageContext.code">code</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext#UsageContext.value[x]">valueReference</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ResearchStudy/6048563-3f7f6-42f3-9752-fb6bd3feffc6&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ResearchStudy/6048563-3f7f6-42f3-9752-fb6bd3feffc6"/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext#UsageContext.value[x]">valueReference</a>&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.useContext">useContext</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">item</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/designNote&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/designNote"&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueMarkdown</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;erheben, lagern, nutzen, eigentum übertragen, analysedaten zusammenführen&quot;/&gt;
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>="erheben, lagern, nutzen, eigentum übertragen, analysedaten zusammenführen"/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://ths-greifswald.de/fhir/StructureDefinition/gics/ConsentPolicyReference&quot; <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;36512b3f-994a-4010-b7d5-aac90a5b5b3a&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;reference&quot;&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="https://ths-greifswald.de/fhir/StructureDefinition/gics/ConsentPolicyReference" <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>="36512b3f-994a-4010-b7d5-aac90a5b5b3a"&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="reference"&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ActivityDefinition/b320c204-4b4e-4dd8-a11e-d29cc37d6535&quot;/&gt;
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ActivityDefinition/b320c204-4b4e-4dd8-a11e-d29cc37d6535"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://ths-greifswald.de/fhir/StructureDefinition/gics/ConsentPolicyReference&quot; <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;725f3ff0-4d31-42af-8e62-244cea523ec1&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;reference&quot;&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="https://ths-greifswald.de/fhir/StructureDefinition/gics/ConsentPolicyReference" <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>="725f3ff0-4d31-42af-8e62-244cea523ec1"&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="reference"&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ActivityDefinition/cf816922-e849-49f0-bc65-33a9e6f277ae&quot;/&gt;
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ActivityDefinition/cf816922-e849-49f0-bc65-33a9e6f277ae"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://ths-greifswald.de/fhir/StructureDefinition/gics/ConsentPolicyReference&quot; <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;f33a4ce5-f875-4f1b-838f-b90c51260246&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;reference&quot;&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="https://ths-greifswald.de/fhir/StructureDefinition/gics/ConsentPolicyReference" <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>="f33a4ce5-f875-4f1b-838f-b90c51260246"&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="reference"&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ActivityDefinition/e7f37956-eea7-41a4-8f8b-e268b522508b&quot;/&gt;
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ActivityDefinition/e7f37956-eea7-41a4-8f8b-e268b522508b"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://ths-greifswald.de/fhir/StructureDefinition/gics/ConsentPolicyReference&quot; <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;92f53938-0e96-4572-af94-23ea6a5db17d&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;reference&quot;&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="https://ths-greifswald.de/fhir/StructureDefinition/gics/ConsentPolicyReference" <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>="92f53938-0e96-4572-af94-23ea6a5db17d"&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="reference"&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ActivityDefinition/ad258a43-1e03-42c4-b535-5c8c69ef2df2&quot;/&gt;
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ActivityDefinition/ad258a43-1e03-42c4-b535-5c8c69ef2df2"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://ths-greifswald.de/fhir/StructureDefinition/gics/ConsentPolicyReference&quot; <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;6250957d-ca69-4887-9f5a-1cb6e142bc95&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;reference&quot;&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="https://ths-greifswald.de/fhir/StructureDefinition/gics/ConsentPolicyReference" <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>="6250957d-ca69-4887-9f5a-1cb6e142bc95"&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="reference"&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ActivityDefinition/a5f323ef-5915-4771-bba2-614ea0a600fb&quot;/&gt;
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ActivityDefinition/a5f323ef-5915-4771-bba2-614ea0a600fb"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://ths-greifswald.de/fhir/StructureDefinition/gics/QuestionnaireLabel&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BIOMAT_erheben_lagern_nutzen&quot;/&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="https://ths-greifswald.de/fhir/StructureDefinition/gics/QuestionnaireLabel"&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="BIOMAT_erheben_lagern_nutzen"/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;key&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;mii_question_oid&quot;/&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="key"&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="mii_question_oid"/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;value&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2.16.840.1.113883.3.1937.777.24.5.3.18&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="value"&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="2.16.840.1.113883.3.1937.777.24.5.3.18"/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BIOMAT_erheben_lagern_nutzen|1.6&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="BIOMAT_erheben_lagern_nutzen|1.6"/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#string#string.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/rendering-xhtml&quot;&gt;
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/rendering-xhtml"&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;&amp;lt;div style=&amp;quot;text-align: justify;&amp;quot;&amp;gt;Ich willige ein in die Gewinnung, Lagerung und wissenschaftliche Nutzung meiner &amp;lt;strong&amp;gt;Biomaterialien &amp;lt;/strong&amp;gt;(Gewebe und Körperflüssigkeiten), wie in Punkt 3.1 bis 3.3 der Einwilligungserklärung und Punkt 3 der Patienteninformation beschrieben.&amp;lt;/div&amp;gt;&quot;/&gt;
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="&amp;lt;div style=&amp;quot;text-align: justify;&amp;quot;&amp;gt;Ich willige ein in die Gewinnung, Lagerung und wissenschaftliche Nutzung meiner &amp;lt;strong&amp;gt;Biomaterialien &amp;lt;/strong&amp;gt;(Gewebe und Körperflüssigkeiten), wie in Punkt 3.1 bis 3.3 der Einwilligungserklärung und Punkt 3 der Patienteninformation beschrieben.&amp;lt;/div&amp;gt;"/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#string#string.extension">extension</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="choice"/&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">item</a>&gt;
 &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire">Questionnaire</a>&gt;</code></pre>
 
 
-  <!-- insert notes if present -->
+    <!-- insert notes if present -->
   
 
 
 
 </div>
-        </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /row -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-content -->
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
 
-  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
   <a name="bottom"> </a>
-  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-    <div class="container">  <!-- container -->
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 20, 2025 15:33+0100">2025-11-20</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 25, 2025 13:13+0100">2025-11-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -420,27 +418,28 @@
                 
           </span>
         </p>
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-    <div class="container">  <!-- container -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
 
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
   ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  <!-- Analytics Below
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
   ================================================== -->
-  </body>
-</html>
+  
 
+
+</div></body></html>

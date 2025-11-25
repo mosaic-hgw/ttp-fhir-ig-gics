@@ -18,39 +18,33 @@
          fhir:lastUpdated [ fhir:v "2022-12-20T10:10:54.889+01:00"^^xsd:dateTime ] ;
          fhir:profile ( [
            fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/Patient"^^xsd:anyURI ;
-           fhir:l <http://fhir.de/ConsentManagement/StructureDefinition/Patient>
+           fhir:link <http://fhir.de/ConsentManagement/StructureDefinition/Patient>
          ] )
        ] ;
        fhir:identifier ( [
          fhir:type [
            fhir:coding ( [
-             fhir:system [
-               fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
-               fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
-             ] ;
+             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
              fhir:code [ fhir:v "ANON" ] ;
              fhir:display [ fhir:v "Anonymous identifier" ]
            ] )
          ] ;
-         fhir:system [
-           fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ;
-           fhir:l <https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym>
-         ] ;
+         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "studypsn1" ]
        ] )
      ] )
   ] [
      fhir:name [ fhir:v "domain" ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "MII"
      ]
   ] [
      fhir:name [ fhir:v "questionnaire" ] ;
      fhir:value [
-       a fhir:Canonical ;
+       a fhir:canonical ;
        fhir:v "https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.f"^^xsd:anyURI ;
-       fhir:l <https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII?version=1.6.f>
+       fhir:link <https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.f>
      ]
   ] ) . # 
 

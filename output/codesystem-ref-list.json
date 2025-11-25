@@ -99,17 +99,17 @@
       "description" : " consent states are used to depict the participant’s will. Therefore, documentation should allow different status values. Further details from https://doi.org/10.1186/s12967-020-02457-y",
       "uses" : {
       },
-      "ValueSet-ConsentStatusWithdrawalShortValuesVS.html" : "ConsentStatusWithdrawalShortValues",
-      "ValueSet-ConsentStatusConsentShortValuesVS.html" : "ConsentStatusConsentShortValues",
-      "ValueSet-ConsentStatusRefusalFullValuesVS.html" : "ConsentStatusRefusalFullValues",
+      "ValueSet-ConsentStatusConsentOptOutFullValuesVS.html" : "ConsentStatusConsentOptOutFullValues",
       "ValueSet-ConsentStatusConsentOptOutShortValuesVS.html" : "ConsentStatusConsentOptOutShortValues",
       "ValueSet-ConsentStatusObjectionShortValuesVS.html" : "ConsentStatusObjectionShortValues",
-      "ValueSet-ConsentStatusRefusalShortValuesVS.html" : "ConsentStatusRefusalShortValues",
       "ValueSet-ConsentStatusWithdrawalFullValuesVS.html" : "ConsentStatusWithdrawalFullValues",
-      "ValueSet-ConsentStatusConsentOptOutFullValuesVS.html" : "ConsentStatusConsentOptOutFullValues",
+      "ValueSet-ConsentStatusConsentShortValuesVS.html" : "ConsentStatusConsentShortValues",
       "ValueSet-ConsentStatusObjectionFullValuesVS.html" : "ConsentStatusObjectionFullValues",
-      "ValueSet-ConsentStatusConsentFullValuesVS.html" : "ConsentStatusConsentFullValues",
-      "ValueSet-ConsentStatusVS.html" : "ConsentStatus"
+      "ValueSet-ConsentStatusRefusalFullValuesVS.html" : "ConsentStatusRefusalFullValues",
+      "ValueSet-ConsentStatusRefusalShortValuesVS.html" : "ConsentStatusRefusalShortValues",
+      "ValueSet-ConsentStatusVS.html" : "ConsentStatus",
+      "ValueSet-ConsentStatusWithdrawalShortValuesVS.html" : "ConsentStatusWithdrawalShortValues",
+      "ValueSet-ConsentStatusConsentFullValuesVS.html" : "ConsentStatusConsentFullValues"
     },
     {
       "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/IdMatchingType",

@@ -1544,8 +1544,9 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ConsentModule","Questionnaire.item.text.extension:renderingMarkdown","Questionnaire.item.text.extension","renderingMarkdown","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/rendering-markdown]]} {[]}
-","String equivalent with markdown","This is an equivalent of the string on which the extension is sent, but includes additional markdown (see documentation about [markdown](http://hl7.org/fhir/R4/datatypes.html#markdown). Note that using HTML  [xhtml](http://hl7.org/fhir/R4/extension-rendering-xhtml.html) can allow for greater precision of display.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+"ConsentModule","Questionnaire.item.text.extension:renderingMarkdown","Questionnaire.item.text.extension","renderingMarkdown","extensions
+user content","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/rendering-markdown]]} {[]}
+","Text als Markdown","This is an equivalent of the string on which the extension is sent, but includes additional markdown (see documentation about [markdown](http://hl7.org/fhir/R4/datatypes.html#markdown). Note that using HTML  [xhtml](http://hl7.org/fhir/R4/extension-rendering-xhtml.html) can allow for greater precision of display.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 cm-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ConsentModule","Questionnaire.item.text.extension:renderingMarkdown.id","Questionnaire.item.text.extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1559,15 +1560,17 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ConsentModule","Questionnaire.item.text.extension:renderingMarkdown.url","Questionnaire.item.text.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/rendering-markdown""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "ConsentModule","Questionnaire.item.text.extension:renderingMarkdown.value[x]","Questionnaire.item.text.extension.value[x]","","","",1,1,"","","","markdown {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ele-1
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"open","Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ConsentModule","Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown","Questionnaire.item.text.extension.value[x]","valueMarkdown","","",1,1,"","","","markdown {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ConsentModule","Questionnaire.item.text.extension:renderingXhtml","Questionnaire.item.text.extension","renderingXhtml","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/rendering-xhtml]]} {[]}
-","String equivalent with html markup","This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc. Existing [restrictions on XHTML content](http://hl7.org/fhir/R4/narrative.html#security) apply. Note that using [markdown](http://hl7.org/fhir/R4/extension-rendering-markdown.html) allows for greater flexibility of display.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+"ConsentModule","Questionnaire.item.text.extension:renderingXhtml","Questionnaire.item.text.extension","renderingXhtml","extensions
+user content","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/rendering-xhtml]]} {[]}
+","String equivalent with html markup","This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc. Existing [restrictions on XHTML content](http://hl7.org/fhir/R4/narrative.html#security) apply. Note that using [markdown](http://hl7.org/fhir/R4/extension-rendering-markdown.html) allows for greater flexibility of display.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ConsentModule","Questionnaire.item.text.extension:renderingXhtml.id","Questionnaire.item.text.extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -1581,7 +1584,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ConsentModule","Questionnaire.item.text.extension:renderingXhtml.url","Questionnaire.item.text.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/rendering-xhtml""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "ConsentModule","Questionnaire.item.text.extension:renderingXhtml.value[x]","Questionnaire.item.text.extension.value[x]","","","",1,1,"","","","string {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ele-1
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"open","Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ConsentModule","Questionnaire.item.text.extension:renderingXhtml.value[x]:valueString","Questionnaire.item.text.extension.value[x]","valueString","","",1,1,"","","","string {[]} {[]}
@@ -3323,7 +3327,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ConsentTemplate","Questionnaire.item.text.extension:renderingMarkdown.url","Questionnaire.item.text.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/rendering-markdown""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "ConsentTemplate","Questionnaire.item.text.extension:renderingMarkdown.value[x]","Questionnaire.item.text.extension.value[x]","","","",1,1,"","","","markdown {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ele-1
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"open","Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ConsentTemplate","Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown","Questionnaire.item.text.extension.value[x]","valueMarkdown","","",1,1,"","","","markdown {[]} {[]}
@@ -3346,7 +3351,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ConsentTemplate","Questionnaire.item.text.extension:renderingXhtml.url","Questionnaire.item.text.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/rendering-xhtml""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "ConsentTemplate","Questionnaire.item.text.extension:renderingXhtml.value[x]","Questionnaire.item.text.extension.value[x]","","","",1,1,"","","","string {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ele-1
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"open","Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ConsentTemplate","Questionnaire.item.text.extension:renderingXhtml.value[x]:valueString","Questionnaire.item.text.extension.value[x]","valueString","","",1,1,"","","","string {[]} {[]}

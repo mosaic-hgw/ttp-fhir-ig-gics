@@ -7,6 +7,7 @@
   ],
   "dependencies": {
     "de.einwilligungsmanagement": "latest",
-    "de.medizininformatikinitiative.kerndatensatz.consent": "2025.0.4"
+    "de.medizininformatikinitiative.kerndatensatz.consent": "2025.0.4",
+    "hl7.fhir.r4.core": "latest"
   }
 }
