@@ -99,17 +99,17 @@
       "description" : " consent states are used to depict the participant’s will. Therefore, documentation should allow different status values. Further details from https://doi.org/10.1186/s12967-020-02457-y",
       "uses" : {
       },
-      "ValueSet-ConsentStatusConsentShortValuesVS.html" : "ConsentStatusConsentShortValues",
-      "ValueSet-ConsentStatusObjectionFullValuesVS.html" : "ConsentStatusObjectionFullValues",
-      "ValueSet-ConsentStatusObjectionShortValuesVS.html" : "ConsentStatusObjectionShortValues",
-      "ValueSet-ConsentStatusRefusalFullValuesVS.html" : "ConsentStatusRefusalFullValues",
-      "ValueSet-ConsentStatusWithdrawalShortValuesVS.html" : "ConsentStatusWithdrawalShortValues",
+      "ValueSet-ConsentStatusConsentFullValuesVS.html" : "ConsentStatusConsentFullValues",
       "ValueSet-ConsentStatusConsentOptOutFullValuesVS.html" : "ConsentStatusConsentOptOutFullValues",
       "ValueSet-ConsentStatusConsentOptOutShortValuesVS.html" : "ConsentStatusConsentOptOutShortValues",
-      "ValueSet-ConsentStatusConsentFullValuesVS.html" : "ConsentStatusConsentFullValues",
+      "ValueSet-ConsentStatusRefusalFullValuesVS.html" : "ConsentStatusRefusalFullValues",
       "ValueSet-ConsentStatusRefusalShortValuesVS.html" : "ConsentStatusRefusalShortValues",
+      "ValueSet-ConsentStatusWithdrawalShortValuesVS.html" : "ConsentStatusWithdrawalShortValues",
+      "ValueSet-ConsentStatusWithdrawalFullValuesVS.html" : "ConsentStatusWithdrawalFullValues",
       "ValueSet-ConsentStatusVS.html" : "ConsentStatus",
-      "ValueSet-ConsentStatusWithdrawalFullValuesVS.html" : "ConsentStatusWithdrawalFullValues"
+      "ValueSet-ConsentStatusConsentShortValuesVS.html" : "ConsentStatusConsentShortValues",
+      "ValueSet-ConsentStatusObjectionFullValuesVS.html" : "ConsentStatusObjectionFullValues",
+      "ValueSet-ConsentStatusObjectionShortValuesVS.html" : "ConsentStatusObjectionShortValues"
     },
     {
       "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/IdMatchingType",

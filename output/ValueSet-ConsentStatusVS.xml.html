@@ -1,58 +1,60 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>ConsentStatus - XML Representation -  v2025.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
-  	<link rel="stylesheet" href="assets/css/cqf.css"/>
-      <!-- Placeholder for child template CSS declarations -->
-<link rel="stylesheet" href="assets/css/ttp-fhir-ig.css"/>
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ttp-fhir-ig.css" rel="stylesheet"/>
 
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-    <script src="assets/js/mermaid.js" type="text/javascript"></script>
-    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"7.47"}
     h3,h4,h5,h6{--heading-prefix:"7.47"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
 
-          <!-- Placeholder for child template header declarations -->
+        <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav"> 
-    <a no-external="true" id="hl7-logo" href="index.html">
-        <img src="assets/images/Design-Logo-THS-deutsch-271-padding.png" alt="THS Greifswald"/>
+    <a id="hl7-logo" no-external="true" href="index.html">
+        <img alt="THS Greifswald" src="assets/images/Design-Logo-THS-deutsch-271-padding.png"/>
     </a>
 
 
@@ -65,27 +67,27 @@
             </span>
           </p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
+              <!-- menu.xml  -->
 
-<ul class="nav navbar-nav">
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
@@ -169,35 +171,35 @@
   <li>
     <a href="Mitgeltend.html">Mitgeltende Profile</a>
   </li>
-  <li><a name="l305">​</a>
-    <a href="Konfig.html">Konfigurationshinweise</a>
+  <li>
+    <a href="konfig.html">Konfigurationshinweise</a>
   </li>
 </ul>
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
 
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>ConsentStatus</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ConsentStatus</b></li>
 
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-  <!-- ReleaseHeader --><p id="publish-box">IGTTPFHIRGatewaygICS - Local Development build (v2025.2.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://ths-greifswald.de/fhir/gics/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+<!--ReleaseHeader--><p id="publish-box">IGTTPFHIRGatewaygICS - Local Development build (v2025.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://ths-greifswald.de/fhir/gics/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -261,139 +263,139 @@
   </table>
 
 
-<p><a href="ValueSet-ConsentStatusVS.xml" no-download="true">Raw xml</a> | <a download="null" href="ValueSet-ConsentStatusVS.xml">Download</a></p>
+<p><a href="ValueSet-ConsentStatusVS.xml" no-download="true">Raw xml</a> | <a href="ValueSet-ConsentStatusVS.xml" download>Download</a></p>
 
-    <!-- insert intro if present -->
+  <!-- insert intro if present -->
   
 
 
 
-  <pre style="white-space: pre; text-wrap: nowrap; width: auto;" class="xml" data-fhir="generated"><code style="white-space: pre; text-wrap: nowrap;" class="language-xml">
-&lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">ValueSet</a> xmlns="http://hl7.org/fhir"&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ConsentStatusVS"/&gt;
+  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">ValueSet</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ConsentStatusVS&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
-    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: ValueSet ConsentStatusVS&lt;/b&gt;&lt;/p&gt;&lt;a name="ConsentStatusVS"&gt; &lt;/a&gt;&lt;a name="hcConsentStatusVS"&gt; &lt;/a&gt;&lt;p&gt;This value set contains 11 concepts&lt;/p&gt;&lt;table class="codes"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;System&lt;/b&gt;&lt;/td&gt;&lt;td style="white-space:nowrap"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name="ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-ACCEPTED"&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style="white-space:nowrap"&gt;&nbsp;&nbsp;&lt;a href="CodeSystem-ConsentStatusCS.html#ConsentStatusCS-ACCEPTED"&gt;ACCEPTED&lt;/a&gt;&lt;/td&gt;&lt;td&gt;ACCEPTED&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name="ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-ACCEPTED_OPT_OUT"&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style="white-space:nowrap"&gt;&nbsp;&nbsp;&lt;a href="CodeSystem-ConsentStatusCS.html#ConsentStatusCS-ACCEPTED_OPT_OUT"&gt;ACCEPTED_OPT_OUT&lt;/a&gt;&lt;/td&gt;&lt;td&gt;ACCEPTED_OPT_OUT&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name="ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-DECLINED"&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style="white-space:nowrap"&gt;&nbsp;&nbsp;&lt;a href="CodeSystem-ConsentStatusCS.html#ConsentStatusCS-DECLINED"&gt;DECLINED&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DECLINED&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name="ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-UNKNOWN"&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style="white-space:nowrap"&gt;&nbsp;&nbsp;&lt;a href="CodeSystem-ConsentStatusCS.html#ConsentStatusCS-UNKNOWN"&gt;UNKNOWN&lt;/a&gt;&lt;/td&gt;&lt;td&gt;UNKNOWN&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name="ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-NOT_ASKED"&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style="white-space:nowrap"&gt;&nbsp;&nbsp;&lt;a href="CodeSystem-ConsentStatusCS.html#ConsentStatusCS-NOT_ASKED"&gt;NOT_ASKED&lt;/a&gt;&lt;/td&gt;&lt;td&gt;NOT ASKED&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name="ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-NOT_CHOSEN"&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style="white-space:nowrap"&gt;&nbsp;&nbsp;&lt;a href="CodeSystem-ConsentStatusCS.html#ConsentStatusCS-NOT_CHOSEN"&gt;NOT_CHOSEN&lt;/a&gt;&lt;/td&gt;&lt;td&gt;NOT CHOSEN&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name="ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-WITHDRAWN"&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style="white-space:nowrap"&gt;&nbsp;&nbsp;&lt;a href="CodeSystem-ConsentStatusCS.html#ConsentStatusCS-WITHDRAWN"&gt;WITHDRAWN&lt;/a&gt;&lt;/td&gt;&lt;td&gt;WITHDRAWN&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name="ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-INVALIDATED"&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style="white-space:nowrap"&gt;&nbsp;&nbsp;&lt;a href="CodeSystem-ConsentStatusCS.html#ConsentStatusCS-INVALIDATED"&gt;INVALIDATED&lt;/a&gt;&lt;/td&gt;&lt;td&gt;INVALIDATED&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name="ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-REFUSED"&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style="white-space:nowrap"&gt;&nbsp;&nbsp;&lt;a href="CodeSystem-ConsentStatusCS.html#ConsentStatusCS-REFUSED"&gt;REFUSED&lt;/a&gt;&lt;/td&gt;&lt;td&gt;REFUSED&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name="ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-EXPIRED"&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style="white-space:nowrap"&gt;&nbsp;&nbsp;&lt;a href="CodeSystem-ConsentStatusCS.html#ConsentStatusCS-EXPIRED"&gt;EXPIRED&lt;/a&gt;&lt;/td&gt;&lt;td&gt;EXPIRED&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name="ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-OBJECTED"&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style="white-space:nowrap"&gt;&nbsp;&nbsp;&lt;a href="CodeSystem-ConsentStatusCS.html#ConsentStatusCS-OBJECTED"&gt;OBJECTED&lt;/a&gt;&lt;/td&gt;&lt;td&gt;OBJECTED&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet ConsentStatusVS&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;ConsentStatusVS&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcConsentStatusVS&quot;&gt; &lt;/a&gt;&lt;p&gt;This value set contains 11 concepts&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;System&lt;/b&gt;&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=&quot;ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-ACCEPTED&quot;&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  &lt;a href=&quot;CodeSystem-ConsentStatusCS.html#ConsentStatusCS-ACCEPTED&quot;&gt;ACCEPTED&lt;/a&gt;&lt;/td&gt;&lt;td&gt;ACCEPTED&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=&quot;ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-ACCEPTED_OPT_OUT&quot;&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  &lt;a href=&quot;CodeSystem-ConsentStatusCS.html#ConsentStatusCS-ACCEPTED_OPT_OUT&quot;&gt;ACCEPTED_OPT_OUT&lt;/a&gt;&lt;/td&gt;&lt;td&gt;ACCEPTED_OPT_OUT&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=&quot;ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-DECLINED&quot;&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  &lt;a href=&quot;CodeSystem-ConsentStatusCS.html#ConsentStatusCS-DECLINED&quot;&gt;DECLINED&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DECLINED&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=&quot;ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-UNKNOWN&quot;&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  &lt;a href=&quot;CodeSystem-ConsentStatusCS.html#ConsentStatusCS-UNKNOWN&quot;&gt;UNKNOWN&lt;/a&gt;&lt;/td&gt;&lt;td&gt;UNKNOWN&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=&quot;ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-NOT_ASKED&quot;&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  &lt;a href=&quot;CodeSystem-ConsentStatusCS.html#ConsentStatusCS-NOT_ASKED&quot;&gt;NOT_ASKED&lt;/a&gt;&lt;/td&gt;&lt;td&gt;NOT ASKED&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=&quot;ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-NOT_CHOSEN&quot;&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  &lt;a href=&quot;CodeSystem-ConsentStatusCS.html#ConsentStatusCS-NOT_CHOSEN&quot;&gt;NOT_CHOSEN&lt;/a&gt;&lt;/td&gt;&lt;td&gt;NOT CHOSEN&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=&quot;ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-WITHDRAWN&quot;&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  &lt;a href=&quot;CodeSystem-ConsentStatusCS.html#ConsentStatusCS-WITHDRAWN&quot;&gt;WITHDRAWN&lt;/a&gt;&lt;/td&gt;&lt;td&gt;WITHDRAWN&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=&quot;ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-INVALIDATED&quot;&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  &lt;a href=&quot;CodeSystem-ConsentStatusCS.html#ConsentStatusCS-INVALIDATED&quot;&gt;INVALIDATED&lt;/a&gt;&lt;/td&gt;&lt;td&gt;INVALIDATED&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=&quot;ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-REFUSED&quot;&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  &lt;a href=&quot;CodeSystem-ConsentStatusCS.html#ConsentStatusCS-REFUSED&quot;&gt;REFUSED&lt;/a&gt;&lt;/td&gt;&lt;td&gt;REFUSED&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=&quot;ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-EXPIRED&quot;&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  &lt;a href=&quot;CodeSystem-ConsentStatusCS.html#ConsentStatusCS-EXPIRED&quot;&gt;EXPIRED&lt;/a&gt;&lt;/td&gt;&lt;td&gt;EXPIRED&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=&quot;ConsentStatusVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-OBJECTED&quot;&gt; &lt;/a&gt;&lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&lt;/code&gt;&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  &lt;a href=&quot;CodeSystem-ConsentStatusCS.html#ConsentStatusCS-OBJECTED&quot;&gt;OBJECTED&lt;/a&gt;&lt;/td&gt;&lt;td&gt;OBJECTED&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatus"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="2025.2.0"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ConsentStatus"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="active"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="false"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2025-06-12"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatus&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2025.2.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ConsentStatus&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-06-12&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unabhängige Treuhandstelle der Universitätsmedizin Greifswald&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>
-          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/&gt;
+          <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unabhängige Treuhandstelle der Universitätsmedizin Greifswald&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="url"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="https://www.ths-greifswald.de/"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://www.ths-greifswald.de/&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.copyright">copyright</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>="Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"/&gt;
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion">expansion</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.timestamp">timestamp</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2021-04-12T12:00:00Z"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.total">total</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="11"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.timestamp">timestamp</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2021-04-12T12:00:00Z&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.total">total</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>=&quot;11&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">system</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="ACCEPTED"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ACCEPTED"/&gt;
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ACCEPTED&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ACCEPTED&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">system</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="ACCEPTED_OPT_OUT"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ACCEPTED_OPT_OUT"/&gt;
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ACCEPTED_OPT_OUT&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ACCEPTED_OPT_OUT&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">system</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="DECLINED"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="DECLINED"/&gt;
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;DECLINED&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DECLINED&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">system</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="UNKNOWN"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="UNKNOWN"/&gt;
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;UNKNOWN&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;UNKNOWN&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">system</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="NOT_ASKED"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="NOT ASKED"/&gt;
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;NOT_ASKED&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;NOT ASKED&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">system</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="NOT_CHOSEN"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="NOT CHOSEN"/&gt;
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;NOT_CHOSEN&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;NOT CHOSEN&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">system</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="WITHDRAWN"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="WITHDRAWN"/&gt;
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;WITHDRAWN&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WITHDRAWN&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">system</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="INVALIDATED"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="INVALIDATED"/&gt;
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;INVALIDATED&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;INVALIDATED&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">system</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="REFUSED"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="REFUSED"/&gt;
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;REFUSED&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;REFUSED&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">system</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="EXPIRED"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="EXPIRED"/&gt;
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;EXPIRED&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;EXPIRED&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">system</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="OBJECTED"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="OBJECTED"/&gt;
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;OBJECTED&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;OBJECTED&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">contains</a>&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion">expansion</a>&gt;
 &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">ValueSet</a>&gt;</code></pre>
 
 
-    <!-- insert notes if present -->
+  <!-- insert notes if present -->
   
 
 
 
 </div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 25, 2025 13:29+0100">2025-11-25</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 25, 2025 14:08+0100">2025-11-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -402,28 +404,27 @@
                 
           </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
 
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
-    <!-- Analytics Below
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
   ================================================== -->
-  
+  </body>
+</html>
 
-
-</div></body></html>
