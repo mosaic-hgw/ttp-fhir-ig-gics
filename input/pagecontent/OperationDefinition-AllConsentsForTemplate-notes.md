@@ -1,4 +1,4 @@
-#### Rückgabe
+## Rückgabe
 
 Paging entsprechend der [FHIR Search API](http://hl7.org/fhir/r4/search.html) wird ab TTP-FHIR Gateway Version 2023.1.1 unterstützt, namentlich die Parameter
 * _count: (maximale) Anzahl der im Bundle enthaltenen Ressourcen
@@ -15,7 +15,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 * 404: Parameter mit unbekanntem Inhalt.
 * 422: Fehlende oder falsche Patienten-Attribute.
 
-#### Beispiel
+## Beispiel
 
 * [Request-Body](Parameters-AllConsentsForTemplate-request-example-1.html)
 * [Rückmeldung](Bundle-AllConsentsForTemplate-response-example-1.html)

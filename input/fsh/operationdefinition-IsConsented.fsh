@@ -5,7 +5,7 @@ Usage: #definition
 * language = #de-DE
 * url = "https://ths-greifswald.de/fhir/OperationDefinition/gics/isConsented"
 * name = "IsConsented"
-* title = "Patient's consent status for a defined policy"
+* title = "IsConsented"
 * kind = #operation
 * description = "Liefert den Einwilligungsstatus eines Patienten für eine spezifische Policy per POST-Request. Die Rückgabe erfolgt als Parameters-Ressource."
 * purpose = "Teil des FHIR Gateway für gICS. Weitere Infos unter https://ths-greifswald.de/gics"

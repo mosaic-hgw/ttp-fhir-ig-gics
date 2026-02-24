@@ -5,7 +5,7 @@ Usage: #definition
 * language = #de-DE
 * url = "https://ths-greifswald.de/fhir/OperationDefinition/gics/allConsentsForDomain"
 * name = "AllConsentsForDomain"
-* title = "All consents for domain"
+* title = "AllConsentsForDomain"
 * kind = #operation
 * description = "Liefert alle Consente einer spezifischen Einwilligungsdomaene. Die Rückgabe erfolgt als Bundle vom Typ \"collection\". Das Bundle enthält je Consent jeweils ein Bundle mit allen für den spezifischen Consent relevanten Ressourcen (TemplateFrame, QuestionnaireComposed, QuestionnaireResponse, Provenance,Patient und i.a. DocumentReference). Details zu den verwendeten Profilen unterhttps://ig.fhir.de/einwilligungsmanagement/stable/Home.html"
 * purpose = "Teil des FHIR Gateway für gICS. Weitere Infos unter https://ths-greifswald.de/gics"

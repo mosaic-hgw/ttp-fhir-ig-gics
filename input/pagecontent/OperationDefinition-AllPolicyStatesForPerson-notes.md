@@ -1,4 +1,4 @@
-#### Rückgabe
+## Rückgabe
 
 Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
 
@@ -8,7 +8,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 * 404: Parameter mit unbekanntem Inhalt.
 * 422: Fehlende oder falsche Patienten-Attribute.
 
-#### Beispiel
+## Beispiel
 
 * [Request-Body](Parameters-AllPolicyStatesForPerson-request-example-1.html)
 * [Rückmeldung](Bundle-AllPolicyStatesForPerson-response-example-1.html)

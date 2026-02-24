@@ -39,15 +39,18 @@ dependencies:
 # sub-pages.
 #
 pages:
-  Extensions.md:
   index.md:
     title: Implementation Guide gICS
-  Questionnaire-Suche.md:
   Allgemein.md:
-  Mitgeltend.md:
-    title: Mitgeltende Profile
+  Extensions.md:
+  Questionnaire-Suche.md:
+  Consent-Suche.md:
+  Suche.md:
   konfig.md:
-    title: Konfigurationshinweise
+    title: Konfiguration
+  Mitgeltend.md:
+    title: Mitgeltende Profile und Erläuterungen
+  Terminologie.md:
   ### automatisch generierte Pages müssen hier nicht gelistet werden
 
 
@@ -89,7 +92,6 @@ menu:
     Provenance: StructureDefinition-Provenance.html
     ConsentQualityControl: StructureDefinition-ConsentQualityControl.html
     ExchangeFormatDefinition: StructureDefinition-ExchangeFormatDefinition.html
-    Questionnaire-Suche: Questionnaire-Suche.html
 
   ##### Extensions #############################################################
   Extensions: Extensions.html
@@ -107,8 +109,12 @@ menu:
     currentPolicyStatesForPerson: OperationDefinition-CurrentPolicyStatesForPerson.html
 
   ### MISC
+  Suche: Suche.html
   Mitgeltende Profile: Mitgeltend.html
   Konfigurationshinweise: konfig.html
+
+  ##### Terminologie ############################################################
+  Terminologie: Terminologie.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

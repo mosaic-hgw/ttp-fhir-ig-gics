@@ -1,4 +1,4 @@
-#### Rückgabe
+## Rückgabe
 
 Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von [FHIR Parameters](https://www.hl7.org/fhir/parameters.html) übermittelt.
 
@@ -13,7 +13,6 @@ Paging entsprechend der [FHIR Search API](http://hl7.org/fhir/r4/search.html) wi
 Der Default-Offset ist 0. Der Default-Count ist 100. Negative Werte für _offset und _count sind nicht erlaubt.
 Werden weder _count noch _offset angegeben, enthält das Bundle maximal 100 Ergebnisse (Default-Count=100, Default-Offset=0).
 
-
 Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
 
 Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
@@ -22,7 +21,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 * 404: Parameter mit unbekanntem Inhalt.
 * 422: Fehlende oder falsche Patienten-Attribute.
 
-#### Beispiel
+## Beispiel
 
 * [Request-Body](Parameters-AllConsentsForDomain-request-example-1.html)
 * [Rückmeldung](Bundle-AllConsentsForDomain-response-example-1.html)

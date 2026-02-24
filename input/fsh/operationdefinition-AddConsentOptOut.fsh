@@ -5,7 +5,7 @@ Usage: #definition
 * language = #de-DE
 * url = "https://ths-greifswald.de/fhir/OperationDefinition/gics/addConsentOptOut"
 * name = "AddConsentOptOut"
-* title = "Add a consent related QuestionnaireResponse for a patient in an opt-out context"
+* title = "AddConsentOptOut"
 * kind = #operation
 * description = "Erstellt die Einwilligungsinformationen in einem Opt-Out-Kontext für einen (ggf. neuen) Patienten, um auf dieser Basis eine neue Einwilligung im gICS zu erzeugen. Liefert Bundle vom Typ \"collection\". Das Bundle enthält die errechnete FHIR Consent-Resource."
 * purpose = "Teil des FHIR Gateway für gICS. Weitere Infos unter https://ths-greifswald.de/gics"

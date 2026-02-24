@@ -5,7 +5,7 @@ Usage: #definition
 * language = #de-DE
 * url = "https://ths-greifswald.de/fhir/OperationDefinition/gics/getAllConsentedIdsFor"
 * name = "GetAllConsentedIdsFor"
-* title = "Get all consented Identifiers for person and template"
+* title = "GetAllConsentedIdsFor"
 * kind = #operation
 * description = "Abruf aller Identifier eines bestimmten benannten Identifier-Typs (z.b. studyPsn) für eine bestimmte Policy (Coding) und Domäne. Zurück geliefert wird eine Liste von eingewilligten Identifiern in Bezug auf die spezifizierte Policy."
 * purpose = "Teil des FHIR Gateway für gICS. Weitere Infos unter https://ths-greifswald.de/gics"

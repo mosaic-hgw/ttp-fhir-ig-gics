@@ -1,7 +1,7 @@
 ### Suchparameter
 
 |Name|Typ|Beschreibung|Pfad|
-|-
+---|---|---|---
 |useContextIdentifier|token|Eindeutiger Name (Identifikator) der Domain|ActivityDefinition.useContext.valueReference(ResearchStudy).identifier|
 |name|string|Name der Policy|ActivityDefinition.name|
 |code|token|Code der Policy|ActivityDefinition.code|
