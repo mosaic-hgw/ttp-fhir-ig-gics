@@ -1,4 +1,20 @@
+### ResultType beeinflusst Struktur von Consent-Ressourcen 
+
+Systemebene
+
+Configure Default Result Type for FHIR Search for Consent Ressources for ALL DOMAINs in gICS
+ according to Search Parameter Category and HL7-Germany Working Group Consent
+ `category=http://fhir.de/ConsentManagement/CodeSystem/ResultType`
+ available: `document`|`policy`|`consent-status`
+
+ _Impact on FHIR SEARCH API Results. No impact on FHIR Operations._
+
+Die Ergebnisse der FHIR Consent Suche sind per DEFAULT nicht dokumenten-spezifisch**, da ein Patient unterschiedliche Einwilligungen und auch Widerrufe zu unterschiedlichen Zeitpunkten unterzeichnet haben kann. Somit ändert sich das Set von zulässigen Policies des Patienten ('Signed Policies') über die Zeit regelhaft.
+Je Signed Policy im gICS wird somit eine FHIR Consent Resource erzeugt** und dem SearchSet-Bundle beigefügt. Somit repräsentiert die **Bundle.Total**-Angabe nicht die Anzahl der vorhandenen Einwilligungen, sondern die **Anzahl der jeweiligen SignedPolicies mit Status `permit`.** Dieses Verhalten ist konfigurierbar (`ttp-fhir.env` -> `TTP_FHIR_GICS_CONSENT_SEARCH_DEFAULT_RESULT_TYPE`).
+
 ### Overview of FHIR Extern Properties for gICS
+
+Datenebene
 
 By default, when gICS content is provided in the form of FHIR resources by the TTP-FHIR Gateway, gICS-specific references and codings are used for e.g. answer options in
 questionnaires, references to questions in consent modules (TemplateFrame) and policy semantics (ConsentFrame).

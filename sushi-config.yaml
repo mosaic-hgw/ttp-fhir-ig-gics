@@ -46,10 +46,10 @@ pages:
   Questionnaire-Suche.md:
   Consent-Suche.md:
   Suche.md:
-  konfig.md:
-    title: Konfiguration
   Mitgeltend.md:
     title: Mitgeltende Profile und Erläuterungen
+  konfig.md:
+    title: Konfiguration
   Terminologie.md:
   ### automatisch generierte Pages müssen hier nicht gelistet werden
 
@@ -110,7 +110,7 @@ menu:
 
   ### MISC
   Suche: Suche.html
-  Mitgeltende Profile: Mitgeltend.html
+  Mitgeltende Profile und Erläuterungen: Mitgeltend.html
   Konfigurationshinweise: konfig.html
 
   ##### Terminologie ############################################################

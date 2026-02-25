@@ -1,4 +1,4 @@
-## Questionnaire-Suchparameter
+### Questionnaire-Suchparameter
 
 |Name|Typ| Beschreibung                                                                                                                                                                                                                  |Pfad|
 ---|---|---|---
@@ -10,9 +10,9 @@
 |`version`|token| Version des Questionnaires                                                                                                                                                                                                    |Questionnaire.version|
 |`_profile`|reference| Angabe um Ausgabeprofil festzulegen.<br>Default ist die gics-Variante; alternativ das Profil aus dem IG Einwilligungsmanagement.<br>Das Profil muss konsistent zu `useContext.code` bzw. zum Suchparameter `context-type` sein.   |Questionnaire.meta.profile|
 
-Mittels context-type wird zwischen TemplateModule, TemplateFrame und QuestionnaireComposed unterschieden.
+Mittels `context-type` wird zwischen `TemplateModule`, `TemplateFrame` und `QuestionnaireComposed` unterschieden.
 
-Zulässige Kombinationen von Suchparametern:
+### Zulässige Kombinationen von Suchparametern:
 * alle Questionnaires einer Domain abfragen <br>`GET [base]/gics/Questionnaire?useContextIdentifier=MI&context-type=TemplateFrame`
 * alle Questionnaires einer Domain mit einem bestimmten Namen abfragen<br>`GET [base]/gics/Questionnaire?useContextIdentifier=MI&context-type=TemplateFrame&name=Patienteneinwilligung MII [mit PDF]`
 * alle Questionnaires einer Domain mit einem bestimmten Namen und einer bestimmten Version abfragen<br> `GET [base]/gics/Questionnaire?useContextIdentifier=MI&context-type=TemplateFrame&name=Patienteneinwilligung MII [mit PDF]&version=1.6.d`

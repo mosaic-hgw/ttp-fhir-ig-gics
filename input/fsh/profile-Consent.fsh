@@ -1,12 +1,12 @@
 Profile: Consent
 Parent: $prEinwConsent
 Id: Consent
-Title: "Einwilligungsinformationen"
+Title: "Consent"
 Description: "Angepasstes FHIR Consent Profil auf Basis des offiziellen [Consent-Profils](https://ig.fhir.de/einwilligungsmanagement/stable/Consent.html) der Hl7 AG Einwilligungsmanagement erweitertet um ausgewählte gICS Eigenschaften."
 * insert meta-profile
 * ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"
-* ^purpose = "Strukturierte, maschinenverarbeitbare Abbildung der Einwilligungserklärung"
+* ^purpose = "Strukturierte, maschinenverarbeitbare Abbildung von Einwilligungsdaten."
 * meta.lastUpdated MS N
 * extension ^min = 0
 * extension contains
