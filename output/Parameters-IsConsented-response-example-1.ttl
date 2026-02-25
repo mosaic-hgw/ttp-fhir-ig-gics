@@ -12,7 +12,7 @@
   fhir:parameter ( [
      fhir:name [ fhir:v "consented" ] ;
      fhir:value [
-       a fhir:boolean ;
+       a fhir:Boolean ;
        fhir:v true
      ]
   ] ) . # 

@@ -4,11 +4,14 @@
 
 * [Implementation Guide gICS](index.md)
 * [Allgemein](Allgemein.md)
-* [Extensions](Extensions.md)
-* [Mitgeltende Profile](Mitgeltend.md)
-* [Questionnaire Suche](Questionnaire-Suche.md)
-* [Konfigurationshinweise](konfig.md)
 * [Artifacts Summary](artifacts.md)
+* [Consent Suche](Consent-Suche.md)
+* [Extensions](Extensions.md)
+* [Konfiguration](konfig.md)
+* [Mitgeltende Profile und Erläuterungen](Mitgeltend.md)
+* [Questionnaire Suche](Questionnaire-Suche.md)
+* [Suche](Suche.md)
+* [Terminologie](Terminologie.md)
 
 ## Resources
 
@@ -22,11 +25,7 @@
 * [ConsentPolicyPurpose](CodeSystem-ConsentPolicyPurposeCS.md)
 * [ConsentStatus](CodeSystem-ConsentStatusCS.md)
 * [DesignationUse](CodeSystem-DesignationUseCS.md)
-* [IdMatchingType](CodeSystem-IdMatchingTypeCS.md)
-* [IdatElements](CodeSystem-IdatElementsCS.md)
-* [MatchStatus](CodeSystem-MatchStatusCS.md)
 * [Policy](CodeSystem-PolicyCS.md)
-* [SaveAction](CodeSystem-SaveActionCS.md)
 
 ### ValueSets
 
@@ -47,12 +46,8 @@
 * [ConsentStatus](ValueSet-ConsentStatusVS.md)
 * [ConsentStatusWithdrawalFullValues](ValueSet-ConsentStatusWithdrawalFullValuesVS.md)
 * [ConsentStatusWithdrawalShortValues](ValueSet-ConsentStatusWithdrawalShortValuesVS.md)
-* [IdMatchingType](ValueSet-IdMatchingTypeVS.md)
-* [IdatElements](ValueSet-IdatElementsVS.md)
-* [MatchStatus](ValueSet-MatchStatusVS.md)
 * [PolicyStatus](ValueSet-PolicyStatusVS.md)
 * [Policy](ValueSet-PolicyVS.md)
-* [SaveAction](ValueSet-SaveActionVS.md)
 
 ### Complex-type Profiles
 
@@ -60,7 +55,7 @@
 
 ### Resource Profiles
 
-* [Einwilligungsinformationen](StructureDefinition-Consent.md)
+* [Consent](StructureDefinition-Consent.md)
 * [Consent Domain](StructureDefinition-ConsentDomain.md)
 * [Consent Module](StructureDefinition-ConsentModule.md)
 * [ConsentPolicy](StructureDefinition-ConsentPolicy.md)
@@ -96,16 +91,16 @@
 
 ### OperationDefinitions
 
-* [Add a consent related QuestionnaireResponse for a patient](OperationDefinition-AddConsent.md)
-* [Add a consent related QuestionnaireResponse for a patient in an opt-out context](OperationDefinition-AddConsentOptOut.md)
-* [All consents for domain](OperationDefinition-AllConsentsForDomain.md)
-* [All consents for person](OperationDefinition-AllConsentsForPerson.md)
-* [All consents for template](OperationDefinition-AllConsentsForTemplate.md)
-* [All policy states for person](OperationDefinition-AllPolicyStatesForPerson.md)
-* [Current consent for person and template](OperationDefinition-CurrentConsentForPersonAndTemplate.md)
-* [Current policy states for person](OperationDefinition-CurrentPolicyStatesForPerson.md)
-* [Get all consented Identifiers for person and template](OperationDefinition-GetAllConsentedIdsFor.md)
-* [Patient's consent status for a defined policy](OperationDefinition-IsConsented.md)
+* [AddConsent](OperationDefinition-AddConsent.md)
+* [AddConsentOptOut](OperationDefinition-AddConsentOptOut.md)
+* [AllConsentsForDomain](OperationDefinition-AllConsentsForDomain.md)
+* [AllConsentsForPerson](OperationDefinition-AllConsentsForPerson.md)
+* [AllConsentsForTemplate](OperationDefinition-AllConsentsForTemplate.md)
+* [AllPolicyStatesForPerson](OperationDefinition-AllPolicyStatesForPerson.md)
+* [CurrentConsentForPersonAndTemplate](OperationDefinition-CurrentConsentForPersonAndTemplate.md)
+* [CurrentPolicyStatesForPerson](OperationDefinition-CurrentPolicyStatesForPerson.md)
+* [GetAllConsentedIdsFor](OperationDefinition-GetAllConsentedIdsFor.md)
+* [IsConsented](OperationDefinition-IsConsented.md)
 
 ### SearchParameters
 

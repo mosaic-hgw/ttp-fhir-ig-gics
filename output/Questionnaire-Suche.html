@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"3"}
-    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -121,9 +121,6 @@
       <li>
         <a href="StructureDefinition-ExchangeFormatDefinition.html">ExchangeFormatDefinition</a>
       </li>
-      <li>
-        <a href="Questionnaire-Suche.html">Questionnaire-Suche</a>
-      </li>
     </ul>
   </li>
   <li>
@@ -167,10 +164,16 @@
     </ul>
   </li>
   <li>
-    <a href="Mitgeltend.html">Mitgeltende Profile</a>
+    <a href="Suche.html">Suche</a>
   </li>
   <li>
-    <a href="konfig.html">Konfigurationshinweise</a>
+    <a href="Mitgeltend.html">Mitgeltende Profile und Erläuterungen</a>
+  </li>
+  <li>
+    <a href="konfig.html">Konfiguration</a>
+  </li>
+  <li>
+    <a href="Terminologie.html">Terminologie</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -220,10 +223,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#questionnaire-suchparameter" id="markdown-toc-questionnaire-suchparameter">Questionnaire-Suchparameter</a></li>
+  <li><a href="#zulässige-kombinationen-von-suchparametern" id="markdown-toc-zulässige-kombinationen-von-suchparametern">Zulässige Kombinationen von Suchparametern:</a></li>
+</ul>
+
 </div>
-<h4 id="questionnaire-suchparameter">Questionnaire-Suchparameter</h4>
+<h3 id="questionnaire-suchparameter">Questionnaire-Suchparameter</h3>
 
 <table>
   <thead>
@@ -236,47 +243,55 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td>useContextIdentifier</td>
+      <td>Name</td>
+      <td>Typ</td>
+      <td>Beschreibung</td>
+      <td>Pfad</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">useContextIdentifier</code></td>
       <td>token</td>
       <td>Eindeutiger Name (Identifikator) der Domain</td>
       <td>Questionnaire.useContext.valueReference(ResearchStudy).identifier</td>
     </tr>
     <tr>
-      <td>context-type</td>
+      <td><code class="language-plaintext highlighter-rouge">context-type</code></td>
       <td>token</td>
       <td>Code gemäß http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents</td>
       <td>Questionnaire.useContext.code</td>
     </tr>
     <tr>
-      <td>name</td>
+      <td><code class="language-plaintext highlighter-rouge">name</code></td>
       <td>string</td>
       <td>Name des Questionnaires ("computationally friendly")</td>
       <td>Questionnaire.name</td>
     </tr>
     <tr>
-      <td>version</td>
+      <td><code class="language-plaintext highlighter-rouge">version</code></td>
       <td>token</td>
       <td>Version des Questionnaires</td>
       <td>Questionnaire.version</td>
     </tr>
     <tr>
-      <td>_profile</td>
+      <td><code class="language-plaintext highlighter-rouge">_profile</code></td>
       <td>reference</td>
-      <td>Angabe um Ausgabeprofil festzulegen.<br />Default ist die gics-Variante; alternativ das Profil aus dem IG Einwilligungsmanagement.<br />Das Profil muss konsistent zu useContext.code bzw. zum Suchparameter context-type sein.</td>
+      <td>Angabe um Ausgabeprofil festzulegen.<br />Default ist die gics-Variante; alternativ das Profil aus dem IG Einwilligungsmanagement.<br />Das Profil muss konsistent zu <code class="language-plaintext highlighter-rouge">useContext.code</code> bzw. zum Suchparameter <code class="language-plaintext highlighter-rouge">context-type</code> sein.</td>
       <td>Questionnaire.meta.profile</td>
     </tr>
   </tbody>
 </table>
 
-<p>Mittels context-type wird zwischen TemplateModule, TemplateFrame und QuestionnaireComposed unterschieden.</p>
+<p>Mittels <code class="language-plaintext highlighter-rouge">context-type</code> wird zwischen <code class="language-plaintext highlighter-rouge">TemplateModule</code>, <code class="language-plaintext highlighter-rouge">TemplateFrame</code> und <code class="language-plaintext highlighter-rouge">QuestionnaireComposed</code> unterschieden.</p>
 
-<p>Zulässige Kombinationen von Suchparametern:</p>
+<h3 id="zulässige-kombinationen-von-suchparametern">Zulässige Kombinationen von Suchparametern:</h3>
 <ul>
-  <li>alle Questionnaires einer Domain abfragen<br /><code>GET [base]/gics/Questionnaire?useContextIdentifier=MI&amp;context-type=TemplateFrame</code></li>
-  <li>alle Questionnaires einer Domain mit einem bestimmten Namen abfragen<br /><code>GET [base]/gics/Questionnaire?useContextIdentifier=MI&amp;context-type=TemplateFrame&amp;name=Patienteneinwilligung MII [mit PDF]</code></li>
-  <li>alle Questionnaires einer Domain mit einem bestimmten Namen und einer bestimmten Version abfragen<br /><code>GET [base]/gics/Questionnaire?useContextIdentifier=MI&amp;context-type=TemplateFrame&amp;name=Patienteneinwilligung MII [mit PDF]&amp;version=1.6.d</code></li>
-  <li>alle Questionnaires einer Domain mit einem bestimmten Namen und einer bestimmten Version abfragen<br /><code>GET [base]/gics/Questionnaire?useContextIdentifier=MI&amp;context-type=TemplateFrame&amp;name=Patienteneinwilligung MII [mit PDF]&amp;version=1.6.d</code></li>
-  <li>alle Questionnaires einer Domain mit einer bestimmten canonical URL und einer bestimmten Version abfragen<br /><code>GET [base]/gics/Questionnaire?useContextIdentifier=MI&amp;url=https://ths-greifswald.de/fhir/gics/TemplateFrame/MII%7CPatienteneinwilligung+MII&amp;context-type=TemplateFrame&amp;version=1.6.d</code></li>
+  <li>alle Questionnaires einer Domain abfragen <br /><code class="language-plaintext highlighter-rouge">GET [base]/gics/Questionnaire?useContextIdentifier=MI&amp;context-type=TemplateFrame</code></li>
+  <li>alle Questionnaires einer Domain mit einem bestimmten Namen abfragen<br /><code class="language-plaintext highlighter-rouge">GET [base]/gics/Questionnaire?useContextIdentifier=MI&amp;context-type=TemplateFrame&amp;name=Patienteneinwilligung MII [mit PDF]</code></li>
+  <li>alle Questionnaires einer Domain mit einem bestimmten Namen und einer bestimmten Version abfragen<br /> <code class="language-plaintext highlighter-rouge">GET [base]/gics/Questionnaire?useContextIdentifier=MI&amp;context-type=TemplateFrame&amp;name=Patienteneinwilligung MII [mit PDF]&amp;version=1.6.d</code></li>
+  <li>alle Questionnaires einer Domain mit einem bestimmten Namen und einer bestimmten Version abfragen<br /> <code class="language-plaintext highlighter-rouge">GET [base]/gics/Questionnaire?useContextIdentifier=MI&amp;context-type=TemplateFrame&amp;name=Patienteneinwilligung MII [mit PDF]&amp;version=1.6.d</code></li>
+  <li>alle Questionnaires einer Domain mit einer bestimmten canonical URL und einer bestimmten Version abfragen<br /> <code class="language-plaintext highlighter-rouge">GET [base]/gics/Questionnaire?useContextIdentifier=MI&amp;url=https://ths-greifswald.de/fhir/gics/TemplateFrame/MII%7CPatienteneinwilligung+MII&amp;context-type=TemplateFrame&amp;version=1.6.d</code></li>
 </ul>
 
 
@@ -297,7 +312,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 25, 2025 14:08+0100">2025-11-25</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 25, 2026 17:02+0100">2026-02-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

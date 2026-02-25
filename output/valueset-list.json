@@ -1,17 +1,6 @@
 {
   "codeSystems" : [
     {
-      "url" : "https://ths-greifswald.de/fhir/ValueSet/dispatcher/IdatElements",
-      "version" : "2025.2.0",
-      "status" : "active",
-      "name" : "IdatElements",
-      "title" : null,
-      "description" : "",
-      "systems" : [
-        "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements"
-      ]
-    },
-    {
       "url" : "https://ths-greifswald.de/fhir/ValueSet/epix/BloomfilterType",
       "version" : "2025.2.0",
       "status" : "draft",
@@ -21,24 +10,6 @@
       "systems" : [
         "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType"
       ]
-    },
-    {
-      "url" : "https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus",
-      "version" : "2025.2.0",
-      "status" : "active",
-      "name" : "MatchStatus",
-      "title" : null,
-      "description" : "",
-      "systems" : ["https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus"]
-    },
-    {
-      "url" : "https://ths-greifswald.de/fhir/ValueSet/epix/SaveAction",
-      "version" : "2025.2.0",
-      "status" : "active",
-      "name" : "SaveAction",
-      "title" : null,
-      "description" : "",
-      "systems" : ["https://ths-greifswald.de/fhir/CodeSystem/epix/SaveAction"]
     },
     {
       "url" : "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentComponentType",
@@ -215,17 +186,6 @@
       "description" : "",
       "systems" : [
         "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"
-      ]
-    },
-    {
-      "url" : "https://ths-greifswald.de/fhir/ValueSet/gics/IdMatchingType",
-      "version" : "2025.2.0",
-      "status" : "active",
-      "name" : "IdMatchingType",
-      "title" : null,
-      "description" : "",
-      "systems" : [
-        "https://ths-greifswald.de/fhir/CodeSystem/gics/IdMatchingType"
       ]
     },
     {

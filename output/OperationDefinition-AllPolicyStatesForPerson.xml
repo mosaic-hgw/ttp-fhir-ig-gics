@@ -15,7 +15,7 @@ Es werden alle jemals von Patienten unterzeichneten Policies zurückgegeben (Con
   <url value="https://ths-greifswald.de/fhir/OperationDefinition/gics/allPolicyStatesForPerson"/>
   <version value="2025.2.0"/>
   <name value="AllPolicyStatesForPerson"/>
-  <title value="All policy states for person"/>
+  <title value="AllPolicyStatesForPerson"/>
   <status value="active"/>
   <kind value="operation"/>
   <date value="2025-06-12"/>

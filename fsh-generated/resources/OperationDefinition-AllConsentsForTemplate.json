@@ -54,7 +54,7 @@
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "language": "de-DE",
   "name": "AllConsentsForTemplate",
-  "title": "All consents for template",
+  "title": "AllConsentsForTemplate",
   "kind": "operation",
   "description": "Liefert alle Consente eines spezifischen TemplateFrame unter Angabe des TemplateFrame-Identifiers (Vorlagenbezug) per POST-Request. Die Rückgabe erfolgt als Bundle vom Typ \"collection\". Das Bundle enthält je Consent einen Bundle-Entry, der alle für den spezifischen Consent relevanten Ressourcen (z.B. TemplateFrame, QuestionnaireComposed, QuestionnaireResponse, Provenance) enthält. Details zu den verwendeten Profilen unterhttps://ig.fhir.de/einwilligungsmanagement/stable/Home.html",
   "purpose": "Teil des FHIR Gateway für gICS. Weitere Infos unter https://ths-greifswald.de/gics",

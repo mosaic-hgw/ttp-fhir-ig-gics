@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Konfigurationshinweise -  v2025.2.0</title>
+    <title>Konfiguration -  v2025.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"6"}
-    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -121,9 +121,6 @@
       <li>
         <a href="StructureDefinition-ExchangeFormatDefinition.html">ExchangeFormatDefinition</a>
       </li>
-      <li>
-        <a href="Questionnaire-Suche.html">Questionnaire-Suche</a>
-      </li>
     </ul>
   </li>
   <li>
@@ -167,10 +164,16 @@
     </ul>
   </li>
   <li>
-    <a href="Mitgeltend.html">Mitgeltende Profile</a>
+    <a href="Suche.html">Suche</a>
   </li>
   <li>
-    <a href="konfig.html">Konfigurationshinweise</a>
+    <a href="Mitgeltend.html">Mitgeltende Profile und Erläuterungen</a>
+  </li>
+  <li>
+    <a href="konfig.html">Konfiguration</a>
+  </li>
+  <li>
+    <a href="Terminologie.html">Terminologie</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -184,7 +187,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Konfigurationshinweise</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Konfiguration</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -205,7 +208,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">IGTTPFHIRGatewaygICS - Local Development build (v2025.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://ths-greifswald.de/fhir/gics/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Konfigurationshinweise</h2>
+  <h2>Konfiguration</h2>
   
 
 
@@ -222,23 +225,61 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#overview-of-fhir-extern-properties-for-gics" id="markdown-toc-overview-of-fhir-extern-properties-for-gics">Overview of FHIR Extern Properties for gICS</a></li>
-  <li><a href="#supported-profiles-for-fhirforceprofileconsent" id="markdown-toc-supported-profiles-for-fhirforceprofileconsent">Supported profiles for <strong>fhirForceProfileConsent</strong></a></li>
+  <li><a href="#fhir-consent-search-strukturelle-bedeutung-für-consent-ressourcen-und-anpassung-per-resulttype" id="markdown-toc-fhir-consent-search-strukturelle-bedeutung-für-consent-ressourcen-und-anpassung-per-resulttype">FHIR Consent Search: Strukturelle Bedeutung für Consent-Ressourcen und Anpassung per ResultType</a></li>
+  <li><a href="#anpassung-von-profilvorgaben-und-terminologien-auf-domain--template--und-modulebene" id="markdown-toc-anpassung-von-profilvorgaben-und-terminologien-auf-domain--template--und-modulebene">Anpassung von Profilvorgaben und Terminologien auf Domain-, Template- und Modulebene</a></li>
+  <li><a href="#unterstützte-profile-und-defaults" id="markdown-toc-unterstützte-profile-und-defaults">Unterstützte Profile und Defaults</a></li>
 </ul>
 
 </div>
-<h3 id="overview-of-fhir-extern-properties-for-gics">Overview of FHIR Extern Properties for gICS</h3>
+<h3 id="fhir-consent-search-strukturelle-bedeutung-für-consent-ressourcen-und-anpassung-per-resulttype">FHIR Consent Search: Strukturelle Bedeutung für Consent-Ressourcen und Anpassung per ResultType</h3>
 
-<p>By default, when gICS content is provided in the form of FHIR resources by the TTP-FHIR Gateway, gICS-specific references and codings are used for e.g. answer options in
-questionnaires, references to questions in consent modules (TemplateFrame) and policy semantics (ConsentFrame).
-policy semantics (Consent.Provisions).</p>
+<h4 id="publikation-und-hintergründe">Publikation und Hintergründe</h4>
 
-<p>These can be configured by using corresponding external properties, for example via the gICS interface or customised by importing a user-defined template import format. The following tables show external properties which, if
-are taken into account when FHIR resources are created.</p>
+<p>Im IG der HL7-D AG Einwilligungsmanagement wird die Bedeutung des Parameters ResultType umfassend erläutert.</p>
 
-<p>Changes to external properties are also possible retrospectively for already finalised and
-actively used templates, e.g. by importing updated consent templates (tick the box next to
-allowUpdates)</p>
+<p><img align="center" width="600px" src="assets/images/figure2_bialke_resulttype_community_dialog_jan2025.jpg" /></p>
+
+<p>Erläuterung: <em>Die ursprüngliche Einwilligung einer Person führt zu einer Consent-Ressource, die einer bestimmten Anzahl von Policies entspricht. Im Laufe der Zeit kann die Person ihre Einwilligung zur Teilnahme an einem Vorhaben oder Projekt aktualisieren oder widerrufen. Dadurch erhöht sich die Menge der zu analysierenden Dokumente und Einwilligungspolicies.
+Dank <code class="language-plaintext highlighter-rouge">ResultType</code> können die vorliegenden Einwilligungsinformationen der betroffenen Person als individuelles Set von Einwilligungspolicies (<code class="language-plaintext highlighter-rouge">policy</code>), als Dokumente (<code class="language-plaintext highlighter-rouge">document</code>) oder als vollständig analysierter aggregierter Einwilligungsstatus (<code class="language-plaintext highlighter-rouge">consent-status</code>) abgefragt werden.</em></p>
+
+<p>Quelle: <a href="https://ebooks.iospress.nl/doi/10.3233/SHTI251389">Publikation</a></p>
+
+<h4 id="default-resulttype-und-steuerung-auf-request-ebene">Default-ResultType und Steuerung auf Request-Ebene</h4>
+
+<p>Die Ergebnisse der FHIR Consent Suche sind im gICS per <strong>DEFAULT policy-spezifisch</strong>, da ein Patient unterschiedliche Einwilligungen und auch Widerrufe zu unterschiedlichen Zeitpunkten unterzeichnet haben kann. Somit ändert sich das Set von zulässigen Policies des Patienten ('Signed Policies') über die Zeit regelhaft.
+In der Standardkonfiguration wird bei Consent-Suchanfragen je Signed Policy im gICS eine separate FHIR Consent Resource erzeugt. Das <strong>Total des SearchSet-Bundle</strong> repräsentiert also in der Standard-Konfiguration die <strong>Anzahl der jeweiligen SignedPolicies</strong> mit Status <code class="language-plaintext highlighter-rouge">permit</code>.</p>
+
+<p>Die Angabe des ResultType wirkt sich auf FHIR Search API Ergebnisse aus. Die Ergebnisse von gICS-Operations werden dadurch nicht verändert.</p>
+
+<p>Je Request kann <em>unabhängig von der Konfiguration des Systems</em> angegeben werden, welche Art von Ergebnis (policy, document, consent-status) man im Response bekommen möchte.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent
+  ?category=http://fhir.de/ConsentManagement/CodeSystem/
+  ResultType|consent-status
+  &amp;domain:identifier=MII
+  &amp;patient.identifier=dic_810MT
+</code></pre></div></div>
+
+<h4 id="anpassung-default-resulttype-auf-system-ebene">Anpassung Default-ResultType auf System-Ebene</h4>
+<p>Der Default-ResultType des gICS ist auf Wunsch konfigurierbar. In der System-Konfigurationsdatei <code class="language-plaintext highlighter-rouge">ttp-fhir.env</code> kann der Wert <code class="language-plaintext highlighter-rouge">TTP_FHIR_GICS_CONSENT_SEARCH_DEFAULT_RESULT_TYPE</code> entsprechend angepasst werden.
+Der so festgelegte Default-ResultType gilt für alle im gICS vorhandenen Domains.</p>
+
+<h4 id="hinweise-für-die-medizininformatik-initiative--das-diz-dashboard">Hinweise für die Medizininformatik-Initiative / das DIZ-Dashboard</h4>
+
+<p><a href="https://simplifier.net/guide/MIIIGModulConsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Empfehlungen-zur-praktischen-Anwendung.page.md?version=current">Bitte lesen Sie die Nutzungsempfehlung zur Verwendung von ResultType in der MII.</a></p>
+
+<p><a href="https://www.ths-greifswald.de/diz-dashboard-empfehlung-gics-kds-consent-status/">Bitte folgen Sie den Herstellerempfehlungen zur Ermittlung von Kennzahlen für das DIZ-Dashboard.</a></p>
+
+<h3 id="anpassung-von-profilvorgaben-und-terminologien-auf-domain--template--und-modulebene">Anpassung von Profilvorgaben und Terminologien auf Domain-, Template- und Modulebene</h3>
+
+<p>Wenn gICS-Inhalte in Form von FHIR-Ressourcen vom TTP-FHIR-Gateway bereitgestellt werden, werden standardmäßig gICS-spezifische Referenzen und Kodierungen verwendet, z. B. für Antwortoptionen in
+Fragebögen, Verweise auf Fragen in Einwilligungsmodulen (TemplateFrame) und Policy-Semantik (Level2-Provisions der Consent-Ressource).</p>
+
+<p>Diese können mithilfe entsprechender externer Eigenschaften (<strong>ExternalProperties</strong>) konfiguriert werden, beispielsweise über die gICS-Schnittstelle, oder durch Importieren eines benutzerdefinierten Vorlagenimportformats angepasst werden. Die folgenden Tabellen zeigen externe Eigenschaften, die bei der Erstellung von FHIR-Ressourcen berücksichtigt werden.
+Änderungen an externen Eigenschaften sind auch nachträglich <strong>zur Laufzeit</strong> für bereits finalisierte und aktiv genutzte Vorlagen möglich, z. B. durch Importieren aktualisierter Einwilligungsvorlagen (aktivieren Sie das Kontrollkästchen neben
+<code class="language-plaintext highlighter-rouge">allowUpdates</code>).</p>
+
+<h4 id="externalproperties-auf-domain-ebene">ExternalProperties auf Domain-Ebene</h4>
 
 <table>
   <thead>
@@ -252,153 +293,185 @@ allowUpdates)</p>
   <tbody>
     <tr>
       <td>Domain</td>
-      <td><strong>fhirSafeSignerIdType</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirSafeSignerIdType</code></td>
       <td><code class="language-plaintext highlighter-rouge">fhirSafeSignerIdType = Pseudonym</code></td>
-      <td>In gICS, the signing participant is represented by 1-n participant IDs. The number and type of participant IDs are determined by the domain configuration. If more than one SignerIdType is configured within a consent domain (e.g. pseudonym, case numbers, patient ID), the first SignerIdType is used by default in FHIR Consent exports as the person identifier based on the FHIR Consent Patient17 in FHIR Consent. this can be adjusted if necessary by defining an external property fhirSafeSignerIdType for the respective domain.</td>
+      <td>In gICS, the signing participant is represented by 1-n participant IDs. The number and type of participant IDs are determined by the domain configuration. If more than one SignerIdType is configured within a consent domain (e.g. pseudonym, case numbers, patient ID), the first SignerIdType is used by default in FHIR Consent exports as the person identifier based on the FHIR Consent Patient in FHIR Consent. this can be adjusted if necessary by defining an external property fhirSafeSignerIdType for the respective domain.</td>
     </tr>
     <tr>
       <td>Domain</td>
-      <td><strong>fhirForceProfileConsent</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileConsent=https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileConsent</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileConsent = https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent</code></td>
       <td>Force default export of consent resources <strong>within the whole domain</strong> in gICS-specific Profile</td>
     </tr>
     <tr>
       <td>Domain</td>
-      <td><strong>fhirForceProfileResearchStudy</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileResearchStudy=https://ths-greifswald.de/fhir/StructureDefinition/gics/ResearchStudy/ConsentDomain</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileResearchStudy</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileResearchStudy = https://ths-greifswald.de/fhir/StructureDefinition/gics/ResearchStudy/ConsentDomain</code></td>
       <td>Force default export of ResearchStudy resources in gICS-specific Profile. DEFAULT profile is HL7-D WG ConsentManagement http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy</td>
     </tr>
     <tr>
-      <td>Domain-&gt;SignatureGroup</td>
-      <td><strong>fhirSignatureTypeSystem</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirSignatureTypeSystem=mySystem1</code></td>
-      <td>Customize provenance.signature.type.system for specific SignatureGroup within a specifc Domain. Requires additional property <code class="language-plaintext highlighter-rouge">fhirSignatureTypeCode</code></td>
-    </tr>
-    <tr>
-      <td>Domain-&gt;SignatureGroup</td>
-      <td><strong>fhirSignatureTypeCode</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirSignatureTypeCode=myCode1</code></td>
-      <td>Customize provenance.signature.type.code for specific SignatureGroup within a specifc Domain. Requires additional property <code class="language-plaintext highlighter-rouge">fhirSignatureTypeSystem</code></td>
-    </tr>
-    <tr>
       <td>Domain</td>
-      <td><strong>fhirForceProfileDocumentReference</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileDocumentReference=https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileDocumentReference</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileDocumentReference = https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference</code></td>
       <td>Force default export of document reference resources (e.g. document scans) <strong>based on the specific domain</strong> in MII KDS Consent-specific Profile for document reference</td>
     </tr>
     <tr>
       <td>Domain</td>
-      <td><strong>fhirForceProfileProvenance</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileProvenance=https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileProvenance</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileProvenance = https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance</code></td>
       <td>Force default export of provenance resources (e.g. signatures or references on scans) <strong>based on the specific domain</strong> in MII KDS Consent-specific Profile for provenance</td>
     </tr>
     <tr>
+      <td>SignatureGroup je Domain</td>
+      <td><code class="language-plaintext highlighter-rouge">fhirSignatureTypeSystem</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirSignatureTypeSystem = mySystem1</code></td>
+      <td>Customize provenance.signature.type.system for specific SignatureGroup within a specifc Domain. Requires additional property <code class="language-plaintext highlighter-rouge">fhirSignatureTypeCode</code></td>
+    </tr>
+    <tr>
+      <td>SignatureGroup je Domain</td>
+      <td><code class="language-plaintext highlighter-rouge">fhirSignatureTypeCode</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirSignatureTypeCode = myCode1</code></td>
+      <td>Customize provenance.signature.type.code for specific SignatureGroup within a specifc Domain. Requires additional property <code class="language-plaintext highlighter-rouge">fhirSignatureTypeSystem</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="externalproperties-auf-template-ebene">ExternalProperties auf Template-Ebene</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Scope</th>
+      <th>ExternalProperty</th>
+      <th>Example</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
       <td>Template</td>
-      <td><strong>fhirPolicyValueSet</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirPolicyValueSet=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirPolicyValueSet</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirPolicyValueSet = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3</code></td>
       <td>Default value set to be used for <code class="language-plaintext highlighter-rouge">Consent.Provision.Coding</code>. Affects all policies assigned to the template.</td>
     </tr>
     <tr>
       <td>Template</td>
-      <td><strong>fhirAnswerCodeSystem</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeSystem=2.16.840.1.113883.3.1937.777.24.5.2</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeSystem</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeSystem = 2.16.840.1.113883.3.1937.777.24.5.2</code></td>
       <td>Individualisation of answers and answer options for FHIR Questionnaire and FHIR. Use with Questionnaire.Item.Item.AnswerValueset QuestionnaireResponse through selected external properties.</td>
     </tr>
     <tr>
       <td>Template</td>
-      <td><strong>fhirAnswerValueSet</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirAnswerValueSet=https://www.medizininformatik-initiative.de/fhir/ValueSet/MiiConsentAnswerValueSet</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerValueSet</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerValueSet = https://www.medizininformatik-initiative.de/fhir/ValueSet/MiiConsentAnswerValueSet</code></td>
       <td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.AnswerValueset</td>
     </tr>
     <tr>
       <td>Template</td>
-      <td><strong>fhirAnswerCodeYes</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeYes=2.16.840.1.113883.3.1937.777.24.5.2.1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeYes</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeYes = 2.16.840.1.113883.3.1937.777.24.5.2.1</code></td>
       <td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer</td>
     </tr>
     <tr>
       <td>Template</td>
-      <td><strong>fhirAnswerCodeNo</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeNo=2.16.840.1.113883.3.1937.777.24.5.2.2</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeNo</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeNo = 2.16.840.1.113883.3.1937.777.24.5.2.2</code></td>
       <td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer</td>
     </tr>
     <tr>
       <td>Template</td>
-      <td><strong>fhirAnswerCodeUnknown</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeUnknown=2.16.840.1.113883.3.1937.777.24.5.2.3</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeUnknown</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeUnknown = 2.16.840.1.113883.3.1937.777.24.5.2.3</code></td>
       <td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer.</td>
     </tr>
     <tr>
       <td>Template</td>
-      <td><strong>fhirAnswerDisplayYes</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirAnswerDisplayYes=valid</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerDisplayYes</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerDisplayYes = valid</code></td>
       <td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer</td>
     </tr>
     <tr>
       <td>Template</td>
-      <td><strong>fhirAnswerDisplayNo</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirAnswerDisplayNo=invalid</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerDisplayNo</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerDisplayNo = invalid</code></td>
       <td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer</td>
     </tr>
     <tr>
       <td>Template</td>
-      <td><strong>fhirAnswerDisplayUnknown</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirAnswerDisplayUnknown=unknown</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerDisplayUnknown</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerDisplayUnknown = unknown</code></td>
       <td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer</td>
     </tr>
     <tr>
       <td>Template</td>
-      <td><strong>fhirPolicyUri</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirPolicyUri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1790</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirPolicyUri</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirPolicyUri = urn:oid:2.16.840.1.113883.3.1937.777.24.2.1790</code></td>
       <td>Consent.policy.uri to uniquely identify the version of the MII Broad Consent</td>
     </tr>
     <tr>
       <td>Template</td>
-      <td><strong>fhirConsentCategory</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirConsentCategory=2.16.840.1.113883.3.1937.777.24.2.184</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirConsentCategory</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirConsentCategory = 2.16.840.1.113883.3.1937.777.24.2.184</code></td>
       <td>Consent.category.coding to uniquely identify the MII Broad Consent</td>
     </tr>
     <tr>
       <td>Template</td>
-      <td><strong>fhirForceProfileConsent</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileConsent=https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileConsent</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileConsent = https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung</code></td>
       <td>Force default export of consent resources <strong>based on the specific template</strong> in MII KDS Consent-specific Profile</td>
     </tr>
     <tr>
       <td>Template</td>
-      <td><strong>fhirForceProfileDocumentReference</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileDocumentReference=https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileDocumentReference</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileDocumentReference = https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference</code></td>
       <td>Force default export of document reference resources (e.g. document scans) <strong>based on the specific template</strong> in MII KDS Consent-specific Profile for document reference</td>
     </tr>
     <tr>
       <td>Template</td>
-      <td><strong>fhirForceProfileProvenance</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileProvenance=https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileProvenance</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileProvenance = https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance</code></td>
       <td>Force default export of provenance resources (e.g. signatures or references on scans) <strong>based on the specific template</strong> in MII KDS Consent-specific Profile for provenance</td>
     </tr>
+  </tbody>
+</table>
+
+<h4 id="externalproperties-auf-modul-ebene">ExternalProperties auf Modul-Ebene</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Scope</th>
+      <th>ExternalProperty</th>
+      <th>Example</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>Module</td>
-      <td><strong>fhirQuestionCode</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">fhirQuestionCode=2.16.840.1.113883.3.1937.777.24.2.1594</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirQuestionCode</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirQuestionCode = 2.16.840.1.113883.3.1937.777.24.2.1594</code></td>
       <td>Individualisation of FHIR Questionnaire.Item.linkId through selected external properties. Consideration for FHIR Element TemplateFrame (Questionnaire.Item.Code and linkId) and QuestionnaireComposed.Item.Code</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="supported-profiles-for-fhirforceprofileconsent">Supported profiles for <strong>fhirForceProfileConsent</strong></h3>
+<h3 id="unterstützte-profile-und-defaults">Unterstützte Profile und Defaults</h3>
+
+<h4 id="externalproperty-fhirforceprofileconsent">ExternalProperty <em>fhirForceProfileConsent</em></h4>
 
 <ul>
   <li>
-    <p><strong>DEFFAULT</strong>: HL7 Germany Working Group Consent Management profile (as of Dec. 2025 ) : http://fhir.de/ConsentManagement/StructureDefinition/Consent
-Details from  https://ig.fhir.de/einwilligungsmanagement/stable/IGEinwilligungsmanagement.html</p>
+    <p><strong>DEFAULT</strong>: HL7 Deutschland Arbeitsgruppe Einwilligungsmanagement Profil: <code class="language-plaintext highlighter-rouge">http://fhir.de/ConsentManagement/StructureDefinition/Consent</code> <br />
+Details unter  <a href="https://ig.fhir.de/einwilligungsmanagement/stable/IGEinwilligungsmanagement.html">https://ig.fhir.de/einwilligungsmanagement/stable/IGEinwilligungsmanagement.html</a></p>
   </li>
   <li>
-    <p>MII Core Data Set Consent profile: https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung ,
-Details from https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-FHIRProfile-Consent.html</p>
+    <p>MII Kerndatensatz Consent Profil: <code class="language-plaintext highlighter-rouge">https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung</code> <br />
+Details unter <a href="https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-FHIRProfile-Consent.html">https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-FHIRProfile-Consent.html</a></p>
   </li>
   <li>
-    <p>gICS specific Consent Profile with several extensions: https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent ,
-Details from https://www.ths-greifswald.de/gics/fhir</p>
+    <p>gICS-spezifisches Consent Profil mit einigen Erweiterungen: <code class="language-plaintext highlighter-rouge">https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent</code> <br />
+Details unter <a href="StructureDefinition-Consent.html">https://www.ths-greifswald.de/gics/fhir</a></p>
   </li>
 </ul>
 
@@ -421,7 +494,7 @@ Details from https://www.ths-greifswald.de/gics/fhir</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 25, 2025 14:08+0100">2025-11-25</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 25, 2026 17:02+0100">2026-02-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

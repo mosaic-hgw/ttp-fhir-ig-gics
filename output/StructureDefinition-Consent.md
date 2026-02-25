@@ -1,4 +1,4 @@
-# Einwilligungsinformationen - v2025.2.0
+# Consent - v2025.2.0
 
 
 
@@ -11,7 +11,7 @@
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent",
   "version" : "2025.2.0",
   "name" : "Consent",
-  "title" : "Einwilligungsinformationen",
+  "title" : "Consent",
   "status" : "active",
   "experimental" : false,
   "date" : "2025-06-12",
@@ -28,7 +28,7 @@
     }
   ],
   "description" : "Angepasstes FHIR Consent Profil auf Basis des offiziellen [Consent-Profils](https://ig.fhir.de/einwilligungsmanagement/stable/Consent.html) der Hl7 AG Einwilligungsmanagement erweitertet um ausgewählte gICS Eigenschaften.",
-  "purpose" : "Strukturierte, maschinenverarbeitbare Abbildung der Einwilligungserklärung",
+  "purpose" : "Strukturierte, maschinenverarbeitbare Abbildung von Einwilligungsdaten.",
   "copyright" : "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "fhirVersion" : "4.0.1",
   "mapping" : [

@@ -1,4 +1,4 @@
-# Patient's consent status for a defined policy - v2025.2.0
+# IsConsented - v2025.2.0
 
 
 
@@ -12,7 +12,7 @@
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gics/isConsented",
   "version" : "2025.2.0",
   "name" : "IsConsented",
-  "title" : "Patient's consent status for a defined policy",
+  "title" : "IsConsented",
   "status" : "active",
   "kind" : "operation",
   "date" : "2025-06-12",

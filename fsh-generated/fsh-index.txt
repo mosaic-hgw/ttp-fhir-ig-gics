@@ -22,11 +22,7 @@ CodeSystem-ConsentPolicyClassCS.json                                  ConsentPol
 CodeSystem-ConsentPolicyPurposeCS.json                                ConsentPolicyPurpose                                  CodeSystem  codesystem-ConsentPolicyPurpose.fsh                         1 - 340
 CodeSystem-ConsentStatusCS.json                                       ConsentStatus                                         CodeSystem  codesystem-ConsentStatus.fsh                                1 - 56
 CodeSystem-DesignationUseCS.json                                      DesignationUse                                        CodeSystem  codesystem-DesignationUse.fsh                               1 - 11
-CodeSystem-IdMatchingTypeCS.json                                      IdMatchingType                                        CodeSystem  codesystem-IdMatchingType.fsh                               1 - 11
-CodeSystem-IdatElementsCS.json                                        IdatElements                                          CodeSystem  codesystem-IdatElements.fsh                                 1 - 23
-CodeSystem-MatchStatusCS.json                                         MatchStatus                                           CodeSystem  codesystem-MatchStatus.fsh                                  1 - 16
 CodeSystem-PolicyCS.json                                              Policy                                                CodeSystem  codesystem-Policy.fsh                                       1 - 83
-CodeSystem-SaveActionCS.json                                          SaveAction                                            CodeSystem  codesystem-SaveAction.fsh                                   1 - 12
 Consent-Consent-example-1.json                                        Consent-example-1                                     Instance    profile-Consent.fsh                                         32 - 52
 Consent-Consent-example-2.json                                        Consent-example-2                                     Instance    profile-Consent.fsh                                         55 - 135
 Consent-Consent-example-3.json                                        Consent-example-3                                     Instance    profile-Consent.fsh                                         138 - 235
@@ -108,10 +104,6 @@ ValueSet-ConsentStatusRefusalShortValuesVS.json                       ConsentSta
 ValueSet-ConsentStatusVS.json                                         ConsentStatus                                         ValueSet    valueset-ConsentStatus.fsh                                  1 - 42
 ValueSet-ConsentStatusWithdrawalFullValuesVS.json                     ConsentStatusWithdrawalFullValues                     ValueSet    valueset-ConsentStatusWithdrawalFullValues.fsh              1 - 28
 ValueSet-ConsentStatusWithdrawalShortValuesVS.json                    ConsentStatusWithdrawalShortValues                    ValueSet    valueset-ConsentStatusWithdrawalShortValues.fsh             1 - 20
-ValueSet-IdMatchingTypeVS.json                                        IdMatchingType                                        ValueSet    valueset-IdMatchingType.fsh                                 1 - 18
-ValueSet-IdatElementsVS.json                                          IdatElements                                          ValueSet    valueset-IdatElements.fsh                                   1 - 54
-ValueSet-MatchStatusVS.json                                           MatchStatus                                           ValueSet    valueset-MatchStatus.fsh                                    1 - 33
 ValueSet-PolicyStatusVS.json                                          PolicyStatus                                          ValueSet    valueset-PolicyStatus.fsh                                   1 - 21
 ValueSet-PolicyVS.json                                                Policy                                                ValueSet    valueset-Policy.fsh                                         1 - 5
-ValueSet-SaveActionVS.json                                            SaveAction                                            ValueSet    valueset-SaveAction.fsh                                     1 - 21
 VerificationResult-ConsentQualityControl-example-1.json               ConsentQualityControl-example-1                       Instance    profile-ConsentQualityControl.fsh                           36 - 45

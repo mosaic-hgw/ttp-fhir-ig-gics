@@ -29,17 +29,6 @@
       "StructureDefinition-FreeTextDefAttributes.html" : "FreeTextDef Attributes"
     },
     {
-      "url" : "https://ths-greifswald.de/fhir/ValueSet/dispatcher/IdatElements",
-      "version" : "2025.2.0",
-      "status" : "active",
-      "name" : "IdatElements",
-      "title" : null,
-      "description" : "",
-      "systems" : [
-        "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements"
-      ]
-    },
-    {
       "url" : "https://ths-greifswald.de/fhir/ValueSet/epix/BloomfilterType",
       "version" : "2025.2.0",
       "status" : "draft",
@@ -52,24 +41,6 @@
       "uses" : {
       },
       "StructureDefinition-identifier-bloomfilter.html" : "Identifier-Profil für die Abbildung einer Bloomfilters"
-    },
-    {
-      "url" : "https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus",
-      "version" : "2025.2.0",
-      "status" : "active",
-      "name" : "MatchStatus",
-      "title" : null,
-      "description" : "",
-      "systems" : ["https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus"]
-    },
-    {
-      "url" : "https://ths-greifswald.de/fhir/ValueSet/epix/SaveAction",
-      "version" : "2025.2.0",
-      "status" : "active",
-      "name" : "SaveAction",
-      "title" : null,
-      "description" : "",
-      "systems" : ["https://ths-greifswald.de/fhir/CodeSystem/epix/SaveAction"]
     },
     {
       "url" : "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentComponentType",
@@ -249,17 +220,6 @@
       ]
     },
     {
-      "url" : "https://ths-greifswald.de/fhir/ValueSet/gics/IdMatchingType",
-      "version" : "2025.2.0",
-      "status" : "active",
-      "name" : "IdMatchingType",
-      "title" : null,
-      "description" : "",
-      "systems" : [
-        "https://ths-greifswald.de/fhir/CodeSystem/gics/IdMatchingType"
-      ]
-    },
-    {
       "url" : "https://ths-greifswald.de/fhir/ValueSet/gics/Policy",
       "version" : "2025.2.0",
       "status" : "draft",
@@ -269,9 +229,9 @@
       "systems" : ["https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"],
       "uses" : {
       },
-      "OperationDefinition-GetAllConsentedIdsFor.html" : "Get all consented Identifiers for person and template",
-      "OperationDefinition-IsConsented.html" : "Patient's consent status for a defined policy",
-      "StructureDefinition-ConsentPolicy.html" : "ConsentPolicy"
+      "StructureDefinition-ConsentPolicy.html" : "ConsentPolicy",
+      "OperationDefinition-GetAllConsentedIdsFor.html" : "GetAllConsentedIdsFor",
+      "OperationDefinition-IsConsented.html" : "IsConsented"
     },
     {
       "url" : "https://ths-greifswald.de/fhir/ValueSet/gics/PolicyStatus",

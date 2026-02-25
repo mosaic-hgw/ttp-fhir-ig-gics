@@ -1,4 +1,4 @@
-# All consents for domain - v2025.2.0
+# AllConsentsForDomain - v2025.2.0
 
 
 
@@ -12,7 +12,7 @@
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gics/allConsentsForDomain",
   "version" : "2025.2.0",
   "name" : "AllConsentsForDomain",
-  "title" : "All consents for domain",
+  "title" : "AllConsentsForDomain",
   "status" : "active",
   "kind" : "operation",
   "date" : "2025-06-12",

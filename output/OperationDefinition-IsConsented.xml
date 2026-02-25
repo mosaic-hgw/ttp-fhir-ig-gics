@@ -13,7 +13,7 @@ Bei Angabe von mehreren Identifikatoren werden diese ODER-verknüpft.</p>
   <url value="https://ths-greifswald.de/fhir/OperationDefinition/gics/isConsented"/>
   <version value="2025.2.0"/>
   <name value="IsConsented"/>
-  <title value="Patient's consent status for a defined policy"/>
+  <title value="IsConsented"/>
   <status value="active"/>
   <kind value="operation"/>
   <date value="2025-06-12"/>

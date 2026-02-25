@@ -13,7 +13,7 @@
   <url value="https://ths-greifswald.de/fhir/OperationDefinition/gics/getAllConsentedIdsFor"/>
   <version value="2025.2.0"/>
   <name value="GetAllConsentedIdsFor"/>
-  <title value="Get all consented Identifiers for person and template"/>
+  <title value="GetAllConsentedIdsFor"/>
   <status value="active"/>
   <kind value="operation"/>
   <date value="2025-06-12"/>

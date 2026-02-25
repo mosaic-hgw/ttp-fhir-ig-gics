@@ -70,7 +70,7 @@
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "language": "de-DE",
   "name": "CurrentConsentForPersonAndTemplate",
-  "title": "Current consent for person and template",
+  "title": "CurrentConsentForPersonAndTemplate",
   "kind": "operation",
   "description": "Liefert den aktuellen Consent einer Person bezogen auf eine spezifische Einwilligungsvorlage (unter Angabe des TemplateFrame-Identifiers) per POST-Request. Aktuell bedeutet <b>\"höchste Version der Einwilligungsvorlage\" UND \"jüngstes Datum\"</b>. Die Rückgabe erfolgt als Bundle vom Typ \"collection\". Das Bundle enthält alle für den spezifischen Consent relevanten Ressourcen (z.B. TemplateFrame, QuestionnaireComposed, QuestionnaireResponse, Provenance). Details zu den verwendeten Profilen unterhttps://ig.fhir.de/einwilligungsmanagement/stable/Home.html",
   "purpose": "Teil des FHIR Gateway für gICS. Weitere Infos unter https://ths-greifswald.de/gics",

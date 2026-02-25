@@ -14,7 +14,7 @@
   <url value="https://ths-greifswald.de/fhir/OperationDefinition/gics/addConsentOptOut"/>
   <version value="2025.2.0"/>
   <name value="AddConsentOptOut"/>
-  <title value="Add a consent related QuestionnaireResponse for a patient in an opt-out context"/>
+  <title value="AddConsentOptOut"/>
   <status value="active"/>
   <kind value="operation"/>
   <date value="2025-06-12"/>

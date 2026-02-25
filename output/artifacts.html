@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7"}
-    h3,h4,h5,h6{--heading-prefix:"7.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -121,9 +121,6 @@
       <li>
         <a href="StructureDefinition-ExchangeFormatDefinition.html">ExchangeFormatDefinition</a>
       </li>
-      <li>
-        <a href="Questionnaire-Suche.html">Questionnaire-Suche</a>
-      </li>
     </ul>
   </li>
   <li>
@@ -167,10 +164,16 @@
     </ul>
   </li>
   <li>
-    <a href="Mitgeltend.html">Mitgeltende Profile</a>
+    <a href="Suche.html">Suche</a>
   </li>
   <li>
-    <a href="konfig.html">Konfigurationshinweise</a>
+    <a href="Mitgeltend.html">Mitgeltende Profile und Erläuterungen</a>
+  </li>
+  <li>
+    <a href="konfig.html">Konfiguration</a>
+  </li>
+  <li>
+    <a href="Terminologie.html">Terminologie</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -254,7 +257,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="OperationDefinition-AddConsent.html"
-                  title="OperationDefinition/AddConsent">Add a consent related QuestionnaireResponse for a patient</a>
+                  title="OperationDefinition/AddConsent">AddConsent</a>
             </td>
             <td>
 <p>Nimmt die Einwilligungsinformationen einschließlich Nebeninformationen (Unterschrift, Scan) für einen (ggf. neuen) Patienten entgegen, um auf dieser Basis eine neue Einwilligung im gICS zu erzeugen. Liefert Bundle vom Typ "collection". Das Bundle enthält die errechnete FHIR Consent-Resource, sowie alle für diesen spezifischen Consent relevanten Ressourcen (z.B. QuestionnaireComposed, QuestionnaireResponse, Provenance, Patient).</p>
@@ -263,7 +266,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="OperationDefinition-AddConsentOptOut.html"
-                  title="OperationDefinition/AddConsentOptOut">Add a consent related QuestionnaireResponse for a patient in an opt-out context</a>
+                  title="OperationDefinition/AddConsentOptOut">AddConsentOptOut</a>
             </td>
             <td>
 <p>Erstellt die Einwilligungsinformationen in einem Opt-Out-Kontext für einen (ggf. neuen) Patienten, um auf dieser Basis eine neue Einwilligung im gICS zu erzeugen. Liefert Bundle vom Typ "collection". Das Bundle enthält die errechnete FHIR Consent-Resource.</p>
@@ -272,7 +275,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="OperationDefinition-AllConsentsForDomain.html"
-                  title="OperationDefinition/AllConsentsForDomain">All consents for domain</a>
+                  title="OperationDefinition/AllConsentsForDomain">AllConsentsForDomain</a>
             </td>
             <td>
 <p>Liefert alle Consente einer spezifischen Einwilligungsdomaene. Die Rückgabe erfolgt als Bundle vom Typ "collection". Das Bundle enthält je Consent jeweils ein Bundle mit allen für den spezifischen Consent relevanten Ressourcen (TemplateFrame, QuestionnaireComposed, QuestionnaireResponse, Provenance,Patient und i.a. DocumentReference). Details zu den verwendeten Profilen unterhttps://ig.fhir.de/einwilligungsmanagement/stable/Home.html</p>
@@ -281,7 +284,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="OperationDefinition-AllConsentsForPerson.html"
-                  title="OperationDefinition/AllConsentsForPerson">All consents for person</a>
+                  title="OperationDefinition/AllConsentsForPerson">AllConsentsForPerson</a>
             </td>
             <td>
 <p>Liefert alle Consente einer Person einer spezifischen Einwilligungsdomaene. Die Rückgabe erfolgt als Bundle vom Typ "collection". Das Bundle enthält je Consent einen Bundle-Entry, der alle für den spezifischen Consent relevanten Ressourcen (z.B. TemplateFrame, QuestionnaireComposed, QuestionnaireResponse, Provenance) enthält. Details zu den verwendeten Profilen unterhttps://ig.fhir.de/einwilligungsmanagement/stable/Home.html</p>
@@ -290,7 +293,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="OperationDefinition-AllConsentsForTemplate.html"
-                  title="OperationDefinition/AllConsentsForTemplate">All consents for template</a>
+                  title="OperationDefinition/AllConsentsForTemplate">AllConsentsForTemplate</a>
             </td>
             <td>
 <p>Liefert alle Consente eines spezifischen TemplateFrame unter Angabe des TemplateFrame-Identifiers (Vorlagenbezug) per POST-Request. Die Rückgabe erfolgt als Bundle vom Typ "collection". Das Bundle enthält je Consent einen Bundle-Entry, der alle für den spezifischen Consent relevanten Ressourcen (z.B. TemplateFrame, QuestionnaireComposed, QuestionnaireResponse, Provenance) enthält. Details zu den verwendeten Profilen unterhttps://ig.fhir.de/einwilligungsmanagement/stable/Home.html</p>
@@ -299,7 +302,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="OperationDefinition-AllPolicyStatesForPerson.html"
-                  title="OperationDefinition/AllPolicyStatesForPerson">All policy states for person</a>
+                  title="OperationDefinition/AllPolicyStatesForPerson">AllPolicyStatesForPerson</a>
             </td>
             <td>
 <p>Liefert alle jemals unterzeichneten Policies einer Person einer spezifischen Einwilligungsdomaene. Die Rückgabe erfolgt als Bundle vom Typ "collection". Das Bundle enthält ausschließlich Consent-Ressourcen zur Abbildung der Policies, d.h. je unterzeichneter Policy ist eine Consent-Ressource mit jeweils einer Policy (provision) enthalten.
@@ -311,7 +314,7 @@ Sollen nur die jeweils neueste Policies angezeigt werden, ist clientseit eine Fi
          <tr>
             <td style="column-width:30%">
                <a href="OperationDefinition-CurrentConsentForPersonAndTemplate.html"
-                  title="OperationDefinition/CurrentConsentForPersonAndTemplate">Current consent for person and template</a>
+                  title="OperationDefinition/CurrentConsentForPersonAndTemplate">CurrentConsentForPersonAndTemplate</a>
             </td>
             <td>
 <p>Liefert den aktuellen Consent einer Person bezogen auf eine spezifische Einwilligungsvorlage (unter Angabe des TemplateFrame-Identifiers) per POST-Request. Aktuell bedeutet &lt;b&gt;"höchste Version der Einwilligungsvorlage" UND "jüngstes Datum"&lt;/b&gt;. Die Rückgabe erfolgt als Bundle vom Typ "collection". Das Bundle enthält alle für den spezifischen Consent relevanten Ressourcen (z.B. TemplateFrame, QuestionnaireComposed, QuestionnaireResponse, Provenance). Details zu den verwendeten Profilen unterhttps://ig.fhir.de/einwilligungsmanagement/stable/Home.html</p>
@@ -320,7 +323,7 @@ Sollen nur die jeweils neueste Policies angezeigt werden, ist clientseit eine Fi
          <tr>
             <td style="column-width:30%">
                <a href="OperationDefinition-CurrentPolicyStatesForPerson.html"
-                  title="OperationDefinition/CurrentPolicyStatesForPerson">Current policy states for person</a>
+                  title="OperationDefinition/CurrentPolicyStatesForPerson">CurrentPolicyStatesForPerson</a>
             </td>
             <td>
 <p>Liefert die aktuellen, gültigen Policies einer Person einer spezifischen Einwilligungsdomaene (Status: permit, deny). Die Rückgabe erfolgt als Bundle vom Typ "collection". Das Bundle enthält ausschließlich Consent-Ressourcen zur Abbildung der Policies, d.h. je unterzeichneter Policy ist eine Consent-Ressource mit jeweils einer Policy (provision) enthalten.
@@ -331,7 +334,7 @@ Per default werden alle aktuell gültigen vom Patienten unterzeichneten Policies
          <tr>
             <td style="column-width:30%">
                <a href="OperationDefinition-GetAllConsentedIdsFor.html"
-                  title="OperationDefinition/GetAllConsentedIdsFor">Get all consented Identifiers for person and template</a>
+                  title="OperationDefinition/GetAllConsentedIdsFor">GetAllConsentedIdsFor</a>
             </td>
             <td>
 <p>Abruf aller Identifier eines bestimmten benannten Identifier-Typs (z.b. studyPsn) für eine bestimmte Policy (Coding) und Domäne. Zurück geliefert wird eine Liste von eingewilligten Identifiern in Bezug auf die spezifizierte Policy.</p>
@@ -340,7 +343,7 @@ Per default werden alle aktuell gültigen vom Patienten unterzeichneten Policies
          <tr>
             <td style="column-width:30%">
                <a href="OperationDefinition-IsConsented.html"
-                  title="OperationDefinition/IsConsented">Patient's consent status for a defined policy</a>
+                  title="OperationDefinition/IsConsented">IsConsented</a>
             </td>
             <td>
 <p>Liefert den Einwilligungsstatus eines Patienten für eine spezifische Policy per POST-Request. Die Rückgabe erfolgt als Parameters-Ressource.</p>
@@ -390,6 +393,15 @@ Per default werden alle aktuell gültigen vom Patienten unterzeichneten Policies
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-Consent.html"
+                  title="StructureDefinition/Consent">Consent</a>
+            </td>
+            <td>
+<p>Angepasstes FHIR Consent Profil auf Basis des offiziellen <a href="https://ig.fhir.de/einwilligungsmanagement/stable/Consent.html">Consent-Profils</a> der Hl7 AG Einwilligungsmanagement erweitertet um ausgewählte gICS Eigenschaften.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-ConsentDomain.html"
                   title="StructureDefinition/ConsentDomain">Consent Domain</a>
             </td>
@@ -431,15 +443,6 @@ Per default werden alle aktuell gültigen vom Patienten unterzeichneten Policies
             </td>
             <td>
 <p>Abbildung aller relevanten Information zur Verwaltung wiederverwendbarer Einwilligungspolicies mit gICS</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-Consent.html"
-                  title="StructureDefinition/Consent">Einwilligungsinformationen</a>
-            </td>
-            <td>
-<p>Angepasstes FHIR Consent Profil auf Basis des offiziellen <a href="https://ig.fhir.de/einwilligungsmanagement/stable/Consent.html">Consent-Profils</a> der Hl7 AG Einwilligungsmanagement erweitertet um ausgewählte gICS Eigenschaften.</p>
 </td>
          </tr>
          <tr>
@@ -758,32 +761,12 @@ Per default werden alle aktuell gültigen vom Patienten unterzeichneten Policies
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-IdMatchingTypeVS.html" title="ValueSet/IdMatchingTypeVS">IdMatchingType</a>
-            </td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-IdatElementsVS.html" title="ValueSet/IdatElementsVS">IdatElements</a>
-            </td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-MatchStatusVS.html" title="ValueSet/MatchStatusVS">MatchStatus</a>
-            </td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="ValueSet-PolicyVS.html" title="ValueSet/PolicyVS">Policy</a>
             </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-PolicyStatusVS.html" title="ValueSet/PolicyStatusVS">PolicyStatus</a>
-            </td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-SaveActionVS.html" title="ValueSet/SaveActionVS">SaveAction</a>
             </td>
          </tr>
       </tbody>
@@ -868,43 +851,10 @@ Per default werden alle aktuell gültigen vom Patienten unterzeichneten Policies
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-IdMatchingTypeCS.html"
-                  title="CodeSystem/IdMatchingTypeCS">IdMatchingType</a>
-            </td>
-            <td>
-<p>ID matching types used in consent management</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-IdatElementsCS.html" title="CodeSystem/IdatElementsCS">IdatElements</a>
-            </td>
-            <td>
-<p>Element names for use in $requestTasks operation.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-MatchStatusCS.html" title="CodeSystem/MatchStatusCS">MatchStatus</a>
-            </td>
-            <td>
-<p>Possible match statuses in the context of adding patient identities.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="CodeSystem-PolicyCS.html" title="CodeSystem/PolicyCS">Policy</a>
             </td>
             <td>
 <p>Policies used in consent management</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-SaveActionCS.html" title="CodeSystem/SaveActionCS">SaveAction</a>
-            </td>
-            <td>
-<p>Possible save actions in the context of adding patient identities.</p>
 </td>
          </tr>
       </tbody>
@@ -1292,7 +1242,7 @@ Per default werden alle aktuell gültigen vom Patienten unterzeichneten Policies
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 25, 2025 14:08+0100">2025-11-25</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 25, 2026 17:02+0100">2026-02-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

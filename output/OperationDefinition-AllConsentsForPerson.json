@@ -9,7 +9,7 @@
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gics/allConsentsForPerson",
   "version" : "2025.2.0",
   "name" : "AllConsentsForPerson",
-  "title" : "All consents for person",
+  "title" : "AllConsentsForPerson",
   "status" : "active",
   "kind" : "operation",
   "date" : "2025-06-12",

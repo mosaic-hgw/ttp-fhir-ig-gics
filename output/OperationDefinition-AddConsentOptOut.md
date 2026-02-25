@@ -1,4 +1,4 @@
-# Add a consent related QuestionnaireResponse for a patient in an opt-out context - v2025.2.0
+# AddConsentOptOut - v2025.2.0
 
 
 
@@ -12,7 +12,7 @@
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gics/addConsentOptOut",
   "version" : "2025.2.0",
   "name" : "AddConsentOptOut",
-  "title" : "Add a consent related QuestionnaireResponse for a patient in an opt-out context",
+  "title" : "AddConsentOptOut",
   "status" : "active",
   "kind" : "operation",
   "date" : "2025-06-12",

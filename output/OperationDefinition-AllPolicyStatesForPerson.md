@@ -1,4 +1,4 @@
-# All policy states for person - v2025.2.0
+# AllPolicyStatesForPerson - v2025.2.0
 
 
 
@@ -12,7 +12,7 @@
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gics/allPolicyStatesForPerson",
   "version" : "2025.2.0",
   "name" : "AllPolicyStatesForPerson",
-  "title" : "All policy states for person",
+  "title" : "AllPolicyStatesForPerson",
   "status" : "active",
   "kind" : "operation",
   "date" : "2025-06-12",

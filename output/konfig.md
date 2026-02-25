@@ -1,2 +1,2 @@
-# Konfigurationshinweise - v2025.2.0
+# Konfiguration - v2025.2.0
 

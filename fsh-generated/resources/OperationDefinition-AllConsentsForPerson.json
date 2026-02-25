@@ -54,7 +54,7 @@
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "language": "de-DE",
   "name": "AllConsentsForPerson",
-  "title": "All consents for person",
+  "title": "AllConsentsForPerson",
   "kind": "operation",
   "description": "Liefert alle Consente einer Person einer spezifischen Einwilligungsdomaene. Die Rückgabe erfolgt als Bundle vom Typ \"collection\". Das Bundle enthält je Consent einen Bundle-Entry, der alle für den spezifischen Consent relevanten Ressourcen (z.B. TemplateFrame, QuestionnaireComposed, QuestionnaireResponse, Provenance) enthält. Details zu den verwendeten Profilen unterhttps://ig.fhir.de/einwilligungsmanagement/stable/Home.html",
   "purpose": "Teil des FHIR Gateway für gICS. Weitere Infos unter https://ths-greifswald.de/gics",

@@ -17,7 +17,7 @@ Default ist die gics-Variante; alternativ das Profil aus dem IG Einwilligungsman
   <url value="https://ths-greifswald.de/fhir/OperationDefinition/gics/currentConsentForPersonAndTemplate"/>
   <version value="2025.2.0"/>
   <name value="CurrentConsentForPersonAndTemplate"/>
-  <title value="Current consent for person and template"/>
+  <title value="CurrentConsentForPersonAndTemplate"/>
   <status value="active"/>
   <kind value="operation"/>
   <date value="2025-06-12"/>

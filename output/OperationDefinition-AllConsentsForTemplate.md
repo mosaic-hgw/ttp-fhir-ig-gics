@@ -1,4 +1,4 @@
-# All consents for template - v2025.2.0
+# AllConsentsForTemplate - v2025.2.0
 
 
 
@@ -12,7 +12,7 @@
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gics/allConsentsForTemplate",
   "version" : "2025.2.0",
   "name" : "AllConsentsForTemplate",
-  "title" : "All consents for template",
+  "title" : "AllConsentsForTemplate",
   "status" : "active",
   "kind" : "operation",
   "date" : "2025-06-12",

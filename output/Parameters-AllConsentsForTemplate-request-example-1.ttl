@@ -12,13 +12,13 @@
   fhir:parameter ( [
      fhir:name [ fhir:v "template" ] ;
      fhir:value [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "MII;Patienteneinwilligung MII;1.6.f"
      ]
   ] [
      fhir:name [ fhir:v "domain" ] ;
      fhir:value [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "MII"
      ]
   ] ) . # 

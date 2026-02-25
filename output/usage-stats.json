@@ -528,7 +528,7 @@
     "Consent": [
       {
         "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent",
-        "title": "Einwilligungsinformationen"
+        "title": "Consent"
       }
     ],
     "Provenance": [

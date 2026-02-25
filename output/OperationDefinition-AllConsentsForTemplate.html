@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>All consents for template -  v2025.2.0</title>
+    <title>AllConsentsForTemplate -  v2025.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.5"}
-    h3,h4,h5,h6{--heading-prefix:"7.5"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.5"}
+    h3,h4,h5,h6{--heading-prefix:"10.5"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -121,9 +121,6 @@
       <li>
         <a href="StructureDefinition-ExchangeFormatDefinition.html">ExchangeFormatDefinition</a>
       </li>
-      <li>
-        <a href="Questionnaire-Suche.html">Questionnaire-Suche</a>
-      </li>
     </ul>
   </li>
   <li>
@@ -167,10 +164,16 @@
     </ul>
   </li>
   <li>
-    <a href="Mitgeltend.html">Mitgeltende Profile</a>
+    <a href="Suche.html">Suche</a>
   </li>
   <li>
-    <a href="konfig.html">Konfigurationshinweise</a>
+    <a href="Mitgeltend.html">Mitgeltende Profile und Erläuterungen</a>
+  </li>
+  <li>
+    <a href="konfig.html">Konfiguration</a>
+  </li>
+  <li>
+    <a href="Terminologie.html">Terminologie</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -184,7 +187,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>All consents for template</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>AllConsentsForTemplate</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -241,7 +244,7 @@
 
   <a name="root"> </a>
 
-  <h2 id="root">OperationDefinition: All consents for template
+  <h2 id="root">OperationDefinition: AllConsentsForTemplate
 
   </h2>
 
@@ -301,12 +304,7 @@
 
 <div style="display:inline-block" markdown="1">
 
-<p><strong>Unterstützt ab TTP-FHIR Gateway Version 2.1.0</strong></p>
-<p align="left">
-  <img width="500" style="float: none;" src="assets/images/fhirgateway-gics.png" />
-</p>
-
-<h4 id="voraussetzung">Voraussetzung</h4>
+<h2 id="voraussetzung">Voraussetzung</h2>
 <ul>
   <li>Spezifizierte Domäne muss angelegt sein</li>
   <li>Es muss eine gültige Einwilligung mit dem gegebenen personIdentifier existieren</li>
@@ -337,12 +335,12 @@ Default ist die gics-Variante; alternativ das Profil aus dem IG Einwilligungsman
   <!-- insert notes if present -->
   
 
-<h3>Hinweise</h3>
+
 
 
 <div style="display:inline-block" markdown="1">
 
-<h4 id="rückgabe">Rückgabe</h4>
+<h2 id="rückgabe">Rückgabe</h2>
 
 <p>Paging entsprechend der <a href="http://hl7.org/fhir/r4/search.html">FHIR Search API</a> wird ab TTP-FHIR Gateway Version 2023.1.1 unterstützt, namentlich die Parameter</p>
 <ul>
@@ -363,7 +361,7 @@ Werden weder _count noch _offset angegeben, enthält das Bundle maximal 100 Erge
   <li>422: Fehlende oder falsche Patienten-Attribute.</li>
 </ul>
 
-<h4 id="beispiel">Beispiel</h4>
+<h2 id="beispiel">Beispiel</h2>
 
 <ul>
   <li><a href="Parameters-AllConsentsForTemplate-request-example-1.html">Request-Body</a></li>
@@ -394,7 +392,7 @@ Werden weder _count noch _offset angegeben, enthält das Bundle maximal 100 Erge
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 25, 2025 14:08+0100">2025-11-25</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 25, 2026 17:02+0100">2026-02-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

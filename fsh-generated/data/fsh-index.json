@@ -184,44 +184,12 @@
     "endLine": 11
   },
   {
-    "outputFile": "CodeSystem-IdMatchingTypeCS.json",
-    "fshName": "IdMatchingType",
-    "fshType": "CodeSystem",
-    "fshFile": "codesystem-IdMatchingType.fsh",
-    "startLine": 1,
-    "endLine": 11
-  },
-  {
-    "outputFile": "CodeSystem-IdatElementsCS.json",
-    "fshName": "IdatElements",
-    "fshType": "CodeSystem",
-    "fshFile": "codesystem-IdatElements.fsh",
-    "startLine": 1,
-    "endLine": 23
-  },
-  {
-    "outputFile": "CodeSystem-MatchStatusCS.json",
-    "fshName": "MatchStatus",
-    "fshType": "CodeSystem",
-    "fshFile": "codesystem-MatchStatus.fsh",
-    "startLine": 1,
-    "endLine": 16
-  },
-  {
     "outputFile": "CodeSystem-PolicyCS.json",
     "fshName": "Policy",
     "fshType": "CodeSystem",
     "fshFile": "codesystem-Policy.fsh",
     "startLine": 1,
     "endLine": 83
-  },
-  {
-    "outputFile": "CodeSystem-SaveActionCS.json",
-    "fshName": "SaveAction",
-    "fshType": "CodeSystem",
-    "fshFile": "codesystem-SaveAction.fsh",
-    "startLine": 1,
-    "endLine": 12
   },
   {
     "outputFile": "Consent-Consent-example-1.json",
@@ -872,30 +840,6 @@
     "endLine": 20
   },
   {
-    "outputFile": "ValueSet-IdMatchingTypeVS.json",
-    "fshName": "IdMatchingType",
-    "fshType": "ValueSet",
-    "fshFile": "valueset-IdMatchingType.fsh",
-    "startLine": 1,
-    "endLine": 18
-  },
-  {
-    "outputFile": "ValueSet-IdatElementsVS.json",
-    "fshName": "IdatElements",
-    "fshType": "ValueSet",
-    "fshFile": "valueset-IdatElements.fsh",
-    "startLine": 1,
-    "endLine": 54
-  },
-  {
-    "outputFile": "ValueSet-MatchStatusVS.json",
-    "fshName": "MatchStatus",
-    "fshType": "ValueSet",
-    "fshFile": "valueset-MatchStatus.fsh",
-    "startLine": 1,
-    "endLine": 33
-  },
-  {
     "outputFile": "ValueSet-PolicyStatusVS.json",
     "fshName": "PolicyStatus",
     "fshType": "ValueSet",
@@ -910,14 +854,6 @@
     "fshFile": "valueset-Policy.fsh",
     "startLine": 1,
     "endLine": 5
-  },
-  {
-    "outputFile": "ValueSet-SaveActionVS.json",
-    "fshName": "SaveAction",
-    "fshType": "ValueSet",
-    "fshFile": "valueset-SaveAction.fsh",
-    "startLine": 1,
-    "endLine": 21
   },
   {
     "outputFile": "VerificationResult-ConsentQualityControl-example-1.json",

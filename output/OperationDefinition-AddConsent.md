@@ -1,4 +1,4 @@
-# Add a consent related QuestionnaireResponse for a patient - v2025.2.0
+# AddConsent - v2025.2.0
 
 
 
@@ -12,7 +12,7 @@
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gics/addConsent",
   "version" : "2025.2.0",
   "name" : "AddConsent",
-  "title" : "Add a consent related QuestionnaireResponse for a patient",
+  "title" : "AddConsent",
   "status" : "active",
   "kind" : "operation",
   "date" : "2025-06-12",

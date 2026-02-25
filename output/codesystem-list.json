@@ -1,36 +1,12 @@
 {
   "codeSystems" : [
     {
-      "url" : "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements",
-      "version" : "2025.2.0",
-      "status" : "active",
-      "name" : "IdatElements",
-      "title" : null,
-      "description" : "Element names for use in $requestTasks operation."
-    },
-    {
       "url" : "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType",
       "version" : "2025.2.0",
       "status" : "active",
       "name" : "BloomfilterType",
       "title" : null,
       "description" : "Types of Bloomfilters."
-    },
-    {
-      "url" : "https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus",
-      "version" : "2025.2.0",
-      "status" : "active",
-      "name" : "MatchStatus",
-      "title" : null,
-      "description" : "Possible match statuses in the context of adding patient identities."
-    },
-    {
-      "url" : "https://ths-greifswald.de/fhir/CodeSystem/epix/SaveAction",
-      "version" : "2025.2.0",
-      "status" : "active",
-      "name" : "SaveAction",
-      "title" : null,
-      "description" : "Possible save actions in the context of adding patient identities."
     },
     {
       "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentComponentType",
@@ -87,14 +63,6 @@
       "name" : "DesignationUse",
       "title" : null,
       "description" : "Use codes (contexts) for terminology designations"
-    },
-    {
-      "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/IdMatchingType",
-      "version" : "2025.2.0",
-      "status" : "active",
-      "name" : "IdMatchingType",
-      "title" : null,
-      "description" : "ID matching types used in consent management"
     },
     {
       "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",

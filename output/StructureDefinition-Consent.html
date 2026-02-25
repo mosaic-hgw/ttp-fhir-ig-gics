@@ -1,58 +1,62 @@
-﻿<!-- get modelType --><?xml version="1.0" encoding="UTF-8"?>
+<!-- get modelType -->
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Einwilligungsinformationen -  v2025.2.0</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Consent -  v2025.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
-  	<link rel="stylesheet" href="assets/css/cqf.css"/>
-      <!-- Placeholder for child template CSS declarations -->
-<link rel="stylesheet" href="assets/css/ttp-fhir-ig.css"/>
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ttp-fhir-ig.css" rel="stylesheet"/>
 
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-    <script src="assets/js/mermaid.js" type="text/javascript"></script>
-    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"7.19"}
-    h3,h4,h5,h6{--heading-prefix:"7.19"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"10.14"}
+    h3,h4,h5,h6{--heading-prefix:"10.14"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
 
-          <!-- Placeholder for child template header declarations -->
+        <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav"> 
-    <a no-external="true" id="hl7-logo" href="index.html">
-        <img src="assets/images/Design-Logo-THS-deutsch-271-padding.png" alt="THS Greifswald"/>
+    <a id="hl7-logo" no-external="true" href="index.html">
+        <img alt="THS Greifswald" src="assets/images/Design-Logo-THS-deutsch-271-padding.png"/>
     </a>
 
 
@@ -65,27 +69,27 @@
             </span>
           </p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
+              <!-- menu.xml  -->
 
-<ul class="nav navbar-nav">
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
@@ -120,9 +124,6 @@
       </li>
       <li>
         <a href="StructureDefinition-ExchangeFormatDefinition.html">ExchangeFormatDefinition</a>
-      </li>
-      <li>
-        <a href="Questionnaire-Suche.html">Questionnaire-Suche</a>
       </li>
     </ul>
   </li>
@@ -167,37 +168,43 @@
     </ul>
   </li>
   <li>
-    <a href="Mitgeltend.html">Mitgeltende Profile</a>
+    <a href="Suche.html">Suche</a>
   </li>
   <li>
-    <a href="konfig.html">Konfigurationshinweise</a>
+    <a href="Mitgeltend.html">Mitgeltende Profile und Erläuterungen</a>
+  </li>
+  <li>
+    <a href="konfig.html">Konfiguration</a>
+  </li>
+  <li>
+    <a href="Terminologie.html">Terminologie</a>
   </li>
 </ul>
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
 
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Einwilligungsinformationen</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Consent</b></li>
 
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">IGTTPFHIRGatewaygICS - Local Development build (v2025.2.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://ths-greifswald.de/fhir/gics/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!--ReleaseHeader--><p id="publish-box">IGTTPFHIRGatewaygICS - Local Development build (v2025.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://ths-greifswald.de/fhir/gics/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -273,7 +280,7 @@
   <a name="root"> </a>
   <h2 id="root">Resource Profile:
 
-    Einwilligungsinformationen
+    Consent
 
 
 
@@ -284,10 +291,10 @@
   <table class="colsi">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent<button data-clipboard-text="https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent" title="Click to copy URL" class="btn-copy"></button></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">2025.2.0<button data-clipboard-text="https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent|2025.2.0" title="Click to copy versioned URL" class="btn-copy"></button></span>
+      <span class="copy-text">2025.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent|2025.2.0"/></span>
       </td>
     </tr>
 
@@ -329,170 +336,21 @@
 </p>
 
 <p>
-<p>Strukturierte, maschinenverarbeitbare Abbildung der Einwilligungserklärung</p>
+<p>Strukturierte, maschinenverarbeitbare Abbildung von Einwilligungsdaten.</p>
 
 </p>
 
 
 
-  <!-- insert intro if present -->
+<!-- insert intro if present -->
 
 
 
 
-<div markdown="1" style="display:inline-block">
+<div style="display:inline-block" markdown="1">
 
-<h3 id="suchparameter">Suchparameter</h3>
-
-<p><strong>Unterstützt ab TTP-FHIR Gateway Version 2023.1.0</strong></p>
-
-<p>Die Suche nach Einwilligungsinformationen ist mittels der FHIR Search-API umgesetzt. Die Rückgabe erfolgt dementsprechend in Form eines Bundles vom Typ searchset.</p>
-
-<p>Die zurückgegebenen FHIR Consent-Ressourcen entsprechen dem <a href="https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-FHIRProfile-Consent.html">MII KDS Consent Profil</a></p>
-
-<p><a name="l517">​</a>Suchanfragen werden ausschließlich als GET-Requests akzeptiert. Bezüglich des Encodings der URL sei auf die Hinweise unter <a href="TechnischeGrundlagen.html">Technische Grundlagen</a> verwiesen.</p>
-
-<p>Unterstützt wird die logische UND-Verknüpfung der einzelnen Parameter gemäß <a href="http://hl7.org/fhir/r4/search.html">FHIR Search API</a>, nicht jedoch das logische ODER.</p>
-
-<p><strong>Die Ergebnisse der FHIR Consent Suche sind per DEFAULT nicht dokumenten-spezifisch</strong>, da ein Patient unterschiedliche Einwilligungen und auch Widerrufe zu unterschiedlichen Zeitpunkten unterzeichnet haben kann. Somit ändert sich das Set von zulässigen Policies des Patienten ('Signed Policies') über die Zeit regelhaft.
-<strong>Je Signed Policy im gICS wird somit eine FHIR Consent Resource erzeugt</strong> und dem SearchSet-Bundle beigefügt. Somit repräsentiert die <strong>Bundle.Total</strong>-Angabe nicht die Anzahl der vorhandenen Einwilligungen, sondern die <strong>Anzahl der jeweiligen SignedPolicies mit Status <code class="language-plaintext highlighter-rouge">permit</code>.</strong> Dieses Verhalten ist konfigurierbar (Details unten im <em>Abschnitt Änderungen mit dem Release 2024.3.0</em>).</p>
-
-<p>Paging entsprechend der <a href="http://hl7.org/fhir/r4/search.html">FHIR Search API</a> wird ab TTP-FHIR Gateway Version 2023.1.1 unterstützt, namentlich die Parameter</p>
-<ul>
-  <li>_count: (maximale) Anzahl der im Bundle enthaltenen Ressourcen</li>
-  <li>_offset: fortlaufende Nummer der ersten im Bundle enthaltenen Ressource</li>
-</ul>
-
-<p>Der Default-Offset ist 0. Der Default-Count ist 100. Negative Werte für _offset und _count sind nicht erlaubt.
-Werden weder _count noch _offset angegeben, enthält das Bundle maximal 100 Ergebnisse (Default-Count=100, Default-Offset=0).</p>
-
-<p>Die Suche erfolgt auf dem Consent-Endpoint mittels der nachfolgend beschriebenen Suchparameter.
-<strong>Die Verwendung von Pipes ('|') in GET-Requests (zur Separierung von System+Code), kann je nach Server-Konfiguration zu Fehler führen. Verwenden Sie anstelle der "|-Notation" das Äquivalent "%7C"</strong></p>
-
-<p><strong>Hinweis: Die Angabe des Suchparameters "domain" ist optional. Gleichzeitig empfehlen wir die Nutzung dieses Parameters. Existiert dieser nicht im Request, werden ALLE im gICS vorhandenen Domänen durchsucht, was sich erheblich auf Laufzeiten auswirken kann.</strong></p>
-
-<h4 id="domäne">Domäne</h4>
-<p>Zum Suchparameter <strong>domain</strong> vgl. die <a href="SearchParameter-domain.html">entsprechende Seite</a>.</p>
-
-<p>Er wird in der Regel gemeinsam mit weiteren Suchparametern verwendet.</p>
-
-<h4 id="kategorie">Kategorie</h4>
-<p>Der Standard-Suchparameter <strong>category</strong> wird unterstützt (vgl. http://www.hl7.org/fhir/consent.html#search)</p>
-
-<p>Beispiel 1:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?domain:identifier=MIRACUM&amp;category=2.16.840.1.113883.3.1937.777.24.2.184
-</code></pre></div></div>
-<p>findet alle Consent-Ressourcen, die einer beliebigen Version des MII Broad Consent (entsprechend der hier beispielhaften OID) entsprechen.</p>
-
-<p>Beispiel 2:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?domain:identifier=MIRACUM&amp;category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|consent-status
-</code></pre></div></div>
-<p>findet Consent-Ressourcen des (ggf. aus mehreren Einwilligungs-Fragebögen errechneten) Consent-Status-Typs. 
-<strong>ACHTUNG</strong>: Consent-Ressourcen vom Typ "Consent-Status" werden in Echtzeit erzeugt und nicht persistiert. Daher ist die verwendete Ressourcen-Id (UUID der Consent-Ressource) in diesem konkreten Fall <em>flüchtig</em>.</p>
-
-<h4 id="änderungen-mit-dem-release-202430">Änderungen mit dem Release 2024.3.0</h4>
-<ul>
-  <li>Es wird Consent.Category <em>ResultType" unterstützt. Dies ist abwärtskompatibel. Default ist  *ResultType.POLICY</em>. Unterstützt werden zum <em>ResultType.DOCUMENT</em> und <em>ResultType.CONSENT-STATUS</em>.</li>
-  <li>Umstellung internes <em>DEFAULT-CONSENT-Profile</em> ist das <a href="https://simplifier.net/guide/Einwilligungsmanagement/Consent?version=current">Consent-Profil der HL7-D AG Einwilligungsmanagement</a>. Bisheriger Default war bislang das gICS-Consent-Profil.</li>
-  <li>Das gewünschte Ausgabe-Profil für Consent-Resourcen kann auf Domain und Template-Ebene mittels externalProperty <em>fhirForceProfileConsent</em> forciert werden. Mehr dazu in der dem Release beiliengenden ReadMe.</li>
-</ul>
-
-<h4 id="provision-code">Provision-Code</h4>
-<p>Der Suchparameter <strong>mii-provision-provision-code</strong>, definiert im <a href="https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current">Implementierungsleitfaden Consent der MII</a>, wird unterstützt.</p>
-
-<p><em>Hinweis: Die Verundung von multiplen mii-provision-provision-code-Parametern ist im Release 2023.1.0 noch nicht möglich.</em></p>
-
-<p>Beispiel:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?domain:identifier=MIRACUM&amp;mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8
-</code></pre></div></div>
-
-<h4 id="typ-der-provision-permit">Typ der Provision (permit)</h4>
-<p>Der Suchparameter <strong>mii-provision-provision-type</strong>, definiert im Rahmen des <a href="https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current">Implementierungsleitfaden Consent der MII</a>, wird unterstützt.</p>
-
-<p>Beispiel:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?domain:identifier=MIRACUM&amp;mii-provision-provision-type=permit
-</code></pre></div></div>
-
-<h4 id="typ-der-provision-einer-bestimmten-durch-einen-code-definierten-provision">Typ der Provision einer bestimmten, durch einen Code definierten, Provision</h4>
-<p>Der <a href="http://www.hl7.org/fhir/r4/search.html#combining">composite Suchparameter</a> <strong>mii-provision-provision-code-type</strong>, definiert im Rahmen des <a href="https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current">Implementierungsleitfaden Consent der MII</a>, wird unterstützt.</p>
-
-<p>Beispiel:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?domain:identifier=MIRACUM&amp;mii-provision-provision-code-type=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8$permit
-</code></pre></div></div>
-
-<h4 id="provisions-zeitraum">Provisions-Zeitraum</h4>
-<p>Der Suchparameter <strong>mii-provision-provision-period</strong>, definiert im Rahmen des <a href="https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current">Implementierungsleitfaden Consent der MII</a>, wird unterstützt.</p>
-
-<p>Bezüglich des Verhaltens bei der Suche in Elementen vom Datentyp period sei ausdrücklich auf den entsprechenden Abschnitt der FHIR-Spezifikation und die dortigen Beispiele zur Inklusion bzw. Exklusion von Suchergebnissen verwiesen: http://hl7.org/fhir/r4/search.html#date .</p>
-
-<p>Beispiel:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?domain:identifier=MIRACUM&amp;mii-provision-provision-period=2020-12-15
-</code></pre></div></div>
-<p>Bei der Verwendung von mii-provision-provision-period ist zu beachten, dass
-<code class="language-plaintext highlighter-rouge">provision.period.start</code> dem <strong>Beginn der Gültigkeit der Einwilligung</strong> (gemäß gICS: "consentLegalDate") entspricht und
-<code class="language-plaintext highlighter-rouge">provision.period.end</code> dem errechneten <strong>Gültigkeitsende einer Einwilligungspolicy</strong> im gICS entspricht.</p>
-
-<p>Unterstützt werden bei der Suche nach FHIR Consent-Ressourcen die folgenden Period-Komparatoren:  <code class="language-plaintext highlighter-rouge">eq, ge, gt, le, lt, eb, sa</code>. Nicht unterstützt werden: <code class="language-plaintext highlighter-rouge">ne, ap</code>.</p>
-
-<p><em>Hinweis: Die Verundung von multiplen mii-provision-provision-period-Parametern ist im Release 2023.1.0 noch nicht möglich.</em></p>
-
-<h4 id="provisions-zeitraum-einer-bestimmten-durch-einen-code-definierten-provision">Provisions-Zeitraum einer bestimmten, durch einen Code definierten, Provision</h4>
-<p>Der <a href="http://www.hl7.org/fhir/r4/search.html#combining">composite Suchparameter</a> <strong>mii-provision-provision-code-period</strong>, definiert im Rahmen des <a href="https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current">Implementierungsleitfaden Consent der MII</a>, wird unterstützt.</p>
-
-<p>Beispiel:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?mii-provision-provision-code-period=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8$2020-12-15
-</code></pre></div></div>
-
-<h4 id="policy-uri-versionsspezifischer-mii-broad-consent">Policy URI (versionsspezifischer MII Broad Consent)</h4>
-<p>Der Suchparameter <strong>mii-policy-uri</strong>, definiert im <a href="https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current">Implementierungsleitfaden Consent der MII</a>, wird unterstützt.</p>
-
-<p>Beispiel:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?domain:identifier=MII&amp;mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791
-</code></pre></div></div>
-
-<h4 id="inkludieren-der-provenance-information">Inkludieren der Provenance-Information</h4>
-<p>Das Inkludieren der Herkunftsinformationen zu einer Consent-Ressource ist mittels reverse Include der entsprechenden Provenance-Ressource möglich.
-Die in diesem Kontext verwendeten UUIDs der Ressourcen sind volatil, d.h. es wird nicht garantiert, dass die entsprechenden Ressourcen im Anschluss an die Response unter Verwendung der betreffenden UUID abrufbar sind.
-Vgl. auch entsprechendes Response-Beispiel unten.</p>
-
-<p>Beispiel:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?domain:identifier=MII&amp;mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791&amp;_revinclude=Provenance:target
-</code></pre></div></div>
-<h4 id="inkludieren-der-provenance-information-für-consent-ressourcen-vom-typ-consent-status">Inkludieren der Provenance-Information für Consent-Ressourcen vom Typ <code class="language-plaintext highlighter-rouge">Consent-Status</code></h4>
-<p>Das Inkludieren der Herkunftsinformationen zu einer Consent-Ressource vom Typ <code class="language-plaintext highlighter-rouge">Consent-Status</code> ist mittels reverse Include der entsprechenden Provenance-Ressource ebenfalls möglich.
-Die in diesem Kontext verwendeten UUIDs der Ressourcen sind volatil (flüchtig), d.h. es wird nicht garantiert, dass die entsprechenden Ressourcen im Anschluss an die Response unter Verwendung der betreffenden UUID abrufbar sind.
-Vgl. auch entsprechendes Response-Beispiel unten.</p>
-
-<p>Beispiel:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?domain:identifier=MII&amp;mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791&amp;category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|consent-status&amp;_revinclude=Provenance:target
-</code></pre></div></div>
-<p><strong>ACHTUNG</strong>: Provenance-Ressourcen, die sich auf Consent-Ressourcen vom Typ "Consent-Status" beziehen werden in Echtzeit erzeugt und nicht persistiert. Daher ist die verwendete Ressourcen-Id (UUID der Provenance-Ressource) in diesem konkreten Fall <em>flüchtig</em>.</p>
-
-<h4 id="komplexere-beispiele">Komplexere Beispiele</h4>
-
-<table>
-  <tbody>
-    <tr>
-      <td>Hinweis: die Pipe '</td>
-      <td>' wird HTML-codiert als '%7C' verwendet.</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?domain:identifier=MII&amp;mii-provision-provision-type=permit&amp;mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3%7C2.16.840.1.113883.3.1937.777.24.5.3.8
-</code></pre></div></div>
-<p>findet alle Consent-Ressourcen einer Einwilligungsdomäne 'MII' mit Permit-Provision, bei denen der Provision-Code 2.16.840.1.113883.3.1937.777.24.5.3.8 (entspricht der <a href="https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-Terminologien.html">TFCU-Policy</a> 'MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU') gesetzt ist. Eine Beispiel-Response ist weiter unten dargestellt.</p>
-
-<h4 id="abfrage-von-einwilligungsständen-zu-unterschiedlichen-zeitpunkten-unter-verwendung-von-period-komparatoren">Abfrage von Einwilligungsständen zu unterschiedlichen Zeitpunkten unter Verwendung von Period-Komparatoren</h4>
-
-<p>Nachfolgende Darstellung zeigt die Abfrage von dokumentierten Einwilligungspolicies (A-E), die zu unterschiedlichen Zeitpunkten beginnen und enden.</p>
-
-<p>Zu unterschiedlichen Zeitpunkten (T1 - T5) werden die gültige Einwilligungspolicies mit Hilfe des FHIR Consent Search Parameters <code class="language-plaintext highlighter-rouge">mii-provision-provision-period</code> abgefragt.</p>
-
-<p>Je verwendetem Komparator unterscheidet sich das erwartete Suchergebnis. Details entnehmen Sie bitte nachstehender Tabelle.</p>
-
-<p><img src="assets/images/PolicyStatus_TFCU_Consent_Suche.png" width="600px" align="center"/></p>
-
+<h3 id="such-parameter">Such-Parameter</h3>
+<p>Die <a href="Consent-Suche.html">Consent Suchparameter</a> sind separat dokumentiert.</p>
 
 </div>
 
@@ -505,7 +363,7 @@ Vgl. auch entsprechendes Response-Beispiel unten.</p>
 </ul>
 <p>You can also check for <a href="https://packages2.fhir.org/xig/ths-greifswald.ttp-fhir-gw.gics|current/StructureDefinition/Consent">usages in the FHIR IG Statistics</a></p>
 
-    <!-- no uri -->
+  <!-- no uri -->
   <a name="profile"> </a>
   <h3 id="profile">Formal Views of Profile Content</h3>
   <p>
@@ -523,19 +381,19 @@ Vgl. auch entsprechendes Response-Beispiel unten.</p>
         <a href="#tabs-snap">Snapshot Table</a>
       </li>
 
-  <!-- <li>
+<!--      <li>
         <a href="#tabs-xml">Pseudo-XML</a>
-      </li> -->
+      </li>-->
 
 
-  <!-- <li>
+<!--      <li>
         <a href="#tabs-json">Pseudo-JSON</a>
-      </li> -->
+      </li>-->
 
 
-        <!-- <li>
+      <!--<li>
         <a href="#tabs-ttl">Pseudo-TTL</a>
-      </li> -->
+      </li>-->
 
       <li>
         <a href="#tabs-summ">Statistics/References</a>
@@ -816,7 +674,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Timeframe for this rule<br class="constraint"/><span title="null" class="constraint">Constraints: </span><span style="font-weight:bold" title="If present, start SHALL have a lower value than end" class="constraint">per-1</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf1b7484-e6fe-46b8-b78b-b688d66d31c1
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f16165a7-92e2-4a93-9666-3103885df217
 document.getElementById('cbConsentK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ConsentK'), 'binding', document.getElementById('cbConsentK-binding').checked, document.getElementById('ppConsentK'));
 document.getElementById('cbConsentK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -824,7 +682,7 @@ filterDesc(document.getElementById('ConsentK'), 'constraint', document.getElemen
 document.getElementById('cbConsentK-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
 filterDesc(document.getElementById('ConsentK'), 'obligation', document.getElementById('cbConsentK-obligation').checked, document.getElementById('ppConsentK'));
 </script></table>
-            <!-- Terminology Bindings heading in the fragment -->
+          <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
 <table class="list" data-fhir="generated-heirarchy">
   <tr>
@@ -967,10 +825,10 @@ filterDesc(document.getElementById('ConsentK'), 'obligation', document.getElemen
 
         
           
-            <!-- 218 is size of empty table -->
+          <!-- 218 is size of empty table -->
           
             <a name="inv-key"> </a>
-              <!-- Constraints  heading in the fragment -->
+            <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
 <table class="list presentation" data-fhir="generated-heirarchy">
   <tr>
@@ -1198,7 +1056,7 @@ filterDesc(document.getElementById('ConsentK'), 'obligation', document.getElemen
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span>..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Code defined by a terminology system</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf1b7484-e6fe-46b8-b78b-b688d66d31c1
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f16165a7-92e2-4a93-9666-3103885df217
 document.getElementById('cbConsentD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ConsentD'), 'binding', document.getElementById('cbConsentD-binding').checked, document.getElementById('ppConsentD'));
 document.getElementById('cbConsentD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1207,11 +1065,11 @@ document.getElementById('cbConsentD-obligation').checked = 'false' != localStora
 filterDesc(document.getElementById('ConsentD'), 'obligation', document.getElementById('cbConsentD-obligation').checked, document.getElementById('ppConsentD'));
 </script></table>
           <a name="tx"> </a>
-            <!-- Terminology Bindings heading in the fragment -->
+          <!--Terminology Bindings heading in the fragment -->
           
         
           
-            <!-- 218 is size of empty table -->
+          <!-- 218 is size of empty table -->
           
         </div>
       </div>
@@ -1898,7 +1756,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Context of activities covered by this rule<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.0/ValueSet-v3-PurposeOfUse.html" title="http://terminology.hl7.org/ValueSet/v3-PurposeOfUse" class="binding">PurposeOfUse</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">What purposes of use are controlled by this exception. If more than one label is specified, operations must have all the specified labels.</span><br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Context of activities covered by this rule<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.1/ValueSet-v3-PurposeOfUse.html" title="http://terminology.hl7.org/ValueSet/v3-PurposeOfUse" class="binding">PurposeOfUse</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">What purposes of use are controlled by this exception. If more than one label is specified, operations must have all the specified labels.</span><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="auj" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Consent-definitions.html#Consent.provision.class" title="The class of information covered by this rule. The type can be a FHIR resource type, a profile on a type, or a CDA document, or some other type that indicates what sort of information the consent relates to." data-no-external="true">class</a><a name="s-Consent.provision.class"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
@@ -1951,7 +1809,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">See <a href="http://hl7.org/fhir/R4/consent.html#Consent.provision" title="Consent.provision">provision (Consent)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nested Exception Rules<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf1b7484-e6fe-46b8-b78b-b688d66d31c1
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f16165a7-92e2-4a93-9666-3103885df217
 document.getElementById('cbConsentS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ConsentS'), 'binding', document.getElementById('cbConsentS-binding').checked, document.getElementById('ppConsentS'));
 document.getElementById('cbConsentS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1959,7 +1817,7 @@ filterDesc(document.getElementById('ConsentS'), 'constraint', document.getElemen
 document.getElementById('cbConsentS-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
 filterDesc(document.getElementById('ConsentS'), 'obligation', document.getElementById('cbConsentS-obligation').checked, document.getElementById('ppConsentS'));
 </script></table>
-            <!-- Terminology Bindings heading in the fragment -->
+          <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
 <table class="list" data-fhir="generated-heirarchy">
   <tr>
@@ -2240,12 +2098,12 @@ filterDesc(document.getElementById('ConsentS'), 'obligation', document.getElemen
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
     </td>
     <td title="What purposes of use are controlled by this exception. If more than one label is specified, operations must have all the specified labels.">
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.0/ValueSet-v3-PurposeOfUse.html">PurposeOfUse</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.1/ValueSet-v3-PurposeOfUse.html">PurposeOfUse</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-PurposeOfUse" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is not explicitly stated, which means it is fixed to 3.1.0, the version found through the package references">&#x1F4E6;3.1.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.0.0">THO v7.0</a>
+      <a href="http://terminology.hl7.org/7.0.1">THO v7.0</a>
     </td>
   </tr>
   <tr>
@@ -2297,10 +2155,10 @@ filterDesc(document.getElementById('ConsentS'), 'obligation', document.getElemen
 
         
           
-            <!-- 218 is size of empty table -->
+          <!-- 218 is size of empty table -->
           
             <a name="inv-snap"> </a>
-              <!-- Constraints  heading in the fragment -->
+            <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
 <table class="list presentation" data-fhir="generated-heirarchy">
   <tr>
@@ -2457,7 +2315,7 @@ filterDesc(document.getElementById('ConsentS'), 'obligation', document.getElemen
       </div>
     </div>
 
-  <!-- <a name="tabs-xml"> </a>
+<!--    <a name="tabs-xml"> </a>
     <div id="tabs-xml">
       <div id="xml">
         <div id="xml-inner">
@@ -2465,14 +2323,14 @@ filterDesc(document.getElementById('ConsentS'), 'obligation', document.getElemen
 
         </div>
       </div>
-    </div> -->
+    </div>-->
 
 
-  <!-- <a name="tabs-json"> </a>
+<!--    <a name="tabs-json"> </a>
     <div id="tabs-json">
       <div id="json">
         <div id="json-inner">
-           // <span style="color: navy; opacity: 0.8">Einwilligungsinformationen</span>
+           // <span style="color: navy; opacity: 0.8">Consent</span>
  {
    "resourceType" : "Consent",
     "<a href="StructureDefinition-Consent.html#Consent.id" title="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes" class="dict"><span style="text-decoration: underline">id</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Logical id of this artifact</span>
@@ -2631,10 +2489,10 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 
         </div>
       </div>
-    </div> -->
+    </div>-->
 
 
-      <!-- <a name="tabs-ttl"> </a>
+    <!--<a name="tabs-ttl"> </a>
     <div id="tabs-ttl">
       <div id="ttl">
         <div id="ttl-inner">
@@ -2642,7 +2500,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 
         </div>
       </div>
-    </div> -->
+    </div>-->
 
     <a name="tabs-summ"> </a>
     <div id="tabs-summ">
@@ -2943,7 +2801,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Timeframe for this rule<br class="constraint"/><span title="null" class="constraint">Constraints: </span><span style="font-weight:bold" title="If present, start SHALL have a lower value than end" class="constraint">per-1</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf1b7484-e6fe-46b8-b78b-b688d66d31c1
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f16165a7-92e2-4a93-9666-3103885df217
 document.getElementById('cbConsentKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ConsentKA'), 'binding', document.getElementById('cbConsentKA-binding').checked, document.getElementById('ppConsentKA'));
 document.getElementById('cbConsentKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2951,7 +2809,7 @@ filterDesc(document.getElementById('ConsentKA'), 'constraint', document.getEleme
 document.getElementById('cbConsentKA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
 filterDesc(document.getElementById('ConsentKA'), 'obligation', document.getElementById('cbConsentKA-obligation').checked, document.getElementById('ppConsentKA'));
 </script></table>
-            <!-- Terminology Bindings heading in the fragment -->
+          <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
 <table class="list" data-fhir="generated-heirarchy">
   <tr>
@@ -3094,10 +2952,10 @@ filterDesc(document.getElementById('ConsentKA'), 'obligation', document.getEleme
 
         
           
-            <!-- 218 is size of empty table -->
+          <!-- 218 is size of empty table -->
           
             <a name="inv-all-key"> </a>
-              <!-- Constraints  heading in the fragment -->
+            <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
 <table class="list presentation" data-fhir="generated-heirarchy">
   <tr>
@@ -3325,7 +3183,7 @@ filterDesc(document.getElementById('ConsentKA'), 'obligation', document.getEleme
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span>..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Code defined by a terminology system</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf1b7484-e6fe-46b8-b78b-b688d66d31c1
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f16165a7-92e2-4a93-9666-3103885df217
 document.getElementById('cbConsentDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ConsentDA'), 'binding', document.getElementById('cbConsentDA-binding').checked, document.getElementById('ppConsentDA'));
 document.getElementById('cbConsentDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3333,11 +3191,11 @@ filterDesc(document.getElementById('ConsentDA'), 'constraint', document.getEleme
 document.getElementById('cbConsentDA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
 filterDesc(document.getElementById('ConsentDA'), 'obligation', document.getElementById('cbConsentDA-obligation').checked, document.getElementById('ppConsentDA'));
 </script></table>
-            <!-- Terminology Bindings heading in the fragment -->
+          <!--Terminology Bindings heading in the fragment -->
           
         
           
-            <!-- 218 is size of empty table -->
+          <!-- 218 is size of empty table -->
           
         </div>
       </div>
@@ -4024,7 +3882,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Context of activities covered by this rule<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.0/ValueSet-v3-PurposeOfUse.html" title="http://terminology.hl7.org/ValueSet/v3-PurposeOfUse" class="binding">PurposeOfUse</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">What purposes of use are controlled by this exception. If more than one label is specified, operations must have all the specified labels.</span><br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Context of activities covered by this rule<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.1/ValueSet-v3-PurposeOfUse.html" title="http://terminology.hl7.org/ValueSet/v3-PurposeOfUse" class="binding">PurposeOfUse</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">What purposes of use are controlled by this exception. If more than one label is specified, operations must have all the specified labels.</span><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="auj" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Consent-definitions.html#Consent.provision.class" title="The class of information covered by this rule. The type can be a FHIR resource type, a profile on a type, or a CDA document, or some other type that indicates what sort of information the consent relates to." data-no-external="true">class</a><a name="sa-Consent.provision.class"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
@@ -4077,7 +3935,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">See <a href="http://hl7.org/fhir/R4/consent.html#Consent.provision" title="Consent.provision">provision (Consent)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nested Exception Rules<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf1b7484-e6fe-46b8-b78b-b688d66d31c1
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f16165a7-92e2-4a93-9666-3103885df217
 document.getElementById('cbConsentSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ConsentSA'), 'binding', document.getElementById('cbConsentSA-binding').checked, document.getElementById('ppConsentSA'));
 document.getElementById('cbConsentSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -4085,7 +3943,7 @@ filterDesc(document.getElementById('ConsentSA'), 'constraint', document.getEleme
 document.getElementById('cbConsentSA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
 filterDesc(document.getElementById('ConsentSA'), 'obligation', document.getElementById('cbConsentSA-obligation').checked, document.getElementById('ppConsentSA'));
 </script></table>
-            <!-- Terminology Bindings heading in the fragment -->
+          <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
 <table class="list" data-fhir="generated-heirarchy">
   <tr>
@@ -4366,12 +4224,12 @@ filterDesc(document.getElementById('ConsentSA'), 'obligation', document.getEleme
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
     </td>
     <td title="What purposes of use are controlled by this exception. If more than one label is specified, operations must have all the specified labels.">
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.0/ValueSet-v3-PurposeOfUse.html">PurposeOfUse</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.1/ValueSet-v3-PurposeOfUse.html">PurposeOfUse</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-PurposeOfUse" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is not explicitly stated, which means it is fixed to 3.1.0, the version found through the package references">&#x1F4E6;3.1.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.0.0">THO v7.0</a>
+      <a href="http://terminology.hl7.org/7.0.1">THO v7.0</a>
     </td>
   </tr>
   <tr>
@@ -4423,10 +4281,10 @@ filterDesc(document.getElementById('ConsentSA'), 'obligation', document.getEleme
 
         
           
-            <!-- 218 is size of empty table -->
+          <!-- 218 is size of empty table -->
           
             <a name="inv-all-snap"> </a>
-              <!-- Constraints  heading in the fragment -->
+            <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
 <table class="list presentation" data-fhir="generated-heirarchy">
   <tr>
@@ -4582,7 +4440,7 @@ filterDesc(document.getElementById('ConsentSA'), 'obligation', document.getEleme
         </div>
       </div>
 
-        <!-- <div id="all-xml">
+      <!--<div id="all-xml">
         <p>
           <b>XML Template</b>
         </p>
@@ -4590,15 +4448,15 @@ filterDesc(document.getElementById('ConsentSA'), 'obligation', document.getEleme
           <p><span style="color: maroon; font-weight: bold">yet to be done: Xml template</span></p>
 
         </div>
-      </div> -->
+      </div>-->
 
 
-        <!-- <div id="all-json">
+      <!--<div id="all-json">
         <p>
           <b>JSON Template</b>
         </p>
         <div id="all-json-inner">
-           // <span style="color: navy; opacity: 0.8">Einwilligungsinformationen</span>
+           // <span style="color: navy; opacity: 0.8">Consent</span>
  {
    "resourceType" : "Consent",
     "<a href="StructureDefinition-Consent.html#Consent.id" title="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes" class="dict"><span style="text-decoration: underline">id</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Logical id of this artifact</span>
@@ -4756,10 +4614,10 @@ The type is the Canonical URL of Resource Definition that is the type this refer
   }
 
         </div>
-      </div> -->
+      </div>-->
 
 
-        <!-- <div id="all-ttl">
+      <!--<div id="all-ttl">
         <p>
           <b>TTL Template</b>
         </p>
@@ -4767,7 +4625,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
           <p><span style="color: maroon; font-weight: bold">yet to be done: Turtle template</span></p>
 
         </div>
-      </div> -->
+      </div>-->
 
       <div id="all-summ">
         <p>This structure is derived from <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.2&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent">ConsentManagementConsent</a>
@@ -4791,38 +4649,38 @@ Summary
       </div>
     </div>
   </div>
-  <p>&nbsp;</p>
+  <p>&#160;</p>
   <p>Other representations of profile: <a href="StructureDefinition-Consent.csv">CSV</a>, <a href="StructureDefinition-Consent.xlsx">Excel</a>, <a href="StructureDefinition-Consent.sch">Schematron</a>
  
   </p>
 
   
 
-  <!-- insert notes if present -->
+<!-- insert notes if present -->
 
 
 
 
 </div>
 
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script src="assets/js/tabs.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
-  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 25, 2025 14:08+0100">2025-11-25</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 25, 2026 17:02+0100">2026-02-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -4831,28 +4689,27 @@ Summary
                 
           </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
 
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
-    <!-- Analytics Below
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
   ================================================== -->
-  
+  </body>
+</html>
 
-
-</div></body></html>
