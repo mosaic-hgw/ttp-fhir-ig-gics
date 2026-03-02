@@ -19,7 +19,6 @@ The generated package (TGZ-format) is available for download from: [Link](https:
 # Additional Information
 
 The documentation and implementation was developed by the University Medicine Greifswald and initially published in 2021 as part of the following research projects:
-
 - MIRACUM (funded by the German Federal Ministry of Education and Research 01ZZ1801M)
 - NUM-CODEX (funded by the German Federal Ministry of Education and Research 01KX2021)
 
