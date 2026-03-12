@@ -52,7 +52,7 @@ jobs:
           set -euo pipefail
 
           if [ -z "$(git ls-files)" ]; then
-            echo "gh-pages branch is empty. Nothing to clean."
+            echo "gh-pages branch is empty. Nothing to clean. "
             exit 0
           fi
 
