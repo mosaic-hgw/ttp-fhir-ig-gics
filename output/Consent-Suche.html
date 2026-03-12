@@ -227,6 +227,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#randbedingungen" id="markdown-toc-randbedingungen">Randbedingungen</a></li>
   <li><a href="#übersicht-der-suchparameter" id="markdown-toc-übersicht-der-suchparameter">Übersicht der Suchparameter</a></li>
+  <li><a href="#geltende-einschränkungen-und-ungültige-kombinationen-von-suchparametern" id="markdown-toc-geltende-einschränkungen-und-ungültige-kombinationen-von-suchparametern">Geltende Einschränkungen und ungültige Kombinationen von Suchparametern</a></li>
 </ul>
 
 </div>
@@ -236,7 +237,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Die zurückgegebenen FHIR Consent-Ressourcen entsprechen dem <a href="https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-FHIRProfile-Consent.html">MII KDS Consent Profil</a></p>
 
-<p><a name="l420">​</a>Suchanfragen werden ausschließlich als GET-Requests akzeptiert. Bezüglich des Encodings der URL sei auf die Hinweise unter <a href="TechnischeGrundlagen.html">Technische Grundlagen</a> verwiesen.</p>
+<p><a name="l424">​</a>Suchanfragen werden ausschließlich als GET-Requests akzeptiert. Bezüglich des Encodings der URL sei auf die Hinweise unter <a href="TechnischeGrundlagen.html">Technische Grundlagen</a> verwiesen.</p>
 
 <h4 id="konfigurationshinweise">Konfigurationshinweise</h4>
 
@@ -372,6 +373,16 @@ Vgl. auch entsprechendes Response-Beispiel unten.</p>
 </code></pre></div></div>
 <p>findet alle Consent-Ressourcen einer Einwilligungsdomäne 'MII' mit Permit-Provision, bei denen der Provision-Code 2.16.840.1.113883.3.1937.777.24.5.3.8 (entspricht der <a href="https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-Terminologien.html">TFCU-Policy</a> 'MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU') gesetzt ist. Eine Beispiel-Response ist weiter unten dargestellt.</p>
 
+<h3 id="geltende-einschränkungen-und-ungültige-kombinationen-von-suchparametern">Geltende Einschränkungen und ungültige Kombinationen von Suchparametern</h3>
+
+<p>Folgende Einschränkungen bezüglich der Verwendung von Suchparametern im gICS gelten.</p>
+<ul>
+  <li>der Parameter <code class="language-plaintext highlighter-rouge">mii-provision-provision-period</code> darf im Request <strong>nur 1x</strong> vorkommen</li>
+  <li>der Parameter <code class="language-plaintext highlighter-rouge">mii-provision-provision-period</code> kann <strong>nicht</strong> mit dem Parameter <code class="language-plaintext highlighter-rouge">_count=0</code> (summary) kombiniert werden. Hier wird als Ergebnis per Default total=0 zurückgegeben</li>
+  <li>der Parameter <code class="language-plaintext highlighter-rouge">status=active</code> wird in Version 2025.2.x nicht unterstützt</li>
+  <li>der Parameter <code class="language-plaintext highlighter-rouge">category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|consent-status</code> erfordert zusätzlich die Angabe des Parameters <code class="language-plaintext highlighter-rouge">domain:identifier=NAME_DER_DOMAIN</code></li>
+</ul>
+
 
 
 </div>
@@ -390,7 +401,7 @@ Vgl. auch entsprechendes Response-Beispiel unten.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 25, 2026 17:02+0100">2026-02-25</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 12, 2026 15:52+0100">2026-03-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

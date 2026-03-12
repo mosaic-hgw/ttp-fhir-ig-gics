@@ -17,17 +17,13 @@
   "kind" : "operation",
   "date" : "2025-06-12",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "contact" : [
-    {
-      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ths-greifswald.de/"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
   "description" : "Erstellt die Einwilligungsinformationen in einem Opt-Out-Kontext für einen (ggf. neuen) Patienten, um auf dieser Basis eine neue Einwilligung im gICS zu erzeugen. Liefert Bundle vom Typ \"collection\". Das Bundle enthält die errechnete FHIR Consent-Resource.",
   "purpose" : "Teil des FHIR Gateway für gICS. Weitere Infos unter https://ths-greifswald.de/gics",
   "affectsState" : true,
@@ -36,40 +32,38 @@
   "system" : true,
   "type" : false,
   "instance" : false,
-  "parameter" : [
-    {
-      "name" : "patient",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Patient-Ressource, entsprechend dem Profil http://fhir.de/ConsentManagement/StructureDefinition/Patient. Für Identifier in dieser Ressource muss der Namensraum (identifier.system) mit der Zeichenfolge 'https://ths-greifswald.de/fhir/gics/identifiers/' beginnen. Angehängt hieran wird der Bezeichner eines im System konfigurierten SignerIDTypes. Abweichungen hiervon führen zu einem Fehler, indiziert durch HTTP Status 422.",
-      "type" : "Patient"
-    },
-    {
-      "name" : "domain",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Angabe der Einwilligungsdomaene",
-      "type" : "string"
-    },
-    {
-      "name" : "questionnaire",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Canonical URL des Questionnaire (entsprechend dem Profil http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireComposed), das im Rahmen eines Opt-Out-Kontexts implizit gilt.",
-      "type" : "canonical"
-    },
-    {
-      "name" : "return",
-      "use" : "out",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Bundle vom Typ collection, das die errechneten Consent-Ressourcen enthält.",
-      "type" : "Bundle"
-    }
-  ]
+  "parameter" : [{
+    "name" : "patient",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Patient-Ressource, entsprechend dem Profil http://fhir.de/ConsentManagement/StructureDefinition/Patient. Für Identifier in dieser Ressource muss der Namensraum (identifier.system) mit der Zeichenfolge 'https://ths-greifswald.de/fhir/gics/identifiers/' beginnen. Angehängt hieran wird der Bezeichner eines im System konfigurierten SignerIDTypes. Abweichungen hiervon führen zu einem Fehler, indiziert durch HTTP Status 422.",
+    "type" : "Patient"
+  },
+  {
+    "name" : "domain",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Angabe der Einwilligungsdomaene",
+    "type" : "string"
+  },
+  {
+    "name" : "questionnaire",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Canonical URL des Questionnaire (entsprechend dem Profil http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireComposed), das im Rahmen eines Opt-Out-Kontexts implizit gilt.",
+    "type" : "canonical"
+  },
+  {
+    "name" : "return",
+    "use" : "out",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Bundle vom Typ collection, das die errechneten Consent-Ressourcen enthält.",
+    "type" : "Bundle"
+  }]
 }
 
 ```

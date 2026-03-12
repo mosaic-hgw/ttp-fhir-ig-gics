@@ -3,7 +3,7 @@
   "id" : "ConsentPolicyActorVS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ConsentPolicyActorVS</b></p><a name=\"ConsentPolicyActorVS\"> </a><a name=\"hcConsentPolicyActorVS\"> </a><ul><li>Include all codes defined in <code>https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyActor</code><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ConsentPolicyActorVS</b></p><a name=\"ConsentPolicyActorVS\"> </a><a name=\"hcConsentPolicyActorVS\"> </a><ul><li>Include all codes defined in <code>https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyActor</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li></ul></div>"
   },
   "url" : "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentPolicyActor",
   "version" : "2025.2.0",

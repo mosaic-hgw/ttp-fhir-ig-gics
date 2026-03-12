@@ -15,35 +15,27 @@
   "experimental" : false,
   "date" : "2025-06-12",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "contact" : [
-    {
-      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ths-greifswald.de/"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
   "copyright" : "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
+      "concept" : [{
+        "code" : "OBJECTED"
+      },
       {
-        "system" : "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
-        "concept" : [
-          {
-            "code" : "OBJECTED"
-          },
-          {
-            "code" : "NOT_ASKED"
-          },
-          {
-            "code" : "NOT_CHOSEN"
-          }
-        ]
-      }
-    ]
+        "code" : "NOT_ASKED"
+      },
+      {
+        "code" : "NOT_CHOSEN"
+      }]
+    }]
   }
 }
 

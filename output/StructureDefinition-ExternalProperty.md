@@ -16,146 +16,146 @@
   "experimental" : false,
   "date" : "2025-06-12",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "contact" : [
-    {
-      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ths-greifswald.de/"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
   "description" : "Key Value Property Element für External Properties zur Individualisierung von Domains, Policies, Modules und Templates",
   "copyright" : "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "ResearchStudy"
-    },
-    {
-      "type" : "element",
-      "expression" : "Consent"
-    },
-    {
-      "type" : "element",
-      "expression" : "ActivityDefinition"
-    },
-    {
-      "type" : "element",
-      "expression" : "Questionnaire"
-    },
-    {
-      "type" : "element",
-      "expression" : "Questionnaire.item"
-    },
-    {
-      "type" : "element",
-      "expression" : "VerificationResult"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "ResearchStudy"
+  },
+  {
+    "type" : "element",
+    "expression" : "Consent"
+  },
+  {
+    "type" : "element",
+    "expression" : "ActivityDefinition"
+  },
+  {
+    "type" : "element",
+    "expression" : "Questionnaire"
+  },
+  {
+    "type" : "element",
+    "expression" : "Questionnaire.item"
+  },
+  {
+    "type" : "element",
+    "expression" : "VerificationResult"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode" : "normative"
-          }
-        ],
-        "path" : "Extension",
-        "short" : "ExternalProperty",
-        "definition" : "ExternalProperty"
-      },
-      {
-        "id" : "Extension.extension",
-        "path" : "Extension.extension",
-        "min" : 2
-      },
-      {
-        "id" : "Extension.extension:key",
-        "path" : "Extension.extension",
-        "sliceName" : "key",
-        "label" : "Key",
-        "short" : "External Property Key",
-        "min" : 1,
-        "max" : "1"
-      },
-      {
-        "id" : "Extension.extension:key.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.extension:key.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "key"
-      },
-      {
-        "id" : "Extension.extension:key.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
-      },
-      {
-        "id" : "Extension.extension:value",
-        "path" : "Extension.extension",
-        "sliceName" : "value",
-        "label" : "Value",
-        "short" : "External Property Value",
-        "min" : 1,
-        "max" : "1"
-      },
-      {
-        "id" : "Extension.extension:value.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.extension:value.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "value"
-      },
-      {
-        "id" : "Extension.extension:value.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "max" : "0"
-      }
-    ]
+    "element" : [{
+      "id" : "Extension",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      }],
+      "path" : "Extension",
+      "short" : "ExternalProperty",
+      "definition" : "ExternalProperty"
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "min" : 2
+    },
+    {
+      "id" : "Extension.extension:key",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      }],
+      "path" : "Extension.extension",
+      "sliceName" : "key",
+      "label" : "Key",
+      "short" : "External Property Key",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:key.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:key.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "key"
+    },
+    {
+      "id" : "Extension.extension:key.value[x]",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      }],
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Extension.extension:value",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      }],
+      "path" : "Extension.extension",
+      "sliceName" : "value",
+      "label" : "Value",
+      "short" : "External Property Value",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:value.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:value.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "value"
+    },
+    {
+      "id" : "Extension.extension:value.value[x]",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      }],
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "max" : "0"
+    }]
   }
 }
 

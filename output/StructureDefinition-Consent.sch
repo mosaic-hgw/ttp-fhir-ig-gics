@@ -22,7 +22,6 @@
   <sch:pattern>
     <sch:title>f:Consent/f:extension</sch:title>
     <sch:rule context="f:Consent/f:extension">
-      <sch:assert test="count(f:extension[@url = 'domain']) &gt;= 1">extension with URL = 'domain': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'domain']) &lt;= 1">extension with URL = 'domain': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'status']) &lt;= 1">extension with URL = 'status': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>

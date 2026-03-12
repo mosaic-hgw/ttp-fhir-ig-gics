@@ -9,28 +9,22 @@
   "resourceType" : "Patient",
   "id" : "PatientPseudonymized-example-1",
   "meta" : {
-    "profile" : [
-      "https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized"
-    ]
+    "profile" : ["https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized"]
   },
-  "identifier" : [
-    {
-      "system" : "http://fhir.de/sid/gkv/kvid-10",
-      "value" : "A123456789"
+  "identifier" : [{
+    "system" : "http://fhir.de/sid/gkv/kvid-10",
+    "value" : "A123456789"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType",
+        "code" : "A"
+      }]
     },
-    {
-      "type" : {
-        "coding" : [
-          {
-            "system" : "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType",
-            "code" : "A"
-          }
-        ]
-      },
-      "system" : "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType",
-      "value" : "SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg=="
-    }
-  ]
+    "system" : "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType",
+    "value" : "SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg=="
+  }]
 }
 
 ```

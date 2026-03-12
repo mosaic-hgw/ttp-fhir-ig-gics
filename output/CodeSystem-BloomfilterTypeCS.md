@@ -15,32 +15,26 @@
   "experimental" : false,
   "date" : "2025-06-12",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "contact" : [
-    {
-      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ths-greifswald.de/"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
   "description" : "Types of Bloomfilters.",
   "copyright" : "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 2,
-  "concept" : [
-    {
-      "code" : "A",
-      "display" : "Dummy-Bloomfilter A"
-    },
-    {
-      "code" : "B",
-      "display" : "Dummy-Bloomfilter B"
-    }
-  ]
+  "concept" : [{
+    "code" : "A",
+    "display" : "Dummy-Bloomfilter A"
+  },
+  {
+    "code" : "B",
+    "display" : "Dummy-Bloomfilter B"
+  }]
 }
 
 ```

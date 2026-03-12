@@ -260,13 +260,13 @@
 
   <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
   "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">resourceType</a>" : "Bundle",
-  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a>" : "example-BatchResponse-verify-consent-state",
+  "<a href="http://hl7.org/fhir/R4/resource.html#Bundle.id">id</a>" : "example-BatchResponse-verify-consent-state",
   "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a>" : "batch-response",
   "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/bundle.html">resourceType</a>" : "Bundle",
-        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a>" : "example-BatchResponse-verify-consent-state-searchset1",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Bundle.id">id</a>" : "example-BatchResponse-verify-consent-state-searchset1",
         "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a>" : "searchset",
         "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.total">total</a>" : 1,
         "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>" : [
@@ -274,12 +274,12 @@
             "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://fhir-server.my-hospital.de/fhir/Consent/Consent-example-2",
             "<a href="http://hl7.org/fhir/R4/consent.html#Consent">resource</a>" : {
               "<a href="http://hl7.org/fhir/R4/consent.html">resourceType</a>" : "Consent",
-              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.id">id</a>" : "Consent-example-2",
-              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.meta">meta</a>" : {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a>" : [
+              "<a href="http://hl7.org/fhir/R4/resource.html#Consent.id">id</a>" : "Consent-example-2",
+              "<a href="http://hl7.org/fhir/R4/resource.html#Consent.meta">meta</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Meta.extension">extension</a>" : [
                   {
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created",
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueInstant</a>" : "2020-01-02T04:05:06+01:00"
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueInstant</a>" : "2020-01-02T04:05:06+01:00"
                   }
                 ],
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2021-10-29T11:00:08.695+02:00",
@@ -287,18 +287,18 @@
                   <a href="StructureDefinition-Consent.html" style="color: Maroon">&#x1F517;</a> "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"
                 ]
               },
-              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.extension">extension</a>" : [
+              "<a href="http://hl7.org/fhir/R4/domainresource.html#Consent.extension">extension</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
                     {
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "domain",
-                      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
+                      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueReference</a>" : {
                         "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ResearchStudy/b0b83c00-e230-4c52-8d3a-cbb882e0a72f"
                       }
                     },
                     {
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "status",
-                      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
+                      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCoding</a>" : {
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/publication-status",
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "active"
                       }
@@ -307,40 +307,40 @@
                   "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
                 },
                 {
-                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
                     {
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "key",
-                      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "mykey1"
+                      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "mykey1"
                     },
                     {
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "value",
-                      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "myvalue1"
+                      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "myvalue1"
                     }
                   ],
                   "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
                 },
                 {
-                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
                     {
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "key",
-                      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "mykey2"
+                      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "mykey2"
                     },
                     {
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "value",
-                      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "myvalue2"
+                      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "myvalue2"
                     }
                   ],
                   "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
                 },
                 {
-                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
                     {
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "key",
-                      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "EXPIRATION_DATE"
+                      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "EXPIRATION_DATE"
                     },
                     {
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "value",
-                      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Tue Nov 30 00:00:00 CET 2021"
+                      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "Tue Nov 30 00:00:00 CET 2021"
                     }
                   ],
                   "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
@@ -383,7 +383,7 @@
                   "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "MII"
                 }
               ],
-              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.source[x]">sourceReference</a>" : {
+              "<a href="http://hl7.org/fhir/R4/consent.html#Consent.source_x_">sourceReference</a>" : {
                 "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "QuestionnaireResponse/0f1ccc50-9b24-4f12-a998-49f80d5285c1"
               },
               "<a href="http://hl7.org/fhir/R4/consent.html#Consent.policy">policy</a>" : [
@@ -663,7 +663,7 @@
     {
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/bundle.html">resourceType</a>" : "Bundle",
-        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a>" : "example-BatchResponse-verify-consent-state-searchset2",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Bundle.id">id</a>" : "example-BatchResponse-verify-consent-state-searchset2",
         "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a>" : "searchset",
         "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.total">total</a>" : 0
       },
@@ -696,7 +696,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 25, 2026 17:02+0100">2026-02-25</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 12, 2026 15:52+0100">2026-03-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

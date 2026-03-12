@@ -17,17 +17,13 @@
   "kind" : "operation",
   "date" : "2025-06-12",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "contact" : [
-    {
-      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ths-greifswald.de/"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
   "description" : "Liefert den Einwilligungsstatus eines Patienten für eine spezifische Policy per POST-Request. Die Rückgabe erfolgt als Parameters-Ressource.",
   "purpose" : "Teil des FHIR Gateway für gICS. Weitere Infos unter https://ths-greifswald.de/gics",
   "affectsState" : false,
@@ -36,56 +32,54 @@
   "system" : true,
   "type" : false,
   "instance" : false,
-  "parameter" : [
-    {
-      "name" : "personIdentifier",
-      "use" : "in",
-      "min" : 1,
-      "max" : "*",
-      "documentation" : "Um den Bezug zwischen Person und Einwilligung herzustellen, ist die Angabe von mindestens einem eindeutigen Personenidentifikator erforderlich. Dies kann je nach Anforderungen die Fallnummer, ein Patienten-Identifikator, die Angabe eines Bevollmächtigten oder ein Studienpseudonym, o.ä. sein und erfolgt unter Verwendung des passenden Patienten-Profils der AG Einwilligungsmanagement: https://simplifier.net/guide/Einwilligungsmanagement/Patient.\r\nBei Angabe von mehreren Identifikatoren werden diese ODER-verknüpft.",
-      "type" : "Identifier"
-    },
-    {
-      "name" : "domain",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Angabe der Einwilligungsdomaene",
-      "type" : "string"
-    },
-    {
-      "name" : "policy",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "type" : "Coding",
-      "binding" : {
-        "strength" : "extensible",
-        "valueSet" : "https://ths-greifswald.de/fhir/ValueSet/gics/Policy"
-      }
-    },
-    {
-      "name" : "version",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "type" : "string"
-    },
-    {
-      "name" : "config",
-      "use" : "in",
-      "min" : 0,
-      "max" : "1",
-      "type" : "Parameters"
-    },
-    {
-      "name" : "consented",
-      "use" : "out",
-      "min" : 1,
-      "max" : "1",
-      "type" : "boolean"
+  "parameter" : [{
+    "name" : "personIdentifier",
+    "use" : "in",
+    "min" : 1,
+    "max" : "*",
+    "documentation" : "Um den Bezug zwischen Person und Einwilligung herzustellen, ist die Angabe von mindestens einem eindeutigen Personenidentifikator erforderlich. Dies kann je nach Anforderungen die Fallnummer, ein Patienten-Identifikator, die Angabe eines Bevollmächtigten oder ein Studienpseudonym, o.ä. sein und erfolgt unter Verwendung des passenden Patienten-Profils der AG Einwilligungsmanagement: https://simplifier.net/guide/Einwilligungsmanagement/Patient.\r\nBei Angabe von mehreren Identifikatoren werden diese ODER-verknüpft.",
+    "type" : "Identifier"
+  },
+  {
+    "name" : "domain",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Angabe der Einwilligungsdomaene",
+    "type" : "string"
+  },
+  {
+    "name" : "policy",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "type" : "Coding",
+    "binding" : {
+      "strength" : "extensible",
+      "valueSet" : "https://ths-greifswald.de/fhir/ValueSet/gics/Policy"
     }
-  ]
+  },
+  {
+    "name" : "version",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "type" : "string"
+  },
+  {
+    "name" : "config",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "type" : "Parameters"
+  },
+  {
+    "name" : "consented",
+    "use" : "out",
+    "min" : 1,
+    "max" : "1",
+    "type" : "boolean"
+  }]
 }
 
 ```

@@ -16,78 +16,68 @@
   "experimental" : false,
   "date" : "2025-06-12",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "contact" : [
-    {
-      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ths-greifswald.de/"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
   "description" : "Label in einem Questionnaire",
   "purpose" : "Erweiterung für Vergabe eines Labels in Questionnaires",
   "copyright" : "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "Questionnaire.item"
-    },
-    {
-      "type" : "element",
-      "expression" : "Questionnaire"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "Questionnaire.item"
+  },
+  {
+    "type" : "element",
+    "expression" : "Questionnaire"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode" : "normative"
-          }
-        ],
-        "path" : "Extension",
-        "short" : "Questionnaire Label",
-        "definition" : "Label in einem Questionnaire",
-        "max" : "1"
-      },
-      {
-        "id" : "Extension.extension",
-        "path" : "Extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/QuestionnaireLabel"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "Extension",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      }],
+      "path" : "Extension",
+      "short" : "Questionnaire Label",
+      "definition" : "Label in einem Questionnaire",
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/QuestionnaireLabel"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      }],
+      "path" : "Extension.value[x]",
+      "type" : [{
+        "code" : "string"
+      }]
+    }]
   }
 }
 

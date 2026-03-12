@@ -8,16 +8,14 @@
 {
   "resourceType" : "Parameters",
   "id" : "AllConsentsForTemplate-request-example-1",
-  "parameter" : [
-    {
-      "name" : "template",
-      "valueString" : "MII;Patienteneinwilligung MII;1.6.f"
-    },
-    {
-      "name" : "domain",
-      "valueString" : "MII"
-    }
-  ]
+  "parameter" : [{
+    "name" : "template",
+    "valueString" : "MII;Patienteneinwilligung MII;1.6.f"
+  },
+  {
+    "name" : "domain",
+    "valueString" : "MII"
+  }]
 }
 
 ```

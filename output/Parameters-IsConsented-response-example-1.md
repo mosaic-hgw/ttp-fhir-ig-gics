@@ -8,12 +8,10 @@
 {
   "resourceType" : "Parameters",
   "id" : "IsConsented-response-example-1",
-  "parameter" : [
-    {
-      "name" : "consented",
-      "valueBoolean" : true
-    }
-  ]
+  "parameter" : [{
+    "name" : "consented",
+    "valueBoolean" : true
+  }]
 }
 
 ```

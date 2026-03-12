@@ -1,93 +1,91 @@
 {
-  "codeSystems" : [
-    {
-      "url" : "http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents",
-      "version" : "2.0.2",
-      "status" : "active",
-      "name" : "QuestionnaireProfileType",
-      "title" : null,
-      "description" : "Typen der Questionnaire-Profile zur Unterscheidung als Suchkriterium",
-      "uses" : {
-      },
-      "ValueSet-ConsentComponentTypeVS.html" : "ConsentComponentType"
+  "codeSystems" : [{
+    "url" : "http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents",
+    "version" : "2.0.3",
+    "status" : "active",
+    "name" : "QuestionnaireProfileType",
+    "title" : null,
+    "description" : "Typen der Questionnaire-Profile zur Unterscheidung als Suchkriterium",
+    "uses" : {
     },
-    {
-      "url" : "http://hl7.org/fhir/publication-status",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "PublicationStatus",
-      "title" : "PublicationStatus",
-      "description" : "The lifecycle status of an artifact.",
-      "oids" : ["2.16.840.1.113883.4.642.4.4"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-publication-status.html" : "PublicationStatus"
+    "ValueSet-ConsentComponentTypeVS.html" : "ConsentComponentType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/publication-status",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "PublicationStatus",
+    "title" : "PublicationStatus",
+    "description" : "The lifecycle status of an artifact.",
+    "oids" : ["2.16.840.1.113883.4.642.4.4"],
+    "uses" : {
     },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-      "version" : "3.0.0",
-      "status" : "active",
-      "name" : "NullFlavor",
-      "title" : "NullFlavor",
-      "description" : "A collection of codes specifying why a valid value is not present.",
-      "oids" : ["2.16.840.1.113883.5.1008"],
-      "uses" : {
-      },
-      "ValueSet-PolicyStatusVS.html" : "PolicyStatus"
+    "http://hl7.org/fhir/R4/valueset-publication-status.html" : "PublicationStatus"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "NullFlavor",
+    "title" : "NullFlavor",
+    "description" : "A collection of codes specifying why a valid value is not present.",
+    "oids" : ["2.16.840.1.113883.5.1008"],
+    "uses" : {
     },
-    {
-      "url" : "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType",
-      "version" : "2025.2.0",
-      "status" : "active",
-      "name" : "BloomfilterType",
-      "title" : null,
-      "description" : "Types of Bloomfilters.",
-      "uses" : {
-      },
-      "ValueSet-BloomfilterTypeVS.html" : "BloomfilterType"
+    "ValueSet-PolicyStatusVS.html" : "PolicyStatus"
+  },
+  {
+    "url" : "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType",
+    "version" : "2025.2.0",
+    "status" : "active",
+    "name" : "BloomfilterType",
+    "title" : null,
+    "description" : "Types of Bloomfilters.",
+    "uses" : {
     },
-    {
-      "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentComponentType",
-      "version" : "2025.2.0",
-      "status" : "active",
-      "name" : "ConsentComponentType",
-      "title" : null,
-      "description" : "Typen der für gICS relevanten Consent-Componenten zur Unterscheidung als Suchkriterium",
-      "uses" : {
-      },
-      "ValueSet-ConsentComponentTypeVS.html" : "ConsentComponentType"
+    "ValueSet-BloomfilterTypeVS.html" : "BloomfilterType"
+  },
+  {
+    "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentComponentType",
+    "version" : "2025.2.0",
+    "status" : "active",
+    "name" : "ConsentComponentType",
+    "title" : null,
+    "description" : "Typen der für gICS relevanten Consent-Componenten zur Unterscheidung als Suchkriterium",
+    "uses" : {
     },
-    {
-      "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
-      "version" : "2025.2.0",
-      "status" : "active",
-      "name" : "ConsentStatus",
-      "title" : null,
-      "description" : " consent states are used to depict the participant’s will. Therefore, documentation should allow different status values. Further details from https://doi.org/10.1186/s12967-020-02457-y",
-      "uses" : {
-      },
-      "ValueSet-ConsentStatusObjectionShortValuesVS.html" : "ConsentStatusObjectionShortValues",
-      "ValueSet-ConsentStatusRefusalShortValuesVS.html" : "ConsentStatusRefusalShortValues",
-      "ValueSet-ConsentStatusVS.html" : "ConsentStatus",
-      "ValueSet-ConsentStatusConsentFullValuesVS.html" : "ConsentStatusConsentFullValues",
-      "ValueSet-ConsentStatusConsentShortValuesVS.html" : "ConsentStatusConsentShortValues",
-      "ValueSet-ConsentStatusRefusalFullValuesVS.html" : "ConsentStatusRefusalFullValues",
-      "ValueSet-ConsentStatusWithdrawalShortValuesVS.html" : "ConsentStatusWithdrawalShortValues",
-      "ValueSet-ConsentStatusConsentOptOutShortValuesVS.html" : "ConsentStatusConsentOptOutShortValues",
-      "ValueSet-ConsentStatusWithdrawalFullValuesVS.html" : "ConsentStatusWithdrawalFullValues",
-      "ValueSet-ConsentStatusConsentOptOutFullValuesVS.html" : "ConsentStatusConsentOptOutFullValues",
-      "ValueSet-ConsentStatusObjectionFullValuesVS.html" : "ConsentStatusObjectionFullValues"
+    "ValueSet-ConsentComponentTypeVS.html" : "ConsentComponentType"
+  },
+  {
+    "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
+    "version" : "2025.2.0",
+    "status" : "active",
+    "name" : "ConsentStatus",
+    "title" : null,
+    "description" : " consent states are used to depict the participant’s will. Therefore, documentation should allow different status values. Further details from https://doi.org/10.1186/s12967-020-02457-y",
+    "uses" : {
     },
-    {
-      "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
-      "version" : "2025.2.0",
-      "status" : "active",
-      "name" : "Policy",
-      "title" : null,
-      "description" : "Policies used in consent management",
-      "uses" : {
-      },
-      "ValueSet-PolicyVS.html" : "Policy"
-    }
-  ]
+    "ValueSet-ConsentStatusObjectionShortValuesVS.html" : "ConsentStatusObjectionShortValues",
+    "ValueSet-ConsentStatusWithdrawalFullValuesVS.html" : "ConsentStatusWithdrawalFullValues",
+    "ValueSet-ConsentStatusRefusalShortValuesVS.html" : "ConsentStatusRefusalShortValues",
+    "ValueSet-ConsentStatusConsentShortValuesVS.html" : "ConsentStatusConsentShortValues",
+    "ValueSet-ConsentStatusConsentOptOutShortValuesVS.html" : "ConsentStatusConsentOptOutShortValues",
+    "ValueSet-ConsentStatusObjectionFullValuesVS.html" : "ConsentStatusObjectionFullValues",
+    "ValueSet-ConsentStatusConsentOptOutFullValuesVS.html" : "ConsentStatusConsentOptOutFullValues",
+    "ValueSet-ConsentStatusVS.html" : "ConsentStatus",
+    "ValueSet-ConsentStatusConsentFullValuesVS.html" : "ConsentStatusConsentFullValues",
+    "ValueSet-ConsentStatusRefusalFullValuesVS.html" : "ConsentStatusRefusalFullValues",
+    "ValueSet-ConsentStatusWithdrawalShortValuesVS.html" : "ConsentStatusWithdrawalShortValues"
+  },
+  {
+    "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+    "version" : "2025.2.0",
+    "status" : "active",
+    "name" : "Policy",
+    "title" : null,
+    "description" : "Policies used in consent management",
+    "uses" : {
+    },
+    "ValueSet-PolicyVS.html" : "Policy"
+  }]
 }
