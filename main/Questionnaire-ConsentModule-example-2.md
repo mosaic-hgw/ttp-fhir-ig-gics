@@ -23,7 +23,7 @@
   "name" : "MDAT_ErhebenSpeichernNutzen",
   "title" : "Verarbeitung und Nutzung von Patientendaten für die medizinische Forschung",
   "status" : "active",
-  "date" : "2026-03-12T14:14:00+00:00",
+  "date" : "2026-03-12T14:30:41+00:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

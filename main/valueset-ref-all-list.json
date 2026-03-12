@@ -270,8 +270,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.757"],
     "uses" : {
     },
-    "ValueSet-PolicyStatusVS.html" : "PolicyStatus",
-    "StructureDefinition-Consent.html" : "Consent"
+    "StructureDefinition-Consent.html" : "Consent",
+    "ValueSet-PolicyStatusVS.html" : "PolicyStatus"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/consent-scope",
@@ -1184,8 +1184,8 @@
     "systems" : ["https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"],
     "uses" : {
     },
-    "OperationDefinition-IsConsented.html" : "IsConsented",
     "OperationDefinition-GetAllConsentedIdsFor.html" : "GetAllConsentedIdsFor",
+    "OperationDefinition-IsConsented.html" : "IsConsented",
     "StructureDefinition-ConsentPolicy.html" : "ConsentPolicy"
   },
   {
