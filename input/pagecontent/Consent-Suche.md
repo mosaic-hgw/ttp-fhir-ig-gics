@@ -148,3 +148,12 @@ GET [base]/Consent?domain:identifier=MII&mii-policy-uri=urn:oid:2.16.840.1.11388
 GET [base]/Consent?domain:identifier=MII&mii-provision-provision-type=permit&mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3%7C2.16.840.1.113883.3.1937.777.24.5.3.8
 ```
 findet alle Consent-Ressourcen einer Einwilligungsdomäne 'MII' mit Permit-Provision, bei denen der Provision-Code 2.16.840.1.113883.3.1937.777.24.5.3.8 (entspricht der [TFCU-Policy](https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-Terminologien.html) 'MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU') gesetzt ist. Eine Beispiel-Response ist weiter unten dargestellt.
+
+
+### Geltende Einschränkungen und ungültige Kombinationen von Suchparametern
+
+Folgende Einschränkungen bezüglich der Verwendung von Suchparametern im gICS gelten.
+- der Parameter `mii-provision-provision-period` darf im Request **nur 1x** vorkommen
+- der Parameter `mii-provision-provision-period` kann **nicht** mit dem Parameter `_count=0` (summary) kombiniert werden. Hier wird als Ergebnis per Default total=0 zurückgegeben
+- der Parameter `status=active` wird in Version 2025.2.x nicht unterstützt
+- der Parameter `category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|consent-status` erfordert zusätzlich die Angabe des Parameters `domain:identifier=NAME_DER_DOMAIN` 
