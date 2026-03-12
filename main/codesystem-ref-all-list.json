@@ -305,9 +305,9 @@
     "description" : "One of the resource types defined as part of this version of FHIR.",
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
     "http://hl7.org/fhir/R4/valueset-subject-type.html" : "Subject type",
-    "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class"
+    "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class",
+    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
   },
   {
     "url" : "http://hl7.org/fhir/search-entry-mode",
@@ -331,10 +331,10 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
     "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-    "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-    "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes"
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
+    "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/can-push-updates",
@@ -683,8 +683,8 @@
     "oids" : ["2.16.840.1.113883.5.90"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
@@ -789,17 +789,17 @@
     "description" : " consent states are used to depict the participant’s will. Therefore, documentation should allow different status values. Further details from https://doi.org/10.1186/s12967-020-02457-y",
     "uses" : {
     },
-    "ValueSet-ConsentStatusRefusalFullValuesVS.html" : "ConsentStatusRefusalFullValues",
-    "ValueSet-ConsentStatusObjectionShortValuesVS.html" : "ConsentStatusObjectionShortValues",
-    "ValueSet-ConsentStatusRefusalShortValuesVS.html" : "ConsentStatusRefusalShortValues",
     "ValueSet-ConsentStatusWithdrawalFullValuesVS.html" : "ConsentStatusWithdrawalFullValues",
     "ValueSet-ConsentStatusObjectionFullValuesVS.html" : "ConsentStatusObjectionFullValues",
-    "ValueSet-ConsentStatusVS.html" : "ConsentStatus",
-    "ValueSet-ConsentStatusWithdrawalShortValuesVS.html" : "ConsentStatusWithdrawalShortValues",
-    "ValueSet-ConsentStatusConsentOptOutFullValuesVS.html" : "ConsentStatusConsentOptOutFullValues",
-    "ValueSet-ConsentStatusConsentOptOutShortValuesVS.html" : "ConsentStatusConsentOptOutShortValues",
     "ValueSet-ConsentStatusConsentShortValuesVS.html" : "ConsentStatusConsentShortValues",
-    "ValueSet-ConsentStatusConsentFullValuesVS.html" : "ConsentStatusConsentFullValues"
+    "ValueSet-ConsentStatusObjectionShortValuesVS.html" : "ConsentStatusObjectionShortValues",
+    "ValueSet-ConsentStatusWithdrawalShortValuesVS.html" : "ConsentStatusWithdrawalShortValues",
+    "ValueSet-ConsentStatusRefusalShortValuesVS.html" : "ConsentStatusRefusalShortValues",
+    "ValueSet-ConsentStatusConsentOptOutShortValuesVS.html" : "ConsentStatusConsentOptOutShortValues",
+    "ValueSet-ConsentStatusRefusalFullValuesVS.html" : "ConsentStatusRefusalFullValues",
+    "ValueSet-ConsentStatusVS.html" : "ConsentStatus",
+    "ValueSet-ConsentStatusConsentFullValuesVS.html" : "ConsentStatusConsentFullValues",
+    "ValueSet-ConsentStatusConsentOptOutFullValuesVS.html" : "ConsentStatusConsentOptOutFullValues"
   },
   {
     "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
