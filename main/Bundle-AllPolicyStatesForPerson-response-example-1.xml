@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="AllPolicyStatesForPerson-response-example-1"/>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="urn:uuid:c52ebb8f-3ca0-4978-9116-22c92aaccb18"/>
+    <resource>
+      <Consent>
+        <id value="c52ebb8f-3ca0-4978-9116-22c92aaccb18"/>
+        <meta>
+          <lastUpdated value="2021-06-03T09:47:47.361+02:00"/>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"/>
+          <profile value="http://fhir.de/ConsentManagement/StructureDefinition/Consent"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Consent_c52ebb8f-3ca0-4978-9116-22c92aaccb18"> </a><p class="res-header-id"><b>Generated Narrative: Consent c52ebb8f-3ca0-4978-9116-22c92aaccb18</b></p><a name="c52ebb8f-3ca0-4978-9116-22c92aaccb18"> </a><a name="hcc52ebb8f-3ca0-4978-9116-22c92aaccb18"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-06-03 09:47:47+0200</p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-Consent.html">Consent</a>, <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent">Consent Management: Consent</a></p></div><h2>Participants</h2><table class="grid"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title="Who the consent applies to">Patient</td><td><a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/34d195ef-179f-48dd-b830-d52ea9347157">Pseudonym dic_GCC83</a></td></tr></table><p>This consent is made under the regulation <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_bereitstellen_EU_DSGVO_NIVEAU}">Herausgabe identifizierender Daten (IDAT) an verantwortliche Stelle zur weiteren Verarbeitung</span> .</p><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Rule">Rule</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Period">Time Period</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Data">What</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other Applicable Rules">Rules</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: white; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Period: 2021-06-03 09:47:47+0200 --&gt; 2051-06-03 09:47:47+0200</li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Code: <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_bereitstellen_EU_DSGVO_NIVEAU}">Herausgabe identifizierender Daten (IDAT) an verantwortliche Stelle zur weiteren Verarbeitung</span></li><li>Code: <span title="Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.5}">IDAT bereitstellen EU DSGVO NIVEAU</span></li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr><td colspan="4" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+        </text>
+        <extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+          <extension url="status">
+            <valueCoding>
+              <system value="http://hl7.org/fhir/publication-status"/>
+              <code value="active"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <status value="active"/>
+        <scope>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+            <code value="research"/>
+          </coding>
+        </scope>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="57016-8"/>
+          </coding>
+        </category>
+        <category>
+          <coding>
+            <system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType"/>
+            <code value="policy"/>
+          </coding>
+        </category>
+        <patient>
+          <reference value="Patient/34d195ef-179f-48dd-b830-d52ea9347157"/>
+          <display value="Pseudonym dic_GCC83"/>
+        </patient>
+        <dateTime value="2021-06-03T00:00:00+02:00"/>
+        <sourceReference>
+          <reference value="QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56"/>
+        </sourceReference>
+        <policyRule>
+          <coding>
+            <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+            <code value="IDAT_bereitstellen_EU_DSGVO_NIVEAU"/>
+            <display value="Herausgabe identifizierender Daten (IDAT) an verantwortliche Stelle zur weiteren Verarbeitung"/>
+          </coding>
+        </policyRule>
+        <provision>
+          <type value="permit"/>
+          <period>
+            <start value="2021-06-03T09:47:47+02:00"/>
+            <end value="2051-06-03T09:47:47+02:00"/>
+          </period>
+          <code>
+            <coding>
+              <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+              <code value="IDAT_bereitstellen_EU_DSGVO_NIVEAU"/>
+              <display value="Herausgabe identifizierender Daten (IDAT) an verantwortliche Stelle zur weiteren Verarbeitung"/>
+            </coding>
+          </code>
+          <code>
+            <coding>
+              <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+              <code value="2.16.840.1.113883.3.1937.777.24.5.3.5"/>
+            </coding>
+          </code>
+        </provision>
+      </Consent>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:68148751-1a10-4e5a-84cd-2290950c3793"/>
+    <resource>
+      <Consent>
+        <id value="68148751-1a10-4e5a-84cd-2290950c3793"/>
+        <meta>
+          <lastUpdated value="2021-06-03T09:47:47.361+02:00"/>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"/>
+          <profile value="http://fhir.de/ConsentManagement/StructureDefinition/Consent"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Consent_68148751-1a10-4e5a-84cd-2290950c3793"> </a><p class="res-header-id"><b>Generated Narrative: Consent 68148751-1a10-4e5a-84cd-2290950c3793</b></p><a name="68148751-1a10-4e5a-84cd-2290950c3793"> </a><a name="hc68148751-1a10-4e5a-84cd-2290950c3793"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-06-03 09:47:47+0200</p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-Consent.html">Consent</a>, <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent">Consent Management: Consent</a></p></div><h2>Participants</h2><table class="grid"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title="Who the consent applies to">Patient</td><td><a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/34d195ef-179f-48dd-b830-d52ea9347157">Pseudonym dic_GCC83</a></td></tr></table><p>This consent is made under the regulation <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_erheben}">Erfassung neuer identifizierender Daten (IDAT)</span> .</p><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Rule">Rule</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Period">Time Period</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Data">What</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other Applicable Rules">Rules</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: white; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Period: 2021-06-03 09:47:47+0200 --&gt; 2051-06-03 09:47:47+0200</li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Code: <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_erheben}">Erfassung neuer identifizierender Daten (IDAT)</span></li><li>Code: <span title="Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.2}">IDAT erheben</span></li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr><td colspan="4" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+        </text>
+        <extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+          <extension url="status">
+            <valueCoding>
+              <system value="http://hl7.org/fhir/publication-status"/>
+              <code value="active"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <status value="active"/>
+        <scope>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+            <code value="research"/>
+          </coding>
+        </scope>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="57016-8"/>
+          </coding>
+        </category>
+        <category>
+          <coding>
+            <system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType"/>
+            <code value="policy"/>
+          </coding>
+        </category>
+        <patient>
+          <reference value="Patient/34d195ef-179f-48dd-b830-d52ea9347157"/>
+          <display value="Pseudonym dic_GCC83"/>
+        </patient>
+        <dateTime value="2021-06-03T00:00:00+02:00"/>
+        <sourceReference>
+          <reference value="QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56"/>
+        </sourceReference>
+        <policyRule>
+          <coding>
+            <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+            <code value="IDAT_erheben"/>
+            <display value="Erfassung neuer identifizierender Daten (IDAT)"/>
+          </coding>
+        </policyRule>
+        <provision>
+          <type value="permit"/>
+          <period>
+            <start value="2021-06-03T09:47:47+02:00"/>
+            <end value="2051-06-03T09:47:47+02:00"/>
+          </period>
+          <code>
+            <coding>
+              <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+              <code value="IDAT_erheben"/>
+              <display value="Erfassung neuer identifizierender Daten (IDAT)"/>
+            </coding>
+          </code>
+          <code>
+            <coding>
+              <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+              <code value="2.16.840.1.113883.3.1937.777.24.5.3.2"/>
+            </coding>
+          </code>
+        </provision>
+      </Consent>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:32fa19b1-f6fb-4fd5-b199-4d4dceb69e53"/>
+    <resource>
+      <Consent>
+        <id value="32fa19b1-f6fb-4fd5-b199-4d4dceb69e53"/>
+        <meta>
+          <lastUpdated value="2021-06-03T09:47:47.361+02:00"/>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"/>
+          <profile value="http://fhir.de/ConsentManagement/StructureDefinition/Consent"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Consent_32fa19b1-f6fb-4fd5-b199-4d4dceb69e53"> </a><p class="res-header-id"><b>Generated Narrative: Consent 32fa19b1-f6fb-4fd5-b199-4d4dceb69e53</b></p><a name="32fa19b1-f6fb-4fd5-b199-4d4dceb69e53"> </a><a name="hc32fa19b1-f6fb-4fd5-b199-4d4dceb69e53"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-06-03 09:47:47+0200</p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-Consent.html">Consent</a>, <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent">Consent Management: Consent</a></p></div><h2>Participants</h2><table class="grid"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title="Who the consent applies to">Patient</td><td><a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/34d195ef-179f-48dd-b830-d52ea9347157">Pseudonym dic_GCC83</a></td></tr></table><p>This consent is made under the regulation <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_speichern_verarbeiten}">Speicherung und Verarbeitung identifizierender Daten (IDAT) in der verantwortlichen Stelle</span> .</p><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Rule">Rule</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Period">Time Period</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Data">What</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other Applicable Rules">Rules</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: white; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Period: 2021-06-03 09:47:47+0200 --&gt; 2051-06-03 09:47:47+0200</li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Code: <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_speichern_verarbeiten}">Speicherung und Verarbeitung identifizierender Daten (IDAT) in der verantwortlichen Stelle</span></li><li>Code: <span title="Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.3}">IDAT speichern, verarbeiten</span></li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr><td colspan="4" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+        </text>
+        <extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+          <extension url="status">
+            <valueCoding>
+              <system value="http://hl7.org/fhir/publication-status"/>
+              <code value="active"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <status value="active"/>
+        <scope>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+            <code value="research"/>
+          </coding>
+        </scope>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="57016-8"/>
+          </coding>
+        </category>
+        <category>
+          <coding>
+            <system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType"/>
+            <code value="policy"/>
+          </coding>
+        </category>
+        <patient>
+          <reference value="Patient/34d195ef-179f-48dd-b830-d52ea9347157"/>
+          <display value="Pseudonym dic_GCC83"/>
+        </patient>
+        <dateTime value="2021-06-03T00:00:00+02:00"/>
+        <sourceReference>
+          <reference value="QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56"/>
+        </sourceReference>
+        <policyRule>
+          <coding>
+            <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+            <code value="IDAT_speichern_verarbeiten"/>
+            <display value="Speicherung und Verarbeitung identifizierender Daten (IDAT) in der verantwortlichen Stelle"/>
+          </coding>
+        </policyRule>
+        <provision>
+          <type value="permit"/>
+          <period>
+            <start value="2021-06-03T09:47:47+02:00"/>
+            <end value="2051-06-03T09:47:47+02:00"/>
+          </period>
+          <code>
+            <coding>
+              <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+              <code value="IDAT_speichern_verarbeiten"/>
+              <display value="Speicherung und Verarbeitung identifizierender Daten (IDAT) in der verantwortlichen Stelle"/>
+            </coding>
+          </code>
+          <code>
+            <coding>
+              <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+              <code value="2.16.840.1.113883.3.1937.777.24.5.3.3"/>
+            </coding>
+          </code>
+        </provision>
+      </Consent>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:343a8482-a00f-4ae4-974b-884932bdf44a"/>
+    <resource>
+      <Consent>
+        <id value="343a8482-a00f-4ae4-974b-884932bdf44a"/>
+        <meta>
+          <lastUpdated value="2021-06-03T09:47:47.361+02:00"/>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"/>
+          <profile value="http://fhir.de/ConsentManagement/StructureDefinition/Consent"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Consent_343a8482-a00f-4ae4-974b-884932bdf44a"> </a><p class="res-header-id"><b>Generated Narrative: Consent 343a8482-a00f-4ae4-974b-884932bdf44a</b></p><a name="343a8482-a00f-4ae4-974b-884932bdf44a"> </a><a name="hc343a8482-a00f-4ae4-974b-884932bdf44a"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-06-03 09:47:47+0200</p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-Consent.html">Consent</a>, <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent">Consent Management: Consent</a></p></div><h2>Participants</h2><table class="grid"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title="Who the consent applies to">Patient</td><td><a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/34d195ef-179f-48dd-b830-d52ea9347157">Pseudonym dic_GCC83</a></td></tr></table><p>This consent is made under the regulation <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_zusammenfuehren_Dritte}">Zusammenführung identifizierender Daten (IDAT) mit Dritten Forschungspartnern</span> .</p><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Rule">Rule</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Period">Time Period</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Data">What</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other Applicable Rules">Rules</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: white; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Period: 2021-06-03 09:47:47+0200 --&gt; 2051-06-03 09:47:47+0200</li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Code: <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_zusammenfuehren_Dritte}">Zusammenführung identifizierender Daten (IDAT) mit Dritten Forschungspartnern</span></li><li>Code: <span title="Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.4}">IDAT zusammenfuehren Dritte</span></li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr><td colspan="4" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+        </text>
+        <extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+          <extension url="status">
+            <valueCoding>
+              <system value="http://hl7.org/fhir/publication-status"/>
+              <code value="active"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <status value="active"/>
+        <scope>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+            <code value="research"/>
+          </coding>
+        </scope>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="57016-8"/>
+          </coding>
+        </category>
+        <category>
+          <coding>
+            <system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType"/>
+            <code value="policy"/>
+          </coding>
+        </category>
+        <patient>
+          <reference value="Patient/34d195ef-179f-48dd-b830-d52ea9347157"/>
+          <display value="Pseudonym dic_GCC83"/>
+        </patient>
+        <dateTime value="2021-06-03T00:00:00+02:00"/>
+        <sourceReference>
+          <reference value="QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56"/>
+        </sourceReference>
+        <policyRule>
+          <coding>
+            <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+            <code value="IDAT_zusammenfuehren_Dritte"/>
+            <display value="Zusammenführung identifizierender Daten (IDAT) mit Dritten Forschungspartnern"/>
+          </coding>
+        </policyRule>
+        <provision>
+          <type value="permit"/>
+          <period>
+            <start value="2021-06-03T09:47:47+02:00"/>
+            <end value="2051-06-03T09:47:47+02:00"/>
+          </period>
+          <code>
+            <coding>
+              <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+              <code value="IDAT_zusammenfuehren_Dritte"/>
+              <display value="Zusammenführung identifizierender Daten (IDAT) mit Dritten Forschungspartnern"/>
+            </coding>
+          </code>
+          <code>
+            <coding>
+              <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+              <code value="2.16.840.1.113883.3.1937.777.24.5.3.4"/>
+            </coding>
+          </code>
+        </provision>
+      </Consent>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f250a5a5-20e3-4b6b-97a5-f134b0b34d50"/>
+    <resource>
+      <Consent>
+        <id value="f250a5a5-20e3-4b6b-97a5-f134b0b34d50"/>
+        <meta>
+          <lastUpdated value="2021-06-03T09:47:47.361+02:00"/>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"/>
+          <profile value="http://fhir.de/ConsentManagement/StructureDefinition/Consent"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Consent_f250a5a5-20e3-4b6b-97a5-f134b0b34d50"> </a><p class="res-header-id"><b>Generated Narrative: Consent f250a5a5-20e3-4b6b-97a5-f134b0b34d50</b></p><a name="f250a5a5-20e3-4b6b-97a5-f134b0b34d50"> </a><a name="hcf250a5a5-20e3-4b6b-97a5-f134b0b34d50"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-06-03 09:47:47+0200</p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-Consent.html">Consent</a>, <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent">Consent Management: Consent</a></p></div><h2>Participants</h2><table class="grid"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title="Who the consent applies to">Patient</td><td><a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/34d195ef-179f-48dd-b830-d52ea9347157">Pseudonym dic_GCC83</a></td></tr></table><p>This consent is made under the regulation <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_erheben}">Erfassung medizinischer Daten</span> .</p><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Rule">Rule</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Period">Time Period</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Data">What</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other Applicable Rules">Rules</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: white; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Period: 2021-06-03 09:47:47+0200 --&gt; 2026-06-03 09:47:47+0200</li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Code: <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_erheben}">Erfassung medizinischer Daten</span></li><li>Code: <span title="Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.6}">MDAT erheben</span></li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr><td colspan="4" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+        </text>
+        <extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+          <extension url="status">
+            <valueCoding>
+              <system value="http://hl7.org/fhir/publication-status"/>
+              <code value="active"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <status value="active"/>
+        <scope>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+            <code value="research"/>
+          </coding>
+        </scope>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="57016-8"/>
+          </coding>
+        </category>
+        <category>
+          <coding>
+            <system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType"/>
+            <code value="policy"/>
+          </coding>
+        </category>
+        <patient>
+          <reference value="Patient/34d195ef-179f-48dd-b830-d52ea9347157"/>
+          <display value="Pseudonym dic_GCC83"/>
+        </patient>
+        <dateTime value="2021-06-03T00:00:00+02:00"/>
+        <sourceReference>
+          <reference value="QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56"/>
+        </sourceReference>
+        <policyRule>
+          <coding>
+            <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+            <code value="MDAT_erheben"/>
+            <display value="Erfassung medizinischer Daten"/>
+          </coding>
+        </policyRule>
+        <provision>
+          <type value="permit"/>
+          <period>
+            <start value="2021-06-03T09:47:47+02:00"/>
+            <end value="2026-06-03T09:47:47+02:00"/>
+          </period>
+          <code>
+            <coding>
+              <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+              <code value="MDAT_erheben"/>
+              <display value="Erfassung medizinischer Daten"/>
+            </coding>
+          </code>
+          <code>
+            <coding>
+              <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+              <code value="2.16.840.1.113883.3.1937.777.24.5.3.6"/>
+            </coding>
+          </code>
+        </provision>
+      </Consent>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:7159f7db-a76f-41a5-b831-10c972a3a282"/>
+    <resource>
+      <Consent>
+        <id value="7159f7db-a76f-41a5-b831-10c972a3a282"/>
+        <meta>
+          <lastUpdated value="2021-06-03T09:47:47.361+02:00"/>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"/>
+          <profile value="http://fhir.de/ConsentManagement/StructureDefinition/Consent"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Consent_7159f7db-a76f-41a5-b831-10c972a3a282"> </a><p class="res-header-id"><b>Generated Narrative: Consent 7159f7db-a76f-41a5-b831-10c972a3a282</b></p><a name="7159f7db-a76f-41a5-b831-10c972a3a282"> </a><a name="hc7159f7db-a76f-41a5-b831-10c972a3a282"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-06-03 09:47:47+0200</p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-Consent.html">Consent</a>, <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent">Consent Management: Consent</a></p></div><h2>Participants</h2><table class="grid"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title="Who the consent applies to">Patient</td><td><a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/34d195ef-179f-48dd-b830-d52ea9347157">Pseudonym dic_GCC83</a></td></tr></table><p>This consent is made under the regulation <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_GECCO83_bereitstellen_NUM_CODEX}">Medizinische Daten des GECCO83 Datensatz für wiss. Nutzung in NUM-CODEX Plattform bereitstellen</span> .</p><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Rule">Rule</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Period">Time Period</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Data">What</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other Applicable Rules">Rules</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: white; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Period: 2021-06-03 09:47:47+0200 --&gt; 2051-06-03 09:47:47+0200</li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Code: <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_GECCO83_bereitstellen_NUM_CODEX}">Medizinische Daten des GECCO83 Datensatz für wiss. Nutzung in NUM-CODEX Plattform bereitstellen</span></li><li>Code: <span title="Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.33}">MDAT GECCO83 bereitstellen NUM/CODEX</span></li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr><td colspan="4" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+        </text>
+        <extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+          <extension url="status">
+            <valueCoding>
+              <system value="http://hl7.org/fhir/publication-status"/>
+              <code value="active"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <status value="active"/>
+        <scope>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+            <code value="research"/>
+          </coding>
+        </scope>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="57016-8"/>
+          </coding>
+        </category>
+        <category>
+          <coding>
+            <system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType"/>
+            <code value="policy"/>
+          </coding>
+        </category>
+        <patient>
+          <reference value="Patient/34d195ef-179f-48dd-b830-d52ea9347157"/>
+          <display value="Pseudonym dic_GCC83"/>
+        </patient>
+        <dateTime value="2021-06-03T00:00:00+02:00"/>
+        <sourceReference>
+          <reference value="QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56"/>
+        </sourceReference>
+        <policyRule>
+          <coding>
+            <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+            <code value="MDAT_GECCO83_bereitstellen_NUM_CODEX"/>
+            <display value="Medizinische Daten des GECCO83 Datensatz für wiss. Nutzung in NUM-CODEX Plattform bereitstellen"/>
+          </coding>
+        </policyRule>
+        <provision>
+          <type value="permit"/>
+          <period>
+            <start value="2021-06-03T09:47:47+02:00"/>
+            <end value="2051-06-03T09:47:47+02:00"/>
+          </period>
+          <code>
+            <coding>
+              <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+              <code value="MDAT_GECCO83_bereitstellen_NUM_CODEX"/>
+              <display value="Medizinische Daten des GECCO83 Datensatz für wiss. Nutzung in NUM-CODEX Plattform bereitstellen"/>
+            </coding>
+          </code>
+          <code>
+            <coding>
+              <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+              <code value="2.16.840.1.113883.3.1937.777.24.5.3.33"/>
+            </coding>
+          </code>
+        </provision>
+      </Consent>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:b790946a-8a5c-48ed-926b-02ab9342e0ab"/>
+    <resource>
+      <Consent>
+        <id value="b790946a-8a5c-48ed-926b-02ab9342e0ab"/>
+        <meta>
+          <lastUpdated value="2021-06-03T09:47:47.361+02:00"/>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"/>
+          <profile value="http://fhir.de/ConsentManagement/StructureDefinition/Consent"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Consent_b790946a-8a5c-48ed-926b-02ab9342e0ab"> </a><p class="res-header-id"><b>Generated Narrative: Consent b790946a-8a5c-48ed-926b-02ab9342e0ab</b></p><a name="b790946a-8a5c-48ed-926b-02ab9342e0ab"> </a><a name="hcb790946a-8a5c-48ed-926b-02ab9342e0ab"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-06-03 09:47:47+0200</p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-Consent.html">Consent</a>, <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent">Consent Management: Consent</a></p></div><h2>Participants</h2><table class="grid"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title="Who the consent applies to">Patient</td><td><a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/34d195ef-179f-48dd-b830-d52ea9347157">Pseudonym dic_GCC83</a></td></tr></table><p>This consent is made under the regulation <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_GECCO83_bereitstellen_NUM_CODEX_non_EU_DSGVO_NIVEAU}">Medizinische Daten des GECCO83 Datensatz an Länder ohne EU Datenschutzniveau weitergeben</span> .</p><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Rule">Rule</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Period">Time Period</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Data">What</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other Applicable Rules">Rules</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: white; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Period: 2021-06-03 09:47:47+0200 --&gt; 2051-06-03 09:47:47+0200</li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Code: <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_GECCO83_bereitstellen_NUM_CODEX_non_EU_DSGVO_NIVEAU}">Medizinische Daten des GECCO83 Datensatz an Länder ohne EU Datenschutzniveau weitergeben</span></li><li>Code: <span title="Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.36}">MDAT GECCO83 bereitstellen NUM/CODEX ohne EU DSGVO NIVEAU</span></li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr><td colspan="4" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+        </text>
+        <extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+          <extension url="status">
+            <valueCoding>
+              <system value="http://hl7.org/fhir/publication-status"/>
+              <code value="active"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <status value="active"/>
+        <scope>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+            <code value="research"/>
+          </coding>
+        </scope>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="57016-8"/>
+          </coding>
+        </category>
+        <category>
+          <coding>
+            <system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType"/>
+            <code value="policy"/>
+          </coding>
+        </category>
+        <patient>
+          <reference value="Patient/34d195ef-179f-48dd-b830-d52ea9347157"/>
+          <display value="Pseudonym dic_GCC83"/>
+        </patient>
+        <dateTime value="2021-06-03T00:00:00+02:00"/>
+        <sourceReference>
+          <reference value="QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56"/>
+        </sourceReference>
+        <policyRule>
+          <coding>
+            <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+            <code value="MDAT_GECCO83_bereitstellen_NUM_CODEX_non_EU_DSGVO_NIVEAU"/>
+            <display value="Medizinische Daten des GECCO83 Datensatz an Länder ohne EU Datenschutzniveau weitergeben"/>
+          </coding>
+        </policyRule>
+        <provision>
+          <type value="permit"/>
+          <period>
+            <start value="2021-06-03T09:47:47+02:00"/>
+            <end value="2051-06-03T09:47:47+02:00"/>
+          </period>
+          <code>
+            <coding>
+              <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+              <code value="MDAT_GECCO83_bereitstellen_NUM_CODEX_non_EU_DSGVO_NIVEAU"/>
+              <display value="Medizinische Daten des GECCO83 Datensatz an Länder ohne EU Datenschutzniveau weitergeben"/>
+            </coding>
+          </code>
+          <code>
+            <coding>
+              <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+              <code value="2.16.840.1.113883.3.1937.777.24.5.3.36"/>
+            </coding>
+          </code>
+        </provision>
+      </Consent>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:29e8f702-9949-48d0-82b8-64afae92354e"/>
+    <resource>
+      <Consent>
+        <id value="29e8f702-9949-48d0-82b8-64afae92354e"/>
+        <meta>
+          <lastUpdated value="2021-06-03T09:47:47.361+02:00"/>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"/>
+          <profile value="http://fhir.de/ConsentManagement/StructureDefinition/Consent"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Consent_29e8f702-9949-48d0-82b8-64afae92354e"> </a><p class="res-header-id"><b>Generated Narrative: Consent 29e8f702-9949-48d0-82b8-64afae92354e</b></p><a name="29e8f702-9949-48d0-82b8-64afae92354e"> </a><a name="hc29e8f702-9949-48d0-82b8-64afae92354e"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-06-03 09:47:47+0200</p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-Consent.html">Consent</a>, <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent">Consent Management: Consent</a></p></div><h2>Participants</h2><table class="grid"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title="Who the consent applies to">Patient</td><td><a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/34d195ef-179f-48dd-b830-d52ea9347157">Pseudonym dic_GCC83</a></td></tr></table><p>This consent is made under the regulation <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_GECCO83_speichern_verarbeiten_NUM_CODEX}">Medizinische Daten des GECCO83 Datensatz in NUM-CODEX Plattform speichern und verarbeiten</span> .</p><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Rule">Rule</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Period">Time Period</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Data">What</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other Applicable Rules">Rules</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: white; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Period: 2021-06-03 09:47:47+0200 --&gt; 2051-06-03 09:47:47+0200</li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Code: <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_GECCO83_speichern_verarbeiten_NUM_CODEX}">Medizinische Daten des GECCO83 Datensatz in NUM-CODEX Plattform speichern und verarbeiten</span></li><li>Code: <span title="Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.34}">MDAT GECCO83 speichern verarbeiten NUM/CODEX</span></li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr><td colspan="4" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+        </text>
+        <extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+          <extension url="status">
+            <valueCoding>
+              <system value="http://hl7.org/fhir/publication-status"/>
+              <code value="active"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <status value="active"/>
+        <scope>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+            <code value="research"/>
+          </coding>
+        </scope>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="57016-8"/>
+          </coding>
+        </category>
+        <category>
+          <coding>
+            <system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType"/>
+            <code value="policy"/>
+          </coding>
+        </category>
+        <patient>
+          <reference value="Patient/34d195ef-179f-48dd-b830-d52ea9347157"/>
+          <display value="Pseudonym dic_GCC83"/>
+        </patient>
+        <dateTime value="2021-06-03T00:00:00+02:00"/>
+        <sourceReference>
+          <reference value="QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56"/>
+        </sourceReference>
+        <policyRule>
+          <coding>
+            <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+            <code value="MDAT_GECCO83_speichern_verarbeiten_NUM_CODEX"/>
+            <display value="Medizinische Daten des GECCO83 Datensatz in NUM-CODEX Plattform speichern und verarbeiten"/>
+          </coding>
+        </policyRule>
+        <provision>
+          <type value="permit"/>
+          <period>
+            <start value="2021-06-03T09:47:47+02:00"/>
+            <end value="2051-06-03T09:47:47+02:00"/>
+          </period>
+          <code>
+            <coding>
+              <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+              <code value="MDAT_GECCO83_speichern_verarbeiten_NUM_CODEX"/>
+              <display value="Medizinische Daten des GECCO83 Datensatz in NUM-CODEX Plattform speichern und verarbeiten"/>
+            </coding>
+          </code>
+          <code>
+            <coding>
+              <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+              <code value="2.16.840.1.113883.3.1937.777.24.5.3.34"/>
+            </coding>
+          </code>
+        </provision>
+      </Consent>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:7726b2ea-ea25-4848-a666-2135bf384cff"/>
+    <resource>
+      <Consent>
+        <id value="7726b2ea-ea25-4848-a666-2135bf384cff"/>
+        <meta>
+          <lastUpdated value="2021-06-03T09:47:47.361+02:00"/>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"/>
+          <profile value="http://fhir.de/ConsentManagement/StructureDefinition/Consent"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Consent_7726b2ea-ea25-4848-a666-2135bf384cff"> </a><p class="res-header-id"><b>Generated Narrative: Consent 7726b2ea-ea25-4848-a666-2135bf384cff</b></p><a name="7726b2ea-ea25-4848-a666-2135bf384cff"> </a><a name="hc7726b2ea-ea25-4848-a666-2135bf384cff"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-06-03 09:47:47+0200</p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-Consent.html">Consent</a>, <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent">Consent Management: Consent</a></p></div><h2>Participants</h2><table class="grid"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title="Who the consent applies to">Patient</td><td><a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/34d195ef-179f-48dd-b830-d52ea9347157">Pseudonym dic_GCC83</a></td></tr></table><p>This consent is made under the regulation <span title="Codes:{https://mii.de/fhir/CodeSystem/gics/Policy/MII MDAT_GECCO83_wissenschaftlich_nutzen_COVID_19_Forschung_EU_DSGVO_konform}">Nutzung des Covid-19-Datensatzes auf der im Rahmen des Projekts NUM-CODEX aufgebauten zentralen Datenplattform für die COVID-19-Forschung</span> .</p><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Rule">Rule</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Period">Time Period</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Data">What</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other Applicable Rules">Rules</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: white; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Period: 2021-06-03 09:47:47+0200 --&gt; 2051-06-03 09:47:47+0200</li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Code: <span title="Codes:{https://mii.de/fhir/CodeSystem/gics/Policy/MII MDAT_GECCO83_wissenschaftlich_nutzen_COVID_19_Forschung_EU_DSGVO_konform}">Nutzung des Covid-19-Datensatzes auf der im Rahmen des Projekts NUM-CODEX aufgebauten zentralen Datenplattform für die COVID-19-Forschung</span></li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr><td colspan="4" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+        </text>
+        <extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+          <extension url="status">
+            <valueCoding>
+              <system value="http://hl7.org/fhir/publication-status"/>
+              <code value="active"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <status value="active"/>
+        <scope>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+            <code value="research"/>
+          </coding>
+        </scope>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="57016-8"/>
+          </coding>
+        </category>
+        <category>
+          <coding>
+            <system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType"/>
+            <code value="policy"/>
+          </coding>
+        </category>
+        <patient>
+          <reference value="Patient/34d195ef-179f-48dd-b830-d52ea9347157"/>
+          <display value="Pseudonym dic_GCC83"/>
+        </patient>
+        <dateTime value="2021-06-03T00:00:00+02:00"/>
+        <sourceReference>
+          <reference value="QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56"/>
+        </sourceReference>
+        <policyRule>
+          <coding>
+            <system value="https://mii.de/fhir/CodeSystem/gics/Policy/MII"/>
+            <code value="MDAT_GECCO83_wissenschaftlich_nutzen_COVID_19_Forschung_EU_DSGVO_konform"/>
+            <display value="Nutzung des Covid-19-Datensatzes auf der im Rahmen des Projekts NUM-CODEX aufgebauten zentralen Datenplattform für die COVID-19-Forschung"/>
+          </coding>
+        </policyRule>
+        <provision>
+          <type value="permit"/>
+          <period>
+            <start value="2021-06-03T09:47:47+02:00"/>
+            <end value="2051-06-03T09:47:47+02:00"/>
+          </period>
+          <code>
+            <coding>
+              <system value="https://mii.de/fhir/CodeSystem/gics/Policy/MII"/>
+              <code value="MDAT_GECCO83_wissenschaftlich_nutzen_COVID_19_Forschung_EU_DSGVO_konform"/>
+              <display value="Nutzung des Covid-19-Datensatzes auf der im Rahmen des Projekts NUM-CODEX aufgebauten zentralen Datenplattform für die COVID-19-Forschung"/>
+            </coding>
+          </code>
+        </provision>
+      </Consent>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:3fc1cb1f-e37c-4c5a-9b46-c6edc1459aa6"/>
+    <resource>
+      <Consent>
+        <id value="3fc1cb1f-e37c-4c5a-9b46-c6edc1459aa6"/>
+        <meta>
+          <lastUpdated value="2021-06-03T09:47:47.361+02:00"/>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"/>
+          <profile value="http://fhir.de/ConsentManagement/StructureDefinition/Consent"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Consent_3fc1cb1f-e37c-4c5a-9b46-c6edc1459aa6"> </a><p class="res-header-id"><b>Generated Narrative: Consent 3fc1cb1f-e37c-4c5a-9b46-c6edc1459aa6</b></p><a name="3fc1cb1f-e37c-4c5a-9b46-c6edc1459aa6"> </a><a name="hc3fc1cb1f-e37c-4c5a-9b46-c6edc1459aa6"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-06-03 09:47:47+0200</p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-Consent.html">Consent</a>, <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent">Consent Management: Consent</a></p></div><h2>Participants</h2><table class="grid"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title="Who the consent applies to">Patient</td><td><a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/34d195ef-179f-48dd-b830-d52ea9347157">Pseudonym dic_GCC83</a></td></tr></table><p>This consent is made under the regulation <span title="Codes:{https://mii.de/fhir/CodeSystem/gics/Policy/MII MDAT_GECCO83_wissenschaftlich_nutzen_Pandemie_Forschung_EU_DSGVO_konform}">Nutzung des Covid-19-Datensatzes auf der im Rahmen des Projekts NUM-CODEX aufgebauten zentralen Datenplattform für die Pandemie-Forschung</span> .</p><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Rule">Rule</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Period">Time Period</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Data">What</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other Applicable Rules">Rules</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: white; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Period: 2021-06-03 09:47:47+0200 --&gt; 2051-06-03 09:47:47+0200</li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Code: <span title="Codes:{https://mii.de/fhir/CodeSystem/gics/Policy/MII MDAT_GECCO83_wissenschaftlich_nutzen_Pandemie_Forschung_EU_DSGVO_konform}">Nutzung des Covid-19-Datensatzes auf der im Rahmen des Projekts NUM-CODEX aufgebauten zentralen Datenplattform für die Pandemie-Forschung</span></li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr><td colspan="4" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+        </text>
+        <extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+          <extension url="status">
+            <valueCoding>
+              <system value="http://hl7.org/fhir/publication-status"/>
+              <code value="active"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <status value="active"/>
+        <scope>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+            <code value="research"/>
+          </coding>
+        </scope>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="57016-8"/>
+          </coding>
+        </category>
+        <category>
+          <coding>
+            <system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType"/>
+            <code value="policy"/>
+          </coding>
+        </category>
+        <patient>
+          <reference value="Patient/34d195ef-179f-48dd-b830-d52ea9347157"/>
+          <display value="Pseudonym dic_GCC83"/>
+        </patient>
+        <dateTime value="2021-06-03T00:00:00+02:00"/>
+        <sourceReference>
+          <reference value="QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56"/>
+        </sourceReference>
+        <policyRule>
+          <coding>
+            <system value="https://mii.de/fhir/CodeSystem/gics/Policy/MII"/>
+            <code value="MDAT_GECCO83_wissenschaftlich_nutzen_Pandemie_Forschung_EU_DSGVO_konform"/>
+            <display value="Nutzung des Covid-19-Datensatzes auf der im Rahmen des Projekts NUM-CODEX aufgebauten zentralen Datenplattform für die Pandemie-Forschung"/>
+          </coding>
+        </policyRule>
+        <provision>
+          <type value="permit"/>
+          <period>
+            <start value="2021-06-03T09:47:47+02:00"/>
+            <end value="2051-06-03T09:47:47+02:00"/>
+          </period>
+          <code>
+            <coding>
+              <system value="https://mii.de/fhir/CodeSystem/gics/Policy/MII"/>
+              <code value="MDAT_GECCO83_wissenschaftlich_nutzen_Pandemie_Forschung_EU_DSGVO_konform"/>
+              <display value="Nutzung des Covid-19-Datensatzes auf der im Rahmen des Projekts NUM-CODEX aufgebauten zentralen Datenplattform für die Pandemie-Forschung"/>
+            </coding>
+          </code>
+        </provision>
+      </Consent>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:9d317d12-e34f-4b4f-a9c1-693ecf7e1615"/>
+    <resource>
+      <Consent>
+        <id value="9d317d12-e34f-4b4f-a9c1-693ecf7e1615"/>
+        <meta>
+          <lastUpdated value="2021-06-03T09:47:47.361+02:00"/>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"/>
+          <profile value="http://fhir.de/ConsentManagement/StructureDefinition/Consent"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Consent_9d317d12-e34f-4b4f-a9c1-693ecf7e1615"> </a><p class="res-header-id"><b>Generated Narrative: Consent 9d317d12-e34f-4b4f-a9c1-693ecf7e1615</b></p><a name="9d317d12-e34f-4b4f-a9c1-693ecf7e1615"> </a><a name="hc9d317d12-e34f-4b4f-a9c1-693ecf7e1615"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-06-03 09:47:47+0200</p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-Consent.html">Consent</a>, <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent">Consent Management: Consent</a></p></div><h2>Participants</h2><table class="grid"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title="Who the consent applies to">Patient</td><td><a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/34d195ef-179f-48dd-b830-d52ea9347157">Pseudonym dic_GCC83</a></td></tr></table><p>This consent is made under the regulation <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_speichern_verarbeiten}">Speicherung_Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)</span> .</p><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Rule">Rule</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Period">Time Period</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Data">What</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other Applicable Rules">Rules</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: white; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Period: 2021-06-03 09:47:47+0200 --&gt; 2051-06-03 09:47:47+0200</li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Code: <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_speichern_verarbeiten}">Speicherung_Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)</span></li><li>Code: <span title="Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.7}">MDAT speichern, verarbeiten</span></li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr><td colspan="4" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+        </text>
+        <extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+          <extension url="status">
+            <valueCoding>
+              <system value="http://hl7.org/fhir/publication-status"/>
+              <code value="active"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <status value="active"/>
+        <scope>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+            <code value="research"/>
+          </coding>
+        </scope>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="57016-8"/>
+          </coding>
+        </category>
+        <category>
+          <coding>
+            <system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType"/>
+            <code value="policy"/>
+          </coding>
+        </category>
+        <patient>
+          <reference value="Patient/34d195ef-179f-48dd-b830-d52ea9347157"/>
+          <display value="Pseudonym dic_GCC83"/>
+        </patient>
+        <dateTime value="2021-06-03T00:00:00+02:00"/>
+        <sourceReference>
+          <reference value="QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56"/>
+        </sourceReference>
+        <policyRule>
+          <coding>
+            <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+            <code value="MDAT_speichern_verarbeiten"/>
+            <display value="Speicherung_Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)"/>
+          </coding>
+        </policyRule>
+        <provision>
+          <type value="permit"/>
+          <period>
+            <start value="2021-06-03T09:47:47+02:00"/>
+            <end value="2051-06-03T09:47:47+02:00"/>
+          </period>
+          <code>
+            <coding>
+              <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+              <code value="MDAT_speichern_verarbeiten"/>
+              <display value="Speicherung_Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)"/>
+            </coding>
+          </code>
+          <code>
+            <coding>
+              <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+              <code value="2.16.840.1.113883.3.1937.777.24.5.3.7"/>
+            </coding>
+          </code>
+        </provision>
+      </Consent>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:8fead334-f5a9-4025-b604-5e38f9ad44c3"/>
+    <resource>
+      <Consent>
+        <id value="8fead334-f5a9-4025-b604-5e38f9ad44c3"/>
+        <meta>
+          <lastUpdated value="2021-06-03T09:47:47.361+02:00"/>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"/>
+          <profile value="http://fhir.de/ConsentManagement/StructureDefinition/Consent"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Consent_8fead334-f5a9-4025-b604-5e38f9ad44c3"> </a><p class="res-header-id"><b>Generated Narrative: Consent 8fead334-f5a9-4025-b604-5e38f9ad44c3</b></p><a name="8fead334-f5a9-4025-b604-5e38f9ad44c3"> </a><a name="hc8fead334-f5a9-4025-b604-5e38f9ad44c3"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-06-03 09:47:47+0200</p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-Consent.html">Consent</a>, <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent">Consent Management: Consent</a></p></div><h2>Participants</h2><table class="grid"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title="Who the consent applies to">Patient</td><td><a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/34d195ef-179f-48dd-b830-d52ea9347157">Pseudonym dic_GCC83</a></td></tr></table><p>This consent is made under the regulation <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU}">Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung </span>.</p><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Rule">Rule</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Period">Time Period</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Data">What</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other Applicable Rules">Rules</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: white; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Period: 2021-06-03 09:47:47+0200 --&gt; 2051-06-03 09:47:47+0200</li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Code: <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU}">Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung </span></li><li>Code: <span title="Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.8}">MDAT wissenschaftlich nutzen EU DSGVO NIVEAU</span></li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr><td colspan="4" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+        </text>
+        <extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+          <extension url="status">
+            <valueCoding>
+              <system value="http://hl7.org/fhir/publication-status"/>
+              <code value="active"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <status value="active"/>
+        <scope>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+            <code value="research"/>
+          </coding>
+        </scope>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="57016-8"/>
+          </coding>
+        </category>
+        <category>
+          <coding>
+            <system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType"/>
+            <code value="policy"/>
+          </coding>
+        </category>
+        <patient>
+          <reference value="Patient/34d195ef-179f-48dd-b830-d52ea9347157"/>
+          <display value="Pseudonym dic_GCC83"/>
+        </patient>
+        <dateTime value="2021-06-03T00:00:00+02:00"/>
+        <sourceReference>
+          <reference value="QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56"/>
+        </sourceReference>
+        <policyRule>
+          <coding>
+            <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+            <code value="MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
+            <display value="Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung "/>
+          </coding>
+        </policyRule>
+        <provision>
+          <type value="permit"/>
+          <period>
+            <start value="2021-06-03T09:47:47+02:00"/>
+            <end value="2051-06-03T09:47:47+02:00"/>
+          </period>
+          <code>
+            <coding>
+              <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+              <code value="MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
+              <display value="Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung "/>
+            </coding>
+          </code>
+          <code>
+            <coding>
+              <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+              <code value="2.16.840.1.113883.3.1937.777.24.5.3.8"/>
+            </coding>
+          </code>
+        </provision>
+      </Consent>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:a778fd9a-e68a-4b98-ab9d-2d788db705d5"/>
+    <resource>
+      <Consent>
+        <id value="a778fd9a-e68a-4b98-ab9d-2d788db705d5"/>
+        <meta>
+          <lastUpdated value="2021-06-03T09:47:47.361+02:00"/>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"/>
+          <profile value="http://fhir.de/ConsentManagement/StructureDefinition/Consent"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Consent_a778fd9a-e68a-4b98-ab9d-2d788db705d5"> </a><p class="res-header-id"><b>Generated Narrative: Consent a778fd9a-e68a-4b98-ab9d-2d788db705d5</b></p><a name="a778fd9a-e68a-4b98-ab9d-2d788db705d5"> </a><a name="hca778fd9a-e68a-4b98-ab9d-2d788db705d5"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-06-03 09:47:47+0200</p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-Consent.html">Consent</a>, <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent">Consent Management: Consent</a></p></div><h2>Participants</h2><table class="grid"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title="Who the consent applies to">Patient</td><td><a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/34d195ef-179f-48dd-b830-d52ea9347157">Pseudonym dic_GCC83</a></td></tr></table><p>This consent is made under the regulation <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_zusammenfuehren_Dritte}">Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern</span> .</p><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Rule">Rule</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Period">Time Period</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Applicable Data">What</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other Applicable Rules">Rules</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: white; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Consent Provision" class="hierarchy"/> permit</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Period: 2021-06-03 09:47:47+0200 --&gt; 2051-06-03 09:47:47+0200</li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li>Code: <span title="Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_zusammenfuehren_Dritte}">Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern</span></li><li>Code: <span title="Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.9}">MDAT zusammenfuehren Dritte</span></li></ul></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr><td colspan="4" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+        </text>
+        <extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+          <extension url="status">
+            <valueCoding>
+              <system value="http://hl7.org/fhir/publication-status"/>
+              <code value="active"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <status value="active"/>
+        <scope>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+            <code value="research"/>
+          </coding>
+        </scope>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="57016-8"/>
+          </coding>
+        </category>
+        <category>
+          <coding>
+            <system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType"/>
+            <code value="policy"/>
+          </coding>
+        </category>
+        <patient>
+          <reference value="Patient/34d195ef-179f-48dd-b830-d52ea9347157"/>
+          <display value="Pseudonym dic_GCC83"/>
+        </patient>
+        <dateTime value="2021-06-03T00:00:00+02:00"/>
+        <sourceReference>
+          <reference value="QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56"/>
+        </sourceReference>
+        <policyRule>
+          <coding>
+            <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+            <code value="MDAT_zusammenfuehren_Dritte"/>
+            <display value="Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern"/>
+          </coding>
+        </policyRule>
+        <provision>
+          <type value="permit"/>
+          <period>
+            <start value="2021-06-03T09:47:47+02:00"/>
+            <end value="2051-06-03T09:47:47+02:00"/>
+          </period>
+          <code>
+            <coding>
+              <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+              <code value="MDAT_zusammenfuehren_Dritte"/>
+              <display value="Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern"/>
+            </coding>
+          </code>
+          <code>
+            <coding>
+              <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+              <code value="2.16.840.1.113883.3.1937.777.24.5.3.9"/>
+            </coding>
+          </code>
+        </provision>
+      </Consent>
+    </resource>
+  </entry>
+</Bundle>

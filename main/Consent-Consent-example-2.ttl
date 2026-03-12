@@ -1,0 +1,418 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/gics/Consent/Consent-example-2> a fhir:Consent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Consent-example-2"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created"^^xsd:anyURI ;
+         fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/gics/Created>
+       ] ;
+       fhir:value [
+         a fhir:Instant ;
+         fhir:v "2020-01-02T04:05:06+01:00"^^xsd:dateTime
+       ]
+     ] ) ;
+     fhir:lastUpdated [ fhir:v "2021-10-29T11:00:08.695+02:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"^^xsd:anyURI ;
+       fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Consent Consent-example-2</b></p><a name=\"Consent-example-2\"> </a><a name=\"hcConsent-example-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2021-10-29 11:00:08+0200</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Consent.html\">Consent</a></p></div><h2>Participants</h2><table class=\"grid\"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title=\"Who the consent applies to\">Patient</td><td><a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/65d4cbf1-f20a-4fd0-9585-53be76416b02\">Pseudonym aachen1</a></td></tr><tr><td title=\"Who manages the consent through its lifecycle.\">Manager</td><td>MII</td></tr></table><p>This consent is made under the policy <code>urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f</code> .</p><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Rule\">Rule</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Period\">Time Period</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Data\">What</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Other Applicable Rules\">Rules</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-qi-hidden.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> deny</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_bereitstellen_EU_DSGVO_NIVEAU}\">Herausgabe identifizierender Daten (IDAT) an verantwortliche Stelle zur weiteren Verarbeitung</span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_erheben}\">Erfassung neuer identifizierender Daten (IDAT)</span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_speichern_verarbeiten}\">Speicherung und Verarbeitung identifizierender Daten (IDAT) in der verantwortlichen Stelle</span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy IDAT_zusammenfuehren_Dritte}\">Zusammenführung identifizierender Daten (IDAT) mit Dritten Forschungspartnern</span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_erheben}\">Erfassung medizinischer Daten</span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_speichern_verarbeiten}\">Speicherung_Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)</span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU}\">Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung </span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy MDAT_zusammenfuehren_Dritte}\">Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern</span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy Rekontaktierung_Verknuepfung_Datenbanken}\">Rekontaktierung zur Verknuepfung von PatDat mit Info anderer Dbs</span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy Rekontaktierung_weitere_Erhebung}\">Rekontaktierung bezüglich Erhebung zusätzlicher Daten</span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy Rekontaktierung_weitere_Studien}\">Rekontaktierung bezüglich Information zu neuen Forschungsvorhaben oder Studien</span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy KDAT_retro_speichern_verarbeiten}\">Krankenkassendaten (KKDAT) für 5 Jahre retrospektiv speichern_verarbeiten in der verantwortlichen Stelle</span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy KDAT_retro_uebertragen}\">Krankenkassendaten (KKDAT) für 5 Jahre retrospektiv übertragen</span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2021-10-29 11:00:08+0200 --&gt; 2021-11-30 00:00:00+0100</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{https://ths-greifswald.de/fhir/CodeSystem/gics/Policy KDAT_retro_wissenschaftlich_nutzen}\">Krankenkassendaten (KKDAT) für 5 Jahre retrospektiv wissenschaftlich nutzen</span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr><td colspan=\"4\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "domain"^^xsd:anyURI ;
+         fhir:l fhir:domain
+       ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:l <https://ths-greifswald.de/fhir/gics/ResearchStudy/b0b83c00-e230-4c52-8d3a-cbb882e0a72f> ;
+         fhir:reference [ fhir:v "ResearchStudy/b0b83c00-e230-4c52-8d3a-cbb882e0a72f" ]
+       ]
+     ] [
+       fhir:url [
+         fhir:v "status"^^xsd:anyURI ;
+         fhir:l fhir:status
+       ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/publication-status"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/publication-status>
+         ] ;
+         fhir:code [ fhir:v "active" ]
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"^^xsd:anyURI ;
+       fhir:l <http://fhir.de/ConsentManagement/StructureDefinition/DomainReference>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "mykey1"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "value"^^xsd:anyURI ;
+         fhir:l fhir:value
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "myvalue1"
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"^^xsd:anyURI ;
+       fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "mykey2"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "value"^^xsd:anyURI ;
+         fhir:l fhir:value
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "myvalue2"
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"^^xsd:anyURI ;
+       fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "EXPIRATION_DATE"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "value"^^xsd:anyURI ;
+         fhir:l fhir:value
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Tue Nov 30 00:00:00 CET 2021"
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"^^xsd:anyURI ;
+       fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty>
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:scope [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/consentscope>
+       ] ;
+       fhir:code [ fhir:v "research" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:59284-0 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "59284-0" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://fhir.de/ConsentManagement/CodeSystem/ResultType"^^xsd:anyURI ;
+         fhir:l <http://fhir.de/ConsentManagement/CodeSystem/ResultType>
+       ] ;
+       fhir:code [ fhir:v "consent-status" ]
+     ] )
+  ] ) ; # 
+  fhir:patient [
+     fhir:l <https://ths-greifswald.de/fhir/gics/Patient/65d4cbf1-f20a-4fd0-9585-53be76416b02> ;
+     fhir:reference [ fhir:v "Patient/65d4cbf1-f20a-4fd0-9585-53be76416b02" ] ;
+     fhir:display [ fhir:v "Pseudonym aachen1" ]
+  ] ; # 
+  fhir:dateTime [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime] ; # 
+  fhir:organization ( [
+     fhir:display [ fhir:v "MII" ]
+  ] ) ; # 
+  fhir:source [
+     a fhir:Reference ;
+     fhir:l <https://ths-greifswald.de/fhir/gics/QuestionnaireResponse/0f1ccc50-9b24-4f12-a998-49f80d5285c1> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/0f1ccc50-9b24-4f12-a998-49f80d5285c1" ]
+  ] ; # 
+  fhir:policy ( [
+     fhir:uri [
+       fhir:v "urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f"^^xsd:anyURI ;
+       fhir:l <urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f>
+     ]
+  ] ) ; # 
+  fhir:provision [
+     fhir:type [ fhir:v "deny" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+       fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+     ] ;
+     fhir:provision ( [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
+             fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
+           ] ;
+           fhir:code [ fhir:v "IDAT_bereitstellen_EU_DSGVO_NIVEAU" ] ;
+           fhir:display [ fhir:v "Herausgabe identifizierender Daten (IDAT) an verantwortliche Stelle zur weiteren Verarbeitung" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
+             fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
+           ] ;
+           fhir:code [ fhir:v "IDAT_erheben" ] ;
+           fhir:display [ fhir:v "Erfassung neuer identifizierender Daten (IDAT)" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
+             fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
+           ] ;
+           fhir:code [ fhir:v "IDAT_speichern_verarbeiten" ] ;
+           fhir:display [ fhir:v "Speicherung und Verarbeitung identifizierender Daten (IDAT) in der verantwortlichen Stelle" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
+             fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
+           ] ;
+           fhir:code [ fhir:v "IDAT_zusammenfuehren_Dritte" ] ;
+           fhir:display [ fhir:v "Zusammenführung identifizierender Daten (IDAT) mit Dritten Forschungspartnern" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
+             fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
+           ] ;
+           fhir:code [ fhir:v "MDAT_erheben" ] ;
+           fhir:display [ fhir:v "Erfassung medizinischer Daten" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
+             fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
+           ] ;
+           fhir:code [ fhir:v "MDAT_speichern_verarbeiten" ] ;
+           fhir:display [ fhir:v "Speicherung_Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
+             fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
+           ] ;
+           fhir:code [ fhir:v "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU" ] ;
+           fhir:display [ fhir:v "Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung " ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
+             fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
+           ] ;
+           fhir:code [ fhir:v "MDAT_zusammenfuehren_Dritte" ] ;
+           fhir:display [ fhir:v "Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
+             fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
+           ] ;
+           fhir:code [ fhir:v "Rekontaktierung_Verknuepfung_Datenbanken" ] ;
+           fhir:display [ fhir:v "Rekontaktierung zur Verknuepfung von PatDat mit Info anderer Dbs" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
+             fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
+           ] ;
+           fhir:code [ fhir:v "Rekontaktierung_weitere_Erhebung" ] ;
+           fhir:display [ fhir:v "Rekontaktierung bezüglich Erhebung zusätzlicher Daten" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
+             fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
+           ] ;
+           fhir:code [ fhir:v "Rekontaktierung_weitere_Studien" ] ;
+           fhir:display [ fhir:v "Rekontaktierung bezüglich Information zu neuen Forschungsvorhaben oder Studien" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
+             fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
+           ] ;
+           fhir:code [ fhir:v "KDAT_retro_speichern_verarbeiten" ] ;
+           fhir:display [ fhir:v "Krankenkassendaten (KKDAT) für 5 Jahre retrospektiv speichern_verarbeiten in der verantwortlichen Stelle" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
+             fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
+           ] ;
+           fhir:code [ fhir:v "KDAT_retro_uebertragen" ] ;
+           fhir:display [ fhir:v "Krankenkassendaten (KKDAT) für 5 Jahre retrospektiv übertragen" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-10-29T11:00:08+02:00"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2021-11-30T00:00:00+01:00"^^xsd:dateTime ]
+       ] ;
+       fhir:code ( [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ;
+             fhir:l <https://ths-greifswald.de/fhir/CodeSystem/gics/Policy>
+           ] ;
+           fhir:code [ fhir:v "KDAT_retro_wissenschaftlich_nutzen" ] ;
+           fhir:display [ fhir:v "Krankenkassendaten (KKDAT) für 5 Jahre retrospektiv wissenschaftlich nutzen" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

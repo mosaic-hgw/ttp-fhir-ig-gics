@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="CurrentPolicyStatesForPerson-request-example-1"/>
+  <parameter>
+    <name value="personIdentifier"/>
+    <valueIdentifier>
+      <system value="https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"/>
+      <value value="dic_1H51T"/>
+    </valueIdentifier>
+  </parameter>
+  <parameter>
+    <name value="domain"/>
+    <valueString value="MII"/>
+  </parameter>
+  <parameter>
+    <name value="config"/>
+    <resource>
+      <Parameters>
+        <parameter>
+          <name value="idMatchingType"/>
+          <valueCoding>
+            <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/IdMatchingType"/>
+            <code value="AT_LEAST_ONE"/>
+          </valueCoding>
+        </parameter>
+        <parameter>
+          <name value="ignoreVersionNumber"/>
+          <valueBoolean value="false"/>
+        </parameter>
+        <parameter>
+          <name value="unknownStateIsConsideredAsDecline"/>
+          <valueBoolean value="false"/>
+        </parameter>
+        <parameter>
+          <name value="requestDate"/>
+          <valueDate value="2022-01-13"/>
+        </parameter>
+      </Parameters>
+    </resource>
+  </parameter>
+</Parameters>

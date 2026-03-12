@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="example-BatchResponse-verify-consent-state"/>
+  <type value="batch-response"/>
+  <entry>
+    <resource>
+      <Bundle>
+        <id value="example-BatchResponse-verify-consent-state-searchset1"/>
+        <type value="searchset"/>
+        <total value="1"/>
+        <entry>
+          <fullUrl value="https://fhir-server.my-hospital.de/fhir/Consent/Consent-example-2"/>
+          <resource>
+            <Consent>
+              <id value="Consent-example-2"/>
+              <meta>
+                <extension url="https://ths-greifswald.de/fhir/StructureDefinition/gics/Created">
+                  <valueInstant value="2020-01-02T04:05:06+01:00"/>
+                </extension>
+                <lastUpdated value="2021-10-29T11:00:08.695+02:00"/>
+                <profile value="https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"/>
+              </meta>
+              <extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+                <extension url="domain">
+                  <valueReference>
+                    <reference value="ResearchStudy/b0b83c00-e230-4c52-8d3a-cbb882e0a72f"/>
+                  </valueReference>
+                </extension>
+                <extension url="status">
+                  <valueCoding>
+                    <system value="http://hl7.org/fhir/publication-status"/>
+                    <code value="active"/>
+                  </valueCoding>
+                </extension>
+              </extension>
+              <extension url="https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty">
+                <extension url="key">
+                  <valueString value="mykey1"/>
+                </extension>
+                <extension url="value">
+                  <valueString value="myvalue1"/>
+                </extension>
+              </extension>
+              <extension url="https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty">
+                <extension url="key">
+                  <valueString value="mykey2"/>
+                </extension>
+                <extension url="value">
+                  <valueString value="myvalue2"/>
+                </extension>
+              </extension>
+              <extension url="https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty">
+                <extension url="key">
+                  <valueString value="EXPIRATION_DATE"/>
+                </extension>
+                <extension url="value">
+                  <valueString value="Tue Nov 30 00:00:00 CET 2021"/>
+                </extension>
+              </extension>
+              <status value="active"/>
+              <scope>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+                  <code value="research"/>
+                </coding>
+              </scope>
+              <category>
+                <coding>
+                  <system value="http://loinc.org"/>
+                  <code value="59284-0"/>
+                </coding>
+              </category>
+              <category>
+                <coding>
+                  <system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType"/>
+                  <code value="consent-status"/>
+                </coding>
+              </category>
+              <patient>
+                <reference value="Patient/65d4cbf1-f20a-4fd0-9585-53be76416b02"/>
+                <display value="Pseudonym aachen1"/>
+              </patient>
+              <dateTime value="2021-10-29T11:00:08+02:00"/>
+              <organization>
+                <display value="MII"/>
+              </organization>
+              <sourceReference>
+                <reference value="QuestionnaireResponse/0f1ccc50-9b24-4f12-a998-49f80d5285c1"/>
+              </sourceReference>
+              <policy>
+                <uri value="urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f"/>
+              </policy>
+              <provision>
+                <type value="deny"/>
+                <period>
+                  <start value="2021-10-29T11:00:08+02:00"/>
+                  <end value="2021-11-30T00:00:00+01:00"/>
+                </period>
+                <provision>
+                  <type value="permit"/>
+                  <period>
+                    <start value="2021-10-29T11:00:08+02:00"/>
+                    <end value="2021-11-30T00:00:00+01:00"/>
+                  </period>
+                  <code>
+                    <coding>
+                      <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+                      <code value="IDAT_bereitstellen_EU_DSGVO_NIVEAU"/>
+                      <display value="Herausgabe identifizierender Daten (IDAT) an verantwortliche Stelle zur weiteren Verarbeitung"/>
+                    </coding>
+                  </code>
+                </provision>
+                <provision>
+                  <type value="permit"/>
+                  <period>
+                    <start value="2021-10-29T11:00:08+02:00"/>
+                    <end value="2021-11-30T00:00:00+01:00"/>
+                  </period>
+                  <code>
+                    <coding>
+                      <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+                      <code value="IDAT_erheben"/>
+                      <display value="Erfassung neuer identifizierender Daten (IDAT)"/>
+                    </coding>
+                  </code>
+                </provision>
+                <provision>
+                  <type value="permit"/>
+                  <period>
+                    <start value="2021-10-29T11:00:08+02:00"/>
+                    <end value="2021-11-30T00:00:00+01:00"/>
+                  </period>
+                  <code>
+                    <coding>
+                      <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+                      <code value="IDAT_speichern_verarbeiten"/>
+                      <display value="Speicherung und Verarbeitung identifizierender Daten (IDAT) in der verantwortlichen Stelle"/>
+                    </coding>
+                  </code>
+                </provision>
+                <provision>
+                  <type value="permit"/>
+                  <period>
+                    <start value="2021-10-29T11:00:08+02:00"/>
+                    <end value="2021-11-30T00:00:00+01:00"/>
+                  </period>
+                  <code>
+                    <coding>
+                      <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+                      <code value="IDAT_zusammenfuehren_Dritte"/>
+                      <display value="Zusammenführung identifizierender Daten (IDAT) mit Dritten Forschungspartnern"/>
+                    </coding>
+                  </code>
+                </provision>
+                <provision>
+                  <type value="permit"/>
+                  <period>
+                    <start value="2021-10-29T11:00:08+02:00"/>
+                    <end value="2021-11-30T00:00:00+01:00"/>
+                  </period>
+                  <code>
+                    <coding>
+                      <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+                      <code value="MDAT_erheben"/>
+                      <display value="Erfassung medizinischer Daten"/>
+                    </coding>
+                  </code>
+                </provision>
+                <provision>
+                  <type value="permit"/>
+                  <period>
+                    <start value="2021-10-29T11:00:08+02:00"/>
+                    <end value="2021-11-30T00:00:00+01:00"/>
+                  </period>
+                  <code>
+                    <coding>
+                      <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+                      <code value="MDAT_speichern_verarbeiten"/>
+                      <display value="Speicherung_Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)"/>
+                    </coding>
+                  </code>
+                </provision>
+                <provision>
+                  <type value="permit"/>
+                  <period>
+                    <start value="2021-10-29T11:00:08+02:00"/>
+                    <end value="2021-11-30T00:00:00+01:00"/>
+                  </period>
+                  <code>
+                    <coding>
+                      <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+                      <code value="MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
+                      <display value="Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung "/>
+                    </coding>
+                  </code>
+                </provision>
+                <provision>
+                  <type value="permit"/>
+                  <period>
+                    <start value="2021-10-29T11:00:08+02:00"/>
+                    <end value="2021-11-30T00:00:00+01:00"/>
+                  </period>
+                  <code>
+                    <coding>
+                      <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+                      <code value="MDAT_zusammenfuehren_Dritte"/>
+                      <display value="Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern"/>
+                    </coding>
+                  </code>
+                </provision>
+                <provision>
+                  <type value="permit"/>
+                  <period>
+                    <start value="2021-10-29T11:00:08+02:00"/>
+                    <end value="2021-11-30T00:00:00+01:00"/>
+                  </period>
+                  <code>
+                    <coding>
+                      <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+                      <code value="Rekontaktierung_Verknuepfung_Datenbanken"/>
+                      <display value="Rekontaktierung zur Verknuepfung von PatDat mit Info anderer Dbs"/>
+                    </coding>
+                  </code>
+                </provision>
+                <provision>
+                  <type value="permit"/>
+                  <period>
+                    <start value="2021-10-29T11:00:08+02:00"/>
+                    <end value="2021-11-30T00:00:00+01:00"/>
+                  </period>
+                  <code>
+                    <coding>
+                      <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+                      <code value="Rekontaktierung_weitere_Erhebung"/>
+                      <display value="Rekontaktierung bezüglich Erhebung zusätzlicher Daten"/>
+                    </coding>
+                  </code>
+                </provision>
+                <provision>
+                  <type value="permit"/>
+                  <period>
+                    <start value="2021-10-29T11:00:08+02:00"/>
+                    <end value="2021-11-30T00:00:00+01:00"/>
+                  </period>
+                  <code>
+                    <coding>
+                      <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+                      <code value="Rekontaktierung_weitere_Studien"/>
+                      <display value="Rekontaktierung bezüglich Information zu neuen Forschungsvorhaben oder Studien"/>
+                    </coding>
+                  </code>
+                </provision>
+                <provision>
+                  <type value="permit"/>
+                  <period>
+                    <start value="2021-10-29T11:00:08+02:00"/>
+                    <end value="2021-11-30T00:00:00+01:00"/>
+                  </period>
+                  <code>
+                    <coding>
+                      <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+                      <code value="KDAT_retro_speichern_verarbeiten"/>
+                      <display value="Krankenkassendaten (KKDAT) für 5 Jahre retrospektiv speichern_verarbeiten in der verantwortlichen Stelle"/>
+                    </coding>
+                  </code>
+                </provision>
+                <provision>
+                  <type value="permit"/>
+                  <period>
+                    <start value="2021-10-29T11:00:08+02:00"/>
+                    <end value="2021-11-30T00:00:00+01:00"/>
+                  </period>
+                  <code>
+                    <coding>
+                      <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+                      <code value="KDAT_retro_uebertragen"/>
+                      <display value="Krankenkassendaten (KKDAT) für 5 Jahre retrospektiv übertragen"/>
+                    </coding>
+                  </code>
+                </provision>
+                <provision>
+                  <type value="permit"/>
+                  <period>
+                    <start value="2021-10-29T11:00:08+02:00"/>
+                    <end value="2021-11-30T00:00:00+01:00"/>
+                  </period>
+                  <code>
+                    <coding>
+                      <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
+                      <code value="KDAT_retro_wissenschaftlich_nutzen"/>
+                      <display value="Krankenkassendaten (KKDAT) für 5 Jahre retrospektiv wissenschaftlich nutzen"/>
+                    </coding>
+                  </code>
+                </provision>
+              </provision>
+            </Consent>
+          </resource>
+        </entry>
+      </Bundle>
+    </resource>
+    <response>
+      <status value="200"/>
+    </response>
+  </entry>
+  <entry>
+    <resource>
+      <Bundle>
+        <id value="example-BatchResponse-verify-consent-state-searchset2"/>
+        <type value="searchset"/>
+        <total value="0"/>
+      </Bundle>
+    </resource>
+    <response>
+      <status value="200"/>
+    </response>
+  </entry>
+</Bundle>
