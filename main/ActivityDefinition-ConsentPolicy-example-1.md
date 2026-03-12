@@ -32,7 +32,7 @@
   "name" : "MDAT_erheben",
   "title" : "Medizinische Daten erheben",
   "status" : "active",
-  "date" : "2026-03-12T14:32:50+00:00",
+  "date" : "2026-03-12T15:03:31+00:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
