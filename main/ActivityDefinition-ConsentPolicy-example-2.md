@@ -21,7 +21,7 @@
   "name" : "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU",
   "title" : "Medizinische Daten nutzen",
   "status" : "active",
-  "date" : "2026-03-12T15:20:01+00:00",
+  "date" : "2026-03-12T15:22:57+00:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
