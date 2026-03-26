@@ -23,6 +23,7 @@
   <compose>
     <include>
       <system value="http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents"/>
+      <version value="2.0.3"/>
     </include>
     <include>
       <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentComponentType"/>

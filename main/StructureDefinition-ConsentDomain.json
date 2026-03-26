@@ -554,7 +554,7 @@
         }],
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/languages|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
       }
     },
     {
@@ -661,6 +661,14 @@
     },
     {
       "id" : "ResearchStudy.extension:versionFormat",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "ResearchStudy.extension",
       "sliceName" : "versionFormat",
       "short" : "Versionierungsformat der Policies, Modules und Templates für diese Consent Domain",
@@ -693,9 +701,24 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      },
+      {
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
-      "isModifier" : false,
-      "isSummary" : false
+      "isModifier" : false
     },
     {
       "id" : "ResearchStudy.extension:versionFormat.id",
@@ -1169,6 +1192,14 @@
     },
     {
       "id" : "ResearchStudy.extension:versionFormat.value[x]",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "ResearchStudy.extension.value[x]",
       "short" : "Value of extension",
       "definition" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).",
@@ -1376,10 +1407,25 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      },
+      {
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : true,
       "isModifier" : false,
-      "isSummary" : false,
       "mapping" : [{
         "identity" : "rim",
         "map" : "n/a"
@@ -1559,10 +1605,25 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      },
+      {
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : true,
       "isModifier" : false,
-      "isSummary" : false,
       "mapping" : [{
         "identity" : "rim",
         "map" : "n/a"
@@ -1643,6 +1704,14 @@
     },
     {
       "id" : "ResearchStudy.extension:contextIdentifier.extension:resourceType",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "ResearchStudy.extension.extension",
       "sliceName" : "resourceType",
       "short" : "Extension",
@@ -1784,6 +1853,14 @@
     },
     {
       "id" : "ResearchStudy.extension:contextIdentifier.extension:resourceType.value[x]",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "ResearchStudy.extension.extension.value[x]",
       "short" : "Value of extension",
       "definition" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).",
@@ -1819,6 +1896,14 @@
     },
     {
       "id" : "ResearchStudy.extension:contextIdentifier.extension:type",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "ResearchStudy.extension.extension",
       "sliceName" : "type",
       "short" : "Extension",
@@ -1960,6 +2045,14 @@
     },
     {
       "id" : "ResearchStudy.extension:contextIdentifier.extension:type.value[x]",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "ResearchStudy.extension.extension.value[x]",
       "short" : "Value of extension",
       "definition" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).",
@@ -1995,6 +2088,14 @@
     },
     {
       "id" : "ResearchStudy.extension:contextIdentifier.extension:system",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "ResearchStudy.extension.extension",
       "sliceName" : "system",
       "short" : "Extension",
@@ -2136,6 +2237,14 @@
     },
     {
       "id" : "ResearchStudy.extension:contextIdentifier.extension:system.value[x]",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "ResearchStudy.extension.extension.value[x]",
       "short" : "Value of extension",
       "definition" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).",
@@ -2373,6 +2482,14 @@
     },
     {
       "id" : "ResearchStudy.extension:consentMode",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "ResearchStudy.extension",
       "sliceName" : "consentMode",
       "short" : "Standardverfahren für die Domäne",
@@ -2404,10 +2521,25 @@
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      },
+      {
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : true,
-      "isModifier" : false,
-      "isSummary" : false
+      "isModifier" : false
     },
     {
       "id" : "ResearchStudy.extension:consentMode.id",
@@ -2516,6 +2648,14 @@
     },
     {
       "id" : "ResearchStudy.extension:consentMode.value[x]",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "normative"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+        "valueCode" : "4.0.0"
+      }],
       "path" : "ResearchStudy.extension.value[x]",
       "short" : "Value of extension",
       "definition" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).",
@@ -3336,7 +3476,7 @@
         }],
         "strength" : "extensible",
         "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-type|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-type"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -3491,7 +3631,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -3566,7 +3706,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/PlanDefinition|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/PlanDefinition"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -3607,7 +3747,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ResearchStudy|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ResearchStudy"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -3710,7 +3850,7 @@
         }],
         "strength" : "extensible",
         "description" : "Codes for the main intent of the study.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/research-study-prim-purp-type|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/research-study-prim-purp-type"
       },
       "mapping" : [{
         "identity" : "BRIDG5.1",
@@ -3749,7 +3889,7 @@
         }],
         "strength" : "example",
         "description" : "Codes for the stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/research-study-phase|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/research-study-phase"
       },
       "mapping" : [{
         "identity" : "clinicaltrials-gov",
@@ -3880,7 +4020,7 @@
         }],
         "strength" : "example",
         "description" : "Identification of the condition or diagnosis.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/condition-code|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/condition-code"
       },
       "mapping" : [{
         "identity" : "clinicaltrials-gov",
@@ -4037,7 +4177,7 @@
         }],
         "strength" : "extensible",
         "description" : "Countries and regions within which this artifact is targeted for use.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/jurisdiction"
       },
       "mapping" : [{
         "identity" : "BRIDG5.1",
@@ -4096,7 +4236,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Group|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Group"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -4186,7 +4326,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -4229,8 +4369,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -4269,7 +4409,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -4326,7 +4466,7 @@
         }],
         "strength" : "example",
         "description" : "Codes for why the study ended prematurely.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/research-study-reason-stopped|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/research-study-reason-stopped"
       },
       "mapping" : [{
         "identity" : "clinicaltrials-gov",
@@ -4827,7 +4967,7 @@
         }],
         "strength" : "preferred",
         "description" : "Codes for the kind of study objective.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/research-study-objective-type|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/research-study-objective-type"
       },
       "mapping" : [{
         "identity" : "BRIDG5.1",

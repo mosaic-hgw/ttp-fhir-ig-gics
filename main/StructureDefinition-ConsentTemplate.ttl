@@ -181,8 +181,8 @@
          fhir:expression [ fhir:v "name.matches('[A-Z]([A-Za-z0-9_]){0,254}')" ] ;
          fhir:xpath [ fhir:v "not(exists(f:name/@value)) or matches(f:name/@value, '[A-Z]([A-Za-z0-9_]){0,254}')" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire>
+           fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/TemplateFrame"^^xsd:anyURI ;
+           fhir:l <http://fhir.de/ConsentManagement/StructureDefinition/TemplateFrame>
          ]
        ] [
          fhir:key [ fhir:v "que-2" ] ;
@@ -191,8 +191,8 @@
          fhir:expression [ fhir:v "descendants().linkId.isDistinct()" ] ;
          fhir:xpath [ fhir:v "count(descendant::f:linkId/@value)=count(distinct-values(descendant::f:linkId/@value))" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire>
+           fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/TemplateFrame"^^xsd:anyURI ;
+           fhir:l <http://fhir.de/ConsentManagement/StructureDefinition/TemplateFrame>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -360,8 +360,8 @@
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:description [ fhir:v "A human language." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/languages|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/ValueSet/languages?version=4.0.1>
+           fhir:v "http://hl7.org/fhir/ValueSet/languages"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/languages>
          ]
        ]
      ] [
@@ -538,10 +538,29 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
+       ] [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] [
+         fhir:key [ fhir:v "ext-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
+         fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
        fhir:isModifier [ fhir:v false ] ;
-       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
@@ -897,6 +916,15 @@
              a fhir:String ;
              fhir:v "MimeType"
            ]
+         ] [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding>
+           ] ;
+           fhir:value [
+             a fhir:Boolean ;
+             fhir:v true
+           ]
          ] ) ;
          fhir:strength [ fhir:v "required" ] ;
          fhir:description [ fhir:v "The mime type of an attachment. Any valid mime type is allowed." ] ;
@@ -971,12 +999,21 @@
              a fhir:String ;
              fhir:v "Language"
            ]
+         ] [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding>
+           ] ;
+           fhir:value [
+             a fhir:Boolean ;
+             fhir:v true
+           ]
          ] ) ;
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:description [ fhir:v "A human language." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/languages|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/ValueSet/languages?version=4.0.1>
+           fhir:v "http://hl7.org/fhir/ValueSet/languages"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/languages>
          ]
        ] ;
        fhir:mapping ( [
@@ -1297,11 +1334,13 @@
            fhir:l <http://hl7.org/fhir/StructureDefinition/questionnaire-signatureRequired>
          ] )
        ] ) ;
+       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
@@ -1311,14 +1350,34 @@
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ] [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] [
+         fhir:key [ fhir:v "ext-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
+         fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
-       fhir:isModifier [ fhir:v false ] ;
-       fhir:isSummary [ fhir:v false ]
+       fhir:isModifier [ fhir:v false ]
      ] [
        fhir:id [ fhir:v "Questionnaire.extension:signatureRequired.id" ] ;
        fhir:path [ fhir:v "Questionnaire.extension.id" ] ;
@@ -1507,11 +1566,7 @@
              fhir:v "SignatureRequired"
            ]
          ] ) ;
-         fhir:strength [ fhir:v "extensible" ] ;
-         fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/signature-type|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/ValueSet/signature-type?version=4.0.1>
-         ]
+         fhir:strength [ fhir:v "extensible" ]
        ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
@@ -2859,8 +2914,8 @@
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/identifier-type|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/ValueSet/identifier-type?version=4.0.1>
+           fhir:v "http://hl7.org/fhir/ValueSet/identifier-type"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/identifier-type>
          ]
        ] ;
        fhir:mapping ( [
@@ -3032,8 +3087,8 @@
            fhir:l fhir:Reference
          ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Organization?version=4.0.1>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Organization>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -3200,8 +3255,8 @@
            fhir:l fhir:canonical
          ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire?version=4.0.1>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -4266,8 +4321,8 @@
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "Aa resource (or, for logical models, the URI of the logical model)." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/resource-types|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/ValueSet/resource-types?version=4.0.1>
+           fhir:v "http://hl7.org/fhir/ValueSet/resource-types"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/resource-types>
          ]
        ] ;
        fhir:mapping ( [
@@ -4402,8 +4457,8 @@
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "Countries and regions within which this artifact is targeted for use." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/ValueSet/jurisdiction?version=4.0.1>
+           fhir:v "http://hl7.org/fhir/ValueSet/jurisdiction"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/jurisdiction>
          ]
        ] ;
        fhir:mapping ( [
@@ -5025,8 +5080,8 @@
          fhir:expression [ fhir:v "(type='group' implies item.empty().not()) and (type.trace('type')='display' implies item.trace('item').empty())" ] ;
          fhir:xpath [ fhir:v "not((f:type/@value='group' and not(f:item)) or (f:type/@value='display' and f:item))" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item>
          ]
        ] [
          fhir:key [ fhir:v "que-3" ] ;
@@ -5035,8 +5090,8 @@
          fhir:expression [ fhir:v "type!='display' or code.empty()" ] ;
          fhir:xpath [ fhir:v "not(f:type/@value='display' and f:code)" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item>
          ]
        ] [
          fhir:key [ fhir:v "que-4" ] ;
@@ -5045,8 +5100,8 @@
          fhir:expression [ fhir:v "answerOption.empty() or answerValueSet.empty()" ] ;
          fhir:xpath [ fhir:v "not(f:answerValueSet and f:answerOption)" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item>
          ]
        ] [
          fhir:key [ fhir:v "que-5" ] ;
@@ -5055,8 +5110,8 @@
          fhir:expression [ fhir:v "(type ='choice' or type = 'open-choice' or type = 'decimal' or type = 'integer' or type = 'date' or type = 'dateTime' or type = 'time' or type = 'string' or type = 'quantity') or (answerValueSet.empty() and answerOption.empty())" ] ;
          fhir:xpath [ fhir:v "f:type/@value=('choice','open-choice','decimal','integer','date','dateTime','time','string','quantity',') or not(f:answerOption or f:answerValueSet)" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item>
          ]
        ] [
          fhir:key [ fhir:v "que-6" ] ;
@@ -5065,8 +5120,8 @@
          fhir:expression [ fhir:v "type!='display' or (required.empty() and repeats.empty())" ] ;
          fhir:xpath [ fhir:v "not(f:type/@value='display' and (f:required or f:repeats))" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item>
          ]
        ] [
          fhir:key [ fhir:v "que-8" ] ;
@@ -5075,8 +5130,8 @@
          fhir:expression [ fhir:v "(type!='group' and type!='display') or initial.empty()" ] ;
          fhir:xpath [ fhir:v "not(f:type/@value=('group', 'display') and f:*[starts-with(local-name(.), 'initial')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item>
          ]
        ] [
          fhir:key [ fhir:v "que-9" ] ;
@@ -5085,8 +5140,8 @@
          fhir:expression [ fhir:v "type!='display' or readOnly.empty()" ] ;
          fhir:xpath [ fhir:v "not(f:type/@value=('group', 'display') and f:*[starts-with(local-name(.), 'initial')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item>
          ]
        ] [
          fhir:key [ fhir:v "que-10" ] ;
@@ -5095,8 +5150,8 @@
          fhir:expression [ fhir:v "(type in ('boolean' | 'decimal' | 'integer' | 'string' | 'text' | 'url' | 'open-choice')) or maxLength.empty()" ] ;
          fhir:xpath [ fhir:v "f:type/@value=('boolean', 'decimal', 'integer', 'open-choice', 'string', 'text', 'url') or not(f:maxLength)" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item>
          ]
        ] [
          fhir:key [ fhir:v "que-11" ] ;
@@ -5105,8 +5160,8 @@
          fhir:expression [ fhir:v "answerOption.empty() or initial.empty()" ] ;
          fhir:xpath [ fhir:v "not(f:answerOption) or not(count(f:*[starts-with(local-name(.), 'initial')]))" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item>
          ]
        ] [
          fhir:key [ fhir:v "que-12" ] ;
@@ -5115,8 +5170,8 @@
          fhir:expression [ fhir:v "enableWhen.count() > 2 implies enableBehavior.exists()" ] ;
          fhir:xpath [ fhir:v "not(f:answerOption) or not(count(f:*[starts-with(local-name(.), 'initial')]))" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item>
          ]
        ] [
          fhir:key [ fhir:v "que-13" ] ;
@@ -5125,8 +5180,8 @@
          fhir:expression [ fhir:v "repeats=true or initial.count() <= 1" ] ;
          fhir:xpath [ fhir:v "f:repeats/@value='true' or count(f:initial)<=1" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -5247,7 +5302,7 @@
        fhir:definition [ fhir:v "Information captured by the author/maintainer of the questionnaire for development purposes, not intended to be seen by users." ] ;
        fhir:comment [ fhir:v "Allows capture of todos, rationale for design decisions, etc." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
+       fhir:max [ fhir:v "*" ] ;
        fhir:base [
          fhir:path [ fhir:v "Element.extension" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -5263,11 +5318,13 @@
            fhir:l <http://hl7.org/fhir/StructureDefinition/designNote>
          ] )
        ] ) ;
+       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
@@ -5277,14 +5334,34 @@
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ] [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] [
+         fhir:key [ fhir:v "ext-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
+         fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
-       fhir:isModifier [ fhir:v false ] ;
-       fhir:isSummary [ fhir:v false ]
+       fhir:isModifier [ fhir:v false ]
      ] [
        fhir:id [ fhir:v "Questionnaire.item.extension:subQuestionnaire" ] ;
        fhir:path [ fhir:v "Questionnaire.item.extension" ] ;
@@ -5329,10 +5406,29 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
+       ] [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] [
+         fhir:key [ fhir:v "ext-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
+         fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
        fhir:isModifier [ fhir:v false ] ;
-       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
@@ -5695,8 +5791,8 @@
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "Aa resource (or, for logical models, the URI of the logical model)." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/resource-types|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/ValueSet/resource-types?version=4.0.1>
+           fhir:v "http://hl7.org/fhir/ValueSet/resource-types"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/resource-types>
          ]
        ] ;
        fhir:mapping ( [
@@ -6186,8 +6282,8 @@
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "Codes for questionnaires, groups and individual questions." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/questionnaire-questions|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/ValueSet/questionnaire-questions?version=4.0.1>
+           fhir:v "http://hl7.org/fhir/ValueSet/questionnaire-questions"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/questionnaire-questions>
          ]
        ] ;
        fhir:mapping ( [
@@ -6690,7 +6786,7 @@
        fhir:short [ fhir:v "String equivalent with markdown" ] ;
        fhir:definition [ fhir:v "This is an equivalent of the string on which the extension is sent, but includes additional markdown (see documentation about [markdown](http://hl7.org/fhir/R4/datatypes.html#markdown). Note that using HTML  [xhtml](http://hl7.org/fhir/R4/extension-rendering-xhtml.html) can allow for greater precision of display." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
+       fhir:max [ fhir:v "*" ] ;
        fhir:base [
          fhir:path [ fhir:v "Element.extension" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -6706,11 +6802,13 @@
            fhir:l <http://hl7.org/fhir/StructureDefinition/rendering-markdown>
          ] )
        ] ) ;
+       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
@@ -6720,13 +6818,33 @@
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ] [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] [
+         fhir:key [ fhir:v "ext-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
+         fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
-       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "ED can be markdown content" ]
@@ -6757,7 +6875,7 @@
        fhir:short [ fhir:v "String equivalent with html markup" ] ;
        fhir:definition [ fhir:v "This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc. Existing [restrictions on XHTML content](http://hl7.org/fhir/R4/narrative.html#security) apply. Note that using [markdown](http://hl7.org/fhir/R4/extension-rendering-markdown.html) allows for greater flexibility of display." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
+       fhir:max [ fhir:v "*" ] ;
        fhir:base [
          fhir:path [ fhir:v "Element.extension" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -6773,11 +6891,13 @@
            fhir:l <http://hl7.org/fhir/StructureDefinition/rendering-xhtml>
          ] )
        ] ) ;
+       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
@@ -6787,13 +6907,33 @@
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ] [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] [
+         fhir:key [ fhir:v "ext-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
+         fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
-       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "ED can be XHTML content" ]
@@ -6933,8 +7073,8 @@
          fhir:expression [ fhir:v "operator = 'exists' implies (answer is Boolean)" ] ;
          fhir:xpath [ fhir:v "f:operator/@value != 'exists' or exists(f:answerBoolean)" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item.enableWhen"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item.enableWhen>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -7092,10 +7232,29 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
+       ] [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] [
+         fhir:key [ fhir:v "ext-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
+         fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
        fhir:isModifier [ fhir:v false ] ;
-       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
@@ -7445,6 +7604,25 @@
        ] )
      ] [
        fhir:id [ fhir:v "Questionnaire.item.enableWhen.extension:sourceSubQuestionnaire.value[x].type" ] ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "normative"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version>
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "4.0.0"
+         ]
+       ] ) ;
        fhir:path [ fhir:v "Questionnaire.item.enableWhen.extension.value[x].type" ] ;
        fhir:short [ fhir:v "Type the reference refers to (e.g. \"Patient\")" ] ;
        fhir:definition [ fhir:v "The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.\n\nThe type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. \"Patient\" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)." ] ;
@@ -7489,8 +7667,8 @@
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "Aa resource (or, for logical models, the URI of the logical model)." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/resource-types|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/ValueSet/resource-types?version=4.0.1>
+           fhir:v "http://hl7.org/fhir/ValueSet/resource-types"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/resource-types>
          ]
        ] ;
        fhir:mapping ( [
@@ -7499,6 +7677,25 @@
        ] )
      ] [
        fhir:id [ fhir:v "Questionnaire.item.enableWhen.extension:sourceSubQuestionnaire.value[x].identifier" ] ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "normative"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version>
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "4.0.0"
+         ]
+       ] ) ;
        fhir:path [ fhir:v "Questionnaire.item.enableWhen.extension.value[x].identifier" ] ;
        fhir:short [ fhir:v "Logical reference, when literal reference is not known" ] ;
        fhir:definition [ fhir:v "An identifier for the target resource. This is used when there is no way to reference the other resource directly, either because the entity it represents is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference." ] ;
@@ -7536,6 +7733,24 @@
      ] [
        fhir:id [ fhir:v "Questionnaire.item.enableWhen.extension:sourceSubQuestionnaire.value[x].display" ] ;
        fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "normative"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version>
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "4.0.0"
+         ]
+       ] [
          fhir:url [
            fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable>
@@ -7782,8 +7997,8 @@
            fhir:l fhir:Reference
          ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Resource?version=4.0.1>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Resource"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Resource>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "que-7" ] ) ;
@@ -7815,8 +8030,8 @@
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "Allowed values to answer questions." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/questionnaire-answers|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/ValueSet/questionnaire-answers?version=4.0.1>
+           fhir:v "http://hl7.org/fhir/ValueSet/questionnaire-answers"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/questionnaire-answers>
          ]
        ] ;
        fhir:mapping ( [
@@ -8053,8 +8268,8 @@
            fhir:l fhir:canonical
          ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ValueSet|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/ValueSet?version=4.0.1>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/ValueSet"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/ValueSet>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "que-4" ] [ fhir:v "que-5" ] ) ;
@@ -8300,8 +8515,8 @@
            fhir:l fhir:Reference
          ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Resource?version=4.0.1>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Resource"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Resource>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -8332,8 +8547,8 @@
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "Allowed values to answer questions." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/questionnaire-answers|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/ValueSet/questionnaire-answers?version=4.0.1>
+           fhir:v "http://hl7.org/fhir/ValueSet/questionnaire-answers"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/questionnaire-answers>
          ]
        ] ;
        fhir:mapping ( [
@@ -8643,8 +8858,8 @@
            fhir:l fhir:Reference
          ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Resource?version=4.0.1>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Resource"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Resource>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -8675,8 +8890,8 @@
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "Allowed values to answer questions." ] ;
          fhir:valueSet [
-           fhir:v "http://hl7.org/fhir/ValueSet/questionnaire-answers|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/ValueSet/questionnaire-answers?version=4.0.1>
+           fhir:v "http://hl7.org/fhir/ValueSet/questionnaire-answers"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/questionnaire-answers>
          ]
        ] ;
        fhir:mapping ( [

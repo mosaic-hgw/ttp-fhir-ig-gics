@@ -61,8 +61,8 @@
     "systems" : ["http://fhir.de/ConsentManagement/CodeSystem/TemplateType"],
     "uses" : {
     },
-    "StructureDefinition-ConsentTemplate.html" : "Consent Template",
-    "StructureDefinition-Consent.html" : "Consent"
+    "StructureDefinition-Consent.html" : "Consent",
+    "StructureDefinition-ConsentTemplate.html" : "Consent Template"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/action-participant-role",
@@ -149,11 +149,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.79"],
     "uses" : {
     },
-    "StructureDefinition-ConsentModule.html" : "Consent Module",
+    "StructureDefinition-Consent.html" : "Consent",
     "StructureDefinition-ConsentPolicy.html" : "ConsentPolicy",
-    "StructureDefinition-ConsentDomain.html" : "Consent Domain",
+    "StructureDefinition-ConsentModule.html" : "Consent Module",
     "StructureDefinition-ConsentQualityControl.html" : "Consent Quality Control",
-    "StructureDefinition-Consent.html" : "Consent"
+    "StructureDefinition-ConsentDomain.html" : "Consent Domain"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-code",
@@ -343,8 +343,8 @@
     },
     "StructureDefinition-ConsentModule.html" : "Consent Module",
     "StructureDefinition-ConsentTemplate.html" : "Consent Template",
-    "StructureDefinition-PatientPseudonymized.html" : "Patient pseudonymisiert",
-    "StructureDefinition-ConsentDomain.html" : "Consent Domain"
+    "StructureDefinition-ConsentDomain.html" : "Consent Domain",
+    "StructureDefinition-PatientPseudonymized.html" : "Patient pseudonymisiert"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -358,11 +358,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.57"],
     "uses" : {
     },
+    "StructureDefinition-identifier-bloomfilter.html" : "Identifier-Profil für die Abbildung einer Bloomfilters",
     "StructureDefinition-ConsentModule.html" : "Consent Module",
     "StructureDefinition-ConsentTemplate.html" : "Consent Template",
-    "StructureDefinition-identifier-bloomfilter.html" : "Identifier-Profil für die Abbildung einer Bloomfilters",
-    "StructureDefinition-PatientPseudonymized.html" : "Patient pseudonymisiert",
-    "StructureDefinition-ConsentDomain.html" : "Consent Domain"
+    "StructureDefinition-ConsentDomain.html" : "Consent Domain",
+    "StructureDefinition-PatientPseudonymized.html" : "Patient pseudonymisiert"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/item-type",
@@ -393,9 +393,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.48"],
     "uses" : {
     },
+    "StructureDefinition-ConsentPolicy.html" : "ConsentPolicy",
     "StructureDefinition-ConsentModule.html" : "Consent Module",
     "StructureDefinition-ConsentTemplate.html" : "Consent Template",
-    "StructureDefinition-ConsentPolicy.html" : "ConsentPolicy",
     "StructureDefinition-ConsentDomain.html" : "Consent Domain"
   },
   {
@@ -410,15 +410,15 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-ConsentModule.html" : "Consent Module",
-    "StructureDefinition-ConsentTemplate.html" : "Consent Template",
-    "StructureDefinition-ExchangeFormatDefinition.html" : "ExchangeFormatDefinition",
-    "StructureDefinition-Provenance.html" : "Herkunftsinformationen und Signatur",
+    "StructureDefinition-Consent.html" : "Consent",
     "StructureDefinition-ConsentPolicy.html" : "ConsentPolicy",
-    "StructureDefinition-PatientPseudonymized.html" : "Patient pseudonymisiert",
-    "StructureDefinition-ConsentDomain.html" : "Consent Domain",
+    "StructureDefinition-ConsentModule.html" : "Consent Module",
+    "StructureDefinition-Provenance.html" : "Herkunftsinformationen und Signatur",
+    "StructureDefinition-ExchangeFormatDefinition.html" : "ExchangeFormatDefinition",
+    "StructureDefinition-ConsentTemplate.html" : "Consent Template",
     "StructureDefinition-ConsentQualityControl.html" : "Consent Quality Control",
-    "StructureDefinition-Consent.html" : "Consent"
+    "StructureDefinition-ConsentDomain.html" : "Consent Domain",
+    "StructureDefinition-PatientPseudonymized.html" : "Patient pseudonymisiert"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -475,8 +475,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.1024"],
     "uses" : {
     },
-    "StructureDefinition-ConsentTemplate.html" : "Consent Template",
-    "StructureDefinition-Provenance.html" : "Herkunftsinformationen und Signatur"
+    "StructureDefinition-Provenance.html" : "Herkunftsinformationen und Signatur",
+    "StructureDefinition-ConsentTemplate.html" : "Consent Template"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -549,11 +549,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.3"],
     "uses" : {
     },
-    "StructureDefinition-ConsentModule.html" : "Consent Module",
-    "StructureDefinition-ConsentTemplate.html" : "Consent Template",
-    "StructureDefinition-FreeTextDefAttributes.html" : "FreeTextDef Attributes",
+    "StructureDefinition-Consent.html" : "Consent",
     "StructureDefinition-ConsentPolicy.html" : "ConsentPolicy",
-    "StructureDefinition-Consent.html" : "Consent"
+    "StructureDefinition-ConsentModule.html" : "Consent Module",
+    "StructureDefinition-FreeTextDefAttributes.html" : "FreeTextDef Attributes",
+    "StructureDefinition-ConsentTemplate.html" : "Consent Template"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
@@ -753,14 +753,14 @@
     "sources" : ["2.16.840.1.113883.4.642.3.27"],
     "uses" : {
     },
-    "StructureDefinition-ConsentModule.html" : "Consent Module",
-    "StructureDefinition-ConsentTemplate.html" : "Consent Template",
-    "StructureDefinition-Provenance.html" : "Herkunftsinformationen und Signatur",
+    "StructureDefinition-Consent.html" : "Consent",
     "StructureDefinition-ConsentPolicy.html" : "ConsentPolicy",
     "StructureDefinition-ConsentPolicyReference.html" : "Consent Policy Reference",
-    "StructureDefinition-ConsentDomain.html" : "Consent Domain",
+    "StructureDefinition-ConsentModule.html" : "Consent Module",
+    "StructureDefinition-Provenance.html" : "Herkunftsinformationen und Signatur",
+    "StructureDefinition-ConsentTemplate.html" : "Consent Template",
     "StructureDefinition-ConsentQualityControl.html" : "Consent Quality Control",
-    "StructureDefinition-Consent.html" : "Consent"
+    "StructureDefinition-ConsentDomain.html" : "Consent Domain"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
@@ -792,11 +792,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.47"],
     "uses" : {
     },
-    "StructureDefinition-ConsentModule.html" : "Consent Module",
+    "StructureDefinition-Consent.html" : "Consent",
     "StructureDefinition-ConsentPolicy.html" : "ConsentPolicy",
-    "StructureDefinition-ConsentDomain.html" : "Consent Domain",
+    "StructureDefinition-ConsentModule.html" : "Consent Module",
     "StructureDefinition-ConsentQualityControl.html" : "Consent Quality Control",
-    "StructureDefinition-Consent.html" : "Consent"
+    "StructureDefinition-ConsentDomain.html" : "Consent Domain"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/security-role-type",
@@ -816,22 +816,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.978"],
     "uses" : {
     },
-    "StructureDefinition-Provenance.html" : "Herkunftsinformationen und Signatur",
-    "StructureDefinition-Consent.html" : "Consent"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/signature-type",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "SignatureTypeCodes",
-    "title" : "Signature Type Codes",
-    "description" : "The Digital Signature Purposes, an indication of the reason an entity signs a document. This is included in the signed information and can be used when determining accountability for various actions concerning the document. Examples include: author, transcriptionist/recorder, and witness.",
-    "systems" : ["urn:iso-astm:E1762-95:2013"],
-    "oids" : ["1.2.840.10065.1.12"],
-    "sources" : ["1.2.840.10065.1.12"],
-    "uses" : {
-    },
-    "StructureDefinition-ConsentTemplate.html" : "Consent Template",
+    "StructureDefinition-Consent.html" : "Consent",
     "StructureDefinition-Provenance.html" : "Herkunftsinformationen und Signatur"
   },
   {
@@ -1014,8 +999,8 @@
     "sources" : ["2.16.840.1.113883.1.11.20448"],
     "uses" : {
     },
-    "StructureDefinition-Provenance.html" : "Herkunftsinformationen und Signatur",
-    "StructureDefinition-Consent.html" : "Consent"
+    "StructureDefinition-Consent.html" : "Consent",
+    "StructureDefinition-Provenance.html" : "Herkunftsinformationen und Signatur"
   },
   {
     "url" : "https://ths-greifswald.de/fhir/ValueSet/epix/BloomfilterType",
@@ -1185,8 +1170,8 @@
     "uses" : {
     },
     "OperationDefinition-GetAllConsentedIdsFor.html" : "GetAllConsentedIdsFor",
-    "StructureDefinition-ConsentPolicy.html" : "ConsentPolicy",
-    "OperationDefinition-IsConsented.html" : "IsConsented"
+    "OperationDefinition-IsConsented.html" : "IsConsented",
+    "StructureDefinition-ConsentPolicy.html" : "ConsentPolicy"
   },
   {
     "url" : "https://ths-greifswald.de/fhir/ValueSet/gics/PolicyStatus",

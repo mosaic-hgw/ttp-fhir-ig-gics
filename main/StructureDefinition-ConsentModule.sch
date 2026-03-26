@@ -22,7 +22,6 @@
   <sch:pattern>
     <sch:title>f:Questionnaire/f:item</sch:title>
     <sch:rule context="f:Questionnaire/f:item">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/designNote']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/designNote': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://ths-greifswald.de/fhir/StructureDefinition/gics/QuestionnaireLabel']) &lt;= 1">extension with URL = 'https://ths-greifswald.de/fhir/StructureDefinition/gics/QuestionnaireLabel': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://ths-greifswald.de/fhir/StructureDefinition/gics/ShortText']) &lt;= 1">extension with URL = 'https://ths-greifswald.de/fhir/StructureDefinition/gics/ShortText': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
@@ -33,13 +32,6 @@
       <sch:assert test="count(f:extension[@url = 'expression']) &gt;= 1">extension with URL = 'expression': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'expression']) &lt;= 1">extension with URL = 'expression': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'label']) &lt;= 1">extension with URL = 'label': maximum cardinality of 'extension' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:Questionnaire/f:item/f:text</sch:title>
-    <sch:rule context="f:Questionnaire/f:item/f:text">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/rendering-markdown']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/rendering-markdown': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/rendering-xhtml']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/rendering-xhtml': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

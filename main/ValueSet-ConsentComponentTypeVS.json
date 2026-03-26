@@ -22,7 +22,8 @@
   "copyright" : "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "compose" : {
     "include" : [{
-      "system" : "http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents"
+      "system" : "http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents",
+      "version" : "2.0.3"
     },
     {
       "system" : "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentComponentType"
