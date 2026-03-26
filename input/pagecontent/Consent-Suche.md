@@ -149,6 +149,14 @@ GET [base]/Consent?domain:identifier=MII&mii-provision-provision-type=permit&mii
 ```
 findet alle Consent-Ressourcen einer Einwilligungsdomäne 'MII' mit Permit-Provision, bei denen der Provision-Code 2.16.840.1.113883.3.1937.777.24.5.3.8 (entspricht der [TFCU-Policy](https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-Terminologien.html) 'MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU') gesetzt ist. Eine Beispiel-Response ist weiter unten dargestellt.
 
+#### Patientenspezifische Suche nach Consent-Dokumenten mit Ausgabe von digitalen Unterschriften
+
+Beispiel:
+```
+GET [base]/Consent?domain:identifier=MII&category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|document&_format=json&patient.identifier=https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym|testpatient1&_revinclude=Provenance:target
+```
+In der Domain `MII` werden alle Dokumente der Person `testpatient1` vom SignerIdType `Pseudonym`ermittelt und Provenance-Ressourcen mit den entsprechenden digitalen Unterschriften erstellt.
+Liegen Unterschriften nur als Scan vor, ist anstelle der direkten Unterschrift ein Verweis auf DocumentReference enthalten. Diese sind separat direkt abfragbar.
 
 ### Geltende Einschränkungen und ungültige Kombinationen von Suchparametern
 
