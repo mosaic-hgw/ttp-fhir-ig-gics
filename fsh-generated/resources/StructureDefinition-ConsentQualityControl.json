@@ -101,12 +101,24 @@
       },
       {
         "id": "VerificationResult.target.reference",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "VerificationResult.target.reference",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "VerificationResult.status",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "VerificationResult.status",
         "label": "QC-Status",
         "short": "QC-Status",
@@ -115,6 +127,12 @@
       },
       {
         "id": "VerificationResult.statusDate",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "VerificationResult.statusDate",
         "short": "Datum der QC",
         "min": 1,
@@ -130,6 +148,16 @@
       },
       {
         "id": "VerificationResult.validationType.text",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "VerificationResult.validationType.text",
         "min": 1,
         "mustSupport": true
@@ -149,6 +177,16 @@
       },
       {
         "id": "VerificationResult.attestation.who.display",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "VerificationResult.attestation.who.display",
         "min": 1,
         "mustSupport": true

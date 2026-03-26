@@ -31,8 +31,8 @@
     "description" : "Typen der Questionnaire-Profile zur Unterscheidung als Suchkriterium",
     "uses" : {
     },
-    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=http://fhir.de/ConsentManagement/ValueSet/QuestionnaireComponents" : "ConsentManagementQuestionnaireComponents",
-    "ValueSet-ConsentComponentTypeVS.html" : "ConsentComponentType"
+    "ValueSet-ConsentComponentTypeVS.html" : "ConsentComponentType",
+    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=http://fhir.de/ConsentManagement/ValueSet/QuestionnaireComponents" : "ConsentManagementQuestionnaireComponents"
   },
   {
     "url" : "http://fhir.de/ConsentManagement/CodeSystem/ResultType",
@@ -305,9 +305,9 @@
     "description" : "One of the resource types defined as part of this version of FHIR.",
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-subject-type.html" : "Subject type",
+    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
     "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class",
-    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+    "http://hl7.org/fhir/R4/valueset-subject-type.html" : "Subject type"
   },
   {
     "url" : "http://hl7.org/fhir/search-entry-mode",
@@ -332,9 +332,9 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-    "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
+    "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
     "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes"
+    "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/can-push-updates",
@@ -585,8 +585,8 @@
     "oids" : ["2.16.840.1.113883.18.108"],
     "uses" : {
     },
-    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=http://fhir.de/ConsentManagement/ValueSet/ContextIdentifierType" : "ConsentManagementContextIdentifierType",
-    "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
+    "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType",
+    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=http://fhir.de/ConsentManagement/ValueSet/ContextIdentifierType" : "ConsentManagementContextIdentifierType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -658,8 +658,8 @@
     "oids" : ["2.16.840.1.113883.5.1008"],
     "uses" : {
     },
-    "ValueSet-PolicyStatusVS.html" : "PolicyStatus",
-    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus",
+    "ValueSet-PolicyStatusVS.html" : "PolicyStatus"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
@@ -683,8 +683,8 @@
     "oids" : ["2.16.840.1.113883.5.90"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
@@ -789,17 +789,17 @@
     "description" : " consent states are used to depict the participant’s will. Therefore, documentation should allow different status values. Further details from https://doi.org/10.1186/s12967-020-02457-y",
     "uses" : {
     },
-    "ValueSet-ConsentStatusObjectionShortValuesVS.html" : "ConsentStatusObjectionShortValues",
-    "ValueSet-ConsentStatusWithdrawalFullValuesVS.html" : "ConsentStatusWithdrawalFullValues",
-    "ValueSet-ConsentStatusRefusalShortValuesVS.html" : "ConsentStatusRefusalShortValues",
-    "ValueSet-ConsentStatusConsentShortValuesVS.html" : "ConsentStatusConsentShortValues",
-    "ValueSet-ConsentStatusConsentOptOutShortValuesVS.html" : "ConsentStatusConsentOptOutShortValues",
-    "ValueSet-ConsentStatusObjectionFullValuesVS.html" : "ConsentStatusObjectionFullValues",
-    "ValueSet-ConsentStatusConsentOptOutFullValuesVS.html" : "ConsentStatusConsentOptOutFullValues",
     "ValueSet-ConsentStatusVS.html" : "ConsentStatus",
+    "ValueSet-ConsentStatusWithdrawalFullValuesVS.html" : "ConsentStatusWithdrawalFullValues",
+    "ValueSet-ConsentStatusWithdrawalShortValuesVS.html" : "ConsentStatusWithdrawalShortValues",
+    "ValueSet-ConsentStatusObjectionFullValuesVS.html" : "ConsentStatusObjectionFullValues",
+    "ValueSet-ConsentStatusConsentShortValuesVS.html" : "ConsentStatusConsentShortValues",
     "ValueSet-ConsentStatusConsentFullValuesVS.html" : "ConsentStatusConsentFullValues",
+    "ValueSet-ConsentStatusConsentOptOutFullValuesVS.html" : "ConsentStatusConsentOptOutFullValues",
+    "ValueSet-ConsentStatusObjectionShortValuesVS.html" : "ConsentStatusObjectionShortValues",
+    "ValueSet-ConsentStatusRefusalShortValuesVS.html" : "ConsentStatusRefusalShortValues",
     "ValueSet-ConsentStatusRefusalFullValuesVS.html" : "ConsentStatusRefusalFullValues",
-    "ValueSet-ConsentStatusWithdrawalShortValuesVS.html" : "ConsentStatusWithdrawalShortValues"
+    "ValueSet-ConsentStatusConsentOptOutShortValuesVS.html" : "ConsentStatusConsentOptOutShortValues"
   },
   {
     "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",

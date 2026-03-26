@@ -55,6 +55,12 @@
       },
       {
         "id": "Extension.extension:name",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Extension.extension",
         "sliceName": "name",
         "label": "Name",
@@ -74,6 +80,12 @@
       },
       {
         "id": "Extension.extension:name.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Extension.extension.value[x]",
         "min": 1,
         "type": [
@@ -84,6 +96,12 @@
       },
       {
         "id": "Extension.extension:converterstring",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Extension.extension",
         "sliceName": "converterstring",
         "label": "Converter String",
@@ -103,6 +121,12 @@
       },
       {
         "id": "Extension.extension:converterstring.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Extension.extension.value[x]",
         "type": [
           {
@@ -112,6 +136,12 @@
       },
       {
         "id": "Extension.extension:updateDate",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Extension.extension",
         "sliceName": "updateDate",
         "label": "Update Date",
@@ -131,6 +161,12 @@
       },
       {
         "id": "Extension.extension:updateDate.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Extension.extension.value[x]",
         "min": 1,
         "type": [
@@ -141,6 +177,12 @@
       },
       {
         "id": "Extension.extension:finalized",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Extension.extension",
         "sliceName": "finalized",
         "label": "Finalized",
@@ -160,6 +202,12 @@
       },
       {
         "id": "Extension.extension:finalized.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Extension.extension.value[x]",
         "min": 1,
         "type": [
@@ -174,11 +222,23 @@
       },
       {
         "id": "Extension.extension:finalized.value[x].system",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Extension.extension.value[x].system",
         "min": 1
       },
       {
         "id": "Extension.extension:finalized.value[x].code",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Extension.extension.value[x].code",
         "min": 1
       },

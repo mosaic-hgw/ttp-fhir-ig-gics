@@ -48,6 +48,12 @@
       },
       {
         "id": "Questionnaire.extension:externalProperty",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Questionnaire.extension",
         "sliceName": "externalProperty",
         "min": 0,
@@ -64,6 +70,12 @@
       },
       {
         "id": "Questionnaire.extension:expirationProperty",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Questionnaire.extension",
         "sliceName": "expirationProperty",
         "min": 0,
@@ -80,6 +92,12 @@
       },
       {
         "id": "Questionnaire.extension:label",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Questionnaire.extension",
         "sliceName": "label",
         "min": 0,
@@ -96,6 +114,12 @@
       },
       {
         "id": "Questionnaire.extension:versionLabel",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Questionnaire.extension",
         "sliceName": "versionLabel",
         "min": 0,
@@ -112,11 +136,23 @@
       },
       {
         "id": "Questionnaire.extension:versionLabel.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Questionnaire.extension.value[x]",
         "mustSupport": true
       },
       {
         "id": "Questionnaire.useContext.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Questionnaire.useContext.value[x]",
         "type": [
           {
@@ -139,6 +175,12 @@
       },
       {
         "id": "Questionnaire.item.extension:subQuestionnaire.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Questionnaire.item.extension.value[x]",
         "type": [
           {
@@ -152,6 +194,12 @@
       },
       {
         "id": "Questionnaire.item.extension:externalProperty",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Questionnaire.item.extension",
         "sliceName": "externalProperty",
         "min": 0,
@@ -168,6 +216,12 @@
       },
       {
         "id": "Questionnaire.item.extension:expirationProperty",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Questionnaire.item.extension",
         "sliceName": "expirationProperty",
         "min": 0,
@@ -184,6 +238,12 @@
       },
       {
         "id": "Questionnaire.item.extension:freeTextDefAttributes",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Questionnaire.item.extension",
         "sliceName": "freeTextDefAttributes",
         "min": 0,
@@ -200,6 +260,12 @@
       },
       {
         "id": "Questionnaire.item.extension:position",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Questionnaire.item.extension",
         "sliceName": "position",
         "min": 0,
@@ -216,16 +282,34 @@
       },
       {
         "id": "Questionnaire.item.answerOption.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Questionnaire.item.answerOption.value[x]",
         "mustSupport": true
       },
       {
         "id": "Questionnaire.item.answerOption.initialSelected",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Questionnaire.item.answerOption.initialSelected",
         "mustSupport": true
       },
       {
         "id": "Questionnaire.item.initial.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Questionnaire.item.initial.value[x]",
         "mustSupport": true
       }

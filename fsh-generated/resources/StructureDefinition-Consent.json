@@ -49,6 +49,12 @@
       },
       {
         "id": "Consent.meta.lastUpdated",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Consent.meta.lastUpdated",
         "mustSupport": true
       },

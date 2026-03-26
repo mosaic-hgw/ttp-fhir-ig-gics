@@ -194,9 +194,9 @@
     "systems" : ["https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"],
     "uses" : {
     },
-    "StructureDefinition-ConsentPolicy.html" : "ConsentPolicy",
     "OperationDefinition-GetAllConsentedIdsFor.html" : "GetAllConsentedIdsFor",
-    "OperationDefinition-IsConsented.html" : "IsConsented"
+    "OperationDefinition-IsConsented.html" : "IsConsented",
+    "StructureDefinition-ConsentPolicy.html" : "ConsentPolicy"
   },
   {
     "url" : "https://ths-greifswald.de/fhir/ValueSet/gics/PolicyStatus",
