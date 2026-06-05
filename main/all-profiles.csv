@@ -87,7 +87,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Consent","Consent.extension:domainReference","Consent.extension","domainReference","","",0,*,"Y","","","Extension {[CanonicalType[http://fhir.de/ConsentManagement/StructureDefinition/DomainReference]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Consent","Consent.extension:domainReference.id","Consent.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "Consent","Consent.extension:domainReference.extension","Consent.extension.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -176,7 +176,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Which of the four areas this resource covers (extensible)","A selector of the type of consent being presented: ADR, Privacy, Treatment, Research.  This list is now extensible.","Wird im Kontext des Einwilligungsmanagment-Leitfadens nicht näher definiert.
 Bei Bedarf kann das ValueSet erweitert oder ggf. ein NullFlavor-Code eingetragen werden.","","","","","","","","",,"extensible","The four anticipated uses for the Consent Resource.","http://hl7.org/fhir/ValueSet/consent-scope","",,,,"Consent.scope",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Consent","Consent.category","Consent.category","","","",3,*,"Y","","Y","CodeableConcept {[]} {[]}
+"Consent","Consent.category","Consent.category","","","",1,*,"Y","","Y","CodeableConcept {[]} {[]}
 ","Classification of the consent statement - for indexing/retrieval","A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements.","","","","","","","","","",,"extensible","A classification of the type of consents found in a consent statement.","http://hl7.org/fhir/ValueSet/consent-category","","pattern:$this}
 ","",,"open","Consent.category",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -218,7 +218,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Consent","Consent.category:consentCategory.text","Consent.category.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Consent","Consent.category:resultType","Consent.category","resultType","","",1,*,"Y","","Y","CodeableConcept {[]} {[]}
+"Consent","Consent.category:resultType","Consent.category","resultType","","",0,*,"Y","","Y","CodeableConcept {[]} {[]}
 ","Classification of the consent statement - for indexing/retrieval","A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements.","","","","","","","","","",,"required","","http://fhir.de/ConsentManagement/ValueSet/ResultType","",,,,"Consent.category",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Consent","Consent.category:resultType.id","Consent.category.id","","","",0,1,"","","","string {[]} {[]}
@@ -256,7 +256,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Consent","Consent.category:resultType.text","Consent.category.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Consent","Consent.category:templateType","Consent.category","templateType","","",1,*,"Y","","Y","CodeableConcept {[]} {[]}
+"Consent","Consent.category:templateType","Consent.category","templateType","","",0,*,"Y","","Y","CodeableConcept {[]} {[]}
 ","Classification of the consent statement - for indexing/retrieval","A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements.","","","","","","","","","",,"extensible","","http://fhir.de/ConsentManagement/ValueSet/TemplateType","",,,,"Consent.category",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Consent","Consent.category:templateType.id","Consent.category.id","","","",0,1,"","","","string {[]} {[]}
@@ -404,18 +404,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Consent","Consent.policyRule.extension:xacml","Consent.policyRule.extension","xacml","","",0,1,"Y","","","Extension {[CanonicalType[http://fhir.de/ConsentManagement/StructureDefinition/Xacml]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Consent","Consent.policyRule.extension:xacml.id","Consent.policyRule.extension.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"Consent","Consent.policyRule.extension:xacml.extension","Consent.policyRule.extension.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Consent","Consent.policyRule.extension:xacml.url","Consent.policyRule.extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://fhir.de/ConsentManagement/StructureDefinition/Xacml""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"Consent","Consent.policyRule.extension:xacml.value[x]","Consent.policyRule.extension.value[x]","","","",1,1,"","","","base64Binary {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
 "Consent","Consent.policyRule.coding","Consent.policyRule.coding","","","",0,*,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -589,7 +577,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ConsentDomain","ResearchStudy.extension:versionFormat","ResearchStudy.extension","versionFormat","","",0,1,"","","","Extension {[CanonicalType[http://fhir.de/ConsentManagement/StructureDefinition/VersionFormat]]} {[]}
 ","Versionierungsformat der Policies, Modules und Templates für diese Consent Domain","Format von Versionsangaben","Werden sowohl formatString als auch formatExpression angegeben, müssen diese synonym sein.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ConsentDomain","ResearchStudy.extension:versionFormat.id","ResearchStudy.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "ConsentDomain","ResearchStudy.extension:versionFormat.extension","ResearchStudy.extension.extension","","","",0,*,"","","","Extension {[]} {[]}
@@ -634,7 +622,7 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 "ConsentDomain","ResearchStudy.extension:logo","ResearchStudy.extension","logo","","Logo",0,1,"Y","","","Extension {[CanonicalType[http://fhir.de/ConsentManagement/StructureDefinition/Logo]]} {[]}
 ","Logo der Studie/des Vorhabens","Logo zur Darstellung auf Einwilligungsvorlagen","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ConsentDomain","ResearchStudy.extension:logo.id","ResearchStudy.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "ConsentDomain","ResearchStudy.extension:logo.extension","ResearchStudy.extension.extension","","extensions
@@ -650,7 +638,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ConsentDomain","ResearchStudy.extension:contextIdentifier","ResearchStudy.extension","contextIdentifier","","SignerIDTypes",1,*,"Y","","","Extension {[CanonicalType[http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier]]} {[]}
 ","Herstellung des Patientenbezugs je Kontext","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ConsentDomain","ResearchStudy.extension:contextIdentifier.id","ResearchStudy.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "ConsentDomain","ResearchStudy.extension:contextIdentifier.extension","ResearchStudy.extension.extension","","","",0,*,"","","","Extension {[]} {[]}
@@ -710,7 +698,7 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 "ConsentDomain","ResearchStudy.extension:consentMode","ResearchStudy.extension","consentMode","","",0,1,"Y","","","Extension {[CanonicalType[http://fhir.de/ConsentManagement/StructureDefinition/ConsentMode]]} {[]}
 ","Standardverfahren für die Domäne","Standardverfahren für die Domäne","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ConsentDomain","ResearchStudy.extension:consentMode.id","ResearchStudy.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "ConsentDomain","ResearchStudy.extension:consentMode.extension","ResearchStudy.extension.extension","","extensions
@@ -1140,7 +1128,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ConsentModule","Questionnaire.item.extension:xacmlTemplate","Questionnaire.item.extension","xacmlTemplate","","",0,*,"Y","","","Extension {[CanonicalType[http://fhir.de/ConsentManagement/StructureDefinition/XacmlTemplate]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ConsentModule","Questionnaire.item.extension:xacmlTemplate.id","Questionnaire.item.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "ConsentModule","Questionnaire.item.extension:xacmlTemplate.extension","Questionnaire.item.extension.extension","","","",0,*,"","","","Extension {[]} {[]}
@@ -1182,10 +1170,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ConsentModule","Questionnaire.item.extension:xacmlTemplate.value[x]","Questionnaire.item.extension.value[x]","","","",0,0,"Y","","","base64Binary {[]} {[]}
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ConsentModule","Questionnaire.item.extension:designNote","Questionnaire.item.extension","designNote","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/designNote]]} {[]}
+"ConsentModule","Questionnaire.item.extension:designNote","Questionnaire.item.extension","designNote","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/designNote]]} {[]}
 ","Design comments","Information captured by the author/maintainer of the questionnaire for development purposes, not intended to be seen by users.","Allows capture of todos, rationale for design decisions, etc.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ConsentModule","Questionnaire.item.extension:label","Questionnaire.item.extension","label","","Label",0,1,"Y","","","Extension {[CanonicalType[https://ths-greifswald.de/fhir/StructureDefinition/gics/QuestionnaireLabel]]} {[]}
 ","Label des Consent Moduls","Label des Consent Moduls","Label des Consent Moduls","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -1229,7 +1217,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ConsentModule","Questionnaire.item.text","Questionnaire.item.text","","","",0,1,"Y","","","string {[]} {[]}
 ","Vollständiger Text des Moduls aus dem Einwilligungsdokument","The name of a section, the text of a question or text content for a display item.","Hier wird der unformatierte Text abgelegt.
 Zur formatierten Ablage kann die spezifizierte rendering-markdown-Extension verwendet werden.
-In diesem Fall muss der reine Textinhalt identisch sein.","","","","","","","","",,,,,"",,,,"Questionnaire.item.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+In diesem Fall muss der reine Textinhalt identisch sein.","","","","","","","","",,,,,"",,,,"Questionnaire.item.text",0,1,"cm-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 cm-1:Wenn der Text im Markdown-Format angegeben ist, muss er auch als Klartext angegeben sein. {extension('http://hl7.org/fhir/StructureDefinition/rendering-markdown').empty() or hasValue()}"
 "ConsentModule","Questionnaire.item.text.id","Questionnaire.item.text.id","","","",0,1,"","","","string {[]} {[]}
 ","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -1237,13 +1226,12 @@ cm-1:Wenn der Text im Markdown-Format angegeben ist, muss er auch als Klartext a
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ConsentModule","Questionnaire.item.text.extension:renderingMarkdown","Questionnaire.item.text.extension","renderingMarkdown","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/rendering-markdown]]} {[]}
+"ConsentModule","Questionnaire.item.text.extension:renderingMarkdown","Questionnaire.item.text.extension","renderingMarkdown","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/rendering-markdown]]} {[]}
 ","String equivalent with markdown","This is an equivalent of the string on which the extension is sent, but includes additional markdown (see documentation about [markdown](http://hl7.org/fhir/R4/datatypes.html#markdown). Note that using HTML  [xhtml](http://hl7.org/fhir/R4/extension-rendering-xhtml.html) can allow for greater precision of display.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ConsentModule","Questionnaire.item.text.extension:renderingMarkdown.id","Questionnaire.item.text.extension.id","","","",0,1,"","","","id {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
-",""
+cm-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ConsentModule","Questionnaire.item.text.extension:renderingMarkdown.id","Questionnaire.item.text.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "ConsentModule","Questionnaire.item.text.extension:renderingMarkdown.extension","Questionnaire.item.text.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -1251,17 +1239,15 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ConsentModule","Questionnaire.item.text.extension:renderingMarkdown.url","Questionnaire.item.text.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/rendering-markdown""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "ConsentModule","Questionnaire.item.text.extension:renderingMarkdown.value[x]","Questionnaire.item.text.extension.value[x]","","","",1,1,"","","","markdown {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
-","",,"open","Extension.value[x]",0,1,"ext-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"open","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ConsentModule","Questionnaire.item.text.extension:renderingXhtml","Questionnaire.item.text.extension","renderingXhtml","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/rendering-xhtml]]} {[]}
+"ConsentModule","Questionnaire.item.text.extension:renderingXhtml","Questionnaire.item.text.extension","renderingXhtml","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/rendering-xhtml]]} {[]}
 ","String equivalent with html markup","This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc. Existing [restrictions on XHTML content](http://hl7.org/fhir/R4/narrative.html#security) apply. Note that using [markdown](http://hl7.org/fhir/R4/extension-rendering-markdown.html) allows for greater flexibility of display.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ConsentModule","Questionnaire.item.text.extension:renderingXhtml.id","Questionnaire.item.text.extension.id","","","",0,1,"","","","id {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
-",""
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ConsentModule","Questionnaire.item.text.extension:renderingXhtml.id","Questionnaire.item.text.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "ConsentModule","Questionnaire.item.text.extension:renderingXhtml.extension","Questionnaire.item.text.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -1269,10 +1255,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ConsentModule","Questionnaire.item.text.extension:renderingXhtml.url","Questionnaire.item.text.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/rendering-xhtml""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "ConsentModule","Questionnaire.item.text.extension:renderingXhtml.value[x]","Questionnaire.item.text.extension.value[x]","","","",1,1,"","","","string {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
-","",,"open","Extension.value[x]",0,1,"ext-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"open","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+xhtml-ext-1:The XHTML contained here SHALL abide by the same constraints as narrative.  I.e. contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes {htmlChecks()}"
 "ConsentModule","Questionnaire.item.text.value","Questionnaire.item.text.value","","","",0,1,"","","","string {[]} {[]}
 ","Primitive value for string","The actual value","","","","","","","","","",1048576,,,,"",,,,"string.value",0,1,"",""
 "ConsentModule","Questionnaire.item.type","Questionnaire.item.type","","","",1,1,"Y","","","code {[]} {[]}
@@ -2229,7 +2214,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ConsentTemplate","Questionnaire.extension:sourceDocument","Questionnaire.extension","sourceDocument","","",0,*,"Y","","","Extension {[CanonicalType[http://fhir.de/ConsentManagement/StructureDefinition/SourceDocument]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ConsentTemplate","Questionnaire.extension:sourceDocument.id","Questionnaire.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "ConsentTemplate","Questionnaire.extension:sourceDocument.extension","Questionnaire.extension.extension","","extensions
@@ -2278,7 +2263,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 The signature can be captured using the http://hl7.org/fhir/StructureDefinition/questionnaireresponse-signature extension.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ConsentTemplate","Questionnaire.extension:signatureRequired.id","Questionnaire.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "ConsentTemplate","Questionnaire.extension:signatureRequired.extension","Questionnaire.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -2288,7 +2273,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ConsentTemplate","Questionnaire.extension:signatureRequired.url","Questionnaire.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/questionnaire-signatureRequired""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "ConsentTemplate","Questionnaire.extension:signatureRequired.value[x]","Questionnaire.extension.value[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","","","","",,"extensible","","","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","","","","",,"extensible","","http://hl7.org/fhir/ValueSet/signature-type","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ConsentTemplate","Questionnaire.extension:signatureRequired.value[x].id","Questionnaire.extension.value[x].id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -2543,14 +2528,14 @@ que-1:Group items must have nested items, display items cannot have nested items
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ConsentTemplate","Questionnaire.item.extension:designNote","Questionnaire.item.extension","designNote","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/designNote]]} {[]}
+"ConsentTemplate","Questionnaire.item.extension:designNote","Questionnaire.item.extension","designNote","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/designNote]]} {[]}
 ","Design comments","Information captured by the author/maintainer of the questionnaire for development purposes, not intended to be seen by users.","Allows capture of todos, rationale for design decisions, etc.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ConsentTemplate","Questionnaire.item.extension:subQuestionnaire","Questionnaire.item.extension","subQuestionnaire","","",0,1,"Y","","","Extension {[CanonicalType[http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ConsentTemplate","Questionnaire.item.extension:subQuestionnaire.id","Questionnaire.item.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "ConsentTemplate","Questionnaire.item.extension:subQuestionnaire.extension","Questionnaire.item.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -2661,14 +2646,14 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ConsentTemplate","Questionnaire.item.text.extension:renderingMarkdown","Questionnaire.item.text.extension","renderingMarkdown","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/rendering-markdown]]} {[]}
+"ConsentTemplate","Questionnaire.item.text.extension:renderingMarkdown","Questionnaire.item.text.extension","renderingMarkdown","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/rendering-markdown]]} {[]}
 ","String equivalent with markdown","This is an equivalent of the string on which the extension is sent, but includes additional markdown (see documentation about [markdown](http://hl7.org/fhir/R4/datatypes.html#markdown). Note that using HTML  [xhtml](http://hl7.org/fhir/R4/extension-rendering-xhtml.html) can allow for greater precision of display.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ConsentTemplate","Questionnaire.item.text.extension:renderingXhtml","Questionnaire.item.text.extension","renderingXhtml","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/rendering-xhtml]]} {[]}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ConsentTemplate","Questionnaire.item.text.extension:renderingXhtml","Questionnaire.item.text.extension","renderingXhtml","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/rendering-xhtml]]} {[]}
 ","String equivalent with html markup","This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc. Existing [restrictions on XHTML content](http://hl7.org/fhir/R4/narrative.html#security) apply. Note that using [markdown](http://hl7.org/fhir/R4/extension-rendering-markdown.html) allows for greater flexibility of display.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ConsentTemplate","Questionnaire.item.text.value","Questionnaire.item.text.value","","","",0,1,"","","","string {[]} {[]}
 ","Primitive value for string","The actual value","","","","","","","","","",1048576,,,,"",,,,"string.value",0,1,"",""
 "ConsentTemplate","Questionnaire.item.type","Questionnaire.item.type","","","",1,1,"Y","","","code {[]} {[]}
@@ -2686,7 +2671,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ConsentTemplate","Questionnaire.item.enableWhen.extension:sourceSubQuestionnaire","Questionnaire.item.enableWhen.extension","sourceSubQuestionnaire","","",0,1,"Y","","","Extension {[CanonicalType[http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ConsentTemplate","Questionnaire.item.enableWhen.extension:sourceSubQuestionnaire.id","Questionnaire.item.enableWhen.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "ConsentTemplate","Questionnaire.item.enableWhen.extension:sourceSubQuestionnaire.extension","Questionnaire.item.enableWhen.extension.extension","","extensions
@@ -3689,7 +3674,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Provenance","Provenance.signature.type","Provenance.signature.type","","","",1,*,"Y","","Y","Coding {[]} {[]}
-","Indication of the reason the entity signed the object(s)","An indication of the reason that the entity signed this document. This may be explicitly included as part of the signature information and can be used when determining accountability for various actions concerning the document.","Examples include attesting to: authorship, correct transcription, and witness of specific event. Also known as a &quot;Commitment Type Indication&quot;.","","","","","","","","",,"extensible","","","",,,,"Signature.type",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Indication of the reason the entity signed the object(s)","An indication of the reason that the entity signed this document. This may be explicitly included as part of the signature information and can be used when determining accountability for various actions concerning the document.","Examples include attesting to: authorship, correct transcription, and witness of specific event. Also known as a &quot;Commitment Type Indication&quot;.","","","","","","","","",,"extensible","","http://hl7.org/fhir/ValueSet/signature-type","",,,,"Signature.type",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Provenance","Provenance.signature.type.id","Provenance.signature.type.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""

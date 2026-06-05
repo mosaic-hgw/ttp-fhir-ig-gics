@@ -3,15 +3,15 @@
 ## Pages
 
 * [Implementation Guide gICS](index.md)
-* [Allgemein](Allgemein.md)
-* [Konfiguration](konfig.md)
-* [Suche](Suche.md)
-* [Terminologie](Terminologie.md)
-* [Questionnaire Suche](Questionnaire-Suche.md)
 * [Mitgeltende Profile und Erläuterungen](Mitgeltend.md)
+* [Terminologie](Terminologie.md)
 * [Consent Suche](Consent-Suche.md)
-* [Artifacts Summary](artifacts.md)
+* [Suche](Suche.md)
 * [Extensions](Extensions.md)
+* [Konfiguration](konfig.md)
+* [Allgemein](Allgemein.md)
+* [Questionnaire Suche](Questionnaire-Suche.md)
+* [Artifacts Summary](artifacts.md)
 
 ## Resources
 

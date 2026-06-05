@@ -59,7 +59,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ResearchStudy.extension:versionFormat","ResearchStudy.extension","versionFormat","","",0,1,"","","","Extension {[CanonicalType[http://fhir.de/ConsentManagement/StructureDefinition/VersionFormat]]} {[]}
 ","Versionierungsformat der Policies, Modules und Templates für diese Consent Domain","Format von Versionsangaben","Werden sowohl formatString als auch formatExpression angegeben, müssen diese synonym sein.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ResearchStudy.extension:versionFormat.id","ResearchStudy.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "ResearchStudy.extension:versionFormat.extension","ResearchStudy.extension.extension","","","",0,*,"","","","Extension {[]} {[]}
@@ -104,7 +104,7 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 "ResearchStudy.extension:logo","ResearchStudy.extension","logo","","Logo",0,1,"Y","","","Extension {[CanonicalType[http://fhir.de/ConsentManagement/StructureDefinition/Logo]]} {[]}
 ","Logo der Studie/des Vorhabens","Logo zur Darstellung auf Einwilligungsvorlagen","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "ResearchStudy.extension:logo.id","ResearchStudy.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "ResearchStudy.extension:logo.extension","ResearchStudy.extension.extension","","extensions
@@ -120,7 +120,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ResearchStudy.extension:contextIdentifier","ResearchStudy.extension","contextIdentifier","","SignerIDTypes",1,*,"Y","","","Extension {[CanonicalType[http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier]]} {[]}
 ","Herstellung des Patientenbezugs je Kontext","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "ResearchStudy.extension:contextIdentifier.id","ResearchStudy.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "ResearchStudy.extension:contextIdentifier.extension","ResearchStudy.extension.extension","","","",0,*,"","","","Extension {[]} {[]}
@@ -180,7 +180,7 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 "ResearchStudy.extension:consentMode","ResearchStudy.extension","consentMode","","",0,1,"Y","","","Extension {[CanonicalType[http://fhir.de/ConsentManagement/StructureDefinition/ConsentMode]]} {[]}
 ","Standardverfahren für die Domäne","Standardverfahren für die Domäne","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ResearchStudy.extension:consentMode.id","ResearchStudy.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "ResearchStudy.extension:consentMode.extension","ResearchStudy.extension.extension","","extensions

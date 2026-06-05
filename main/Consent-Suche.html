@@ -302,21 +302,28 @@ Werden weder _count noch _offset angegeben, enthält das Bundle maximal 100 Erge
 <p><em>Hinweis: Die Verundung von multiplen mii-provision-provision-code-Parametern ist im Release 2023.1.0 noch nicht möglich.</em></p>
 
 <p>Beispiel:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?domain:identifier=MIRACUM&amp;mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent
+?domain:identifier=MIRACUM
+&amp;mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8
 </code></pre></div></div>
 
 <h4 id="typ-der-provision-permit">Typ der Provision (permit)</h4>
 <p>Der Suchparameter <code class="language-plaintext highlighter-rouge">mii-provision-provision-type</code>, definiert im Rahmen des <a href="https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current">Implementierungsleitfaden Consent der MII</a>, wird unterstützt.</p>
 
 <p>Beispiel:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?domain:identifier=MIRACUM&amp;mii-provision-provision-type=permit
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent
+?domain:identifier=MIRACUM
+&amp;mii-provision-provision-type=permit
 </code></pre></div></div>
 
 <h4 id="typ-der-provision-einer-bestimmten-durch-einen-code-definierten-provision">Typ der Provision einer bestimmten, durch einen Code definierten, Provision</h4>
 <p>Der <a href="http://www.hl7.org/fhir/r4/search.html#combining">composite Suchparameter</a> <code class="language-plaintext highlighter-rouge">mii-provision-provision-code-type</code>, definiert im Rahmen des <a href="https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current">Implementierungsleitfaden Consent der MII</a>, wird unterstützt.</p>
 
 <p>Beispiel:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?domain:identifier=MIRACUM&amp;mii-provision-provision-code-type=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8$permit
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent
+?domain:identifier=MIRACUM
+&amp;mii-provision-provision-code-type=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8
+$permit
 </code></pre></div></div>
 
 <h4 id="provisions-zeitraum">Provisions-Zeitraum</h4>
@@ -325,7 +332,9 @@ Werden weder _count noch _offset angegeben, enthält das Bundle maximal 100 Erge
 <p>Bezüglich des Verhaltens bei der Suche in Elementen vom Datentyp period sei ausdrücklich auf den entsprechenden Abschnitt der FHIR-Spezifikation und die dortigen Beispiele zur Inklusion bzw. Exklusion von Suchergebnissen verwiesen: http://hl7.org/fhir/r4/search.html#date .</p>
 
 <p>Beispiel:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?domain:identifier=MIRACUM&amp;mii-provision-provision-period=2020-12-15
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent
+?domain:identifier=MIRACUM
+&amp;mii-provision-provision-period=2020-12-15
 </code></pre></div></div>
 <p>Bei der Verwendung von <code class="language-plaintext highlighter-rouge">mii-provision-provision-period</code> ist zu beachten, dass
 <code class="language-plaintext highlighter-rouge">provision.period.start</code> dem <strong>Beginn der Gültigkeit der Einwilligung</strong> (gemäß gICS: "consentLegalDate") entspricht und
@@ -339,7 +348,9 @@ Werden weder _count noch _offset angegeben, enthält das Bundle maximal 100 Erge
 <p>Der <a href="http://www.hl7.org/fhir/r4/search.html#combining">composite Suchparameter</a> <code class="language-plaintext highlighter-rouge">mii-provision-provision-code-period</code>, definiert im Rahmen des <a href="https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current">Implementierungsleitfaden Consent der MII</a>, wird unterstützt.</p>
 
 <p>Beispiel:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?mii-provision-provision-code-period=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8$2020-12-15
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent
+?mii-provision-provision-code-period=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8
+$2020-12-15
 </code></pre></div></div>
 
 <h4 id="policy-uri-versionsspezifischer-mii-broad-consent">Policy URI (versionsspezifischer MII Broad Consent)</h4>
@@ -348,6 +359,15 @@ Werden weder _count noch _offset angegeben, enthält das Bundle maximal 100 Erge
 <p>Beispiel:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?domain:identifier=MII&amp;mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791
 </code></pre></div></div>
+<h4 id="policy-uri-filterung-versionsspezifischer-mii-broad-consent-und-enthaltene-zusatzmodule">Policy URI (Filterung versionsspezifischer MII Broad Consent und enthaltene Zusatzmodule)</h4>
+<p>Der Suchparameter <code class="language-plaintext highlighter-rouge">mii-policy-uri</code>kann seit fhir-gw-Version 2026.1.0 ver<em>*UND</em>det werden. Dies ermöglicht die spezifische Suche nach bestimmten Template-Versionen (z.B. MII BC 1.7.2), die zusätzlich spezifische Zusatzmodule (z.B. ACRIBIS) verwenden.</p>
+
+<p>Beispiel:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent
+?domain:identifier=MII
+&amp;mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.2079
+&amp;mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.4031
+</code></pre></div></div>
 
 <h4 id="inkludieren-der-provenance-information">Inkludieren der Provenance-Information</h4>
 <p>Das Inkludieren der Herkunftsinformationen zu einer Consent-Ressource ist mittels reverse Include der entsprechenden Provenance-Ressource möglich.
@@ -355,7 +375,10 @@ Die in diesem Kontext verwendeten UUIDs der Ressourcen sind volatil, d.h. es wir
 Vgl. auch entsprechendes Response-Beispiel unten.</p>
 
 <p>Beispiel:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?domain:identifier=MII&amp;mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791&amp;_revinclude=Provenance:target
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent
+?domain:identifier=MII
+&amp;mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791
+&amp;_revinclude=Provenance:target
 </code></pre></div></div>
 <h4 id="inkludieren-der-provenance-information-für-consent-ressourcen-vom-typ-consent-status">Inkludieren der Provenance-Information für Consent-Ressourcen vom Typ <code class="language-plaintext highlighter-rouge">Consent-Status</code></h4>
 <p>Das Inkludieren der Herkunftsinformationen zu einer Consent-Ressource vom Typ <code class="language-plaintext highlighter-rouge">Consent-Status</code> ist mittels <code class="language-plaintext highlighter-rouge">reverse Include</code> der entsprechenden Provenance-Ressource ebenfalls möglich.
@@ -363,20 +386,32 @@ Die in diesem Kontext verwendeten UUIDs der Ressourcen sind volatil (flüchtig),
 Vgl. auch entsprechendes Response-Beispiel unten.</p>
 
 <p>Beispiel:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?domain:identifier=MII&amp;mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791&amp;category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|consent-status&amp;_revinclude=Provenance:target
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent
+?domain:identifier=MII
+&amp;mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791
+&amp;category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|consent-status
+&amp;_revinclude=Provenance:target
 </code></pre></div></div>
 <p><strong>ACHTUNG</strong>: Provenance-Ressourcen, die sich auf Consent-Ressourcen vom Typ <code class="language-plaintext highlighter-rouge">consent-status</code> beziehen werden in Echtzeit erzeugt und nicht persistiert. Daher ist die verwendete Ressourcen-Id (UUID der Provenance-Ressource) in diesem konkreten Fall <em>flüchtig</em>.</p>
 
 <h4 id="komplexere-beispiele">Komplexere Beispiele</h4>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?domain:identifier=MII&amp;mii-provision-provision-type=permit&amp;mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3%7C2.16.840.1.113883.3.1937.777.24.5.3.8
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent
+?domain:identifier=MII
+&amp;mii-provision-provision-type=permit
+&amp;mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3%7C2.16.840.1.113883.3.1937.777.24.5.3.8
 </code></pre></div></div>
 <p>findet alle Consent-Ressourcen einer Einwilligungsdomäne 'MII' mit Permit-Provision, bei denen der Provision-Code 2.16.840.1.113883.3.1937.777.24.5.3.8 (entspricht der <a href="https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-Terminologien.html">TFCU-Policy</a> 'MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU') gesetzt ist. Eine Beispiel-Response ist weiter unten dargestellt.</p>
 
 <h4 id="patientenspezifische-suche-nach-consent-dokumenten-mit-ausgabe-von-digitalen-unterschriften">Patientenspezifische Suche nach Consent-Dokumenten mit Ausgabe von digitalen Unterschriften</h4>
 
 <p>Beispiel:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?domain:identifier=MII&amp;category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|document&amp;_format=json&amp;patient.identifier=https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym|testpatient1&amp;_revinclude=Provenance:target
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent
+?domain:identifier=MII
+&amp;category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|document
+&amp;_format=json
+&amp;patient.identifier=https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym|testpatient1
+&amp;_revinclude=Provenance:target
 </code></pre></div></div>
 <p>In der Domain <code class="language-plaintext highlighter-rouge">MII</code> werden alle Dokumente der Person <code class="language-plaintext highlighter-rouge">testpatient1</code> vom SignerIdType <code class="language-plaintext highlighter-rouge">Pseudonym</code>ermittelt und Provenance-Ressourcen mit den entsprechenden digitalen Unterschriften erstellt.
 Liegen Unterschriften nur als Scan vor, ist anstelle der direkten Unterschrift ein Verweis auf DocumentReference enthalten. Diese sind separat direkt abfragbar.</p>
@@ -389,6 +424,7 @@ Liegen Unterschriften nur als Scan vor, ist anstelle der direkten Unterschrift e
   <li>der Parameter <code class="language-plaintext highlighter-rouge">mii-provision-provision-period</code> kann <strong>nicht</strong> mit dem Parameter <code class="language-plaintext highlighter-rouge">_count=0</code> (summary) kombiniert werden. Hier wird als Ergebnis per Default total=0 zurückgegeben</li>
   <li>der Parameter <code class="language-plaintext highlighter-rouge">status=active</code> wird in Version 2025.2.x nicht unterstützt</li>
   <li>der Parameter <code class="language-plaintext highlighter-rouge">category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|consent-status</code> erfordert zusätzlich die Angabe des Parameters <code class="language-plaintext highlighter-rouge">domain:identifier=NAME_DER_DOMAIN</code></li>
+  <li>die <strong>Verundung multipler Parameter</strong> von <code class="language-plaintext highlighter-rouge">mii-policy-uri</code> in Kombination mit Parameter und Wert<code class="language-plaintext highlighter-rouge">category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|consent-status</code> wird nicht unterstützt. Die Verwendung der Werte<code class="language-plaintext highlighter-rouge">document</code> und <code class="language-plaintext highlighter-rouge">policy</code> ist natürlich möglich.</li>
 </ul>
 
 
@@ -409,7 +445,7 @@ Liegen Unterschriften nur als Scan vor, ist anstelle der direkten Unterschrift e
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 26, 2026 10:06+0000">2026-03-26</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 5, 2026 06:34+0000">2026-06-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
