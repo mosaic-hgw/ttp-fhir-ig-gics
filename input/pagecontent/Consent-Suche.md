@@ -70,7 +70,9 @@ Der Suchparameter `mii-provision-provision-code`, definiert im [Implementierungs
 
 Beispiel:
 ```
-GET [base]/Consent?domain:identifier=MIRACUM&mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8
+GET [base]/Consent
+?domain:identifier=MIRACUM
+&mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8
 ```
 
 #### Typ der Provision (permit)
@@ -78,7 +80,9 @@ Der Suchparameter `mii-provision-provision-type`, definiert im Rahmen des [Imple
 
 Beispiel:
 ```
-GET [base]/Consent?domain:identifier=MIRACUM&mii-provision-provision-type=permit
+GET [base]/Consent
+?domain:identifier=MIRACUM
+&mii-provision-provision-type=permit
 ```
 
 #### Typ der Provision einer bestimmten, durch einen Code definierten, Provision
@@ -86,7 +90,10 @@ Der [composite Suchparameter](http://www.hl7.org/fhir/r4/search.html#combining) 
 
 Beispiel:
 ```
-GET [base]/Consent?domain:identifier=MIRACUM&mii-provision-provision-code-type=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8$permit
+GET [base]/Consent
+?domain:identifier=MIRACUM
+&mii-provision-provision-code-type=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8
+$permit
 ```
 
 #### Provisions-Zeitraum
@@ -96,7 +103,9 @@ Bezüglich des Verhaltens bei der Suche in Elementen vom Datentyp period sei aus
 
 Beispiel:
 ```
-GET [base]/Consent?domain:identifier=MIRACUM&mii-provision-provision-period=2020-12-15
+GET [base]/Consent
+?domain:identifier=MIRACUM
+&mii-provision-provision-period=2020-12-15
 ```
 Bei der Verwendung von `mii-provision-provision-period` ist zu beachten, dass
 `provision.period.start` dem **Beginn der Gültigkeit der Einwilligung** (gemäß gICS: "consentLegalDate") entspricht und
@@ -111,7 +120,9 @@ Der [composite Suchparameter](http://www.hl7.org/fhir/r4/search.html#combining) 
 
 Beispiel:
 ```
-GET [base]/Consent?mii-provision-provision-code-period=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8$2020-12-15
+GET [base]/Consent
+?mii-provision-provision-code-period=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8
+$2020-12-15
 ```
 
 #### Policy URI (versionsspezifischer MII Broad Consent)
@@ -121,6 +132,16 @@ Beispiel:
 ```
 GET [base]/Consent?domain:identifier=MII&mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791
 ```
+#### Policy URI (Filterung versionsspezifischer MII Broad Consent und enthaltene Zusatzmodule)
+Der Suchparameter `mii-policy-uri`kann seit fhir-gw-Version 2026.1.0 ver**UND*det werden. Dies ermöglicht die spezifische Suche nach bestimmten Template-Versionen (z.B. MII BC 1.7.2), die zusätzlich spezifische Zusatzmodule (z.B. ACRIBIS) verwenden.
+
+Beispiel:
+```
+GET [base]/Consent
+?domain:identifier=MII
+&mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.2079
+&mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.4031
+```
 
 #### Inkludieren der Provenance-Information
 Das Inkludieren der Herkunftsinformationen zu einer Consent-Ressource ist mittels reverse Include der entsprechenden Provenance-Ressource möglich.
@@ -129,7 +150,10 @@ Vgl. auch entsprechendes Response-Beispiel unten.
 
 Beispiel:
 ```
-GET [base]/Consent?domain:identifier=MII&mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791&_revinclude=Provenance:target
+GET [base]/Consent
+?domain:identifier=MII
+&mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791
+&_revinclude=Provenance:target
 ```
 #### Inkludieren der Provenance-Information für Consent-Ressourcen vom Typ `Consent-Status`
 Das Inkludieren der Herkunftsinformationen zu einer Consent-Ressource vom Typ `Consent-Status` ist mittels `reverse Include` der entsprechenden Provenance-Ressource ebenfalls möglich.
@@ -138,14 +162,21 @@ Vgl. auch entsprechendes Response-Beispiel unten.
 
 Beispiel:
 ```
-GET [base]/Consent?domain:identifier=MII&mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791&category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|consent-status&_revinclude=Provenance:target
+GET [base]/Consent
+?domain:identifier=MII
+&mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791
+&category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|consent-status
+&_revinclude=Provenance:target
 ```
 **ACHTUNG**: Provenance-Ressourcen, die sich auf Consent-Ressourcen vom Typ `consent-status` beziehen werden in Echtzeit erzeugt und nicht persistiert. Daher ist die verwendete Ressourcen-Id (UUID der Provenance-Ressource) in diesem konkreten Fall *flüchtig*.
 
 #### Komplexere Beispiele
 
 ```
-GET [base]/Consent?domain:identifier=MII&mii-provision-provision-type=permit&mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3%7C2.16.840.1.113883.3.1937.777.24.5.3.8
+GET [base]/Consent
+?domain:identifier=MII
+&mii-provision-provision-type=permit
+&mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3%7C2.16.840.1.113883.3.1937.777.24.5.3.8
 ```
 findet alle Consent-Ressourcen einer Einwilligungsdomäne 'MII' mit Permit-Provision, bei denen der Provision-Code 2.16.840.1.113883.3.1937.777.24.5.3.8 (entspricht der [TFCU-Policy](https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-Terminologien.html) 'MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU') gesetzt ist. Eine Beispiel-Response ist weiter unten dargestellt.
 
@@ -153,7 +184,12 @@ findet alle Consent-Ressourcen einer Einwilligungsdomäne 'MII' mit Permit-Provi
 
 Beispiel:
 ```
-GET [base]/Consent?domain:identifier=MII&category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|document&_format=json&patient.identifier=https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym|testpatient1&_revinclude=Provenance:target
+GET [base]/Consent
+?domain:identifier=MII
+&category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|document
+&_format=json
+&patient.identifier=https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym|testpatient1
+&_revinclude=Provenance:target
 ```
 In der Domain `MII` werden alle Dokumente der Person `testpatient1` vom SignerIdType `Pseudonym`ermittelt und Provenance-Ressourcen mit den entsprechenden digitalen Unterschriften erstellt.
 Liegen Unterschriften nur als Scan vor, ist anstelle der direkten Unterschrift ein Verweis auf DocumentReference enthalten. Diese sind separat direkt abfragbar.
@@ -164,4 +200,5 @@ Folgende Einschränkungen bezüglich der Verwendung von Suchparametern im gICS g
 - der Parameter `mii-provision-provision-period` darf im Request **nur 1x** vorkommen
 - der Parameter `mii-provision-provision-period` kann **nicht** mit dem Parameter `_count=0` (summary) kombiniert werden. Hier wird als Ergebnis per Default total=0 zurückgegeben
 - der Parameter `status=active` wird in Version 2025.2.x nicht unterstützt
-- der Parameter `category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|consent-status` erfordert zusätzlich die Angabe des Parameters `domain:identifier=NAME_DER_DOMAIN` 
+- der Parameter `category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|consent-status` erfordert zusätzlich die Angabe des Parameters `domain:identifier=NAME_DER_DOMAIN`
+- die **Verundung multipler Parameter** von `mii-policy-uri` in Kombination mit Parameter und Wert`category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|consent-status` wird nicht unterstützt. Die Verwendung der Werte`document` und `policy` ist natürlich möglich.
