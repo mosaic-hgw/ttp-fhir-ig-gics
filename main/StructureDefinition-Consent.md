@@ -1,5 +1,46 @@
 # Consent - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Consent**
+
+## Resource Profile: Consent 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent | *Version*:2025.2.0 |
+| Active as of 2025-06-12 | *Computable Name*:Consent |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+ 
+Angepasstes FHIR Consent Profil auf Basis des offiziellen [Consent-Profils](https://ig.fhir.de/einwilligungsmanagement/stable/Consent.html) der Hl7 AG Einwilligungsmanagement erweitertet um ausgewählte gICS Eigenschaften. 
+
+ 
+Strukturierte, maschinenverarbeitbare Abbildung von Einwilligungsdaten. 
+
+### Such-Parameter
+
+Die [Consent Suchparameter](Consent-Suche.md) sind separat dokumentiert.
+
+**Usages:**
+
+* Examples for this Profile: [Consent/Consent-example-1](Consent-Consent-example-1.md), [Consent/Consent-example-2](Consent-Consent-example-2.md) and [Consent/Consent-example-3](Consent-Consent-example-3.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ths-greifswald.ttp-fhir-gw.gics|current/StructureDefinition/StructureDefinition-Consent.json)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-Consent.csv), [Excel](StructureDefinition-Consent.xlsx), [Schematron](StructureDefinition-Consent.sch) 
+
 
 
 ## Resource Content

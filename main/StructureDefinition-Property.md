@@ -1,5 +1,44 @@
 # Property Element - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Property Element**
+
+## Extension: Property Element 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/gics/Property | *Version*:2025.2.0 |
+| Active as of 2025-06-12 | *Computable Name*:Property |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+Key Value Property Element für Properties zur Individualisierung von Domains, Policies, Modules und Templates
+
+**Context of Use**
+
+**Usage info**
+
+**Usages:**
+
+* This Extension is not used by any profiles in this Specification
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ths-greifswald.ttp-fhir-gw.gics|current/StructureDefinition/StructureDefinition-Property.json)
+
+### Formal Views of Extension Content
+
+ [Description of Profiles, Differentials, Snapshots, and how the XML and JSON presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-Property.csv), [Excel](StructureDefinition-Property.xlsx), [Schematron](StructureDefinition-Property.sch) 
+
+#### Constraints
+
 
 
 ## Resource Content

@@ -1,5 +1,28 @@
 # Verarbeitung und Nutzung von Patientendaten für die medizinische Forschung - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Verarbeitung und Nutzung von Patientendaten für die medizinische Forschung**
+
+## Questionnaire: Verarbeitung und Nutzung von Patientendaten für die medizinische Forschung 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/gics/Questionnaire/ConsentModule-example-2 | *Version*:2025.2.0 |
+| Active as of 2026-06-17 | *Computable Name*:MDAT_ErhebenSpeichernNutzen |
+| **Usage:**[d7a65ce8-2810-401a-b0db-70782a7b19a6](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=http://fhir.org/packages/de.einwilligungsmanagement/d7a65ce8-2810-401a-b0db-70782a7b19a6) | |
+
+ 
+Beispiel-Fragen-Modul aus der MI-Initiative 
+
+ 
+Einwilligungserklärung für die wissenschaftliche Nutzung 
+
 
 
 ## Resource Content
@@ -23,7 +46,7 @@
   "name" : "MDAT_ErhebenSpeichernNutzen",
   "title" : "Verarbeitung und Nutzung von Patientendaten für die medizinische Forschung",
   "status" : "active",
-  "date" : "2026-06-05T06:34:54+00:00",
+  "date" : "2026-06-17T10:42:51+00:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

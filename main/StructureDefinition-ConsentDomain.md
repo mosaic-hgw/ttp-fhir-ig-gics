@@ -1,5 +1,63 @@
 # Consent Domain - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Consent Domain**
+
+## Resource Profile: Consent Domain 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/gics/StructureDefinition/ConsentDomain | *Version*:2025.2.0 |
+| Active as of 2025-06-12 | *Computable Name*:ConsentDomain |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+ 
+Erweitertes Profil der Consent Management Domain Research Study (Arbeitsgruppe Einwilligungsmanagement) zur Abbildung aller relevanten Domänen-Infos für gICS über entsprechende Extensions 
+
+ 
+Erweitertes Profil der Arbeitsgruppe Einwilligungsmanagement zur Abbildung aller relevanten Domänen-Infos für gICS 
+
+## Suchparameter
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| identifier | token | Eindeutiger Name (Identifikator) der Domäne | ResearchStudy.identifier |
+| _profile | reference | Angabe um Ausgabeprofil festzulegen.default: https://ths-greifswald.de/fhir/StructureDefinition/gics/ResearchStudy/ConsentDomainalternativ: http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy | ResearchStudy.meta.profile |
+
+Zulässige Kombinationen von Suchparametern:
+
+* alle ConsentDomains
+`GET [base]/gics/ResearchStudy`
+* alle ConsentDomains, profiliert nach IG Einwilligungsmanagement
+`GET [base]/gics/ResearchStudy?_profile=http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy`
+* spezifische ConsentDomain
+`GET [base]/gics/ResearchStudy?identifier=MIRACUM`
+`GET [base]/gics/ResearchStudy?identifier=MIRACUM&_profile=http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy`
+
+**Usages:**
+
+* Use this Profile: [ExchangeFormatDefinition](StructureDefinition-ExchangeFormatDefinition.md)
+* Refer to this Profile: [Consent Module](StructureDefinition-ConsentModule.md) and [ConsentPolicy](StructureDefinition-ConsentPolicy.md)
+* Examples for this Profile: [ResearchStudy/ConsentDomain-example-1](ResearchStudy-ConsentDomain-example-1.md), [ResearchStudy/ConsentDomain-example-2](ResearchStudy-ConsentDomain-example-2.md) and [ResearchStudy/ConsentDomain-example-3](ResearchStudy-ConsentDomain-example-3.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ths-greifswald.ttp-fhir-gw.gics|current/StructureDefinition/StructureDefinition-ConsentDomain.json)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-ConsentDomain.csv), [Excel](StructureDefinition-ConsentDomain.xlsx), [Schematron](StructureDefinition-ConsentDomain.sch) 
+
+In der Extension `configurationProperties` kann die Konfiguration der Domäne im XML-Format repräsentiert werden. Diese XML-Struktur ist base64-codiert enthalten.
+
 
 
 ## Resource Content

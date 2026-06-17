@@ -1,5 +1,45 @@
 # Comment - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Comment**
+
+## Extension: Comment 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/gics/Comment | *Version*:2025.2.0 |
+| Active as of 2025-06-12 | *Computable Name*:Comment |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+ergänzender Kommentar
+
+**Context of Use**
+
+**Usage info**
+
+**Usages:**
+
+* Use this Extension: [Consent Quality Control](StructureDefinition-ConsentQualityControl.md)
+* Examples for this Extension: [VerificationResult/ConsentQualityControl-example-1](VerificationResult-ConsentQualityControl-example-1.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ths-greifswald.ttp-fhir-gw.gics|current/StructureDefinition/StructureDefinition-Comment.json)
+
+### Formal Views of Extension Content
+
+ [Description of Profiles, Differentials, Snapshots, and how the XML and JSON presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-Comment.csv), [Excel](StructureDefinition-Comment.xlsx), [Schematron](StructureDefinition-Comment.sch) 
+
+#### Constraints
+
 
 
 ## Resource Content

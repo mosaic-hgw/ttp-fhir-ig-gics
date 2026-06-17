@@ -1,5 +1,43 @@
 # ExchangeFormatDefinition - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **ExchangeFormatDefinition**
+
+## Resource Profile: ExchangeFormatDefinition 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/gics/Bundle/ExchangeFormatDefinition | *Version*:2025.2.0 |
+| Draft as of 2025-06-12 | *Computable Name*:ExchangeFormatDefinition |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+ 
+Die in diesem Bundle enthaltenen FHIR-Ressourcen definieren in ihrer Gesamtheit ein oder mehrere Einwiliigungs-Vorlagen (Templates, FHIR-Questionnaires) zu einem bestimmten Kontext. 
+
+## Umsetzung
+
+CONCEPT-DESIGN!!! Noch nicht implementiert.
+
+**Usages:**
+
+* This Profile is not used by any profiles in this Specification
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ths-greifswald.ttp-fhir-gw.gics|current/StructureDefinition/StructureDefinition-ExchangeFormatDefinition.json)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-ExchangeFormatDefinition.csv), [Excel](StructureDefinition-ExchangeFormatDefinition.xlsx), [Schematron](StructureDefinition-ExchangeFormatDefinition.sch) 
+
 
 
 ## Resource Content

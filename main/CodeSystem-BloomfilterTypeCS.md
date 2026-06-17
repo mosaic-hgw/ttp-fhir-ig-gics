@@ -1,5 +1,29 @@
 # BloomfilterType - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **BloomfilterType**
+
+## CodeSystem: BloomfilterType 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType | *Version*:2025.2.0 |
+| Active as of 2025-06-12 | *Computable Name*:BloomfilterType |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+ 
+Types of Bloomfilters. 
+
+ This Code system is referenced in the content logical definition of the following value sets: 
+
+* [BloomfilterType](ValueSet-BloomfilterTypeVS.md)
+
 
 
 ## Resource Content

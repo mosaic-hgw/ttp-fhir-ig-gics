@@ -17,22 +17,13 @@
   fhir:total [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
   fhir:link ( [
      fhir:relation [ fhir:v "self" ] ;
-     fhir:url [
-       fhir:v "http://server:8080/ttp-fhir/fhir/gics/Consent?provisionCode=urn%3Aoid%3A2.16.840.1.113883.3.1937.777.24.5.3%7C2.16.840.1.113883.3.1937.777.24.5.3.8"^^xsd:anyURI ;
-       fhir:l <http://server:8080/ttp-fhir/fhir/gics/Consent?provisionCode=urn%3Aoid%3A2.16.840.1.113883.3.1937.777.24.5.3%7C2.16.840.1.113883.3.1937.777.24.5.3.8>
-     ]
+     fhir:url [ fhir:v "http://server:8080/ttp-fhir/fhir/gics/Consent?provisionCode=urn%3Aoid%3A2.16.840.1.113883.3.1937.777.24.5.3%7C2.16.840.1.113883.3.1937.777.24.5.3.8"^^xsd:anyURI ]
   ] ) ; # 
   fhir:entry ( [
-     fhir:fullUrl [
-       fhir:v "http://server:8080/ttp-fhir/fhir/gics/Consent/23db88b1-6e47-4907-8d9f-3fb4b2e97630"^^xsd:anyURI ;
-       fhir:l <http://server:8080/ttp-fhir/fhir/gics/Consent/23db88b1-6e47-4907-8d9f-3fb4b2e97630>
-     ] ;
+     fhir:fullUrl [ fhir:v "http://server:8080/ttp-fhir/fhir/gics/Consent/23db88b1-6e47-4907-8d9f-3fb4b2e97630"^^xsd:anyURI ] ;
      fhir:resource ( <http://server:8080/ttp-fhir/fhir/gics/Consent/23db88b1-6e47-4907-8d9f-3fb4b2e97630> )
   ] [
-     fhir:fullUrl [
-       fhir:v "http://server:8080/ttp-fhir/fhir/gics/Consent/fab23c8e-6a94-49da-acfd-4df51098ca22"^^xsd:anyURI ;
-       fhir:l <http://server:8080/ttp-fhir/fhir/gics/Consent/fab23c8e-6a94-49da-acfd-4df51098ca22>
-     ] ;
+     fhir:fullUrl [ fhir:v "http://server:8080/ttp-fhir/fhir/gics/Consent/fab23c8e-6a94-49da-acfd-4df51098ca22"^^xsd:anyURI ] ;
      fhir:resource ( <http://server:8080/ttp-fhir/fhir/gics/Consent/fab23c8e-6a94-49da-acfd-4df51098ca22> )
   ] ) . # 
 
@@ -42,10 +33,10 @@
      fhir:lastUpdated [ fhir:v "2023-04-27T16:13:49.367+02:00"^^xsd:dateTime ] ;
      fhir:profile ( [
        fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"^^xsd:anyURI ;
-       fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent>
+       fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent>
      ] [
        fhir:v "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"^^xsd:anyURI ;
-       fhir:l <https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung>
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung>
      ] )
   ] ; # 
   fhir:text [
@@ -54,64 +45,43 @@
   ] ; # 
   fhir:extension ( [
      fhir:extension ( [
-       fhir:url [
-         fhir:v "domain"^^xsd:anyURI ;
-         fhir:l fhir:domain
-       ] ;
+       fhir:url [ fhir:v "domain"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:Reference ;
-         fhir:l <https://ths-greifswald.de/fhir/gics/ResearchStudy/91e74202-4a7b-43ba-a9b9-4017634c9540> ;
+         fhir:link <https://ths-greifswald.de/fhir/gics/ResearchStudy/91e74202-4a7b-43ba-a9b9-4017634c9540> ;
          fhir:reference [ fhir:v "ResearchStudy/91e74202-4a7b-43ba-a9b9-4017634c9540" ]
        ]
      ] [
-       fhir:url [
-         fhir:v "status"^^xsd:anyURI ;
-         fhir:l fhir:status
-       ] ;
+       fhir:url [ fhir:v "status"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:Coding ;
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/publication-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/publication-status>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/publication-status"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "active" ]
        ]
      ] ) ;
-     fhir:url [
-       fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"^^xsd:anyURI ;
-       fhir:l <http://fhir.de/ConsentManagement/StructureDefinition/DomainReference>
-     ]
+     fhir:url [ fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"^^xsd:anyURI ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:scope [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ;
-         fhir:l <http://terminology.hl7.org/CodeSystem/consentscope>
-       ] ;
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "research" ]
      ] )
   ] ; # 
   fhir:category ( [
      fhir:coding ( [
        a loinc:57016-8 ;
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "57016-8" ]
      ] )
   ] [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"^^xsd:anyURI ;
-         fhir:l <https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category>
-       ] ;
+       fhir:system [ fhir:v "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.2.184" ]
      ] )
   ] ) ; # 
   fhir:patient [
-     fhir:l <https://ths-greifswald.de/fhir/gics/Patient/d2850872-1e98-47a5-b345-62f133833094> ;
+     fhir:link <https://ths-greifswald.de/fhir/gics/Patient/d2850872-1e98-47a5-b345-62f133833094> ;
      fhir:reference [ fhir:v "Patient/d2850872-1e98-47a5-b345-62f133833094" ] ;
      fhir:display [ fhir:v "Pseudonym dic_1H51T" ]
   ] ; # 
@@ -121,21 +91,15 @@
   ] ) ; # 
   fhir:source [
      a fhir:Reference ;
-     fhir:l <https://ths-greifswald.de/fhir/gics/QuestionnaireResponse/4ec9a105-1818-4c92-9986-2821d5bab565> ;
+     fhir:link <https://ths-greifswald.de/fhir/gics/QuestionnaireResponse/4ec9a105-1818-4c92-9986-2821d5bab565> ;
      fhir:reference [ fhir:v "QuestionnaireResponse/4ec9a105-1818-4c92-9986-2821d5bab565" ]
   ] ; # 
   fhir:policy ( [
-     fhir:uri [
-       fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.2.184"^^xsd:anyURI ;
-       fhir:l <urn:oid:2.16.840.1.113883.3.1937.777.24.2.184>
-     ]
+     fhir:uri [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.2.184"^^xsd:anyURI ]
   ] ) ; # 
   fhir:policyRule [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "https://mii.de/fhir/CodeSystem/gics/Policy/MII"^^xsd:anyURI ;
-         fhir:l <https://mii.de/fhir/CodeSystem/gics/Policy/MII>
-       ] ;
+       fhir:system [ fhir:v "https://mii.de/fhir/CodeSystem/gics/Policy/MII"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform" ] ;
        fhir:display [ fhir:v "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher" ]
      ] )
@@ -148,19 +112,13 @@
      ] ;
      fhir:code ( [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://mii.de/fhir/CodeSystem/gics/Policy/MII"^^xsd:anyURI ;
-           fhir:l <https://mii.de/fhir/CodeSystem/gics/Policy/MII>
-         ] ;
+         fhir:system [ fhir:v "https://mii.de/fhir/CodeSystem/gics/Policy/MII"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform" ] ;
          fhir:display [ fhir:v "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher" ]
        ] )
      ] [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ;
-           fhir:l <urn:oid:2.16.840.1.113883.3.1937.777.24.5.3>
-         ] ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.3.8" ] ;
          fhir:display [ fhir:v "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU" ]
        ] )
@@ -173,10 +131,10 @@
      fhir:lastUpdated [ fhir:v "2023-04-27T16:23:37.048+02:00"^^xsd:dateTime ] ;
      fhir:profile ( [
        fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"^^xsd:anyURI ;
-       fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent>
+       fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent>
      ] [
        fhir:v "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"^^xsd:anyURI ;
-       fhir:l <https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung>
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung>
      ] )
   ] ; # 
   fhir:text [
@@ -185,64 +143,43 @@
   ] ; # 
   fhir:extension ( [
      fhir:extension ( [
-       fhir:url [
-         fhir:v "domain"^^xsd:anyURI ;
-         fhir:l fhir:domain
-       ] ;
+       fhir:url [ fhir:v "domain"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:Reference ;
-         fhir:l <https://ths-greifswald.de/fhir/gics/ResearchStudy/91e74202-4a7b-43ba-a9b9-4017634c9540> ;
+         fhir:link <https://ths-greifswald.de/fhir/gics/ResearchStudy/91e74202-4a7b-43ba-a9b9-4017634c9540> ;
          fhir:reference [ fhir:v "ResearchStudy/91e74202-4a7b-43ba-a9b9-4017634c9540" ]
        ]
      ] [
-       fhir:url [
-         fhir:v "status"^^xsd:anyURI ;
-         fhir:l fhir:status
-       ] ;
+       fhir:url [ fhir:v "status"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:Coding ;
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/publication-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/publication-status>
-         ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/publication-status"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "active" ]
        ]
      ] ) ;
-     fhir:url [
-       fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"^^xsd:anyURI ;
-       fhir:l <http://fhir.de/ConsentManagement/StructureDefinition/DomainReference>
-     ]
+     fhir:url [ fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"^^xsd:anyURI ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:scope [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ;
-         fhir:l <http://terminology.hl7.org/CodeSystem/consentscope>
-       ] ;
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "research" ]
      ] )
   ] ; # 
   fhir:category ( [
      fhir:coding ( [
        a loinc:57016-8 ;
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "57016-8" ]
      ] )
   ] [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"^^xsd:anyURI ;
-         fhir:l <https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category>
-       ] ;
+       fhir:system [ fhir:v "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.2.184" ]
      ] )
   ] ) ; # 
   fhir:patient [
-     fhir:l <https://ths-greifswald.de/fhir/gics/Patient/854f8281-50be-4848-b99d-7ae0aa0da9a0> ;
+     fhir:link <https://ths-greifswald.de/fhir/gics/Patient/854f8281-50be-4848-b99d-7ae0aa0da9a0> ;
      fhir:reference [ fhir:v "Patient/854f8281-50be-4848-b99d-7ae0aa0da9a0" ] ;
      fhir:display [ fhir:v "Pseudonym dic_R3M0V3" ]
   ] ; # 
@@ -252,21 +189,15 @@
   ] ) ; # 
   fhir:source [
      a fhir:Reference ;
-     fhir:l <https://ths-greifswald.de/fhir/gics/QuestionnaireResponse/69886267-43c8-4e46-9301-8c44c9f2f6d9> ;
+     fhir:link <https://ths-greifswald.de/fhir/gics/QuestionnaireResponse/69886267-43c8-4e46-9301-8c44c9f2f6d9> ;
      fhir:reference [ fhir:v "QuestionnaireResponse/69886267-43c8-4e46-9301-8c44c9f2f6d9" ]
   ] ; # 
   fhir:policy ( [
-     fhir:uri [
-       fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.2.184"^^xsd:anyURI ;
-       fhir:l <urn:oid:2.16.840.1.113883.3.1937.777.24.2.184>
-     ]
+     fhir:uri [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.2.184"^^xsd:anyURI ]
   ] ) ; # 
   fhir:policyRule [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "https://mii.de/fhir/CodeSystem/gics/Policy/MII"^^xsd:anyURI ;
-         fhir:l <https://mii.de/fhir/CodeSystem/gics/Policy/MII>
-       ] ;
+       fhir:system [ fhir:v "https://mii.de/fhir/CodeSystem/gics/Policy/MII"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform" ] ;
        fhir:display [ fhir:v "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher" ]
      ] )
@@ -279,19 +210,13 @@
      ] ;
      fhir:code ( [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://mii.de/fhir/CodeSystem/gics/Policy/MII"^^xsd:anyURI ;
-           fhir:l <https://mii.de/fhir/CodeSystem/gics/Policy/MII>
-         ] ;
+         fhir:system [ fhir:v "https://mii.de/fhir/CodeSystem/gics/Policy/MII"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform" ] ;
          fhir:display [ fhir:v "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher" ]
        ] )
      ] [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ;
-           fhir:l <urn:oid:2.16.840.1.113883.3.1937.777.24.5.3>
-         ] ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.3.8" ] ;
          fhir:display [ fhir:v "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU" ]
        ] )

@@ -1,5 +1,60 @@
 # Implementation Guide gICS - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* **Implementation Guide gICS**
+
+## Implementation Guide gICS
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics | *Version*:2025.2.0 |
+| Active as of 2026-06-17 | *Computable Name*:IGTTPFHIRGatewaygICS |
+
+# FHIR-Support für Einwilligungsmanagement
+
+Stand 24.02.2026
+
+Die Softwarelösungen E-PIX, gPAS, gICS und Dispatcher werden in zahlreichen Forschungseinrichtungen und Projekten für die Realisierung von Treuhandstellen-Services (THS) eingesetzt. Um die Verwendung dieser Lösungen in FHIR-basierten Infrastrukturen zu unterstützen, werden ausgewählte THS-Funktionalitäten durch FHIR-basierte Operations, Profile, Erweiterungen und Terminologien realisiert.
+
+Diese werden in entsprechenden [Implementierungsleitfäden](https://www.ths-greifswald.de/fhir) themenspezifisch beschrieben und zahlreiche Details erläutert.
+
+Der vorliegende **Implementation Guide Einwilligungsmanagement** setzt den Fokus auf Operations, Profile und Extensions, die für das [Einwilligungsmanagement gICS](https://www.ths-greifswald.de/gics/fhir) relevant sind.
+
+### Endpunkt
+
+Der FHIR-Endpunkt (`base`) für das Einwilligungsmanagement ist
+
+**`http[s]://\<host\>:\<port\>/ttp-fhir/fhir/gics`**
+
+Die Bereitstellung von Einwilligungsinformationen durch das Gateway erfolgt primär auf Basis der in der [AG Einwilligungsmanagement von HL7 Deutschland](https://ig.fhir.de/einwilligungsmanagement/stable/Home.html) spezifizierten Profile und Extensions.
+
+Um alle für gICS relevanten Informationen per FHIR lesend bereitstellen zu können, wurden zusätzlich gICS-bezogene Profile und Extensions erstellt, die kompatibel zu den Arbeiten der AG Einwilligungsmanagement sind.
+
+Das Anlegen, Suchen und Auswerten von Einwilligungsinhalten wird im **[HL7 FHIR®-Standard der HL7-D AG Einwilligungsmanagement](https://ig.fhir.de/einwilligungsmanagement/2.0.2/Home.html)** ermöglicht. Unterstützt wird auch der **[MII Kerndatensatz Consent](https://simplifier.net/MedizininformatikInitiative-ModulConsent/~guides)**.
+
+ ![](assets/images/fhirgateway-gics.png) 
+
+### Package
+
+Das automatisch erzeugte Package (TGZ) steht als Download zur Verfügung unter: [Link](package.tgz).
+
+### Implementierung
+
+Martin Bialke, Peter Penndorf, Christoper Hampf, Frank Michael Moser
+
+### Autoren
+
+Martin Bialke, Stefan Lang
+
+### Kontakt
+
+kontakt-ths (at) med.uni-greifswald.de
+
 
 
 ## Resource Content
@@ -12,7 +67,7 @@
   "version" : "2025.2.0",
   "name" : "IGTTPFHIRGatewaygICS",
   "status" : "active",
-  "date" : "2026-06-05T06:34:54+00:00",
+  "date" : "2026-06-17T10:42:51+00:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
@@ -32,7 +87,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.1.0"
+    "version" : "7.2.0"
   },
   {
     "id" : "hl7ext",

@@ -2,8 +2,8 @@ IGTTPFHIRGatewaygICS : Validation Results
 =========================================
 
 err = 1008, warn = 424, info = 224
-IG Publisher Version: 2.2.8
-Generated Fri Jun 05 06:36:48 UTC 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.gics#2025.2.0 (canonical = https://ths-greifswald.de/fhir/gics)
+IG Publisher Version: 2.2.9
+Generated Wed Jun 17 10:45:05 UTC 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.gics#2025.2.0 (canonical = https://ths-greifswald.de/fhir/gics)
  Build Errors : 6 / 56 / 0
  /workspace/fsh-generated/resources/ActivityDefinition-ConsentPolicy-example-1 : 6 / 0 / 2
  /workspace/fsh-generated/resources/ActivityDefinition-ConsentPolicy-example-2 : 6 / 0 / 2
@@ -168,12 +168,12 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/example-Batch-verify-consent-state.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/example-BatchResponse-provideCD.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/example-BatchResponse-verify-consent-state.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Consent-Suche.html#/html/body/div/div/div/div/div/div/p/a at Line 240, column 128: The link 'TechnischeGrundlagen.html' for "Technische Grundlagen" cannot be resolved
-ERROR: OperationDefinition-AddConsent.html#/html/body/div/div/div/div/div/div/div/ul/li/a at Line 403, column 8: The link 'Parameters-AddConsent-request-example-1.html' for "Request-Body" cannot be resolved
-ERROR: OperationDefinition-AddConsentOptOut.html#/html/body/div/div/div/div/div/div/div/ul/li/a at Line 364, column 8: The link 'Parameters-AddConsentOptOut-request-example-1.html' for "Request-Body" cannot be resolved
-ERROR: OperationDefinition-CurrentPolicyStatesForPerson.html#/html/body/div/div/div/div/div/div/div/p/a at Line 345, column 92: The link 'StructureDefinition-Config.html' for "Config-Profil" cannot be resolved
-ERROR: OperationDefinition-GetAllConsentedIdsFor.html#/html/body/div/div/div/div/div/div/div/p/a at Line 345, column 92: The link 'StructureDefinition-Config.html' for "Config-Profil" cannot be resolved
-ERROR: OperationDefinition-IsConsented.html#/html/body/div/div/div/div/div/div/div/p/a at Line 344, column 92: The link 'StructureDefinition-Config.html' for "Config-Profil" cannot be resolved
+ERROR: Consent-Suche.html#/html/body/div/div/div/div/div/p/a at Line 240, column 128: The link 'TechnischeGrundlagen.html' for "Technische Grundlagen" cannot be resolved
+ERROR: OperationDefinition-AddConsent.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 403, column 8: The link 'Parameters-AddConsent-request-example-1.html' for "Request-Body" cannot be resolved
+ERROR: OperationDefinition-AddConsentOptOut.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 364, column 8: The link 'Parameters-AddConsentOptOut-request-example-1.html' for "Request-Body" cannot be resolved
+ERROR: OperationDefinition-CurrentPolicyStatesForPerson.html#/html/body/div/div/div/div/div/div/p/a at Line 345, column 92: The link 'StructureDefinition-Config.html' for "Config-Profil" cannot be resolved
+ERROR: OperationDefinition-GetAllConsentedIdsFor.html#/html/body/div/div/div/div/div/div/p/a at Line 345, column 92: The link 'StructureDefinition-Config.html' for "Config-Profil" cannot be resolved
+ERROR: OperationDefinition-IsConsented.html#/html/body/div/div/div/div/div/div/p/a at Line 344, column 92: The link 'StructureDefinition-Config.html' for "Config-Profil" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide

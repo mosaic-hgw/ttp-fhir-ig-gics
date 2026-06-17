@@ -1,5 +1,16 @@
 # example-Batch-verify-consent-state - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **example-Batch-verify-consent-state**
+
+## Example Bundle: example-Batch-verify-consent-state
+
 
 
 ## Resource Content

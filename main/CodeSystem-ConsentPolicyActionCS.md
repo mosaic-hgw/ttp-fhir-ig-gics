@@ -1,5 +1,32 @@
 # ConsentPolicyAction - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **ConsentPolicyAction**
+
+## CodeSystem: ConsentPolicyAction 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction | *Version*:2025.2.0 |
+| Active as of 2025-06-12 | *Computable Name*:ConsentPolicyAction |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+ 
+Extensible description of the permissible (data processing-) action resulting from consented module or policy. 
+
+ 
+Second axis 'action' of the 'Semantic Consent Code (SCC)' for use as Consent.provision.action 
+
+ This Code system is referenced in the content logical definition of the following value sets: 
+
+* This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
 
 
 ## Resource Content

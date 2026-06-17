@@ -1,5 +1,54 @@
 # GetAllConsentedIdsFor - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **GetAllConsentedIdsFor**
+
+## OperationDefinition: GetAllConsentedIdsFor 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/OperationDefinition/gics/getAllConsentedIdsFor | *Version*:2025.2.0 |
+| Active as of 2025-06-12 | *Computable Name*:GetAllConsentedIdsFor |
+
+ 
+Abruf aller Identifier eines bestimmten benannten Identifier-Typs (z.b. studyPsn) für eine bestimmte Policy (Coding) und Domäne. Zurück geliefert wird eine Liste von eingewilligten Identifiern in Bezug auf die spezifizierte Policy. 
+
+ 
+Teil des FHIR Gateway für gICS. Weitere Infos unter https://ths-greifswald.de/gics 
+
+#### Voraussetzung
+
+* Spezifizierte Domäne muss angelegt sein
+* Es muss eine gültige Einwilligung mit dem gegebenen personIdentifierType existieren
+* Die spezifizierte Policy muss innerhalb einer gültigen Einwilligung referenziert werden
+* Bei Nutzung alternativer PolicyCodeSysteme müssen nötige fhirPolicyCodes innerhalb von gICS per ExternalProperty der Policies definiert worden sein ([Beispiel](https://www.ths-greifswald.de/gics/templates/mii/1.6.f))
+
+## Hinweise
+
+Der Parameter config enthält eine verschachtelte Parameters-Ressource entsprechend dem [Config-Profil](StructureDefinition-Config.md).
+
+## Rückgabe
+
+Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
+
+Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
+
+* 400: Fehlende oder fehlerhafte Parameter.
+* 401: Fehlende Authentifizierung oder Autorisierung.
+* 404: Parameter mit unbekanntem Inhalt.
+* 422: Fehlende oder falsche Patienten-Attribute.
+
+## Beispiel
+
+* [Request-Body](Parameters-GetAllConsentedIdsFor-request-example-1.md)
+* [Rückmeldung](Parameters-GetAllConsentedIdsFor-response-example-1.md)
+
 
 
 ## Resource Content

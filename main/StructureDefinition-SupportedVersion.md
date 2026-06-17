@@ -1,5 +1,44 @@
 # SupportedVersion - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **SupportedVersion**
+
+## Extension: SupportedVersion 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/gics/SupportedVersion | *Version*:2025.2.0 |
+| Active as of 2025-06-12 | *Computable Name*:SupportedVersion |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+unterstüzte Version
+
+**Context of Use**
+
+**Usage info**
+
+**Usages:**
+
+* Use this Extension: [ExchangeFormatDefinition](StructureDefinition-ExchangeFormatDefinition.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ths-greifswald.ttp-fhir-gw.gics|current/StructureDefinition/StructureDefinition-SupportedVersion.json)
+
+### Formal Views of Extension Content
+
+ [Description of Profiles, Differentials, Snapshots, and how the XML and JSON presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-SupportedVersion.csv), [Excel](StructureDefinition-SupportedVersion.xlsx), [Schematron](StructureDefinition-SupportedVersion.sch) 
+
+#### Constraints
+
 
 
 ## Resource Content

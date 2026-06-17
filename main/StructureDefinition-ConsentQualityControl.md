@@ -1,5 +1,43 @@
 # Consent Quality Control - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Consent Quality Control**
+
+## Resource Profile: Consent Quality Control 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/gics/VerificationResult/ConsentQualityControl | *Version*:2025.2.0 |
+| Active as of 2025-06-12 | *Computable Name*:ConsentQualityControl |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+ 
+Dokumentation des Status der Qualitätsprüfung einer ausgefüllten Einwilligung (QuestionnaireResponse) 
+
+## Suchparameter
+
+Für dieses Profil sind keine Suchparameter definiert.
+
+**Usages:**
+
+* Examples for this Profile: [VerificationResult/ConsentQualityControl-example-1](VerificationResult-ConsentQualityControl-example-1.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ths-greifswald.ttp-fhir-gw.gics|current/StructureDefinition/StructureDefinition-ConsentQualityControl.json)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-ConsentQualityControl.csv), [Excel](StructureDefinition-ConsentQualityControl.xlsx), [Schematron](StructureDefinition-ConsentQualityControl.sch) 
+
 
 
 ## Resource Content

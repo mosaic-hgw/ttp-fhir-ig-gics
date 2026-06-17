@@ -1,5 +1,24 @@
 # useContextIdentifier - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **useContextIdentifier**
+
+## SearchParameter: useContextIdentifier 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/SearchParameter/gics/useContextIdentifier | *Version*:2025.2.0 |
+| Active as of 2025-06-12 | *Computable Name*:useContextIdentifier |
+
+ 
+Eindeutiger Name (Identifikator) der referenzierten Consent Domain 
+
 
 
 ## Resource Content
