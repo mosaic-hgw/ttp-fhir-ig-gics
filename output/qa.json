@@ -5,15 +5,15 @@
   "description" : "",
   "status" : "active",
   "package-id" : "ths-greifswald.ttp-fhir-gw.gics",
-  "ig-ver" : "2025.2.0",
-  "date" : "Thu, 26 Mar, 2026 10:50:31 +0100",
-  "dateISO8601" : "2026-03-26T10:50:31+01:00",
-  "errs" : 1000,
-  "warnings" : 402,
-  "hints" : 220,
+  "ig-ver" : "2026.1.0",
+  "date" : "Thu, 23 Jul, 2026 11:40:31 +0200",
+  "dateISO8601" : "2026-07-23T11:40:31+02:00",
+  "errs" : 1039,
+  "warnings" : 393,
+  "hints" : 236,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 2245296056
+  "maxMemory" : 2738924680
 }

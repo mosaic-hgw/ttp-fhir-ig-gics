@@ -18,25 +18,19 @@
          fhir:lastUpdated [ fhir:v "2022-12-20T10:10:54.889+01:00"^^xsd:dateTime ] ;
          fhir:profile ( [
            fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/Patient"^^xsd:anyURI ;
-           fhir:l <http://fhir.de/ConsentManagement/StructureDefinition/Patient>
+           fhir:link <http://fhir.de/ConsentManagement/StructureDefinition/Patient>
          ] )
        ] ;
        fhir:identifier ( [
          fhir:id [ fhir:v "1" ] ;
          fhir:type [
            fhir:coding ( [
-             fhir:system [
-               fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
-               fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
-             ] ;
+             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
              fhir:code [ fhir:v "ANON" ] ;
              fhir:display [ fhir:v "Anonymous identifier" ]
            ] )
          ] ;
-         fhir:system [
-           fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ;
-           fhir:l <https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym>
-         ] ;
+         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "studypsn1" ]
        ] )
      ] )
@@ -49,28 +43,28 @@
          fhir:lastUpdated [ fhir:v "2022-12-21T18:41:18.919+01:00"^^xsd:dateTime ] ;
          fhir:profile ( [
            fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse"^^xsd:anyURI ;
-           fhir:l <http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse>
+           fhir:link <http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse>
          ] )
        ] ;
        fhir:language [ fhir:v "de" ] ;
        fhir:questionnaire [
          fhir:v "https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.d"^^xsd:anyURI ;
-         fhir:l <https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII?version=1.6.d>
+         fhir:link <https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.d>
        ] ;
        fhir:status [ fhir:v "completed" ] ;
        fhir:subject [
-         fhir:l <https://ths-greifswald.de/fhir/gics/Patient/1> ;
+         fhir:link <https://ths-greifswald.de/fhir/gics/Patient/1> ;
          fhir:reference [ fhir:v "Patient/1" ] ;
          fhir:display [ fhir:v "Pseudonym studypsn1" ]
        ] ;
        fhir:authored [ fhir:v "2022-12-21T00:00:00+01:00"^^xsd:dateTime ] ;
        fhir:author [
-         fhir:l <https://ths-greifswald.de/fhir/gics/Patient/1> ;
+         fhir:link <https://ths-greifswald.de/fhir/gics/Patient/1> ;
          fhir:reference [ fhir:v "Patient/1" ] ;
          fhir:display [ fhir:v "Pseudonym studypsn1" ]
        ] ;
        fhir:source [
-         fhir:l <https://ths-greifswald.de/fhir/gics/Patient/1> ;
+         fhir:link <https://ths-greifswald.de/fhir/gics/Patient/1> ;
          fhir:reference [ fhir:v "Patient/1" ] ;
          fhir:display [ fhir:v "Pseudonym studypsn1" ]
        ] ;
@@ -79,10 +73,7 @@
          fhir:answer ( [
            fhir:value [
              a fhir:Coding ;
-             fhir:system [
-               fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ;
-               fhir:l <urn:oid:2.16.840.1.113883.3.1937.777.24.5.2>
-             ] ;
+             fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ] ;
              fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.2.2" ] ;
              fhir:display [ fhir:v "ungültig" ]
            ]
@@ -92,10 +83,7 @@
          fhir:answer ( [
            fhir:value [
              a fhir:Coding ;
-             fhir:system [
-               fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ;
-               fhir:l <urn:oid:2.16.840.1.113883.3.1937.777.24.5.2>
-             ] ;
+             fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ] ;
              fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.2.1" ] ;
              fhir:display [ fhir:v "gültig" ]
            ]
@@ -105,10 +93,7 @@
          fhir:answer ( [
            fhir:value [
              a fhir:Coding ;
-             fhir:system [
-               fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ;
-               fhir:l <urn:oid:2.16.840.1.113883.3.1937.777.24.5.2>
-             ] ;
+             fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ] ;
              fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.2.1" ] ;
              fhir:display [ fhir:v "gültig" ]
            ]
@@ -118,10 +103,7 @@
          fhir:answer ( [
            fhir:value [
              a fhir:Coding ;
-             fhir:system [
-               fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ;
-               fhir:l <urn:oid:2.16.840.1.113883.3.1937.777.24.5.2>
-             ] ;
+             fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ] ;
              fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.2.2" ] ;
              fhir:display [ fhir:v "ungültig" ]
            ]
@@ -131,10 +113,7 @@
          fhir:answer ( [
            fhir:value [
              a fhir:Coding ;
-             fhir:system [
-               fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ;
-               fhir:l <urn:oid:2.16.840.1.113883.3.1937.777.24.5.2>
-             ] ;
+             fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ] ;
              fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.2.2" ] ;
              fhir:display [ fhir:v "ungültig" ]
            ]
@@ -144,10 +123,7 @@
          fhir:answer ( [
            fhir:value [
              a fhir:Coding ;
-             fhir:system [
-               fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ;
-               fhir:l <urn:oid:2.16.840.1.113883.3.1937.777.24.5.2>
-             ] ;
+             fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ] ;
              fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.2.1" ] ;
              fhir:display [ fhir:v "gültig" ]
            ]
@@ -157,10 +133,7 @@
          fhir:answer ( [
            fhir:value [
              a fhir:Coding ;
-             fhir:system [
-               fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ;
-               fhir:l <urn:oid:2.16.840.1.113883.3.1937.777.24.5.2>
-             ] ;
+             fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"^^xsd:anyURI ] ;
              fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.2.2" ] ;
              fhir:display [ fhir:v "ungültig" ]
            ]
@@ -176,29 +149,23 @@
          fhir:lastUpdated [ fhir:v "2022-12-21T18:37:11.090+01:00"^^xsd:dateTime ] ;
          fhir:profile ( [
            fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference"^^xsd:anyURI ;
-           fhir:l <http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference>
+           fhir:link <http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference>
          ] )
        ] ;
        fhir:status [ fhir:v "current" ] ;
        fhir:subject [
-         fhir:l <https://ths-greifswald.de/fhir/gics/Patient/1> ;
+         fhir:link <https://ths-greifswald.de/fhir/gics/Patient/1> ;
          fhir:reference [ fhir:v "Patient/1" ] ;
          fhir:identifier [
            fhir:id [ fhir:v "1" ] ;
            fhir:type [
              fhir:coding ( [
-               fhir:system [
-                 fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
-                 fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
-               ] ;
+               fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
                fhir:code [ fhir:v "ANON" ] ;
                fhir:display [ fhir:v "Anonymous identifier" ]
              ] )
            ] ;
-           fhir:system [
-             fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ;
-             fhir:l <https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym>
-           ] ;
+           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "Pseudonym studypsn1" ]
          ]
        ] ;
@@ -213,7 +180,7 @@
   ] [
      fhir:name [ fhir:v "domain" ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "MII"
      ]
   ] [
@@ -224,11 +191,11 @@
        fhir:meta [
          fhir:profile ( [
            fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/Provenance"^^xsd:anyURI ;
-           fhir:l <http://fhir.de/ConsentManagement/StructureDefinition/Provenance>
+           fhir:link <http://fhir.de/ConsentManagement/StructureDefinition/Provenance>
          ] )
        ] ;
        fhir:target ( [
-         fhir:l <https://ths-greifswald.de/fhir/gics/QuestionnaireResponse/2> ;
+         fhir:link <https://ths-greifswald.de/fhir/gics/QuestionnaireResponse/2> ;
          fhir:reference [ fhir:v "QuestionnaireResponse/2" ]
        ] ) ;
        fhir:recorded [ fhir:v "2022-12-21T18:39:02.076+01:00"^^xsd:dateTime ] ;
@@ -240,39 +207,33 @@
        fhir:entity ( [
          fhir:role [ fhir:v "source" ] ;
          fhir:what [
-           fhir:l <https://ths-greifswald.de/fhir/gics/DocumentReference/3> ;
+           fhir:link <https://ths-greifswald.de/fhir/gics/DocumentReference/3> ;
            fhir:reference [ fhir:v "DocumentReference/3" ]
          ]
        ] ) ;
        fhir:signature ( [
          fhir:extension ( [
            fhir:value [
-             a fhir:String ;
+             a fhir:string ;
              fhir:v "Greifswald"
            ]
          ] ) ;
          fhir:type ( [
-           fhir:system [
-             fhir:v "urn:iso-astm:E1762-95:2013"^^xsd:anyURI ;
-             fhir:l <urn:iso-astm:E1762-95:2013>
-           ] ;
+           fhir:system [ fhir:v "urn:iso-astm:E1762-95:2013"^^xsd:anyURI ] ;
            fhir:code [ fhir:v "1.2.840.10065.1.12.1.7" ] ;
            fhir:display [ fhir:v "Consent Signature" ]
          ] ) ;
          fhir:when [ fhir:v "2022-12-21T00:00:00.000+01:00"^^xsd:dateTime ] ;
          fhir:who [
-           fhir:l <https://ths-greifswald.de/fhir/gics/Patient/1> ;
+           fhir:link <https://ths-greifswald.de/fhir/gics/Patient/1> ;
            fhir:reference [ fhir:v "Patient/1" ] ;
            fhir:display [ fhir:v "Pseudonym studypsn1" ]
          ] ;
          fhir:data [
            fhir:extension ( [
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/data-absent-reason>
-             ] ;
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
              fhir:value [
-               a fhir:Code ;
+               a fhir:code ;
                fhir:v "error"
              ]
            ] )
@@ -280,15 +241,12 @@
        ] [
          fhir:extension ( [
            fhir:value [
-             a fhir:String ;
+             a fhir:string ;
              fhir:v "Greifswald"
            ]
          ] ) ;
          fhir:type ( [
-           fhir:system [
-             fhir:v "urn:iso-astm:E1762-95:2013"^^xsd:anyURI ;
-             fhir:l <urn:iso-astm:E1762-95:2013>
-           ] ;
+           fhir:system [ fhir:v "urn:iso-astm:E1762-95:2013"^^xsd:anyURI ] ;
            fhir:code [ fhir:v "1.2.840.10065.1.12.1.5" ] ;
            fhir:display [ fhir:v "Verification Signature" ]
          ] ) ;
@@ -298,12 +256,9 @@
          ] ;
          fhir:data [
            fhir:extension ( [
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/data-absent-reason>
-             ] ;
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
              fhir:value [
-               a fhir:Code ;
+               a fhir:code ;
                fhir:v "error"
              ]
            ] )

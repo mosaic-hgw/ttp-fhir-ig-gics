@@ -9,7 +9,7 @@ name: IG TTP-FHIR Gateway gICS
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: active # draft | active | retired | unknown
-version: 2025.2.0
+version: 2026.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2021+
 releaseLabel: ci-build

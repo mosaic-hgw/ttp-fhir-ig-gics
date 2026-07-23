@@ -6,10 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ths-greifswald.ttp-fhir-gw.gics</b></p><a name=\"ths-greifswald.ttp-fhir-gw.gics\"> </a><a name=\"hcths-greifswald.ttp-fhir-gw.gics\"> </a><h2>IGTTPFHIRGatewaygICS</h2><p>The official URL for this implementation guide is: </p><pre>https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics</pre></div>"
   },
   "url" : "https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "IGTTPFHIRGatewaygICS",
   "status" : "active",
-  "date" : "2026-03-26T10:50:31+01:00",
+  "date" : "2026-07-23T11:40:31+02:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
@@ -29,7 +29,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.1.0"
+    "version" : "7.2.0"
   },
   {
     "id" : "hl7ext",
@@ -39,7 +39,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.2.0"
+    "version" : "5.3.0"
   },
   {
     "id" : "de_einwilligungsmanagement",
@@ -331,7 +331,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
     },
     {
       "extension" : [{

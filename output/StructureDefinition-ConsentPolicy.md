@@ -1,4 +1,58 @@
-# ConsentPolicy - v2025.2.0
+# ConsentPolicy - v2026.1.0
+
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2026.1.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **ConsentPolicy**
+
+## Resource Profile: ConsentPolicy 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/gics/ActivityDefinition/ConsentPolicy | *Version*:2026.1.0 |
+| Active as of 2025-06-12 | *Computable Name*:ConsentPolicy |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+ 
+Abbildung aller relevanten Information zur Verwaltung wiederverwendbarer Einwilligungspolicies mit gICS 
+
+### Suchparameter
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| useContextIdentifier | token | Eindeutiger Name (Identifikator) der Domain | ActivityDefinition.useContext.valueReference(ResearchStudy).identifier |
+| name | string | Name der Policy | ActivityDefinition.name |
+| code | token | Code der Policy | ActivityDefinition.code |
+| version | token | Version der Policy | ActivityDefinition.version |
+
+Zulässige Kombinationen von Suchparametern:
+
+* alle Policies einer Consent Domain
+`GET [base]/gics/ActivityDefinition?useContextIdentifier=MIRACUM`
+* spezifische Policy einer Consent Domain nach Name
+`GET [base]/gics/ActivityDefinition?useContextIdentifier=MIRACUM&name=BIOMAT_Analysedaten_erheben&version=1.0`
+* spezifische Policy einer Consent Domain nach Code
+`GET [base]/gics/ActivityDefinition?useContextIdentifier=MIRACUM&code=https://ths-greifswald.de/fhir/CodeSystem/gics/Policy|MDAT_speichern&version=1.0`
+
+**Usages:**
+
+* Use this Profile: [ExchangeFormatDefinition](StructureDefinition-ExchangeFormatDefinition.md)
+* Refer to this Profile: [Consent Policy Reference](StructureDefinition-ConsentPolicyReference.md)
+* Examples for this Profile: [MDAT_erheben](ActivityDefinition-ConsentPolicy-example-1.md), [MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU](ActivityDefinition-ConsentPolicy-example-2.md) and [MDAT_speichern_verarbeiten](ActivityDefinition-ConsentPolicy-example-3.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ths-greifswald.ttp-fhir-gw.gics|current/StructureDefinition/StructureDefinition-ConsentPolicy.json)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-ConsentPolicy.csv), [Excel](StructureDefinition-ConsentPolicy.xlsx), [Schematron](StructureDefinition-ConsentPolicy.sch) 
 
 
 
@@ -9,7 +63,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "ConsentPolicy",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/ActivityDefinition/ConsentPolicy",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "ConsentPolicy",
   "status" : "active",
   "experimental" : false,

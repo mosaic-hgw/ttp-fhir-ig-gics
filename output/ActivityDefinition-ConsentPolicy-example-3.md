@@ -1,4 +1,35 @@
-# Medizinische Daten speichern - v2025.2.0
+# Medizinische Daten speichern - v2026.1.0
+
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2026.1.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Medizinische Daten speichern**
+
+## ActivityDefinition: Medizinische Daten speichern 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/gics/ActivityDefinition/ConsentPolicy-example-3 | *Version*:2026.1.0 |
+| Active as of 2026-07-23 | *Computable Name*:MDAT_speichern_verarbeiten |
+| **Usage:**[d7a65ce8-2810-401a-b0db-70782a7b19a6](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=http://fhir.org/packages/de.einwilligungsmanagement/d7a65ce8-2810-401a-b0db-70782a7b19a6) | |
+
+ 
+Beispiel Consent Policy für die Speicherung medizinischer Daten im Rahmen eines Forschungsprojektes 
+
+* **Code: **: **Id: **
+  * **system: **[https://ths-greifswald.de/fhir/CodeSystem/gics/Policy](CodeSystem-PolicyCS.md)**code: **MDAT_speichern_verarbeiten: ConsentPolicy-example-3
+* **Code: **: **Version: **
+  * **system: **[https://ths-greifswald.de/fhir/CodeSystem/gics/Policy](CodeSystem-PolicyCS.md)**code: **MDAT_speichern_verarbeiten: 2026.1.0
+* **Code: **: **Date (date last changed): **
+  * **system: **[https://ths-greifswald.de/fhir/CodeSystem/gics/Policy](CodeSystem-PolicyCS.md)**code: **MDAT_speichern_verarbeiten: 2026-07-23 11:40:31+0200
+* **Code: **: **Publisher (steward): **
+  * **system: **[https://ths-greifswald.de/fhir/CodeSystem/gics/Policy](CodeSystem-PolicyCS.md)**code: **MDAT_speichern_verarbeiten: Unabhängige Treuhandstelle der Universitätsmedizin Greifswald
+* **Code: **: **Description: **
+  * **system: **[https://ths-greifswald.de/fhir/CodeSystem/gics/Policy](CodeSystem-PolicyCS.md)**code: **MDAT_speichern_verarbeiten: Beispiel Consent Policy für die Speicherung medizinischer Daten im Rahmen eines Forschungsprojektes
 
 
 
@@ -17,11 +48,11 @@
     "valueInstant" : "2020-01-02T04:05:06+01:00"
   }],
   "url" : "https://ths-greifswald.de/fhir/gics/ActivityDefinition/ConsentPolicy-example-3",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "MDAT_speichern_verarbeiten",
   "title" : "Medizinische Daten speichern",
   "status" : "active",
-  "date" : "2026-03-26T10:50:31+01:00",
+  "date" : "2026-07-23T11:40:31+02:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

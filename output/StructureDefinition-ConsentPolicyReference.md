@@ -1,4 +1,46 @@
-# Consent Policy Reference - v2025.2.0
+# Consent Policy Reference - v2026.1.0
+
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2026.1.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Consent Policy Reference**
+
+## Extension: Consent Policy Reference 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/gics/ConsentPolicyReference | *Version*:2026.1.0 |
+| Active as of 2025-06-12 | *Computable Name*:ConsentPolicyReference |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+Referenz auf eine Consent Policy zur Verwendung innerhalb eines Consent Moduls
+
+**Context of Use**
+
+**Usage info**
+
+**Usages:**
+
+* Use this Extension: [Consent Module](StructureDefinition-ConsentModule.md)
+* Examples for this Extension: [BIOMAT_erheben_lagern_nutzen](Questionnaire-ConsentModule-example-1.md) and [MDAT_ErhebenSpeichernNutzen](Questionnaire-ConsentModule-example-2.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ths-greifswald.ttp-fhir-gw.gics|current/StructureDefinition/StructureDefinition-ConsentPolicyReference.json)
+
+### Formal Views of Extension Content
+
+ [Description of Profiles, Differentials, Snapshots, and how the XML and JSON presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-ConsentPolicyReference.csv), [Excel](StructureDefinition-ConsentPolicyReference.xlsx), [Schematron](StructureDefinition-ConsentPolicyReference.sch) 
+
+#### Terminology Bindings
+
+#### Constraints
 
 
 
@@ -9,7 +51,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "ConsentPolicyReference",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/ConsentPolicyReference",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "ConsentPolicyReference",
   "title" : "Consent Policy Reference",
   "status" : "active",

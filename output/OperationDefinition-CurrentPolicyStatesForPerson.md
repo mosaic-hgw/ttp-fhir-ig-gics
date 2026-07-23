@@ -1,4 +1,52 @@
-# CurrentPolicyStatesForPerson - v2025.2.0
+# CurrentPolicyStatesForPerson - v2026.1.0
+
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2026.1.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **CurrentPolicyStatesForPerson**
+
+## OperationDefinition: CurrentPolicyStatesForPerson 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/OperationDefinition/gics/currentPolicyStatesForPerson | *Version*:2026.1.0 |
+| Active as of 2025-06-12 | *Computable Name*:CurrentPolicyStatesForPerson |
+
+ 
+Liefert die aktuellen, gültigen Policies einer Person einer spezifischen Einwilligungsdomaene (Status: permit, deny). Die Rückgabe erfolgt als Bundle vom Typ "collection". Das Bundle enthält ausschließlich Consent-Ressourcen zur Abbildung der Policies, d.h. je unterzeichneter Policy ist eine Consent-Ressource mit jeweils einer Policy (provision) enthalten. 
+Per default werden alle aktuell gültigen vom Patienten unterzeichneten Policies zurückgegeben (Accepted=Permit, Declined=Deny, Unknown=Deny). Sollen eingewilligte Policies mit Status "Unknown" ignoriert werden (mittels UNKNOWN können detailliertere Statusangaben wie UNKNOWN, NOT_ASKED, NOT_CHOSEN, WITHDRAWN, INVALIDATED, REFUSED und EXPIRED intern gruppiert werden) , kann dies parametrisiert werden (checkconsentconfig.unknownStateIsConsideredAsDecline=false). 
+
+ 
+Teil des FHIR Gateway für gICS. Weitere Infos unter https://ths-greifswald.de/gics 
+
+## Voraussetzung
+
+* Spezifizierte Domäne muss angelegt sein
+* Es muss eine gültige Einwilligung mit dem gegebenen personIdentifier existieren
+
+## Hinweise
+
+Der Parameter config enthält eine verschachtelte Parameters-Ressource entsprechend dem [Config-Profil](StructureDefinition-Config.md).
+
+## Rückgabe
+
+Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
+
+Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
+
+* 400: Fehlende oder fehlerhafte Parameter.
+* 401: Fehlende Authentifizierung oder Autorisierung.
+* 404: Parameter mit unbekanntem Inhalt.
+* 422: Fehlende oder falsche Patienten-Attribute.
+
+## Beispiel
+
+* [Request-Body](Parameters-CurrentPolicyStatesForPerson-request-example-1.md)
+* [Rückmeldung](Bundle-CurrentPolicyStatesForPerson-response-example-1.md)
 
 
 
@@ -10,7 +58,7 @@
   "id" : "CurrentPolicyStatesForPerson",
   "language" : "de-DE",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gics/currentPolicyStatesForPerson",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "CurrentPolicyStatesForPerson",
   "title" : "CurrentPolicyStatesForPerson",
   "status" : "active",

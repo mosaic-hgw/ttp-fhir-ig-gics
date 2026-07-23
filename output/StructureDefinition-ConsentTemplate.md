@@ -1,4 +1,43 @@
-# Consent Template - v2025.2.0
+# Consent Template - v2026.1.0
+
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2026.1.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Consent Template**
+
+## Resource Profile: Consent Template 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/gics/StructureDefinition/ConsentTemplate | *Version*:2026.1.0 |
+| Active as of 2025-06-12 | *Computable Name*:ConsentTemplate |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+ 
+Einwilligungsvorlage auf Basis des ConsentManagementTemplateFrame erweitertet um ausgewählte gICS Eigenschaften 
+
+## Suchparameter
+
+Die Suchparameter sind für alle Questionnaire-Profile identisch, vgl. [Questionnaire-Suche](Questionnaire-Suche.md).
+
+**Usages:**
+
+* Use this Profile: [ExchangeFormatDefinition](StructureDefinition-ExchangeFormatDefinition.md)
+* Examples for this Profile: [Patienteneinwilligung MII](Questionnaire-ConsentTemplate-example-1.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ths-greifswald.ttp-fhir-gw.gics|current/StructureDefinition/StructureDefinition-ConsentTemplate.json)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-ConsentTemplate.csv), [Excel](StructureDefinition-ConsentTemplate.xlsx), [Schematron](StructureDefinition-ConsentTemplate.sch) 
 
 
 
@@ -9,7 +48,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "ConsentTemplate",
   "url" : "https://ths-greifswald.de/fhir/gics/StructureDefinition/ConsentTemplate",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "ConsentTemplate",
   "title" : "Consent Template",
   "status" : "active",

@@ -1,4 +1,38 @@
-# Identifier-Profil für die Abbildung einer Bloomfilters - v2025.2.0
+# Identifier-Profil für die Abbildung einer Bloomfilters - v2026.1.0
+
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2026.1.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Identifier-Profil für die Abbildung einer Bloomfilters**
+
+## Data Type Profile: Identifier-Profil für die Abbildung einer Bloomfilters 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/gics/StructureDefinition/identifier-bloomfilter | *Version*:2026.1.0 |
+| Draft as of 2025-06-12 | *Computable Name*:IdentifierBloomfilter |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+ 
+Identifier-Profil für die Abbildung einer Bloomfilters 
+
+**Usages:**
+
+* Use this DataType Profile: [Patient pseudonymisiert](StructureDefinition-PatientPseudonymized.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ths-greifswald.ttp-fhir-gw.gics|current/StructureDefinition/StructureDefinition-identifier-bloomfilter.json)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-identifier-bloomfilter.csv), [Excel](StructureDefinition-identifier-bloomfilter.xlsx), [Schematron](StructureDefinition-identifier-bloomfilter.sch) 
 
 
 
@@ -9,7 +43,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "identifier-bloomfilter",
   "url" : "https://ths-greifswald.de/fhir/gics/StructureDefinition/identifier-bloomfilter",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "IdentifierBloomfilter",
   "title" : "Identifier-Profil für die Abbildung einer Bloomfilters",
   "status" : "draft",

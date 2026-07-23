@@ -1,4 +1,47 @@
-# Consent Module - v2025.2.0
+# Consent Module - v2026.1.0
+
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2026.1.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Consent Module**
+
+## Resource Profile: Consent Module 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/gics/StructureDefinition/ConsentModule | *Version*:2026.1.0 |
+| Active as of 2025-06-12 | *Computable Name*:ConsentModule |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+ 
+Wiederverwendbares Consent Module auf Basis des ConsentManagementTemplateModules erweitertet um ausgewählte gICS Eigenschaften 
+
+ 
+Wiederverwendbares Consent Module auf Basis des ConsentManagementTemplateModules erweitertet um ausgewählte gICS Eigenschaften 
+
+## Suchparameter
+
+Die Suchparameter sind für alle Questionnaire-Profile identisch, vgl. [Questionnaire-Suche](Questionnaire-Suche.md).
+
+**Usages:**
+
+* Use this Profile: [ExchangeFormatDefinition](StructureDefinition-ExchangeFormatDefinition.md)
+* Refer to this Profile: [Consent Template](StructureDefinition-ConsentTemplate.md)
+* Examples for this Profile: [BIOMAT_erheben_lagern_nutzen](Questionnaire-ConsentModule-example-1.md) and [MDAT_ErhebenSpeichernNutzen](Questionnaire-ConsentModule-example-2.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ths-greifswald.ttp-fhir-gw.gics|current/StructureDefinition/StructureDefinition-ConsentModule.json)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-ConsentModule.csv), [Excel](StructureDefinition-ConsentModule.xlsx), [Schematron](StructureDefinition-ConsentModule.sch) 
 
 
 
@@ -9,7 +52,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "ConsentModule",
   "url" : "https://ths-greifswald.de/fhir/gics/StructureDefinition/ConsentModule",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "ConsentModule",
   "title" : "Consent Module",
   "status" : "active",

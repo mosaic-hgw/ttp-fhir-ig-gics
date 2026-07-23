@@ -1,4 +1,54 @@
-# IsConsented - v2025.2.0
+# IsConsented - v2026.1.0
+
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2026.1.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **IsConsented**
+
+## OperationDefinition: IsConsented 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/OperationDefinition/gics/isConsented | *Version*:2026.1.0 |
+| Active as of 2025-06-12 | *Computable Name*:IsConsented |
+
+ 
+Liefert den Einwilligungsstatus eines Patienten für eine spezifische Policy per POST-Request. Die Rückgabe erfolgt als Parameters-Ressource. 
+
+ 
+Teil des FHIR Gateway für gICS. Weitere Infos unter https://ths-greifswald.de/gics 
+
+#### Voraussetzung
+
+* Spezifizierte Domäne muss angelegt sein
+* Es muss eine gültige Einwilligung mit dem gegebenen personIdentifier existieren
+* Die spezifizierte Policy muss innerhalb einer gültigen Einwilligung des Patienten referenziert werden
+* Bei Nutzung alternativer PolicyCodeSysteme müssen nötige fhirPolicyCodes innerhalb von gICS per ExternalProperty der Policies definiert worden sein ([Beispiel](https://www.ths-greifswald.de/gics/templates/mii/1.6.f))
+
+## Hinweise
+
+Der Parameter config enthält eine verschachtelte Parameters-Ressource entsprechend dem [Config-Profil](StructureDefinition-Config.md).
+
+## Rückgabe
+
+Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
+
+Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
+
+* 400: Fehlende oder fehlerhafte Parameter.
+* 401: Fehlende Authentifizierung oder Autorisierung.
+* 404: Parameter mit unbekanntem Inhalt.
+* 422: Fehlende oder falsche Patienten-Attribute.
+
+## Beispiel
+
+* [Request-Body](Parameters-IsConsented-request-example-1.md) auf Basis des [Policy-Codesstems](CodeSystem-PolicyCS.md)
+* [Request-Body mit alternativem Codesystem](Parameters-IsConsented-request-example-2.md)
+* [Rückmeldung](Parameters-IsConsented-response-example-1.md)
 
 
 
@@ -10,7 +60,7 @@
   "id" : "IsConsented",
   "language" : "de-DE",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/gics/isConsented",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "IsConsented",
   "title" : "IsConsented",
   "status" : "active",

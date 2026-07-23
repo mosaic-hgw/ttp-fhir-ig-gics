@@ -1,4 +1,31 @@
-# ConsentPolicyActor - v2025.2.0
+# ConsentPolicyActor - v2026.1.0
+
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2026.1.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **ConsentPolicyActor**
+
+## CodeSystem: ConsentPolicyActor 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor | *Version*:2026.1.0 |
+| Active as of 2025-06-12 | *Computable Name*:ConsentPolicyActor |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+ 
+Expandable categorisation of consumer/requestor of a consent enforcement request related to a specific consent component (e.g. policy or module) 
+
+ 
+Axis 'actor' of the 'Semantic Consent Code (SCC)' for optional use 
+
+ This Code system is referenced in the content logical definition of the following value sets: 
+
+* This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
 
 
 
@@ -9,7 +36,7 @@
   "resourceType" : "CodeSystem",
   "id" : "ConsentPolicyActorCS",
   "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "ConsentPolicyActor",
   "status" : "active",
   "experimental" : false,

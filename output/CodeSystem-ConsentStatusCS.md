@@ -1,4 +1,38 @@
-# ConsentStatus - v2025.2.0
+# ConsentStatus - v2026.1.0
+
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2026.1.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **ConsentStatus**
+
+## CodeSystem: ConsentStatus 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus | *Version*:2026.1.0 |
+| Active as of 2025-06-12 | *Computable Name*:ConsentStatus |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+ 
+consent states are used to depict the participant’s will. Therefore, documentation should allow different status values. Further details from https://doi.org/10.1186/s12967-020-02457-y 
+
+ This Code system is referenced in the content logical definition of the following value sets: 
+
+* [ConsentStatus](ValueSet-ConsentStatusVS.md)
+* [ConsentStatusConsentFullValues](ValueSet-ConsentStatusConsentFullValuesVS.md)
+* [ConsentStatusConsentOptOutFullValues](ValueSet-ConsentStatusConsentOptOutFullValuesVS.md)
+* [ConsentStatusConsentOptOutShortValues](ValueSet-ConsentStatusConsentOptOutShortValuesVS.md)
+* [ConsentStatusConsentShortValues](ValueSet-ConsentStatusConsentShortValuesVS.md)
+* [ConsentStatusObjectionFullValues](ValueSet-ConsentStatusObjectionFullValuesVS.md)
+* [ConsentStatusObjectionShortValues](ValueSet-ConsentStatusObjectionShortValuesVS.md)
+* [ConsentStatusRefusalFullValues](ValueSet-ConsentStatusRefusalFullValuesVS.md)
+* [ConsentStatusRefusalShortValues](ValueSet-ConsentStatusRefusalShortValuesVS.md)
+* [ConsentStatusWithdrawalFullValues](ValueSet-ConsentStatusWithdrawalFullValuesVS.md)
+* [ConsentStatusWithdrawalShortValues](ValueSet-ConsentStatusWithdrawalShortValuesVS.md)
 
 
 
@@ -9,7 +43,7 @@
   "resourceType" : "CodeSystem",
   "id" : "ConsentStatusCS",
   "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "ConsentStatus",
   "status" : "active",
   "experimental" : false,

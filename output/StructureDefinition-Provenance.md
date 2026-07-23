@@ -1,4 +1,38 @@
-# Herkunftsinformationen und Signatur - v2025.2.0
+# Herkunftsinformationen und Signatur - v2026.1.0
+
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2026.1.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Herkunftsinformationen und Signatur**
+
+## Resource Profile: Herkunftsinformationen und Signatur 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/gics/Provenance | *Version*:2026.1.0 |
+| Active as of 2025-06-12 | *Computable Name*:Provenance |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+ 
+Erweitertes Profil der Provenance (Arbeitsgruppe Einwilligungsmanagement) zur Abbildung aller relevanten Informationen für gICS über entsprechende Extensions. 
+
+**Usages:**
+
+* Examples for this Profile: [Provenance/Provenance-example-1](Provenance-Provenance-example-1.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ths-greifswald.ttp-fhir-gw.gics|current/StructureDefinition/StructureDefinition-Provenance.json)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-Provenance.csv), [Excel](StructureDefinition-Provenance.xlsx), [Schematron](StructureDefinition-Provenance.sch) 
 
 
 
@@ -9,7 +43,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "Provenance",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/Provenance",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "Provenance",
   "title" : "Herkunftsinformationen und Signatur",
   "status" : "active",

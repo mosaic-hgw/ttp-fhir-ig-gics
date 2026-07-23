@@ -12,7 +12,7 @@
 </div></div>
   </text>
   <url value="https://ths-greifswald.de/fhir/OperationDefinition/gics/addConsentOptOut"/>
-  <version value="2025.2.0"/>
+  <version value="2026.1.0"/>
   <name value="AddConsentOptOut"/>
   <title value="AddConsentOptOut"/>
   <status value="active"/>

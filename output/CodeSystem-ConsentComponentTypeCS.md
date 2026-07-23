@@ -1,4 +1,28 @@
-# ConsentComponentType - v2025.2.0
+# ConsentComponentType - v2026.1.0
+
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2026.1.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **ConsentComponentType**
+
+## CodeSystem: ConsentComponentType 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentComponentType | *Version*:2026.1.0 |
+| Active as of 2025-06-12 | *Computable Name*:ConsentComponentType |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+ 
+Typen der für gICS relevanten Consent-Componenten zur Unterscheidung als Suchkriterium 
+
+ This Code system is referenced in the content logical definition of the following value sets: 
+
+* [ConsentComponentType](ValueSet-ConsentComponentTypeVS.md)
 
 
 
@@ -9,7 +33,7 @@
   "resourceType" : "CodeSystem",
   "id" : "ConsentComponentTypeCS",
   "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentComponentType",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "ConsentComponentType",
   "status" : "active",
   "experimental" : false,

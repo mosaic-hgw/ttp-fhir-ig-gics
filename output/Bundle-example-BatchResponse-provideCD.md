@@ -1,4 +1,15 @@
-# example-BatchResponse-provideCD - v2025.2.0
+# example-BatchResponse-provideCD - v2026.1.0
+
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2026.1.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **example-BatchResponse-provideCD**
+
+## Example Bundle: example-BatchResponse-provideCD
 
 
 

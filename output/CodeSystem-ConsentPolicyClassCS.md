@@ -1,4 +1,31 @@
-# ConsentPolicyClass - v2025.2.0
+# ConsentPolicyClass - v2026.1.0
+
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2026.1.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **ConsentPolicyClass**
+
+## CodeSystem: ConsentPolicyClass 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass | *Version*:2026.1.0 |
+| Active as of 2025-06-12 | *Computable Name*:ConsentPolicyClass |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+ 
+Extensible description of the application perspective of a ConsentPolicy (e.g. selected data view 'IDAT') 
+
+ 
+First axis 'Class' of the 'Semantic Consent Code (SCC)' for use as Consent.provision.class 
+
+ This Code system is referenced in the content logical definition of the following value sets: 
+
+* This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
 
 
 
@@ -9,7 +36,7 @@
   "resourceType" : "CodeSystem",
   "id" : "ConsentPolicyClassCS",
   "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "ConsentPolicyClass",
   "status" : "active",
   "experimental" : false,

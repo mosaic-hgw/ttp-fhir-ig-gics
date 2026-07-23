@@ -1,4 +1,46 @@
-# ValidFromProperty - v2025.2.0
+# ValidFromProperty - v2026.1.0
+
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2026.1.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **ValidFromProperty**
+
+## Extension: ValidFromProperty 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/gics/ValidFromProperty | *Version*:2026.1.0 |
+| Active as of 2025-06-12 | *Computable Name*:ValidFromProperty |
+| **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+Specifies the point in time from which the domain is valid.
+
+**Context of Use**
+
+**Usage info**
+
+**Usages:**
+
+* Use this Extension: [Consent Domain](StructureDefinition-ConsentDomain.md)
+* Examples for this Extension: [ResearchStudy/ConsentDomain-example-1](ResearchStudy-ConsentDomain-example-1.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ths-greifswald.ttp-fhir-gw.gics|current/StructureDefinition/StructureDefinition-ValidFromProperty.json)
+
+### Formal Views of Extension Content
+
+ [Description of Profiles, Differentials, Snapshots, and how the XML and JSON presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-ValidFromProperty.csv), [Excel](StructureDefinition-ValidFromProperty.xlsx), [Schematron](StructureDefinition-ValidFromProperty.sch) 
+
+#### Terminology Bindings
+
+#### Constraints
 
 
 
@@ -9,7 +51,7 @@
   "resourceType" : "StructureDefinition",
   "id" : "ValidFromProperty",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/ValidFromProperty",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "ValidFromProperty",
   "title" : "ValidFromProperty",
   "status" : "active",
