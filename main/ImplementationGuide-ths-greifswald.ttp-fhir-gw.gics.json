@@ -6,10 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ths-greifswald.ttp-fhir-gw.gics</b></p><a name=\"ths-greifswald.ttp-fhir-gw.gics\"> </a><a name=\"hcths-greifswald.ttp-fhir-gw.gics\"> </a><h2>IGTTPFHIRGatewaygICS</h2><p>The official URL for this implementation guide is: </p><pre>https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics</pre></div>"
   },
   "url" : "https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "IGTTPFHIRGatewaygICS",
   "status" : "active",
-  "date" : "2026-07-23T09:30:17+00:00",
+  "date" : "2026-07-23T10:33:51+00:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

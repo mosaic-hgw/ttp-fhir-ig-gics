@@ -13,7 +13,7 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter useContextIdentifier</b></p><a name=\"useContextIdentifier\"> </a><a name=\"hcuseContextIdentifier\"> </a><h2>useContextIdentifier</h2><p>Parameter <code>useContextIdentifier</code>:<code>token</code></p><div><p>Eindeutiger Name (Identifikator) der referenzierten Consent Domain</p>\n</div><table class=\"grid\"><tr><td>Resources</td><td><a href=\"http://hl7.org/fhir/R4/activitydefinition.html\">ActivityDefinition</a>, <a href=\"http://hl7.org/fhir/R4/questionnaire.html\">Questionnaire</a></td></tr><tr><td>Expression</td><td><code>useContext.valueReference.identifier</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may only appear once</li><li>multipleOr: The parameter may only have one value (no comma separators)</li></ul></td></tr></table></div>"
   ] ;
   fhir:SearchParameter.url [ fhir:value "https://ths-greifswald.de/fhir/SearchParameter/gics/useContextIdentifier"] ;
-  fhir:SearchParameter.version [ fhir:value "2025.2.0"] ;
+  fhir:SearchParameter.version [ fhir:value "2026.1.0"] ;
   fhir:SearchParameter.name [ fhir:value "useContextIdentifier"] ;
   fhir:SearchParameter.status [ fhir:value "active"] ;
   fhir:SearchParameter.date [ fhir:value "2025-06-12"^^xsd:date] ;

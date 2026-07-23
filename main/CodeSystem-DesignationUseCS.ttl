@@ -13,7 +13,7 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DesignationUseCS</b></p><a name=\"DesignationUseCS\"> </a><a name=\"hcDesignationUseCS\"> </a><p>This case-sensitive code system <code>https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">consent<a name=\"DesignationUseCS-consent\"> </a></td></tr><tr><td style=\"white-space:nowrap\">refusal<a name=\"DesignationUseCS-refusal\"> </a></td></tr><tr><td style=\"white-space:nowrap\">withdrawal<a name=\"DesignationUseCS-withdrawal\"> </a></td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"] ;
-  fhir:CodeSystem.version [ fhir:value "2025.2.0"] ;
+  fhir:CodeSystem.version [ fhir:value "2026.1.0"] ;
   fhir:CodeSystem.name [ fhir:value "DesignationUse"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
   fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;

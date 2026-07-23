@@ -1,9 +1,9 @@
-# Implementation Guide gICS - v2025.2.0
+# Implementation Guide gICS - v2026.1.0
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2025.2.0 - ci-build  
+ 2026.1.0 - ci-build  
 
 * [**Table of Contents**](toc.md)
 * **Implementation Guide gICS**
@@ -12,7 +12,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics | *Version*:2025.2.0 |
+| *Official URL*:https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics | *Version*:2026.1.0 |
 | Active as of 2026-07-23 | *Computable Name*:IGTTPFHIRGatewaygICS |
 
 # FHIR-Support für Einwilligungsmanagement
@@ -64,10 +64,10 @@ kontakt-ths (at) med.uni-greifswald.de
   "resourceType" : "ImplementationGuide",
   "id" : "ths-greifswald.ttp-fhir-gw.gics",
   "url" : "https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "IGTTPFHIRGatewaygICS",
   "status" : "active",
-  "date" : "2026-07-23T09:30:17+00:00",
+  "date" : "2026-07-23T10:33:51+00:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

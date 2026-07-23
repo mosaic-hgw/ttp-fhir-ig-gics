@@ -10,10 +10,10 @@
   fhir:Resource.id [ fhir:value "BloomfilterTypeVS"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet BloomfilterTypeVS</b></p><a name=\"BloomfilterTypeVS\"> </a><a name=\"hcBloomfilterTypeVS\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-BloomfilterTypeCS.html\"><code>https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2025.2.0</span></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet BloomfilterTypeVS</b></p><a name=\"BloomfilterTypeVS\"> </a><a name=\"hcBloomfilterTypeVS\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-BloomfilterTypeCS.html\"><code>https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2026.1.0</span></li></ul></div>"
   ] ;
   fhir:ValueSet.url [ fhir:value "https://ths-greifswald.de/fhir/ValueSet/epix/BloomfilterType"] ;
-  fhir:ValueSet.version [ fhir:value "2025.2.0"] ;
+  fhir:ValueSet.version [ fhir:value "2026.1.0"] ;
   fhir:ValueSet.name [ fhir:value "BloomfilterType"] ;
   fhir:ValueSet.status [ fhir:value "draft"] ;
   fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;

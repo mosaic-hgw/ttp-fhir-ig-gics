@@ -13,10 +13,10 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ths-greifswald.ttp-fhir-gw.gics</b></p><a name=\"ths-greifswald.ttp-fhir-gw.gics\"> </a><a name=\"hcths-greifswald.ttp-fhir-gw.gics\"> </a><h2>IGTTPFHIRGatewaygICS</h2><p>The official URL for this implementation guide is: </p><pre>https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics</pre></div>"
   ] ;
   fhir:ImplementationGuide.url [ fhir:value "https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics"] ;
-  fhir:ImplementationGuide.version [ fhir:value "2025.2.0"] ;
+  fhir:ImplementationGuide.version [ fhir:value "2026.1.0"] ;
   fhir:ImplementationGuide.name [ fhir:value "IGTTPFHIRGatewaygICS"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-23T09:30:17+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-23T10:33:51+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;

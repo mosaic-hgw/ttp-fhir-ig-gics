@@ -1,9 +1,9 @@
-# Patient pseudonymisiert - v2025.2.0
+# Patient pseudonymisiert - v2026.1.0
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2025.2.0 - ci-build  
+ 2026.1.0 - ci-build  
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -13,7 +13,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized | *Version*:2025.2.0 |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized | *Version*:2026.1.0 |
 | Active as of 2025-06-12 | *Computable Name*:PatientPseudonymized |
 | **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-PatientPseudonymized
   "resourceType" : "StructureDefinition",
   "id" : "PatientPseudonymized",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "PatientPseudonymized",
   "title" : "Patient pseudonymisiert",
   "status" : "active",

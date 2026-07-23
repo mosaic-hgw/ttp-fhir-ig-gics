@@ -1,9 +1,9 @@
-# <h1>Einwilligungserklärung</h1> - v2025.2.0
+# <h1>Einwilligungserklärung</h1> - v2026.1.0
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2025.2.0 - ci-build  
+ 2026.1.0 - ci-build  
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -13,7 +13,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://ths-greifswald.de/fhir/gics/ConsentTemplate/MII/Patienteneinwilligung+MII|1.6.f | *Version*:2025.2.0 |
+| *Official URL*:https://ths-greifswald.de/fhir/gics/ConsentTemplate/MII/Patienteneinwilligung+MII|1.6.f | *Version*:2026.1.0 |
 | Active as of 2021-05-19 | *Computable Name*:Patienteneinwilligung MII |
 | *Other Identifiers:*https://ths-greifswald.de/fhir/gics/#MII;Patienteneinwilligung MII;1.6.f | |
 | **Usage:**[ResearchStudy/593d66f3-3654-4e8a-9524-3bcd78a363bb](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=http://fhir.org/packages/de.einwilligungsmanagement/ResearchStudy/593d66f3-3654-4e8a-9524-3bcd78a363bb) | |
@@ -187,7 +187,7 @@ Version 1.6f der MII Vorlage, Stand: 31.03.2021, allgemeine Version (PatDat,KKDa
     "system" : "https://ths-greifswald.de/fhir/gics/",
     "value" : "MII;Patienteneinwilligung MII;1.6.f"
   }],
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "Patienteneinwilligung MII",
   "title" : "<h1>Einwilligungserklärung</h1>",
   "status" : "active",

@@ -1,9 +1,9 @@
-# Mitgeltende Profile und Erläuterungen - v2025.2.0
+# Mitgeltende Profile und Erläuterungen - v2026.1.0
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2025.2.0 - ci-build  
+ 2026.1.0 - ci-build  
 
 * [**Table of Contents**](toc.md)
 * **Mitgeltende Profile und Erläuterungen**

@@ -13,7 +13,7 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem BloomfilterTypeCS</b></p><a name=\"BloomfilterTypeCS\"> </a><a name=\"hcBloomfilterTypeCS\"> </a><p>This case-sensitive code system <code>https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"BloomfilterTypeCS-A\"> </a></td><td>Dummy-Bloomfilter A</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"BloomfilterTypeCS-B\"> </a></td><td>Dummy-Bloomfilter B</td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType"] ;
-  fhir:CodeSystem.version [ fhir:value "2025.2.0"] ;
+  fhir:CodeSystem.version [ fhir:value "2026.1.0"] ;
   fhir:CodeSystem.name [ fhir:value "BloomfilterType"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
   fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;

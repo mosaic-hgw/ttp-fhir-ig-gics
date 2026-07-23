@@ -1,9 +1,9 @@
-# Consent - v2025.2.0
+# Consent - v2026.1.0
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2025.2.0 - ci-build  
+ 2026.1.0 - ci-build  
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -13,7 +13,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent | *Version*:2025.2.0 |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent | *Version*:2026.1.0 |
 | Active as of 2025-06-12 | *Computable Name*:Consent |
 | **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-Consent.csv), [Excel
   "resourceType" : "StructureDefinition",
   "id" : "Consent",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "Consent",
   "title" : "Consent",
   "status" : "active",
