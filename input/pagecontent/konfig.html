@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>konfig.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> or <div class="page"></div> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h3 id="fhir-consent-search-strukturelle-bedeutung-für-consent-ressourcen-und-anpassung-per-resulttype">FHIR Consent Search: Strukturelle Bedeutung für Consent-Ressourcen und Anpassung per ResultType</h3>
+<h4 id="publikation-und-hintergründe">Publikation und Hintergründe</h4>
+<p>Im IG der HL7-D AG Einwilligungsmanagement wird die Bedeutung des Parameters ResultType umfassend erläutert.</p>
+<img align="center" width="600px" src="assets/images/figure2_bialke_resulttype_community_dialog_jan2025.jpg"/>
+<p>Erläuterung: <em>Die ursprüngliche Einwilligung einer Person führt zu einer Consent-Ressource, die einer bestimmten Anzahl von Policies entspricht. Im Laufe der Zeit kann die Person ihre Einwilligung zur Teilnahme an einem Vorhaben oder Projekt aktualisieren oder widerrufen. Dadurch erhöht sich die Menge der zu analysierenden Dokumente und Einwilligungspolicies.
+Dank <code>ResultType</code> können die vorliegenden Einwilligungsinformationen der betroffenen Person als individuelles Set von Einwilligungspolicies (<code>policy</code>), als Dokumente (<code>document</code>) oder als vollständig analysierter aggregierter Einwilligungsstatus (<code>consent-status</code>) abgefragt werden.</em></p>
+<p>Quelle: <a href="https://ebooks.iospress.nl/doi/10.3233/SHTI251389">Publikation</a></p>
+<h4 id="default-resulttype-und-steuerung-auf-request-ebene">Default-ResultType und Steuerung auf Request-Ebene</h4>
+<p>Die Ergebnisse der FHIR Consent Suche sind im gICS per <strong>DEFAULT policy-spezifisch</strong>, da ein Patient unterschiedliche Einwilligungen und auch Widerrufe zu unterschiedlichen Zeitpunkten unterzeichnet haben kann. Somit ändert sich das Set von zulässigen Policies des Patienten ('Signed Policies') über die Zeit regelhaft.
+In der Standardkonfiguration wird bei Consent-Suchanfragen je Signed Policy im gICS eine separate FHIR Consent Resource erzeugt. Das <strong>Total des SearchSet-Bundle</strong> repräsentiert also in der Standard-Konfiguration die <strong>Anzahl der jeweiligen SignedPolicies</strong> mit Status <code>permit</code>.</p>
+<p>Die Angabe des ResultType wirkt sich auf FHIR Search API Ergebnisse aus. Die Ergebnisse von gICS-Operations werden dadurch nicht verändert.</p>
+<p>Je Request kann <em>unabhängig von der Konfiguration des Systems</em> angegeben werden, welche Art von Ergebnis (policy, document, consent-status) man im Response bekommen möchte.</p>
+<pre class="hljs"><code><div>GET [base]/Consent
+  ?category=http://fhir.de/ConsentManagement/CodeSystem/
+  ResultType|consent-status
+  &amp;domain:identifier=MII
+  &amp;patient.identifier=dic_810MT
+</div></code></pre>
+<h4 id="anpassung-default-resulttype-auf-system-ebene">Anpassung Default-ResultType auf System-Ebene</h4>
+<p>Der Default-ResultType des gICS ist auf Wunsch konfigurierbar. In der System-Konfigurationsdatei <code>ttp-fhir.env</code> kann der Wert <code>TTP_FHIR_GICS_CONSENT_SEARCH_DEFAULT_RESULT_TYPE</code> entsprechend angepasst werden.
+Der so festgelegte Default-ResultType gilt für alle im gICS vorhandenen Domains.</p>
+<h4 id="hinweise-für-die-medizininformatik-initiative--das-diz-dashboard">Hinweise für die Medizininformatik-Initiative / das DIZ-Dashboard</h4>
+<p><a href="https://simplifier.net/guide/MIIIGModulConsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Empfehlungen-zur-praktischen-Anwendung.page.md?version=current">Bitte lesen Sie die Nutzungsempfehlung zur Verwendung von ResultType in der MII.</a></p>
+<p><a href="https://www.ths-greifswald.de/diz-dashboard-empfehlung-gics-kds-consent-status/">Bitte folgen Sie den Herstellerempfehlungen zur Ermittlung von Kennzahlen für das DIZ-Dashboard.</a></p>
+<h3 id="anpassung-von-profilvorgaben-und-terminologien-auf-domain--template--und-modulebene">Anpassung von Profilvorgaben und Terminologien auf Domain-, Template- und Modulebene</h3>
+<p>Wenn gICS-Inhalte in Form von FHIR-Ressourcen vom TTP-FHIR-Gateway bereitgestellt werden, werden standardmäßig gICS-spezifische Referenzen und Kodierungen verwendet, z. B. für Antwortoptionen in
+Fragebögen, Verweise auf Fragen in Einwilligungsmodulen (TemplateFrame) und Policy-Semantik (Level2-Provisions der Consent-Ressource).</p>
+<p>Diese können mithilfe entsprechender externer Eigenschaften (<strong>ExternalProperties</strong>) konfiguriert werden, beispielsweise über die gICS-Schnittstelle, oder durch Importieren eines benutzerdefinierten Vorlagenimportformats angepasst werden. Die folgenden Tabellen zeigen externe Eigenschaften, die bei der Erstellung von FHIR-Ressourcen berücksichtigt werden.
+Änderungen an externen Eigenschaften sind auch nachträglich <strong>zur Laufzeit</strong> für bereits finalisierte und aktiv genutzte Vorlagen möglich, z. B. durch Importieren aktualisierter Einwilligungsvorlagen (aktivieren Sie das Kontrollkästchen neben
+<code>allowUpdates</code>).</p>
+<h4 id="externalproperties-auf-domain-ebene">ExternalProperties auf Domain-Ebene</h4>
+<table>
+<thead>
+<tr>
+<th>Scope</th>
+<th>ExternalProperty</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Domain</td>
+<td><code>fhirSafeSignerIdType</code></td>
+<td><code>fhirSafeSignerIdType = Pseudonym</code></td>
+<td>In gICS, the signing participant is represented by 1-n participant IDs. The number and type of participant IDs are determined by the domain configuration. If more than one SignerIdType is configured within a consent domain (e.g. pseudonym, case numbers, patient ID), the first SignerIdType is used by default in FHIR Consent exports as the person identifier based on the FHIR Consent Patient in FHIR Consent. this can be adjusted if necessary by defining an external property fhirSafeSignerIdType for the respective domain.</td>
+</tr>
+<tr>
+<td>Domain</td>
+<td><code>fhirForceProfileConsent</code></td>
+<td><code>fhirForceProfileConsent = https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent</code></td>
+<td>Force default export of consent resources <strong>within the whole domain</strong> in gICS-specific Profile</td>
+</tr>
+<tr>
+<td>Domain</td>
+<td><code>fhirForceProfileResearchStudy</code></td>
+<td><code>fhirForceProfileResearchStudy = https://ths-greifswald.de/fhir/StructureDefinition/gics/ResearchStudy/ConsentDomain</code></td>
+<td>Force default export of ResearchStudy resources in gICS-specific Profile. DEFAULT profile is HL7-D WG ConsentManagement http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy</td>
+</tr>
+<tr>
+<td>Domain</td>
+<td><code>fhirForceProfileDocumentReference</code></td>
+<td><code>fhirForceProfileDocumentReference = https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference</code></td>
+<td>Force default export of document reference resources (e.g. document scans) <strong>based on the specific domain</strong> in MII KDS Consent-specific Profile for document reference</td>
+</tr>
+<tr>
+<td>Domain</td>
+<td><code>fhirForceProfileProvenance</code></td>
+<td><code>fhirForceProfileProvenance = https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance</code></td>
+<td>Force default export of provenance resources (e.g. signatures or references on scans) <strong>based on the specific domain</strong> in MII KDS Consent-specific Profile for provenance</td>
+</tr>
+<tr>
+<td>SignatureGroup je Domain</td>
+<td><code>fhirSignatureTypeSystem</code></td>
+<td><code>fhirSignatureTypeSystem = mySystem1</code></td>
+<td>Customize provenance.signature.type.system for specific SignatureGroup within a specifc Domain. Requires additional property <code>fhirSignatureTypeCode</code></td>
+</tr>
+<tr>
+<td>SignatureGroup je Domain</td>
+<td><code>fhirSignatureTypeCode</code></td>
+<td><code>fhirSignatureTypeCode = myCode1</code></td>
+<td>Customize provenance.signature.type.code for specific SignatureGroup within a specifc Domain. Requires additional property <code>fhirSignatureTypeSystem</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="externalproperties-auf-template-ebene">ExternalProperties auf Template-Ebene</h4>
+<table>
+<thead>
+<tr>
+<th>Scope</th>
+<th>ExternalProperty</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Template</td>
+<td><code>fhirPolicyValueSet</code></td>
+<td><code>fhirPolicyValueSet = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3</code></td>
+<td>Default value set to be used for <code>Consent.Provision.Coding</code>. Affects all policies assigned to the template.</td>
+</tr>
+<tr>
+<td>Template</td>
+<td><code>fhirAnswerCodeSystem</code></td>
+<td><code>fhirAnswerCodeSystem = 2.16.840.1.113883.3.1937.777.24.5.2</code></td>
+<td>Individualisation of answers and answer options for FHIR Questionnaire and FHIR. Use with Questionnaire.Item.Item.AnswerValueset QuestionnaireResponse through selected external properties.</td>
+</tr>
+<tr>
+<td>Template</td>
+<td><code>fhirAnswerValueSet</code></td>
+<td><code>fhirAnswerValueSet = https://www.medizininformatik-initiative.de/fhir/ValueSet/MiiConsentAnswerValueSet</code></td>
+<td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.AnswerValueset</td>
+</tr>
+<tr>
+<td>Template</td>
+<td><code>fhirAnswerCodeYes</code></td>
+<td><code>fhirAnswerCodeYes = 2.16.840.1.113883.3.1937.777.24.5.2.1</code></td>
+<td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer</td>
+</tr>
+<tr>
+<td>Template</td>
+<td><code>fhirAnswerCodeNo</code></td>
+<td><code>fhirAnswerCodeNo = 2.16.840.1.113883.3.1937.777.24.5.2.2</code></td>
+<td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer</td>
+</tr>
+<tr>
+<td>Template</td>
+<td><code>fhirAnswerCodeUnknown</code></td>
+<td><code>fhirAnswerCodeUnknown = 2.16.840.1.113883.3.1937.777.24.5.2.3</code></td>
+<td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer.</td>
+</tr>
+<tr>
+<td>Template</td>
+<td><code>fhirAnswerDisplayYes</code></td>
+<td><code>fhirAnswerDisplayYes = valid</code></td>
+<td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer</td>
+</tr>
+<tr>
+<td>Template</td>
+<td><code>fhirAnswerDisplayNo</code></td>
+<td><code>fhirAnswerDisplayNo = invalid</code></td>
+<td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer</td>
+</tr>
+<tr>
+<td>Template</td>
+<td><code>fhirAnswerDisplayUnknown</code></td>
+<td><code>fhirAnswerDisplayUnknown = unknown</code></td>
+<td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer</td>
+</tr>
+<tr>
+<td>Template</td>
+<td><code>fhirPolicyUri</code></td>
+<td><code>fhirPolicyUri = urn:oid:2.16.840.1.113883.3.1937.777.24.2.1790</code></td>
+<td>Consent.policy.uri to uniquely identify the version of the MII Broad Consent and <em>contained addition modules (Z-Modules)</em>. <strong>Note</strong> Use of multiple <strong>commaseparated-values</strong> possible since fhir-gw-version 2026.1.0 (`key=value1,value2,value3;)</td>
+</tr>
+<tr>
+<td>Template</td>
+<td><code>fhirConsentCategory</code></td>
+<td><code>fhirConsentCategory = 2.16.840.1.113883.3.1937.777.24.2.184</code></td>
+<td>Consent.category.coding to uniquely identify the MII Broad Consent</td>
+</tr>
+<tr>
+<td>Template</td>
+<td><code>fhirForceProfileConsent</code></td>
+<td><code>fhirForceProfileConsent = https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung</code></td>
+<td>Force default export of consent resources <strong>based on the specific template</strong> in MII KDS Consent-specific Profile</td>
+</tr>
+<tr>
+<td>Template</td>
+<td><code>fhirForceProfileDocumentReference</code></td>
+<td><code>fhirForceProfileDocumentReference = https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference</code></td>
+<td>Force default export of document reference resources (e.g. document scans) <strong>based on the specific template</strong> in MII KDS Consent-specific Profile for document reference</td>
+</tr>
+<tr>
+<td>Template</td>
+<td><code>fhirForceProfileProvenance</code></td>
+<td><code>fhirForceProfileProvenance = https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance</code></td>
+<td>Force default export of provenance resources (e.g. signatures or references on scans) <strong>based on the specific template</strong> in MII KDS Consent-specific Profile for provenance</td>
+</tr>
+</tbody>
+</table>
+<h4 id="externalproperties-auf-modul-ebene">ExternalProperties auf Modul-Ebene</h4>
+<table>
+<thead>
+<tr>
+<th>Scope</th>
+<th>ExternalProperty</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Module</td>
+<td><code>fhirQuestionCode</code></td>
+<td><code>fhirQuestionCode = 2.16.840.1.113883.3.1937.777.24.2.1594</code></td>
+<td>Individualisation of FHIR Questionnaire.Item.linkId through selected external properties. Consideration for FHIR Element TemplateFrame (Questionnaire.Item.Code and linkId) and QuestionnaireComposed.Item.Code</td>
+</tr>
+</tbody>
+</table>
+<h3 id="unterstützte-profile-und-defaults">Unterstützte Profile und Defaults</h3>
+<h4 id="externalproperty-fhirforceprofileconsent">ExternalProperty <em>fhirForceProfileConsent</em></h4>
+<ul>
+<li>
+<p><strong>DEFAULT</strong>: HL7 Deutschland Arbeitsgruppe Einwilligungsmanagement Profil: <code>http://fhir.de/ConsentManagement/StructureDefinition/Consent</code> <br>
+Details unter  <a href="https://ig.fhir.de/einwilligungsmanagement/stable/IGEinwilligungsmanagement.html">https://ig.fhir.de/einwilligungsmanagement/stable/IGEinwilligungsmanagement.html</a></p>
+</li>
+<li>
+<p>MII Kerndatensatz Consent Profil: <code>https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung</code> <br>
+Details unter <a href="https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-FHIRProfile-Consent.html">https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-FHIRProfile-Consent.html</a></p>
+</li>
+<li>
+<p>gICS-spezifisches Consent Profil mit einigen Erweiterungen: <code>https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent</code> <br>
+Details unter <a href="StructureDefinition-Consent.html">https://www.ths-greifswald.de/gics/fhir</a></p>
+</li>
+</ul>
+
+</body>
+</html>
