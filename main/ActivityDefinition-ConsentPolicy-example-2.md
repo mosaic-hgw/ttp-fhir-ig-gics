@@ -14,7 +14,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://ths-greifswald.de/fhir/gics/ActivityDefinition/ConsentPolicy-example-2 | *Version*:2025.2.0 |
-| Active as of 2026-06-17 | *Computable Name*:MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU |
+| Active as of 2026-07-23 | *Computable Name*:MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU |
 | **Usage:**[d7a65ce8-2810-401a-b0db-70782a7b19a6](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=http://fhir.org/packages/de.einwilligungsmanagement/d7a65ce8-2810-401a-b0db-70782a7b19a6) | |
 
  
@@ -25,7 +25,7 @@ Beispiel Consent Policy für die Nutzung medizinischer Daten im Rahmen eines For
 * **Code: **: **Version: **
   * **system: **[https://ths-greifswald.de/fhir/CodeSystem/gics/Policy](CodeSystem-PolicyCS.md)**code: **MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU: 2025.2.0
 * **Code: **: **Date (date last changed): **
-  * **system: **[https://ths-greifswald.de/fhir/CodeSystem/gics/Policy](CodeSystem-PolicyCS.md)**code: **MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU: 2026-06-17 10:42:51+0000
+  * **system: **[https://ths-greifswald.de/fhir/CodeSystem/gics/Policy](CodeSystem-PolicyCS.md)**code: **MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU: 2026-07-23 09:30:17+0000
 * **Code: **: **Publisher (steward): **
   * **system: **[https://ths-greifswald.de/fhir/CodeSystem/gics/Policy](CodeSystem-PolicyCS.md)**code: **MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU: Unabhängige Treuhandstelle der Universitätsmedizin Greifswald
 * **Code: **: **Description: **
@@ -52,7 +52,7 @@ Beispiel Consent Policy für die Nutzung medizinischer Daten im Rahmen eines For
   "name" : "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU",
   "title" : "Medizinische Daten nutzen",
   "status" : "active",
-  "date" : "2026-06-17T10:42:51+00:00",
+  "date" : "2026-07-23T09:30:17+00:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

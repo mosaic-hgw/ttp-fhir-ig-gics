@@ -14,7 +14,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://ths-greifswald.de/fhir/gics/Questionnaire/ConsentModule-example-2 | *Version*:2025.2.0 |
-| Active as of 2026-06-17 | *Computable Name*:MDAT_ErhebenSpeichernNutzen |
+| Active as of 2026-07-23 | *Computable Name*:MDAT_ErhebenSpeichernNutzen |
 | **Usage:**[d7a65ce8-2810-401a-b0db-70782a7b19a6](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=http://fhir.org/packages/de.einwilligungsmanagement/d7a65ce8-2810-401a-b0db-70782a7b19a6) | |
 
  
@@ -46,7 +46,7 @@ Einwilligungserklärung für die wissenschaftliche Nutzung
   "name" : "MDAT_ErhebenSpeichernNutzen",
   "title" : "Verarbeitung und Nutzung von Patientendaten für die medizinische Forschung",
   "status" : "active",
-  "date" : "2026-06-17T10:42:51+00:00",
+  "date" : "2026-07-23T09:30:17+00:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

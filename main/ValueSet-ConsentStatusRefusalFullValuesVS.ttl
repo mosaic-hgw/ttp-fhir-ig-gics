@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,68 +7,82 @@
 
 <https://ths-greifswald.de/fhir/gics/ValueSet/ConsentStatusRefusalFullValuesVS> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "ConsentStatusRefusalFullValuesVS"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ConsentStatusRefusalFullValuesVS</b></p><a name=\"ConsentStatusRefusalFullValuesVS\"> </a><a name=\"hcConsentStatusRefusalFullValuesVS\"> </a><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a name=\"ConsentStatusRefusalFullValuesVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-ACCEPTED\"> </a><code>https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus</code></td><td style=\"white-space:nowrap\">  <a href=\"CodeSystem-ConsentStatusCS.html#ConsentStatusCS-ACCEPTED\">ACCEPTED</a></td><td>Einwilligen</td></tr><tr><td><a name=\"ConsentStatusRefusalFullValuesVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-DECLINED\"> </a><code>https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus</code></td><td style=\"white-space:nowrap\">  <a href=\"CodeSystem-ConsentStatusCS.html#ConsentStatusCS-DECLINED\">DECLINED</a></td><td>Ja</td></tr><tr><td><a name=\"ConsentStatusRefusalFullValuesVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-NOT_ASKED\"> </a><code>https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus</code></td><td style=\"white-space:nowrap\">  <a href=\"CodeSystem-ConsentStatusCS.html#ConsentStatusCS-NOT_ASKED\">NOT_ASKED</a></td><td>Nicht gefragt</td></tr><tr><td><a name=\"ConsentStatusRefusalFullValuesVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-NOT_CHOSEN\"> </a><code>https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus</code></td><td style=\"white-space:nowrap\">  <a href=\"CodeSystem-ConsentStatusCS.html#ConsentStatusCS-NOT_CHOSEN\">NOT_CHOSEN</a></td><td>Nein</td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [ fhir:v "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusRefusalFullValues"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2025.2.0"] ; # 
-  fhir:name [ fhir:v "ConsentStatusRefusalFullValues"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-06-12"^^xsd:date] ; # 
-  fhir:publisher [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://www.ths-greifswald.de/" ]
-     ] )
-  ] ) ; # 
-  fhir:copyright [ fhir:v "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ; # 
-  fhir:compose [
-     fhir:include ( [
-       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"^^xsd:anyURI ] ;
-       fhir:concept ( [
-         fhir:code [ fhir:v "ACCEPTED" ]
-       ] [
-         fhir:code [ fhir:v "DECLINED" ]
-       ] [
-         fhir:code [ fhir:v "NOT_ASKED" ]
-       ] [
-         fhir:code [ fhir:v "NOT_CHOSEN" ]
-       ] )
-     ] )
-  ] ; # 
-  fhir:expansion [
-     fhir:timestamp [ fhir:v "2021-04-12T12:00:00Z"^^xsd:dateTime ] ;
-     fhir:total [ fhir:v 4 ] ;
-     fhir:parameter ( [
-       fhir:name [ fhir:v "designation" ] ;
-       fhir:value [
-         a fhir:code ;
-         fhir:v "refusal"
+  fhir:Resource.id [ fhir:value "ConsentStatusRefusalFullValuesVS"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ConsentStatusRefusalFullValuesVS</b></p><a name=\"ConsentStatusRefusalFullValuesVS\"> </a><a name=\"hcConsentStatusRefusalFullValuesVS\"> </a><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a name=\"ConsentStatusRefusalFullValuesVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-ACCEPTED\"> </a><code>https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus</code></td><td style=\"white-space:nowrap\">  <a href=\"CodeSystem-ConsentStatusCS.html#ConsentStatusCS-ACCEPTED\">ACCEPTED</a></td><td>Einwilligen</td></tr><tr><td><a name=\"ConsentStatusRefusalFullValuesVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-DECLINED\"> </a><code>https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus</code></td><td style=\"white-space:nowrap\">  <a href=\"CodeSystem-ConsentStatusCS.html#ConsentStatusCS-DECLINED\">DECLINED</a></td><td>Ja</td></tr><tr><td><a name=\"ConsentStatusRefusalFullValuesVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-NOT_ASKED\"> </a><code>https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus</code></td><td style=\"white-space:nowrap\">  <a href=\"CodeSystem-ConsentStatusCS.html#ConsentStatusCS-NOT_ASKED\">NOT_ASKED</a></td><td>Nicht gefragt</td></tr><tr><td><a name=\"ConsentStatusRefusalFullValuesVS-https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus-NOT_CHOSEN\"> </a><code>https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus</code></td><td style=\"white-space:nowrap\">  <a href=\"CodeSystem-ConsentStatusCS.html#ConsentStatusCS-NOT_CHOSEN\">NOT_CHOSEN</a></td><td>Nein</td></tr></table></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusRefusalFullValues"] ;
+  fhir:ValueSet.version [ fhir:value "2025.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "ConsentStatusRefusalFullValues"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2025-06-12"^^xsd:date] ;
+  fhir:ValueSet.publisher [ fhir:value "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.ths-greifswald.de/" ]
+     ]
+  ] ;
+  fhir:ValueSet.copyright [ fhir:value "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ACCEPTED" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DECLINED" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "NOT_ASKED" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "NOT_CHOSEN" ]
        ]
-     ] ) ;
-     fhir:contains ( [
-       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "ACCEPTED" ] ;
-       fhir:display [ fhir:v "Einwilligen" ]
-     ] [
-       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "DECLINED" ] ;
-       fhir:display [ fhir:v "Ja" ]
-     ] [
-       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "NOT_ASKED" ] ;
-       fhir:display [ fhir:v "Nicht gefragt" ]
-     ] [
-       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "NOT_CHOSEN" ] ;
-       fhir:display [ fhir:v "Nein" ]
-     ] )
-  ] . # 
+     ]
+  ] ;
+  fhir:ValueSet.expansion [
+     fhir:ValueSet.expansion.timestamp [ fhir:value "2021-04-12T12:00:00Z"^^xsd:dateTime ] ;
+     fhir:ValueSet.expansion.total [ fhir:value "4"^^xsd:integer ] ;
+     fhir:ValueSet.expansion.parameter [
+       fhir:index 0 ;
+       fhir:ValueSet.expansion.parameter.name [ fhir:value "designation" ] ;
+       fhir:ValueSet.expansion.parameter.valueCode [ fhir:value "refusal" ]
+     ] ;
+     fhir:ValueSet.expansion.contains [
+       fhir:index 0 ;
+       fhir:ValueSet.expansion.contains.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus" ] ;
+       fhir:ValueSet.expansion.contains.code [ fhir:value "ACCEPTED" ] ;
+       fhir:ValueSet.expansion.contains.display [ fhir:value "Einwilligen" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.expansion.contains.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus" ] ;
+       fhir:ValueSet.expansion.contains.code [ fhir:value "DECLINED" ] ;
+       fhir:ValueSet.expansion.contains.display [ fhir:value "Ja" ]
+     ], [
+       fhir:index 2 ;
+       fhir:ValueSet.expansion.contains.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus" ] ;
+       fhir:ValueSet.expansion.contains.code [ fhir:value "NOT_ASKED" ] ;
+       fhir:ValueSet.expansion.contains.display [ fhir:value "Nicht gefragt" ]
+     ], [
+       fhir:index 3 ;
+       fhir:ValueSet.expansion.contains.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus" ] ;
+       fhir:ValueSet.expansion.contains.code [ fhir:value "NOT_CHOSEN" ] ;
+       fhir:ValueSet.expansion.contains.display [ fhir:value "Nein" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/gics/ValueSet/ConsentStatusRefusalFullValuesVS.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

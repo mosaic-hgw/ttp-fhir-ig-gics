@@ -63,7 +63,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 
 ## Beispiel
 
-* [Request-Body](Parameters-AddConsent-request-example-1.md)
+* [Request-Body](Parameters-Parameters-AddConsent-request-example-1.md)
 * [Rückmeldung](Bundle-AddConsent-response-example-1.md)
 
 

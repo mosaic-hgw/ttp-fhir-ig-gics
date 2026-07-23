@@ -14,7 +14,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://ths-greifswald.de/fhir/gics/Questionnaire/ConsentModule-example-1 | *Version*:2025.2.0 |
-| Draft as of 2026-06-17 | *Computable Name*:BIOMAT_erheben_lagern_nutzen |
+| Draft as of 2026-07-23 | *Computable Name*:BIOMAT_erheben_lagern_nutzen |
 | **Usage:**[ResearchStudy/6048563-3f7f6-42f3-9752-fb6bd3feffc6](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=http://fhir.org/packages/de.einwilligungsmanagement/ResearchStudy/6048563-3f7f6-42f3-9752-fb6bd3feffc6) | |
 
 
@@ -37,7 +37,7 @@
   "version" : "2025.2.0",
   "name" : "BIOMAT_erheben_lagern_nutzen",
   "status" : "draft",
-  "date" : "2026-06-17T10:42:51+00:00",
+  "date" : "2026-07-23T09:30:17+00:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

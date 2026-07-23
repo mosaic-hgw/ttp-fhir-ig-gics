@@ -47,7 +47,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 
 ## Beispiel
 
-* [Request-Body](Parameters-AddConsentOptOut-request-example-1.md)
+* [Request-Body](Parameters-Parameters-AddConsentOptOut-request-example-1.md)
 * [Rückmeldung](Bundle-AddConsentOptOut-response-example-1.md)
 
 

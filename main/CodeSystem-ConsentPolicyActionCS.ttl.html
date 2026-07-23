@@ -276,348 +276,496 @@
   <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix sct: &lt;http://snomed.info/id/&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 # - resource -------------------------------------------------------------------
 
- a fhir:CodeSystem ;
+&lt;http://hl7.org/fhir/CodeSystem/ConsentPolicyActionCS&gt; a fhir:CodeSystem ;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ConsentPolicyActionCS&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem ConsentPolicyActionCS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ConsentPolicyActionCS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcConsentPolicyActionCS\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;provide&lt;a name=\&quot;ConsentPolicyActionCS-provide\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;transfer_ownership&lt;a name=\&quot;ConsentPolicyActionCS-transfer_ownership\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;view&lt;a name=\&quot;ConsentPolicyActionCS-view\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;collect&lt;a name=\&quot;ConsentPolicyActionCS-collect\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;analyse_genetic&lt;a name=\&quot;ConsentPolicyActionCS-analyse_genetic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;inform&lt;a name=\&quot;ConsentPolicyActionCS-inform\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;store_process&lt;a name=\&quot;ConsentPolicyActionCS-store_process\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;contact&lt;a name=\&quot;ConsentPolicyActionCS-contact\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;use&lt;a name=\&quot;ConsentPolicyActionCS-use\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;process&lt;a name=\&quot;ConsentPolicyActionCS-process\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;merge&lt;a name=\&quot;ConsentPolicyActionCS-merge\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;query&lt;a name=\&quot;ConsentPolicyActionCS-query\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;supplement&lt;a name=\&quot;ConsentPolicyActionCS-supplement\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;link&lt;a name=\&quot;ConsentPolicyActionCS-link\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Additional Language Displays&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Deutsch (Deutschland) (German (Germany), de)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (English, en)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;provide&lt;/td&gt;&lt;td&gt;bereitstellen&lt;/td&gt;&lt;td&gt;transfer of [CLASS]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;transfer_ownership&lt;/td&gt;&lt;td&gt;uebertragen_eigentum&lt;/td&gt;&lt;td&gt;transfer the ownership of [CLASS] from the participant to the controller/data processor/carrier of the biobank.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;view&lt;/td&gt;&lt;td&gt;einsehen&lt;/td&gt;&lt;td&gt;insight into [CLASS]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;collect&lt;/td&gt;&lt;td&gt;entnehmen; erheben&lt;/td&gt;&lt;td&gt;collection of new [CLASS]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;analyse_genetic&lt;/td&gt;&lt;td&gt;analysieren_genetisch&lt;/td&gt;&lt;td&gt;obtaining genetic data from [CLASS]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;inform&lt;/td&gt;&lt;td&gt;informieren&lt;/td&gt;&lt;td&gt;information &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;store_process&lt;/td&gt;&lt;td&gt;lagern_verarbeiten; speichern_verarbeiten&lt;/td&gt;&lt;td&gt;storage and processing of [CLASS]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;contact&lt;/td&gt;&lt;td&gt;rekontaktieren&lt;/td&gt;&lt;td&gt;contact participant (if necessary, regarding [ACTIVITY|KONTEXT])&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;use&lt;/td&gt;&lt;td&gt;nutzen&lt;/td&gt;&lt;td&gt;provision of [CLASS] for use / analyses / for evaluation purposes [PURPOSE].&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;process&lt;/td&gt;&lt;td&gt;verarbeiten&lt;/td&gt;&lt;td&gt;processing of [CLASS]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;merge&lt;/td&gt;&lt;td&gt;zusammenfuehren&lt;/td&gt;&lt;td&gt;merging and, if necessary, transferring of [CLASS]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;query&lt;/td&gt;&lt;td&gt;abfragen&lt;/td&gt;&lt;td&gt;query with/from [PURPOSE]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;supplement&lt;/td&gt;&lt;td&gt;ergaenzen&lt;/td&gt;&lt;td&gt;supplementary / complementary collection of additional [CLASS] with / from [PURPOSE].&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;link&lt;/td&gt;&lt;td&gt;verknuepfen&lt;/td&gt;&lt;td&gt;linking data of the data subject to [PURPOSE]&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction&quot;^^xsd:anyURI] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;2025.2.0&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ConsentPolicyAction&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-06-12&quot;^^xsd:date] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unabhängige Treuhandstelle der Universitätsmedizin Greifswald&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">fhir:contact</a> ( [
-<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unabhängige Treuhandstelle der Universitätsmedizin Greifswald&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;https://www.ths-greifswald.de/&quot; ]     ] )
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Extensible description of the permissible (data processing-) action resulting from consented module or policy.&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.purpose">fhir:purpose</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Second axis 'action' of the 'Semantic Consent Code (SCC)' for use as Consent.provision.action&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.copyright">fhir:copyright</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">fhir:caseSensitive</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">fhir:content</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;complete&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">fhir:count</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:v</a> &quot;14&quot;^^xsd:nonNegativeInteger] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">fhir:concept</a> ( [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;provide&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;provide&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Weitergabe von [CLASS]&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000013009 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;bereitstellen&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-UK&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;transfer of [CLASS]&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;transfer_ownership&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;transfer_ownership&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Übertragung des Eigentums an [CLASS] vom Teilnehmer an den Verantwortlichen/Datenverarbeiter/Träger der Biobank&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000013009 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;uebertragen_eigentum&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-UK&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;transfer the ownership of [CLASS] from the participant to the controller/data processor/carrier of the biobank.&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;view&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;view&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Einsicht in [CLASS]&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000013009 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;einsehen&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-UK&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;insight into [CLASS]&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;collect&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;collect&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Erhebung neuer [CLASS]&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000013009 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;entnehmen; erheben&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-UK&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;collection of new [CLASS]&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;analyse_genetic&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;analyse_genetic&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Gewinnung von genetischen Daten aus [CLASS]&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000013009 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;analysieren_genetisch&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-UK&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;obtaining genetic data from [CLASS]&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;inform&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;inform&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Information&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000013009 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;informieren&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-UK&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;information &quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;store_process&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;store_process&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Speicherung und Verarbeitung von [CLASS]&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000013009 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;lagern_verarbeiten; speichern_verarbeiten&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-UK&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;storage and processing of [CLASS]&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;contact&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;contact&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Rekontaktierung des Teilnehmers (ggf. in Bezug auf [TAETIGKEIT|KONTEXT])&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000013009 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;rekontaktieren&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-UK&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;contact participant (if necessary, regarding [ACTIVITY|KONTEXT])&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;use&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;use&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Bereitstellung von [CLASS] für Nutzung / Analysen / zu Auswertezwecken [PURPOSE]&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000013009 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;nutzen&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-UK&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;provision of [CLASS] for use / analyses / for evaluation purposes [PURPOSE].&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;process&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;process&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Verarbeitung von [CLASS]&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000013009 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;verarbeiten&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-UK&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;processing of [CLASS]&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;merge&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;merge&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Zusammenführung und ggf. überführen von [CLASS]&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000013009 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;zusammenfuehren&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-UK&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;merging and, if necessary, transferring of [CLASS]&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;query&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;query&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Abfrage von [PURPOSE]&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000013009 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;abfragen&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-UK&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;query with/from [PURPOSE]&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;supplement&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;supplement&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ergänzende / kompletttierende Erhebung zusätzlicher [CLASS] mit / aus [PURPOSE]&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000013009 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ergaenzen&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-UK&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;supplementary / complementary collection of additional [CLASS] with / from [PURPOSE].&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;link&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;link&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:designation</a> [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Verknüpfung von Daten der betroffenen Person mit [PURPOSE]&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;de-DE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000013009 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;verknuepfen&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-UK&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:use</a> [
-a sct:900000000000003001 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;900000000000003001&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;linking data of the data subject to [PURPOSE]&quot; ]     ] )
-  ] ) . # 
+  <a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ConsentPolicyActionCS&quot;] ;
+  <a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem ConsentPolicyActionCS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ConsentPolicyActionCS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcConsentPolicyActionCS\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;provide&lt;a name=\&quot;ConsentPolicyActionCS-provide\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;transfer_ownership&lt;a name=\&quot;ConsentPolicyActionCS-transfer_ownership\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;view&lt;a name=\&quot;ConsentPolicyActionCS-view\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;collect&lt;a name=\&quot;ConsentPolicyActionCS-collect\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;analyse_genetic&lt;a name=\&quot;ConsentPolicyActionCS-analyse_genetic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;inform&lt;a name=\&quot;ConsentPolicyActionCS-inform\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;store_process&lt;a name=\&quot;ConsentPolicyActionCS-store_process\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;contact&lt;a name=\&quot;ConsentPolicyActionCS-contact\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;use&lt;a name=\&quot;ConsentPolicyActionCS-use\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;process&lt;a name=\&quot;ConsentPolicyActionCS-process\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;merge&lt;a name=\&quot;ConsentPolicyActionCS-merge\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;query&lt;a name=\&quot;ConsentPolicyActionCS-query\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;supplement&lt;a name=\&quot;ConsentPolicyActionCS-supplement\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;link&lt;a name=\&quot;ConsentPolicyActionCS-link\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Additional Language Displays&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Deutsch (Deutschland) (German (Germany), de)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (English, en)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;provide&lt;/td&gt;&lt;td&gt;bereitstellen&lt;/td&gt;&lt;td&gt;transfer of [CLASS]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;transfer_ownership&lt;/td&gt;&lt;td&gt;uebertragen_eigentum&lt;/td&gt;&lt;td&gt;transfer the ownership of [CLASS] from the participant to the controller/data processor/carrier of the biobank.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;view&lt;/td&gt;&lt;td&gt;einsehen&lt;/td&gt;&lt;td&gt;insight into [CLASS]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;collect&lt;/td&gt;&lt;td&gt;entnehmen; erheben&lt;/td&gt;&lt;td&gt;collection of new [CLASS]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;analyse_genetic&lt;/td&gt;&lt;td&gt;analysieren_genetisch&lt;/td&gt;&lt;td&gt;obtaining genetic data from [CLASS]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;inform&lt;/td&gt;&lt;td&gt;informieren&lt;/td&gt;&lt;td&gt;information &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;store_process&lt;/td&gt;&lt;td&gt;lagern_verarbeiten; speichern_verarbeiten&lt;/td&gt;&lt;td&gt;storage and processing of [CLASS]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;contact&lt;/td&gt;&lt;td&gt;rekontaktieren&lt;/td&gt;&lt;td&gt;contact participant (if necessary, regarding [ACTIVITY|KONTEXT])&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;use&lt;/td&gt;&lt;td&gt;nutzen&lt;/td&gt;&lt;td&gt;provision of [CLASS] for use / analyses / for evaluation purposes [PURPOSE].&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;process&lt;/td&gt;&lt;td&gt;verarbeiten&lt;/td&gt;&lt;td&gt;processing of [CLASS]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;merge&lt;/td&gt;&lt;td&gt;zusammenfuehren&lt;/td&gt;&lt;td&gt;merging and, if necessary, transferring of [CLASS]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;query&lt;/td&gt;&lt;td&gt;abfragen&lt;/td&gt;&lt;td&gt;query with/from [PURPOSE]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;supplement&lt;/td&gt;&lt;td&gt;ergaenzen&lt;/td&gt;&lt;td&gt;supplementary / complementary collection of additional [CLASS] with / from [PURPOSE].&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;link&lt;/td&gt;&lt;td&gt;verknuepfen&lt;/td&gt;&lt;td&gt;linking data of the data subject to [PURPOSE]&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+  ] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:CodeSystem.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction&quot;] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:CodeSystem.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;2025.2.0&quot;] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">fhir:CodeSystem.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ConsentPolicyAction&quot;] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">fhir:CodeSystem.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">fhir:CodeSystem.experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:CodeSystem.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2025-06-12&quot;^^xsd:date] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">fhir:CodeSystem.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Unabhängige Treuhandstelle der Universitätsmedizin Greifswald&quot;] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">fhir:CodeSystem.contact</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Unabhängige Treuhandstelle der Universitätsmedizin Greifswald&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;https://www.ths-greifswald.de/&quot; ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">fhir:CodeSystem.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Extensible description of the permissible (data processing-) action resulting from consented module or policy.&quot;] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.purpose">fhir:CodeSystem.purpose</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Second axis 'action' of the 'Semantic Consent Code (SCC)' for use as Consent.provision.action&quot;] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.copyright">fhir:CodeSystem.copyright</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald&quot;] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">fhir:CodeSystem.caseSensitive</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">fhir:CodeSystem.content</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;complete&quot;] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">fhir:CodeSystem.count</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:value</a> &quot;14&quot;^^xsd:nonNegativeInteger] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">fhir:CodeSystem.concept</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;provide&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;provide&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:CodeSystem.concept.designation</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Weitergabe von [CLASS]&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000013009 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000013009&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;bereitstellen&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-UK&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;transfer of [CLASS]&quot; ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;transfer_ownership&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;transfer_ownership&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:CodeSystem.concept.designation</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Übertragung des Eigentums an [CLASS] vom Teilnehmer an den Verantwortlichen/Datenverarbeiter/Träger der Biobank&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000013009 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000013009&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;uebertragen_eigentum&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-UK&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;transfer the ownership of [CLASS] from the participant to the controller/data processor/carrier of the biobank.&quot; ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;view&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;view&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:CodeSystem.concept.designation</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Einsicht in [CLASS]&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000013009 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000013009&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;einsehen&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-UK&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;insight into [CLASS]&quot; ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;collect&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;collect&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:CodeSystem.concept.designation</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Erhebung neuer [CLASS]&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000013009 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000013009&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;entnehmen; erheben&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-UK&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;collection of new [CLASS]&quot; ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;analyse_genetic&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;analyse_genetic&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:CodeSystem.concept.designation</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Gewinnung von genetischen Daten aus [CLASS]&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000013009 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000013009&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;analysieren_genetisch&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-UK&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;obtaining genetic data from [CLASS]&quot; ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 5 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;inform&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;inform&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:CodeSystem.concept.designation</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Information&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000013009 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000013009&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;informieren&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-UK&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;information &quot; ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 6 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;store_process&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;store_process&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:CodeSystem.concept.designation</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Speicherung und Verarbeitung von [CLASS]&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000013009 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000013009&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;lagern_verarbeiten; speichern_verarbeiten&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-UK&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;storage and processing of [CLASS]&quot; ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 7 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;contact&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;contact&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:CodeSystem.concept.designation</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Rekontaktierung des Teilnehmers (ggf. in Bezug auf [TAETIGKEIT|KONTEXT])&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000013009 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000013009&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;rekontaktieren&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-UK&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;contact participant (if necessary, regarding [ACTIVITY|KONTEXT])&quot; ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 8 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;use&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;use&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:CodeSystem.concept.designation</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Bereitstellung von [CLASS] für Nutzung / Analysen / zu Auswertezwecken [PURPOSE]&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000013009 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000013009&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;nutzen&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-UK&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;provision of [CLASS] for use / analyses / for evaluation purposes [PURPOSE].&quot; ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 9 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;process&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;process&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:CodeSystem.concept.designation</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Verarbeitung von [CLASS]&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000013009 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000013009&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;verarbeiten&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-UK&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;processing of [CLASS]&quot; ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 10 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;merge&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;merge&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:CodeSystem.concept.designation</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Zusammenführung und ggf. überführen von [CLASS]&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000013009 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000013009&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;zusammenfuehren&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-UK&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;merging and, if necessary, transferring of [CLASS]&quot; ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 11 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;query&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;query&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:CodeSystem.concept.designation</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Abfrage von [PURPOSE]&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000013009 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000013009&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;abfragen&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-UK&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;query with/from [PURPOSE]&quot; ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 12 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;supplement&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;supplement&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:CodeSystem.concept.designation</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Ergänzende / kompletttierende Erhebung zusätzlicher [CLASS] mit / aus [PURPOSE]&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000013009 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000013009&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ergaenzen&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-UK&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;supplementary / complementary collection of additional [CLASS] with / from [PURPOSE].&quot; ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 13 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;link&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;link&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">fhir:CodeSystem.concept.designation</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Verknüpfung von Daten der betroffenen Person mit [PURPOSE]&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;de-DE&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000013009 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000013009&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;verknuepfen&quot; ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">fhir:CodeSystem.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-UK&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">fhir:CodeSystem.concept.designation.use</a> [
+         a sct:900000000000003001 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;900000000000003001&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:CodeSystem.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;linking data of the data subject to [PURPOSE]&quot; ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+&lt;http://hl7.org/fhir/CodeSystem/ConsentPolicyActionCS.ttl&gt; a owl:Ontology ;
+  owl:imports fhir:fhir.ttl ;
+  owl:versionIRI &lt;http://build.fhir.org/CodeSystem/ConsentPolicyActionCS.ttl&gt; .
 
 </code></pre>
 
@@ -644,7 +792,7 @@ a sct:900000000000003001 ;
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 17, 2026 10:42+0000">2026-06-17</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 23, 2026 09:30+0000">2026-07-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

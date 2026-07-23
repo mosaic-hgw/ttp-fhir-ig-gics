@@ -338,22 +338,102 @@ Fragebögen, Verweise auf Fragen in Einwilligungsmodulen (TemplateFrame) und Pol
 
 <h4 id="externalproperties-auf-template-ebene">ExternalProperties auf Template-Ebene</h4>
 
-<p>| Scope                       | ExternalProperty                      | Example                                                                                                                                                   | Description                                                                                                                                                                                                                                        |
-—————————–|—————————————|———————————————————————————————————————————————————–|—————————————————————————————————————————————————————————————————————————————————-|
-| Template                    | <code class="language-plaintext highlighter-rouge">fhirPolicyValueSet</code>                | <code class="language-plaintext highlighter-rouge">fhirPolicyValueSet = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3</code>                                                                                        | Default value set to be used for <code class="language-plaintext highlighter-rouge">Consent.Provision.Coding</code>. Affects all policies assigned to the template.                                                                                                                                        |
-| Template                    | <code class="language-plaintext highlighter-rouge">fhirAnswerCodeSystem</code>              | <code class="language-plaintext highlighter-rouge">fhirAnswerCodeSystem = 2.16.840.1.113883.3.1937.777.24.5.2</code>                                                                                              | Individualisation of answers and answer options for FHIR Questionnaire and FHIR. Use with Questionnaire.Item.Item.AnswerValueset QuestionnaireResponse through selected external properties.                                                       |
-| Template                    | <code class="language-plaintext highlighter-rouge">fhirAnswerValueSet</code>                | <code class="language-plaintext highlighter-rouge">fhirAnswerValueSet = https://www.medizininformatik-initiative.de/fhir/ValueSet/MiiConsentAnswerValueSet</code>                                                 | Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.AnswerValueset                                                                                                                            |
-| Template                    | <code class="language-plaintext highlighter-rouge">fhirAnswerCodeYes</code>                 | <code class="language-plaintext highlighter-rouge">fhirAnswerCodeYes = 2.16.840.1.113883.3.1937.777.24.5.2.1</code>                                                                                               | Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer                                                                                            <br />
-| Template                    | <code class="language-plaintext highlighter-rouge">fhirAnswerCodeNo</code>                  | <code class="language-plaintext highlighter-rouge">fhirAnswerCodeNo = 2.16.840.1.113883.3.1937.777.24.5.2.2</code>                                                                                                | Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer                                                                                              |
-| Template                    | <code class="language-plaintext highlighter-rouge">fhirAnswerCodeUnknown</code>             | <code class="language-plaintext highlighter-rouge">fhirAnswerCodeUnknown = 2.16.840.1.113883.3.1937.777.24.5.2.3</code>                                                                                           | Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer.                                                                                           <br />
-| Template                    | <code class="language-plaintext highlighter-rouge">fhirAnswerDisplayYes</code>              | <code class="language-plaintext highlighter-rouge">fhirAnswerDisplayYes = valid</code>                                                                                                                            | Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer                                                                                              |
-| Template                    | <code class="language-plaintext highlighter-rouge">fhirAnswerDisplayNo</code>               | <code class="language-plaintext highlighter-rouge">fhirAnswerDisplayNo = invalid</code>                                                                                                                           | Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer                                                                                              |
-| Template                    | <code class="language-plaintext highlighter-rouge">fhirAnswerDisplayUnknown</code>          | <code class="language-plaintext highlighter-rouge">fhirAnswerDisplayUnknown = unknown</code>                                                                                                                      | Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer                                                                                              |
-| Template                    | <code class="language-plaintext highlighter-rouge">fhirPolicyUri</code>                     | <code class="language-plaintext highlighter-rouge">fhirPolicyUri = urn:oid:2.16.840.1.113883.3.1937.777.24.2.1790</code>                                                                                          | Consent.policy.uri to uniquely identify the version of the MII Broad Consent and <em>contained addition modules (Z-Modules)</em>. <strong>Note</strong> Use of multiple <strong>commaseparated-values</strong> possible since fhir-gw-version 2026.1.0 (<code class="language-plaintext highlighter-rouge">key=value1,value2,value3;) |
-| Template                    | </code>fhirConsentCategory<code class="language-plaintext highlighter-rouge">               | </code>fhirConsentCategory = 2.16.840.1.113883.3.1937.777.24.2.184<code class="language-plaintext highlighter-rouge">                                                                                             | Consent.category.coding to uniquely identify the MII Broad Consent                                                                                                                                                                                 |
-| Template                    | </code>fhirForceProfileConsent<code class="language-plaintext highlighter-rouge">           | </code>fhirForceProfileConsent = https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung<code class="language-plaintext highlighter-rouge">                | Force default export of consent resources **based on the specific template** in MII KDS Consent-specific Profile                                                                                                                                   |
-| Template                    | </code>fhirForceProfileDocumentReference<code class="language-plaintext highlighter-rouge"> | </code>fhirForceProfileDocumentReference = https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference<code class="language-plaintext highlighter-rouge"> | Force default export of document reference resources (e.g. document scans) **based on the specific template** in MII KDS Consent-specific Profile for document reference                                                                           |
-| Template                    | </code>fhirForceProfileProvenance<code class="language-plaintext highlighter-rouge">        | </code>fhirForceProfileProvenance = https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance`               | Force default export of provenance resources (e.g. signatures or references on scans) <strong>based on the specific template</strong> in MII KDS Consent-specific Profile for provenance                                                                        |</p>
+<table>
+  <thead>
+    <tr>
+      <th>Scope</th>
+      <th>ExternalProperty</th>
+      <th>Example</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Template</td>
+      <td><code class="language-plaintext highlighter-rouge">fhirPolicyValueSet</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirPolicyValueSet = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3</code></td>
+      <td>Default value set to be used for <code class="language-plaintext highlighter-rouge">Consent.Provision.Coding</code>. Affects all policies assigned to the template.</td>
+    </tr>
+    <tr>
+      <td>Template</td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeSystem</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeSystem = 2.16.840.1.113883.3.1937.777.24.5.2</code></td>
+      <td>Individualisation of answers and answer options for FHIR Questionnaire and FHIR. Use with Questionnaire.Item.Item.AnswerValueset QuestionnaireResponse through selected external properties.</td>
+    </tr>
+    <tr>
+      <td>Template</td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerValueSet</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerValueSet = https://www.medizininformatik-initiative.de/fhir/ValueSet/MiiConsentAnswerValueSet</code></td>
+      <td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.AnswerValueset</td>
+    </tr>
+    <tr>
+      <td>Template</td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeYes</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeYes = 2.16.840.1.113883.3.1937.777.24.5.2.1</code></td>
+      <td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer</td>
+    </tr>
+    <tr>
+      <td>Template</td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeNo</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeNo = 2.16.840.1.113883.3.1937.777.24.5.2.2</code></td>
+      <td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer</td>
+    </tr>
+    <tr>
+      <td>Template</td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeUnknown</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerCodeUnknown = 2.16.840.1.113883.3.1937.777.24.5.2.3</code></td>
+      <td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer.</td>
+    </tr>
+    <tr>
+      <td>Template</td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerDisplayYes</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerDisplayYes = valid</code></td>
+      <td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer</td>
+    </tr>
+    <tr>
+      <td>Template</td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerDisplayNo</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerDisplayNo = invalid</code></td>
+      <td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer</td>
+    </tr>
+    <tr>
+      <td>Template</td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerDisplayUnknown</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirAnswerDisplayUnknown = unknown</code></td>
+      <td>Individualisation of answers and answer options for FHIR Questionnaire. Use with Questionnaire.Item.Item.Initial and QuestionnaireResponse.Item.Anwer</td>
+    </tr>
+    <tr>
+      <td>Template</td>
+      <td><code class="language-plaintext highlighter-rouge">fhirPolicyUri</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirPolicyUri = urn:oid:2.16.840.1.113883.3.1937.777.24.2.1790</code></td>
+      <td>Consent.policy.uri to uniquely identify the version of the MII Broad Consent and <em>contained addition modules (Z-Modules)</em>. <strong>Note</strong> Use of multiple <strong>commaseparated-values</strong> possible since fhir-gw-version 2026.1.0 (<code class="language-plaintext highlighter-rouge">key=value1,value2,value3;</code>)</td>
+    </tr>
+    <tr>
+      <td>Template</td>
+      <td><code class="language-plaintext highlighter-rouge">fhirConsentCategory</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirConsentCategory = 2.16.840.1.113883.3.1937.777.24.2.184</code></td>
+      <td>Consent.category.coding to uniquely identify the MII Broad Consent</td>
+    </tr>
+    <tr>
+      <td>Template</td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileConsent</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileConsent = https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung</code></td>
+      <td>Force default export of consent resources <strong>based on the specific template</strong> in MII KDS Consent-specific Profile</td>
+    </tr>
+    <tr>
+      <td>Template</td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileDocumentReference</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileDocumentReference = https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference</code></td>
+      <td>Force default export of document reference resources (e.g. document scans) <strong>based on the specific template</strong> in MII KDS Consent-specific Profile for document reference</td>
+    </tr>
+    <tr>
+      <td>Template</td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileProvenance</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fhirForceProfileProvenance = https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance</code></td>
+      <td>Force default export of provenance resources (e.g. signatures or references on scans) <strong>based on the specific template</strong> in MII KDS Consent-specific Profile for provenance</td>
+    </tr>
+  </tbody>
+</table>
 
 <h4 id="externalproperties-auf-modul-ebene">ExternalProperties auf Modul-Ebene</h4>
 
@@ -414,7 +494,7 @@ Details unter <a href="StructureDefinition-Consent.html">https://www.ths-greifsw
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 17, 2026 10:42+0000">2026-06-17</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.gics#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 23, 2026 09:30+0000">2026-07-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

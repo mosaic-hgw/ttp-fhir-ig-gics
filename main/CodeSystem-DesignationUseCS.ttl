@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,40 +7,50 @@
 
 <https://ths-greifswald.de/fhir/gics/CodeSystem/DesignationUseCS> a fhir:CodeSystem ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "DesignationUseCS"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DesignationUseCS</b></p><a name=\"DesignationUseCS\"> </a><a name=\"hcDesignationUseCS\"> </a><p>This case-sensitive code system <code>https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">consent<a name=\"DesignationUseCS-consent\"> </a></td></tr><tr><td style=\"white-space:nowrap\">refusal<a name=\"DesignationUseCS-refusal\"> </a></td></tr><tr><td style=\"white-space:nowrap\">withdrawal<a name=\"DesignationUseCS-withdrawal\"> </a></td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2025.2.0"] ; # 
-  fhir:name [ fhir:v "DesignationUse"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-06-12"^^xsd:date] ; # 
-  fhir:publisher [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://www.ths-greifswald.de/" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Use codes (contexts) for terminology designations"] ; # 
-  fhir:copyright [ fhir:v "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ; # 
-  fhir:caseSensitive [ fhir:v true] ; # 
-  fhir:content [ fhir:v "complete"] ; # 
-  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
-  fhir:concept ( [
-     fhir:code [ fhir:v "consent" ] ;
-     fhir:display [ fhir:v "consent" ]
-  ] [
-     fhir:code [ fhir:v "refusal" ] ;
-     fhir:display [ fhir:v "refusal" ]
-  ] [
-     fhir:code [ fhir:v "withdrawal" ] ;
-     fhir:display [ fhir:v "withdrawal" ]
-  ] ) . # 
+  fhir:Resource.id [ fhir:value "DesignationUseCS"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DesignationUseCS</b></p><a name=\"DesignationUseCS\"> </a><a name=\"hcDesignationUseCS\"> </a><p>This case-sensitive code system <code>https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">consent<a name=\"DesignationUseCS-consent\"> </a></td></tr><tr><td style=\"white-space:nowrap\">refusal<a name=\"DesignationUseCS-refusal\"> </a></td></tr><tr><td style=\"white-space:nowrap\">withdrawal<a name=\"DesignationUseCS-withdrawal\"> </a></td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"] ;
+  fhir:CodeSystem.version [ fhir:value "2025.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "DesignationUse"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2025-06-12"^^xsd:date] ;
+  fhir:CodeSystem.publisher [ fhir:value "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.ths-greifswald.de/" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Use codes (contexts) for terminology designations"] ;
+  fhir:CodeSystem.copyright [ fhir:value "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "consent" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "consent" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "refusal" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "refusal" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "withdrawal" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "withdrawal" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/gics/CodeSystem/DesignationUseCS.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 
