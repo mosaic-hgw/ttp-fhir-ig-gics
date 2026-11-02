@@ -1,9 +1,9 @@
-# Consent - v2026.1.0
+# Consent - v2026.2.0
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2026.1.0 - ci-build  
+ 2026.2.0 - ci-build  
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -13,7 +13,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent | *Version*:2026.1.0 |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent | *Version*:2026.2.0 |
 | Active as of 2025-06-12 | *Computable Name*:Consent |
 | **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-Consent.csv), [Excel
   "resourceType" : "StructureDefinition",
   "id" : "Consent",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0",
   "name" : "Consent",
   "title" : "Consent",
   "status" : "active",
@@ -144,24 +144,70 @@ Other representations of profile: [CSV](StructureDefinition-Consent.csv), [Excel
       "mustSupport" : true
     },
     {
+      "id" : "Consent.category",
+      "path" : "Consent.category",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "coding.system"
+        }],
+        "description" : "Slicing nach CodeSystem der Kategorie",
+        "rules" : "open"
+      }
+    },
+    {
       "id" : "Consent.category:consentCategory",
       "path" : "Consent.category",
-      "sliceName" : "consentCategory"
+      "sliceName" : "consentCategory",
+      "min" : 1,
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Consent.category:consentCategory.coding",
       "path" : "Consent.category.coding",
-      "max" : "1"
+      "min" : 1,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:consentCategory.coding.system",
+      "path" : "Consent.category.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:consentCategory.coding.code",
+      "path" : "Consent.category.coding.code",
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Consent.category:resultType",
       "path" : "Consent.category",
-      "sliceName" : "resultType"
+      "sliceName" : "resultType",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Consent.category:resultType.coding",
       "path" : "Consent.category.coding",
-      "max" : "1"
+      "min" : 1,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:resultType.coding.system",
+      "path" : "Consent.category.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:resultType.coding.code",
+      "path" : "Consent.category.coding.code",
+      "min" : 1,
+      "mustSupport" : true
     }]
   }
 }

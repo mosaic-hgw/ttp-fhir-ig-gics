@@ -1,6 +1,6 @@
 {
   "package": "ths-greifswald.ttp-fhir-gw.gics",
-  "version": "2026.1.0",
+  "version": "2026.2.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -495,7 +495,8 @@
         "code",
         "string",
         "uri",
-        "code"
+        "code",
+        "date"
       ]
     },
     {
@@ -574,6 +575,9 @@
     ],
     "http://fhir.de/ConsentManagement/StructureDefinition/Logo": [
       "ResearchStudy"
+    ],
+    "http://fhir.de/ConsentManagement/StructureDefinition/Policy": [
+      "Questionnaire"
     ],
     "http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation": [
       "Bundle.entry.resource.entry.resource.signature",
@@ -662,11 +666,17 @@
     "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
       "ImplementationGuide.dependsOn"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implied-type-slice": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/type-profile-constraints": [
+      "StructureDefinition.snapshot.element.type.profile"
     ],
     "https://ths-greifswald.de/fhir/StructureDefinition/gics/Comment": [
       "VerificationResult"

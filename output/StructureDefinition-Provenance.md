@@ -1,9 +1,9 @@
-# Herkunftsinformationen und Signatur - v2026.1.0
+# Herkunftsinformationen und Signatur - v2026.2.0
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2026.1.0 - ci-build  
+ 2026.2.0 - ci-build  
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -13,7 +13,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/gics/Provenance | *Version*:2026.1.0 |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/gics/Provenance | *Version*:2026.2.0 |
 | Active as of 2025-06-12 | *Computable Name*:Provenance |
 | **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-Provenance.csv), [Ex
   "resourceType" : "StructureDefinition",
   "id" : "Provenance",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/Provenance",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0",
   "name" : "Provenance",
   "title" : "Herkunftsinformationen und Signatur",
   "status" : "active",

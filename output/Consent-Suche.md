@@ -1,9 +1,9 @@
-# Consent Suche - v2026.1.0
+# Consent Suche - v2026.2.0
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2026.1.0 - ci-build  
+ 2026.2.0 - ci-build  
 
 * [**Table of Contents**](toc.md)
 * **Consent Suche**

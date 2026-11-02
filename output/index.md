@@ -1,9 +1,9 @@
-# Implementation Guide gICS - v2026.1.0
+# Implementation Guide gICS - v2026.2.0
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2026.1.0 - ci-build  
+ 2026.2.0 - ci-build  
 
 * [**Table of Contents**](toc.md)
 * **Implementation Guide gICS**
@@ -12,10 +12,10 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics | *Version*:2026.1.0 |
-| Active as of 2026-07-23 | *Computable Name*:IGTTPFHIRGatewaygICS |
+| *Official URL*:https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics | *Version*:2026.2.0 |
+| Active as of 2026-11-02 | *Computable Name*:IGTTPFHIRGatewaygICS |
 
-# FHIR-Support für Einwilligungsmanagement
+### FHIR-Support für Einwilligungsmanagement
 
 Stand 24.02.2026
 
@@ -25,7 +25,7 @@ Diese werden in entsprechenden [Implementierungsleitfäden](https://www.ths-grei
 
 Der vorliegende **Implementation Guide Einwilligungsmanagement** setzt den Fokus auf Operations, Profile und Extensions, die für das [Einwilligungsmanagement gICS](https://www.ths-greifswald.de/gics/fhir) relevant sind.
 
-### Endpunkt
+##### Endpunkt
 
 Der FHIR-Endpunkt (`base`) für das Einwilligungsmanagement ist
 
@@ -39,19 +39,19 @@ Das Anlegen, Suchen und Auswerten von Einwilligungsinhalten wird im **[HL7 FHIR�
 
  ![](assets/images/fhirgateway-gics.png) 
 
-### Package
+##### Package
 
 Das automatisch erzeugte Package (TGZ) steht als Download zur Verfügung unter: [Link](package.tgz).
 
-### Implementierung
+##### Implementierung
 
 Martin Bialke, Peter Penndorf, Christoper Hampf, Frank Michael Moser
 
-### Autoren
+##### Autoren
 
 Martin Bialke, Stefan Lang
 
-### Kontakt
+##### Kontakt
 
 kontakt-ths (at) med.uni-greifswald.de
 
@@ -64,10 +64,10 @@ kontakt-ths (at) med.uni-greifswald.de
   "resourceType" : "ImplementationGuide",
   "id" : "ths-greifswald.ttp-fhir-gw.gics",
   "url" : "https://ths-greifswald.de/fhir/gics/ImplementationGuide/ths-greifswald.ttp-fhir-gw.gics",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0",
   "name" : "IGTTPFHIRGatewaygICS",
   "status" : "active",
-  "date" : "2026-07-23T11:40:31+02:00",
+  "date" : "2026-11-02T17:40:29+01:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
@@ -87,7 +87,7 @@ kontakt-ths (at) med.uni-greifswald.de
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.2.0"
+    "version" : "7.5.0"
   },
   {
     "id" : "hl7ext",
@@ -97,299 +97,18 @@ kontakt-ths (at) med.uni-greifswald.de
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.3.0"
+    "version" : "5.4.0"
   },
   {
     "id" : "de_einwilligungsmanagement",
     "uri" : "http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement",
     "packageId" : "de.einwilligungsmanagement",
-    "version" : "2.0.3"
-  },
-  {
-    "id" : "de_medizininformatikinitiative_kerndatensatz_consent",
-    "uri" : "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.consent/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.consent",
-    "packageId" : "de.medizininformatikinitiative.kerndatensatz.consent",
-    "version" : "2025.0.4"
+    "version" : "2.0.4"
   }],
   "definition" : {
     "extension" : [{
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "copyrightyear"
-      },
-      {
-        "url" : "value",
-        "valueString" : "2021+"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "releaselabel"
-      },
-      {
-        "url" : "value",
-        "valueString" : "ci-build"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "autoload-resources"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-liquid"
-      },
-      {
-        "url" : "value",
-        "valueString" : "template/liquid"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-liquid"
-      },
-      {
-        "url" : "value",
-        "valueString" : "input/liquid"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-qa"
-      },
-      {
-        "url" : "value",
-        "valueString" : "temp/qa"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-temp"
-      },
-      {
-        "url" : "value",
-        "valueString" : "temp/pages"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-output"
-      },
-      {
-        "url" : "value",
-        "valueString" : "output"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-suppressed-warnings"
-      },
-      {
-        "url" : "value",
-        "valueString" : "input/ignoreWarnings.txt"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-history"
-      },
-      {
-        "url" : "value",
-        "valueString" : "https://ths-greifswald.de/fhir/gics/history.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "template-html"
-      },
-      {
-        "url" : "value",
-        "valueString" : "template-page.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "template-md"
-      },
-      {
-        "url" : "value",
-        "valueString" : "template-page-md.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-contact"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-context"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-copyright"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-jurisdiction"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-license"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-publisher"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-version"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-wg"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "active-tables"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "fmm-definition"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "propagate-status"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "excludelogbinaryformat"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "tabbed-snapshots"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.3.0"
     },
     {
       "extension" : [{
@@ -670,6 +389,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-ConsentTemplate-example-1.html"
       }],
       "reference" : {
         "reference" : "Questionnaire/ConsentTemplate-example-1"
@@ -681,6 +404,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-ActivityDefinitionCode.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/ActivityDefinitionCode"
@@ -693,6 +420,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationDefinition-AddConsent.html"
       }],
       "reference" : {
         "reference" : "OperationDefinition/AddConsent"
@@ -705,6 +436,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-AddConsent-response-example-1.html"
       }],
       "reference" : {
         "reference" : "Bundle/AddConsent-response-example-1"
@@ -716,6 +451,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationDefinition-AddConsentOptOut.html"
       }],
       "reference" : {
         "reference" : "OperationDefinition/AddConsentOptOut"
@@ -728,6 +467,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-AddConsentOptOut-response-example-1.html"
       }],
       "reference" : {
         "reference" : "Bundle/AddConsentOptOut-response-example-1"
@@ -739,6 +482,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationDefinition-AllConsentsForDomain.html"
       }],
       "reference" : {
         "reference" : "OperationDefinition/AllConsentsForDomain"
@@ -751,6 +498,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-AllConsentsForDomain-request-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/AllConsentsForDomain-request-example-1"
@@ -762,6 +513,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-AllConsentsForDomain-response-example-1.html"
       }],
       "reference" : {
         "reference" : "Bundle/AllConsentsForDomain-response-example-1"
@@ -773,6 +528,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationDefinition-AllConsentsForPerson.html"
       }],
       "reference" : {
         "reference" : "OperationDefinition/AllConsentsForPerson"
@@ -785,6 +544,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-AllConsentsForPerson-request-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/AllConsentsForPerson-request-example-1"
@@ -796,6 +559,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-AllConsentsForPerson-response-example-1.html"
       }],
       "reference" : {
         "reference" : "Bundle/AllConsentsForPerson-response-example-1"
@@ -807,6 +574,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationDefinition-AllConsentsForTemplate.html"
       }],
       "reference" : {
         "reference" : "OperationDefinition/AllConsentsForTemplate"
@@ -819,6 +590,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-AllConsentsForTemplate-request-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/AllConsentsForTemplate-request-example-1"
@@ -830,6 +605,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-AllConsentsForTemplate-response-example-1.html"
       }],
       "reference" : {
         "reference" : "Bundle/AllConsentsForTemplate-response-example-1"
@@ -841,6 +620,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationDefinition-AllPolicyStatesForPerson.html"
       }],
       "reference" : {
         "reference" : "OperationDefinition/AllPolicyStatesForPerson"
@@ -853,6 +636,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-AllPolicyStatesForPerson-request-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/AllPolicyStatesForPerson-request-example-1"
@@ -864,6 +651,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-AllPolicyStatesForPerson-response-example-1.html"
       }],
       "reference" : {
         "reference" : "Bundle/AllPolicyStatesForPerson-response-example-1"
@@ -875,6 +666,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BloomfilterTypeVS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BloomfilterTypeVS"
@@ -886,6 +681,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BloomfilterTypeCS.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BloomfilterTypeCS"
@@ -898,6 +697,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-Comment.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/Comment"
@@ -910,6 +713,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ConfigurationProperties.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ConfigurationProperties"
@@ -922,6 +729,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-Consent.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/Consent"
@@ -934,6 +745,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ConsentDomain.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ConsentDomain"
@@ -946,6 +761,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ConsentModule.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ConsentModule"
@@ -958,6 +777,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ConsentPolicyReference.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ConsentPolicyReference"
@@ -970,6 +793,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ConsentQualityControl.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ConsentQualityControl"
@@ -982,6 +809,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ConsentTemplate.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ConsentTemplate"
@@ -994,6 +825,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-Consent-Bundle-example-1.html"
       }],
       "reference" : {
         "reference" : "Bundle/Consent-Bundle-example-1"
@@ -1005,6 +840,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Consent"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Consent-Consent-example-1.html"
       }],
       "reference" : {
         "reference" : "Consent/Consent-example-1"
@@ -1016,6 +855,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Consent"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Consent-Consent-example-2.html"
       }],
       "reference" : {
         "reference" : "Consent/Consent-example-2"
@@ -1027,6 +870,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Consent"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Consent-Consent-example-3.html"
       }],
       "reference" : {
         "reference" : "Consent/Consent-example-3"
@@ -1038,6 +885,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ConsentComponentTypeVS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ConsentComponentTypeVS"
@@ -1049,6 +900,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ConsentComponentTypeCS.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ConsentComponentTypeCS"
@@ -1061,6 +916,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-ConsentModule-example-1.html"
       }],
       "reference" : {
         "reference" : "Questionnaire/ConsentModule-example-1"
@@ -1072,6 +931,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ConsentPolicy.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ConsentPolicy"
@@ -1084,6 +947,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ConsentPolicyActionVS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ConsentPolicyActionVS"
@@ -1095,6 +962,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ConsentPolicyActionCS.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ConsentPolicyActionCS"
@@ -1107,6 +978,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ConsentPolicyActorVS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ConsentPolicyActorVS"
@@ -1118,6 +993,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ConsentPolicyActorCS.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ConsentPolicyActorCS"
@@ -1130,6 +1009,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ConsentPolicyClassVS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ConsentPolicyClassVS"
@@ -1141,6 +1024,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ConsentPolicyClassCS.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ConsentPolicyClassCS"
@@ -1153,6 +1040,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ConsentPolicyPurposeVS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ConsentPolicyPurposeVS"
@@ -1164,6 +1055,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ConsentPolicyPurposeCS.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ConsentPolicyPurposeCS"
@@ -1176,6 +1071,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "VerificationResult"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "VerificationResult-ConsentQualityControl-example-1.html"
       }],
       "reference" : {
         "reference" : "VerificationResult/ConsentQualityControl-example-1"
@@ -1187,6 +1086,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ConsentStatusVS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ConsentStatusVS"
@@ -1198,6 +1101,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ConsentStatusCS.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ConsentStatusCS"
@@ -1210,6 +1117,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ConsentStatusConsentFullValuesVS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ConsentStatusConsentFullValuesVS"
@@ -1221,6 +1132,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ConsentStatusConsentOptOutFullValuesVS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ConsentStatusConsentOptOutFullValuesVS"
@@ -1232,6 +1147,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ConsentStatusConsentOptOutShortValuesVS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ConsentStatusConsentOptOutShortValuesVS"
@@ -1243,6 +1162,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ConsentStatusConsentShortValuesVS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ConsentStatusConsentShortValuesVS"
@@ -1254,6 +1177,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ConsentStatusObjectionFullValuesVS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ConsentStatusObjectionFullValuesVS"
@@ -1265,6 +1192,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ConsentStatusObjectionShortValuesVS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ConsentStatusObjectionShortValuesVS"
@@ -1276,6 +1207,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ConsentStatusRefusalFullValuesVS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ConsentStatusRefusalFullValuesVS"
@@ -1287,6 +1222,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ConsentStatusRefusalShortValuesVS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ConsentStatusRefusalShortValuesVS"
@@ -1298,6 +1237,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ConsentStatusWithdrawalFullValuesVS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ConsentStatusWithdrawalFullValuesVS"
@@ -1309,6 +1252,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ConsentStatusWithdrawalShortValuesVS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ConsentStatusWithdrawalShortValuesVS"
@@ -1320,6 +1267,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-Created.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/Created"
@@ -1332,6 +1283,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationDefinition-CurrentConsentForPersonAndTemplate.html"
       }],
       "reference" : {
         "reference" : "OperationDefinition/CurrentConsentForPersonAndTemplate"
@@ -1344,6 +1299,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-CurrentConsentForPersonAndTemplate-request-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/CurrentConsentForPersonAndTemplate-request-example-1"
@@ -1355,6 +1314,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationDefinition-CurrentPolicyStatesForPerson.html"
       }],
       "reference" : {
         "reference" : "OperationDefinition/CurrentPolicyStatesForPerson"
@@ -1367,6 +1330,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-CurrentPolicyStatesForPerson-request-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/CurrentPolicyStatesForPerson-request-example-1"
@@ -1378,6 +1345,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-CurrentPolicyStatesForPerson-response-example-1.html"
       }],
       "reference" : {
         "reference" : "Bundle/CurrentPolicyStatesForPerson-response-example-1"
@@ -1389,6 +1360,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-DesignationUseCS.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/DesignationUseCS"
@@ -1401,6 +1376,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-domain.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/domain"
@@ -1413,6 +1392,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-example-Batch-provideCD.html"
       }],
       "reference" : {
         "reference" : "Bundle/example-Batch-provideCD"
@@ -1424,6 +1407,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-example-Batch-verify-consent-state.html"
       }],
       "reference" : {
         "reference" : "Bundle/example-Batch-verify-consent-state"
@@ -1435,6 +1422,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-example-BatchResponse-provideCD.html"
       }],
       "reference" : {
         "reference" : "Bundle/example-BatchResponse-provideCD"
@@ -1446,6 +1437,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-example-BatchResponse-verify-consent-state.html"
       }],
       "reference" : {
         "reference" : "Bundle/example-BatchResponse-verify-consent-state"
@@ -1457,6 +1452,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ExchangeFormatDefinition.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ExchangeFormatDefinition"
@@ -1469,6 +1468,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ExpirationProperty.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ExpirationProperty"
@@ -1481,6 +1484,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ExternalProperty.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ExternalProperty"
@@ -1493,6 +1500,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-FreeTextDefAttributes.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/FreeTextDefAttributes"
@@ -1505,6 +1516,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationDefinition-GetAllConsentedIdsFor.html"
       }],
       "reference" : {
         "reference" : "OperationDefinition/GetAllConsentedIdsFor"
@@ -1517,6 +1532,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-GetAllConsentedIdsFor-request-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/GetAllConsentedIdsFor-request-example-1"
@@ -1528,6 +1547,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-GetAllConsentedIdsFor-response-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/GetAllConsentedIdsFor-response-example-1"
@@ -1539,6 +1562,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-Provenance.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/Provenance"
@@ -1551,6 +1578,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:complex-type"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-identifier-bloomfilter.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/identifier-bloomfilter"
@@ -1563,6 +1594,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationDefinition-IsConsented.html"
       }],
       "reference" : {
         "reference" : "OperationDefinition/IsConsented"
@@ -1575,6 +1610,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-IsConsented-request-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/IsConsented-request-example-1"
@@ -1586,6 +1625,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-IsConsented-request-example-2.html"
       }],
       "reference" : {
         "reference" : "Parameters/IsConsented-request-example-2"
@@ -1597,6 +1640,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-IsConsented-response-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/IsConsented-response-example-1"
@@ -1608,6 +1655,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ActivityDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ActivityDefinition-ConsentPolicy-example-1.html"
       }],
       "reference" : {
         "reference" : "ActivityDefinition/ConsentPolicy-example-1"
@@ -1620,6 +1671,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ActivityDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ActivityDefinition-ConsentPolicy-example-2.html"
       }],
       "reference" : {
         "reference" : "ActivityDefinition/ConsentPolicy-example-2"
@@ -1632,6 +1687,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ActivityDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ActivityDefinition-ConsentPolicy-example-3.html"
       }],
       "reference" : {
         "reference" : "ActivityDefinition/ConsentPolicy-example-3"
@@ -1644,6 +1703,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ResearchStudy"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ResearchStudy-ConsentDomain-example-2.html"
       }],
       "reference" : {
         "reference" : "ResearchStudy/ConsentDomain-example-2"
@@ -1656,6 +1719,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ResearchStudy"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ResearchStudy-ConsentDomain-example-1.html"
       }],
       "reference" : {
         "reference" : "ResearchStudy/ConsentDomain-example-1"
@@ -1668,6 +1735,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ResearchStudy"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ResearchStudy-ConsentDomain-example-3.html"
       }],
       "reference" : {
         "reference" : "ResearchStudy/ConsentDomain-example-3"
@@ -1680,6 +1751,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ModuleVersionFormat.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ModuleVersionFormat"
@@ -1692,6 +1767,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-Parameters-AddConsent-request-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/Parameters-AddConsent-request-example-1"
@@ -1703,6 +1782,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-Parameters-AddConsentOptOut-request-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/Parameters-AddConsentOptOut-request-example-1"
@@ -1714,6 +1797,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-PatientPseudonymized.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/PatientPseudonymized"
@@ -1726,6 +1813,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-PatientPseudonymized-example-1.html"
       }],
       "reference" : {
         "reference" : "Patient/PatientPseudonymized-example-1"
@@ -1737,6 +1828,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PolicyVS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PolicyVS"
@@ -1748,6 +1843,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-PolicyCS.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/PolicyCS"
@@ -1760,6 +1859,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-PolicyVersionFormat.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/PolicyVersionFormat"
@@ -1772,6 +1875,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PolicyStatusVS.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PolicyStatusVS"
@@ -1783,6 +1890,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-Position.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/Position"
@@ -1795,6 +1906,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-Property.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/Property"
@@ -1807,6 +1922,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Provenance"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Provenance-Provenance-example-1.html"
       }],
       "reference" : {
         "reference" : "Provenance/Provenance-example-1"
@@ -1818,6 +1937,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-QuestionnaireLabel.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/QuestionnaireLabel"
@@ -1830,6 +1953,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ShortText.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ShortText"
@@ -1842,6 +1969,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-SupportedVersion.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/SupportedVersion"
@@ -1854,6 +1985,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-TemplateVersionFormat.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/TemplateVersionFormat"
@@ -1866,6 +2001,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-useContextIdentifier.html"
       }],
       "reference" : {
         "reference" : "SearchParameter/useContextIdentifier"
@@ -1878,6 +2017,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ValidFromProperty.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ValidFromProperty"
@@ -1890,6 +2033,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-ConsentModule-example-2.html"
       }],
       "reference" : {
         "reference" : "Questionnaire/ConsentModule-example-2"
@@ -1902,6 +2049,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-VersionLabel.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/VersionLabel"

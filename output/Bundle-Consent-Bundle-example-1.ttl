@@ -1,7 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
-@prefix loinc: <https://loinc.org/rdf/> .
+@prefix loinc: <http://loinc.org/rdf#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -9,219 +8,255 @@
 
 <https://ths-greifswald.de/fhir/gics/Bundle/Consent-Bundle-example-1> a fhir:Bundle ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "Consent-Bundle-example-1"] ; # 
-  fhir:meta [
-     fhir:lastUpdated [ fhir:v "2023-04-28T11:01:33.912+02:00"^^xsd:dateTime ]
-  ] ; # 
-  fhir:type [ fhir:v "searchset"] ; # 
-  fhir:total [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
-  fhir:link ( [
-     fhir:relation [ fhir:v "self" ] ;
-     fhir:url [ fhir:v "http://server:8080/ttp-fhir/fhir/gics/Consent?provisionCode=urn%3Aoid%3A2.16.840.1.113883.3.1937.777.24.5.3%7C2.16.840.1.113883.3.1937.777.24.5.3.8"^^xsd:anyURI ]
-  ] ) ; # 
-  fhir:entry ( [
-     fhir:fullUrl [ fhir:v "http://server:8080/ttp-fhir/fhir/gics/Consent/23db88b1-6e47-4907-8d9f-3fb4b2e97630"^^xsd:anyURI ] ;
-     fhir:resource ( <http://server:8080/ttp-fhir/fhir/gics/Consent/23db88b1-6e47-4907-8d9f-3fb4b2e97630> )
-  ] [
-     fhir:fullUrl [ fhir:v "http://server:8080/ttp-fhir/fhir/gics/Consent/fab23c8e-6a94-49da-acfd-4df51098ca22"^^xsd:anyURI ] ;
-     fhir:resource ( <http://server:8080/ttp-fhir/fhir/gics/Consent/fab23c8e-6a94-49da-acfd-4df51098ca22> )
-  ] ) . # 
+  fhir:Resource.id [ fhir:value "Consent-Bundle-example-1"] ;
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2023-04-28T11:01:33.912+02:00"^^xsd:dateTime ]
+  ] ;
+  fhir:Bundle.type [ fhir:value "searchset"] ;
+  fhir:Bundle.total [ fhir:value "2"^^xsd:nonNegativeInteger] ;
+  fhir:Bundle.link [
+     fhir:index 0 ;
+     fhir:Bundle.link.relation [ fhir:value "self" ] ;
+     fhir:Bundle.link.url [ fhir:value "http://server:8080/ttp-fhir/fhir/gics/Consent?provisionCode=urn%3Aoid%3A2.16.840.1.113883.3.1937.777.24.5.3%7C2.16.840.1.113883.3.1937.777.24.5.3.8" ]
+  ] ;
+  fhir:Bundle.entry [
+     fhir:index 0 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://server:8080/ttp-fhir/fhir/gics/Consent/23db88b1-6e47-4907-8d9f-3fb4b2e97630" ] ;
+     fhir:Bundle.entry.resource <http://server:8080/ttp-fhir/fhir/gics/Consent/23db88b1-6e47-4907-8d9f-3fb4b2e97630>
+  ], [
+     fhir:index 1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://server:8080/ttp-fhir/fhir/gics/Consent/fab23c8e-6a94-49da-acfd-4df51098ca22" ] ;
+     fhir:Bundle.entry.resource <http://server:8080/ttp-fhir/fhir/gics/Consent/fab23c8e-6a94-49da-acfd-4df51098ca22>
+  ] .
 
 <http://server:8080/ttp-fhir/fhir/gics/Consent/23db88b1-6e47-4907-8d9f-3fb4b2e97630> a fhir:Consent ;
-  fhir:id [ fhir:v "23db88b1-6e47-4907-8d9f-3fb4b2e97630"] ; # 
-  fhir:meta [
-     fhir:lastUpdated [ fhir:v "2023-04-27T16:13:49.367+02:00"^^xsd:dateTime ] ;
-     fhir:profile ( [
-       fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "23db88b1-6e47-4907-8d9f-3fb4b2e97630"] ;
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2023-04-27T16:13:49.367+02:00"^^xsd:dateTime ] ;
+     fhir:Meta.profile [
+       fhir:value "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent" ;
+       fhir:index 0 ;
        fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent>
-     ] [
-       fhir:v "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"^^xsd:anyURI ;
+     ], [
+       fhir:value "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung" ;
+       fhir:index 1 ;
        fhir:link <https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Consent_23db88b1-6e47-4907-8d9f-3fb4b2e97630\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Consent 23db88b1-6e47-4907-8d9f-3fb4b2e97630</b></p><a name=\"23db88b1-6e47-4907-8d9f-3fb4b2e97630\"> </a><a name=\"hc23db88b1-6e47-4907-8d9f-3fb4b2e97630\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2023-04-27 16:13:49+0200</p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-Consent.html\">Consent</a>, <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2025.0.4&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung\">Profile - MI-I - Consent - Einwilligung</a></p></div><h2>Participants</h2><table class=\"grid\"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title=\"Who the consent applies to\">Patient</td><td><a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/d2850872-1e98-47a5-b345-62f133833094\">Pseudonym dic_1H51T</a></td></tr><tr><td title=\"Who manages the consent through its lifecycle.\">Manager</td><td>MII</td></tr></table><p>This consent is made under the regulation <span title=\"Codes:{https://mii.de/fhir/CodeSystem/gics/Policy/MII MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform}\">Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher</span> and the policy <code>urn:oid:2.16.840.1.113883.3.1937.777.24.2.184</code> .</p><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Rule\">Rule</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Period\">Time Period</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Data\">What</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Other Applicable Rules\">Rules</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2023-04-27 00:00:00+0200 --&gt; 2053-04-27 00:00:00+0200</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{https://mii.de/fhir/CodeSystem/gics/Policy/MII MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform}\">Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher</span></li><li>Code: <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.8}\">MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU</span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr><td colspan=\"4\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:extension ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "domain"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Reference ;
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Consent_23db88b1-6e47-4907-8d9f-3fb4b2e97630\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Consent 23db88b1-6e47-4907-8d9f-3fb4b2e97630</b></p><a name=\"23db88b1-6e47-4907-8d9f-3fb4b2e97630\"> </a><a name=\"hc23db88b1-6e47-4907-8d9f-3fb4b2e97630\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2023-04-27 16:13:49+0200</p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-Consent.html\">Consent</a>, <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung\">https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung</a></p></div><h2>Participants</h2><table class=\"grid\"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title=\"Who the consent applies to\">Patient</td><td><a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/d2850872-1e98-47a5-b345-62f133833094\">Pseudonym dic_1H51T</a></td></tr><tr><td title=\"Who manages the consent through its lifecycle.\">Manager</td><td>MII</td></tr></table><p>This consent is made under the regulation <span title=\"Codes:{https://mii.de/fhir/CodeSystem/gics/Policy/MII MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform}\">Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher</span> and the policy <code>urn:oid:2.16.840.1.113883.3.1937.777.24.2.184</code> .</p><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder1\"><tr class=\"xhtRowBorder2\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Rule\">Rule</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Period\">Time Period</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Data\">What</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Other Applicable Rules\">Rules</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"></td></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck00.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">permit / </span>permit</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><ul><li>Period: 2023-04-27 00:00:00+0200 --&gt; 2053-04-27 00:00:00+0200</li></ul></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><ul><li>Code: <span title=\"Codes:{https://mii.de/fhir/CodeSystem/gics/Policy/MII MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform}\">Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher</span></li><li>Code: <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.8}\">MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU</span></li></ul></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"></td></tr>#xD;\n<tr><td colspan=\"4\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "domain" ] ;
+       fhir:Extension.valueReference [
          fhir:link <https://ths-greifswald.de/fhir/gics/ResearchStudy/91e74202-4a7b-43ba-a9b9-4017634c9540> ;
-         fhir:reference [ fhir:v "ResearchStudy/91e74202-4a7b-43ba-a9b9-4017634c9540" ]
+         fhir:Reference.reference [ fhir:value "ResearchStudy/91e74202-4a7b-43ba-a9b9-4017634c9540" ]
        ]
-     ] [
-       fhir:url [ fhir:v "status"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Coding ;
-         fhir:system [ fhir:v "http://hl7.org/fhir/publication-status"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "active" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "status" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/publication-status" ] ;
+         fhir:Coding.code [ fhir:value "active" ]
        ]
-     ] ) ;
-     fhir:url [ fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"^^xsd:anyURI ]
-  ] ) ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:scope [
-     fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "research" ]
-     ] )
-  ] ; # 
-  fhir:category ( [
-     fhir:coding ( [
-       a loinc:57016-8 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "57016-8" ]
-     ] )
-  ] [
-     fhir:coding ( [
-       fhir:system [ fhir:v "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.2.184" ]
-     ] )
-  ] ) ; # 
-  fhir:patient [
-     fhir:link <https://ths-greifswald.de/fhir/gics/Patient/d2850872-1e98-47a5-b345-62f133833094> ;
-     fhir:reference [ fhir:v "Patient/d2850872-1e98-47a5-b345-62f133833094" ] ;
-     fhir:display [ fhir:v "Pseudonym dic_1H51T" ]
-  ] ; # 
-  fhir:dateTime [ fhir:v "2023-04-27T00:00:00+02:00"^^xsd:dateTime] ; # 
-  fhir:organization ( [
-     fhir:display [ fhir:v "MII" ]
-  ] ) ; # 
-  fhir:source [
-     a fhir:Reference ;
-     fhir:link <https://ths-greifswald.de/fhir/gics/QuestionnaireResponse/4ec9a105-1818-4c92-9986-2821d5bab565> ;
-     fhir:reference [ fhir:v "QuestionnaireResponse/4ec9a105-1818-4c92-9986-2821d5bab565" ]
-  ] ; # 
-  fhir:policy ( [
-     fhir:uri [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.2.184"^^xsd:anyURI ]
-  ] ) ; # 
-  fhir:policyRule [
-     fhir:coding ( [
-       fhir:system [ fhir:v "https://mii.de/fhir/CodeSystem/gics/Policy/MII"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform" ] ;
-       fhir:display [ fhir:v "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher" ]
-     ] )
-  ] ; # 
-  fhir:provision [
-     fhir:type [ fhir:v "permit" ] ;
-     fhir:period [
-       fhir:start [ fhir:v "2023-04-27T00:00:00+02:00"^^xsd:dateTime ] ;
-       fhir:end [ fhir:v "2053-04-27T00:00:00+02:00"^^xsd:dateTime ]
      ] ;
-     fhir:code ( [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://mii.de/fhir/CodeSystem/gics/Policy/MII"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform" ] ;
-         fhir:display [ fhir:v "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher" ]
-       ] )
-     ] [
-       fhir:coding ( [
-         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.3.8" ] ;
-         fhir:display [ fhir:v "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU" ]
-       ] )
-     ] )
-  ] . # 
+     fhir:Extension.url [ fhir:value "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference" ]
+  ] ;
+  fhir:Consent.status [ fhir:value "active"] ;
+  fhir:Consent.scope [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/consentscope" ] ;
+       fhir:Coding.code [ fhir:value "research" ]
+     ]
+  ] ;
+  fhir:Consent.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:57016-8 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "57016-8" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category" ] ;
+       fhir:Coding.code [ fhir:value "2.16.840.1.113883.3.1937.777.24.2.184" ]
+     ]
+  ] ;
+  fhir:Consent.patient [
+     fhir:link <https://ths-greifswald.de/fhir/gics/Patient/d2850872-1e98-47a5-b345-62f133833094> ;
+     fhir:Reference.reference [ fhir:value "Patient/d2850872-1e98-47a5-b345-62f133833094" ] ;
+     fhir:Reference.display [ fhir:value "Pseudonym dic_1H51T" ]
+  ] ;
+  fhir:Consent.dateTime [ fhir:value "2023-04-27T00:00:00+02:00"^^xsd:dateTime] ;
+  fhir:Consent.organization [
+     fhir:index 0 ;
+     fhir:Reference.display [ fhir:value "MII" ]
+  ] ;
+  fhir:Consent.sourceReference [
+     fhir:link <https://ths-greifswald.de/fhir/gics/QuestionnaireResponse/4ec9a105-1818-4c92-9986-2821d5bab565> ;
+     fhir:Reference.reference [ fhir:value "QuestionnaireResponse/4ec9a105-1818-4c92-9986-2821d5bab565" ]
+  ] ;
+  fhir:Consent.policy [
+     fhir:index 0 ;
+     fhir:Consent.policy.uri [ fhir:value "urn:oid:2.16.840.1.113883.3.1937.777.24.2.184" ]
+  ] ;
+  fhir:Consent.policyRule [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://mii.de/fhir/CodeSystem/gics/Policy/MII" ] ;
+       fhir:Coding.code [ fhir:value "MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform" ] ;
+       fhir:Coding.display [ fhir:value "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher" ]
+     ]
+  ] ;
+  fhir:Consent.provision [
+     fhir:Consent.provision.type [ fhir:value "permit" ] ;
+     fhir:Consent.provision.period [
+       fhir:Period.start [ fhir:value "2023-04-27T00:00:00+02:00"^^xsd:dateTime ] ;
+       fhir:Period.end [ fhir:value "2053-04-27T00:00:00+02:00"^^xsd:dateTime ]
+     ] ;
+     fhir:Consent.provision.code [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://mii.de/fhir/CodeSystem/gics/Policy/MII" ] ;
+         fhir:Coding.code [ fhir:value "MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform" ] ;
+         fhir:Coding.display [ fhir:value "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3" ] ;
+         fhir:Coding.code [ fhir:value "2.16.840.1.113883.3.1937.777.24.5.3.8" ] ;
+         fhir:Coding.display [ fhir:value "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU" ]
+       ]
+     ]
+  ] .
 
 <http://server:8080/ttp-fhir/fhir/gics/Consent/fab23c8e-6a94-49da-acfd-4df51098ca22> a fhir:Consent ;
-  fhir:id [ fhir:v "fab23c8e-6a94-49da-acfd-4df51098ca22"] ; # 
-  fhir:meta [
-     fhir:lastUpdated [ fhir:v "2023-04-27T16:23:37.048+02:00"^^xsd:dateTime ] ;
-     fhir:profile ( [
-       fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "fab23c8e-6a94-49da-acfd-4df51098ca22"] ;
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2023-04-27T16:23:37.048+02:00"^^xsd:dateTime ] ;
+     fhir:Meta.profile [
+       fhir:value "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent" ;
+       fhir:index 0 ;
        fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent>
-     ] [
-       fhir:v "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"^^xsd:anyURI ;
+     ], [
+       fhir:value "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung" ;
+       fhir:index 1 ;
        fhir:link <https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Consent_fab23c8e-6a94-49da-acfd-4df51098ca22\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Consent fab23c8e-6a94-49da-acfd-4df51098ca22</b></p><a name=\"fab23c8e-6a94-49da-acfd-4df51098ca22\"> </a><a name=\"hcfab23c8e-6a94-49da-acfd-4df51098ca22\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2023-04-27 16:23:37+0200</p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-Consent.html\">Consent</a>, <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2025.0.4&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung\">Profile - MI-I - Consent - Einwilligung</a></p></div><h2>Participants</h2><table class=\"grid\"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title=\"Who the consent applies to\">Patient</td><td><a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/854f8281-50be-4848-b99d-7ae0aa0da9a0\">Pseudonym dic_R3M0V3</a></td></tr><tr><td title=\"Who manages the consent through its lifecycle.\">Manager</td><td>MII</td></tr></table><p>This consent is made under the regulation <span title=\"Codes:{https://mii.de/fhir/CodeSystem/gics/Policy/MII MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform}\">Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher</span> and the policy <code>urn:oid:2.16.840.1.113883.3.1937.777.24.2.184</code> .</p><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Rule\">Rule</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Period\">Time Period</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Data\">What</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Other Applicable Rules\">Rules</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2023-04-27 11:10:54+0200 --&gt; 2053-04-27 11:10:54+0200</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{https://mii.de/fhir/CodeSystem/gics/Policy/MII MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform}\">Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher</span></li><li>Code: <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.8}\">MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU</span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>#xD;\n<tr><td colspan=\"4\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:extension ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "domain"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Reference ;
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Consent_fab23c8e-6a94-49da-acfd-4df51098ca22\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Consent fab23c8e-6a94-49da-acfd-4df51098ca22</b></p><a name=\"fab23c8e-6a94-49da-acfd-4df51098ca22\"> </a><a name=\"hcfab23c8e-6a94-49da-acfd-4df51098ca22\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2023-04-27 16:23:37+0200</p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-Consent.html\">Consent</a>, <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung\">https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung</a></p></div><h2>Participants</h2><table class=\"grid\"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title=\"Who the consent applies to\">Patient</td><td><a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/854f8281-50be-4848-b99d-7ae0aa0da9a0\">Pseudonym dic_R3M0V3</a></td></tr><tr><td title=\"Who manages the consent through its lifecycle.\">Manager</td><td>MII</td></tr></table><p>This consent is made under the regulation <span title=\"Codes:{https://mii.de/fhir/CodeSystem/gics/Policy/MII MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform}\">Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher</span> and the policy <code>urn:oid:2.16.840.1.113883.3.1937.777.24.2.184</code> .</p><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder1\"><tr class=\"xhtRowBorder2\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Rule\">Rule</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Period\">Time Period</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Data\">What</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Other Applicable Rules\">Rules</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"></td></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck00.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">permit / </span>permit</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><ul><li>Period: 2023-04-27 11:10:54+0200 --&gt; 2053-04-27 11:10:54+0200</li></ul></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><ul><li>Code: <span title=\"Codes:{https://mii.de/fhir/CodeSystem/gics/Policy/MII MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform}\">Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher</span></li><li>Code: <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.8}\">MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU</span></li></ul></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"></td></tr>#xD;\n<tr><td colspan=\"4\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "domain" ] ;
+       fhir:Extension.valueReference [
          fhir:link <https://ths-greifswald.de/fhir/gics/ResearchStudy/91e74202-4a7b-43ba-a9b9-4017634c9540> ;
-         fhir:reference [ fhir:v "ResearchStudy/91e74202-4a7b-43ba-a9b9-4017634c9540" ]
+         fhir:Reference.reference [ fhir:value "ResearchStudy/91e74202-4a7b-43ba-a9b9-4017634c9540" ]
        ]
-     ] [
-       fhir:url [ fhir:v "status"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Coding ;
-         fhir:system [ fhir:v "http://hl7.org/fhir/publication-status"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "active" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "status" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/publication-status" ] ;
+         fhir:Coding.code [ fhir:value "active" ]
        ]
-     ] ) ;
-     fhir:url [ fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"^^xsd:anyURI ]
-  ] ) ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:scope [
-     fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "research" ]
-     ] )
-  ] ; # 
-  fhir:category ( [
-     fhir:coding ( [
-       a loinc:57016-8 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "57016-8" ]
-     ] )
-  ] [
-     fhir:coding ( [
-       fhir:system [ fhir:v "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.2.184" ]
-     ] )
-  ] ) ; # 
-  fhir:patient [
-     fhir:link <https://ths-greifswald.de/fhir/gics/Patient/854f8281-50be-4848-b99d-7ae0aa0da9a0> ;
-     fhir:reference [ fhir:v "Patient/854f8281-50be-4848-b99d-7ae0aa0da9a0" ] ;
-     fhir:display [ fhir:v "Pseudonym dic_R3M0V3" ]
-  ] ; # 
-  fhir:dateTime [ fhir:v "2023-04-27T11:10:54+02:00"^^xsd:dateTime] ; # 
-  fhir:organization ( [
-     fhir:display [ fhir:v "MII" ]
-  ] ) ; # 
-  fhir:source [
-     a fhir:Reference ;
-     fhir:link <https://ths-greifswald.de/fhir/gics/QuestionnaireResponse/69886267-43c8-4e46-9301-8c44c9f2f6d9> ;
-     fhir:reference [ fhir:v "QuestionnaireResponse/69886267-43c8-4e46-9301-8c44c9f2f6d9" ]
-  ] ; # 
-  fhir:policy ( [
-     fhir:uri [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.2.184"^^xsd:anyURI ]
-  ] ) ; # 
-  fhir:policyRule [
-     fhir:coding ( [
-       fhir:system [ fhir:v "https://mii.de/fhir/CodeSystem/gics/Policy/MII"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform" ] ;
-       fhir:display [ fhir:v "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher" ]
-     ] )
-  ] ; # 
-  fhir:provision [
-     fhir:type [ fhir:v "permit" ] ;
-     fhir:period [
-       fhir:start [ fhir:v "2023-04-27T11:10:54+02:00"^^xsd:dateTime ] ;
-       fhir:end [ fhir:v "2053-04-27T11:10:54+02:00"^^xsd:dateTime ]
      ] ;
-     fhir:code ( [
-       fhir:coding ( [
-         fhir:system [ fhir:v "https://mii.de/fhir/CodeSystem/gics/Policy/MII"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform" ] ;
-         fhir:display [ fhir:v "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher" ]
-       ] )
-     ] [
-       fhir:coding ( [
-         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "2.16.840.1.113883.3.1937.777.24.5.3.8" ] ;
-         fhir:display [ fhir:v "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU" ]
-       ] )
-     ] )
-  ] . # 
+     fhir:Extension.url [ fhir:value "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference" ]
+  ] ;
+  fhir:Consent.status [ fhir:value "active"] ;
+  fhir:Consent.scope [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/consentscope" ] ;
+       fhir:Coding.code [ fhir:value "research" ]
+     ]
+  ] ;
+  fhir:Consent.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:57016-8 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "57016-8" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category" ] ;
+       fhir:Coding.code [ fhir:value "2.16.840.1.113883.3.1937.777.24.2.184" ]
+     ]
+  ] ;
+  fhir:Consent.patient [
+     fhir:link <https://ths-greifswald.de/fhir/gics/Patient/854f8281-50be-4848-b99d-7ae0aa0da9a0> ;
+     fhir:Reference.reference [ fhir:value "Patient/854f8281-50be-4848-b99d-7ae0aa0da9a0" ] ;
+     fhir:Reference.display [ fhir:value "Pseudonym dic_R3M0V3" ]
+  ] ;
+  fhir:Consent.dateTime [ fhir:value "2023-04-27T11:10:54+02:00"^^xsd:dateTime] ;
+  fhir:Consent.organization [
+     fhir:index 0 ;
+     fhir:Reference.display [ fhir:value "MII" ]
+  ] ;
+  fhir:Consent.sourceReference [
+     fhir:link <https://ths-greifswald.de/fhir/gics/QuestionnaireResponse/69886267-43c8-4e46-9301-8c44c9f2f6d9> ;
+     fhir:Reference.reference [ fhir:value "QuestionnaireResponse/69886267-43c8-4e46-9301-8c44c9f2f6d9" ]
+  ] ;
+  fhir:Consent.policy [
+     fhir:index 0 ;
+     fhir:Consent.policy.uri [ fhir:value "urn:oid:2.16.840.1.113883.3.1937.777.24.2.184" ]
+  ] ;
+  fhir:Consent.policyRule [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://mii.de/fhir/CodeSystem/gics/Policy/MII" ] ;
+       fhir:Coding.code [ fhir:value "MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform" ] ;
+       fhir:Coding.display [ fhir:value "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher" ]
+     ]
+  ] ;
+  fhir:Consent.provision [
+     fhir:Consent.provision.type [ fhir:value "permit" ] ;
+     fhir:Consent.provision.period [
+       fhir:Period.start [ fhir:value "2023-04-27T11:10:54+02:00"^^xsd:dateTime ] ;
+       fhir:Period.end [ fhir:value "2053-04-27T11:10:54+02:00"^^xsd:dateTime ]
+     ] ;
+     fhir:Consent.provision.code [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://mii.de/fhir/CodeSystem/gics/Policy/MII" ] ;
+         fhir:Coding.code [ fhir:value "MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform" ] ;
+         fhir:Coding.display [ fhir:value "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3" ] ;
+         fhir:Coding.code [ fhir:value "2.16.840.1.113883.3.1937.777.24.5.3.8" ] ;
+         fhir:Coding.display [ fhir:value "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/gics/Bundle/Consent-Bundle-example-1.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

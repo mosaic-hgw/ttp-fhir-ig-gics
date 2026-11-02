@@ -13,48 +13,48 @@
   },
   {
     "url" : "http://fhir.de/ConsentManagement/CodeSystem/ConsentMode",
-    "version" : "2.0.3",
+    "version" : "2.0.4",
     "status" : "active",
     "name" : "ConsentMode",
     "title" : null,
     "description" : "Arten des Standardverfahrens für Einwilligungen, soweit nicht reines Opt-In bzw. Opt-Out.",
     "uses" : {
     },
-    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=http://fhir.de/ConsentManagement/ValueSet/ConsentMode" : "ConsentManagementConsentMode"
+    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=http://fhir.de/ConsentManagement/ValueSet/ConsentMode" : "ConsentManagementConsentMode"
+  },
+  {
+    "url" : "http://fhir.de/ConsentManagement/CodeSystem/LegalBasisDataProcessing",
+    "version" : "2.0.4",
+    "status" : "draft",
+    "name" : "LegalBasisDataProcessing",
+    "title" : null,
+    "description" : "Rechtsgrundlage der Datenverarbeitung. ANWENDUNGSHINWEIS: die hier als Code hinterlegten URIs sind Ergebnis einer ersten Recherche und sollten zukünftig korrigiert und erweitert werden, idealerweise bundesweit einheitlich durch eine entsprechend autorisierte Institution.",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=http://fhir.de/ConsentManagement/ValueSet/LegalBasisDataProcessing" : "ConsentManagementLegalBasisDataProcessing"
   },
   {
     "url" : "http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents",
-    "version" : "2.0.3",
+    "version" : "2.0.4",
     "status" : "active",
     "name" : "QuestionnaireProfileType",
     "title" : null,
     "description" : "Typen der Questionnaire-Profile zur Unterscheidung als Suchkriterium",
     "uses" : {
     },
-    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=http://fhir.de/ConsentManagement/ValueSet/QuestionnaireComponents" : "ConsentManagementQuestionnaireComponents",
-    "ValueSet-ConsentComponentTypeVS.html" : "ConsentComponentType"
-  },
-  {
-    "url" : "http://fhir.de/ConsentManagement/CodeSystem/ResultType",
-    "version" : "2.0.3",
-    "status" : "active",
-    "name" : "ResultType",
-    "title" : null,
-    "description" : "Ergebnistypen des Einwilligungsdokuments",
-    "uses" : {
-    },
-    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=http://fhir.de/ConsentManagement/ValueSet/ResultType" : "ConsentManagementResultType"
+    "ValueSet-ConsentComponentTypeVS.html" : "ConsentComponentType",
+    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=http://fhir.de/ConsentManagement/ValueSet/QuestionnaireComponents" : "ConsentManagementQuestionnaireComponents"
   },
   {
     "url" : "http://fhir.de/ConsentManagement/CodeSystem/TemplateType",
-    "version" : "2.0.3",
+    "version" : "2.0.4",
     "status" : "active",
     "name" : "TemplateType",
     "title" : null,
     "description" : "Typen des Einwilligungsdokuments",
     "uses" : {
     },
-    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=http://fhir.de/ConsentManagement/ValueSet/TemplateType" : "ConsentManagementTemplateType"
+    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=http://fhir.de/ConsentManagement/ValueSet/TemplateType" : "ConsentManagementTemplateType"
   },
   {
     "url" : "http://hl7.org/fhir/CodeSystem/status",
@@ -306,8 +306,8 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-subject-type.html" : "Subject type",
-    "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class",
-    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
+    "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class"
   },
   {
     "url" : "http://hl7.org/fhir/search-entry-mode",
@@ -332,8 +332,8 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
     "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
     "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes"
   },
   {
@@ -585,12 +585,12 @@
     "oids" : ["2.16.840.1.113883.18.108"],
     "uses" : {
     },
-    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=http://fhir.de/ConsentManagement/ValueSet/ContextIdentifierType" : "ConsentManagementContextIdentifierType",
+    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=http://fhir.de/ConsentManagement/ValueSet/ContextIdentifierType" : "ConsentManagementContextIdentifierType",
     "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-    "version" : "10.0.0",
+    "version" : "11.0.0",
     "status" : "active",
     "name" : "ActCode",
     "title" : "ActCode",
@@ -610,11 +610,11 @@
     "oids" : ["2.16.840.1.113883.5.8"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.2.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse"
+    "http://terminology.hl7.org/7.5.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
-    "version" : "6.0.0",
+    "version" : "7.0.0",
     "status" : "active",
     "name" : "DataOperation",
     "title" : "DataOperation",
@@ -638,7 +638,7 @@
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-    "version" : "4.0.0",
+    "version" : "5.0.0",
     "status" : "active",
     "name" : "MaritalStatus",
     "title" : "MaritalStatus",
@@ -658,12 +658,12 @@
     "oids" : ["2.16.840.1.113883.5.1008"],
     "uses" : {
     },
-    "ValueSet-PolicyStatusVS.html" : "PolicyStatus",
-    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus",
+    "ValueSet-PolicyStatusVS.html" : "PolicyStatus"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
-    "version" : "4.0.0",
+    "version" : "5.0.0",
     "status" : "active",
     "name" : "ParticipationFunction",
     "title" : "ParticipationFunction",
@@ -675,7 +675,7 @@
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-    "version" : "6.0.0",
+    "version" : "7.0.0",
     "status" : "active",
     "name" : "ParticipationType",
     "title" : "ParticipationType",
@@ -683,12 +683,12 @@
     "oids" : ["2.16.840.1.113883.5.90"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
+    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
-    "version" : "5.0.0",
+    "version" : "6.0.0",
     "status" : "active",
     "name" : "RoleClass",
     "title" : "RoleClass",
@@ -760,7 +760,7 @@
   },
   {
     "url" : "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType",
-    "version" : "2026.1.0",
+    "version" : "2026.2.0",
     "status" : "active",
     "name" : "BloomfilterType",
     "title" : null,
@@ -771,7 +771,7 @@
   },
   {
     "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentComponentType",
-    "version" : "2026.1.0",
+    "version" : "2026.2.0",
     "status" : "active",
     "name" : "ConsentComponentType",
     "title" : null,
@@ -782,7 +782,7 @@
   },
   {
     "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
-    "version" : "2026.1.0",
+    "version" : "2026.2.0",
     "status" : "active",
     "name" : "ConsentStatus",
     "title" : null,
@@ -790,20 +790,20 @@
     "uses" : {
     },
     "ValueSet-ConsentStatusObjectionFullValuesVS.html" : "ConsentStatusObjectionFullValues",
-    "ValueSet-ConsentStatusWithdrawalFullValuesVS.html" : "ConsentStatusWithdrawalFullValues",
-    "ValueSet-ConsentStatusObjectionShortValuesVS.html" : "ConsentStatusObjectionShortValues",
-    "ValueSet-ConsentStatusConsentFullValuesVS.html" : "ConsentStatusConsentFullValues",
     "ValueSet-ConsentStatusConsentOptOutFullValuesVS.html" : "ConsentStatusConsentOptOutFullValues",
+    "ValueSet-ConsentStatusRefusalShortValuesVS.html" : "ConsentStatusRefusalShortValues",
+    "ValueSet-ConsentStatusConsentFullValuesVS.html" : "ConsentStatusConsentFullValues",
+    "ValueSet-ConsentStatusVS.html" : "ConsentStatus",
+    "ValueSet-ConsentStatusObjectionShortValuesVS.html" : "ConsentStatusObjectionShortValues",
+    "ValueSet-ConsentStatusWithdrawalFullValuesVS.html" : "ConsentStatusWithdrawalFullValues",
+    "ValueSet-ConsentStatusConsentOptOutShortValuesVS.html" : "ConsentStatusConsentOptOutShortValues",
     "ValueSet-ConsentStatusConsentShortValuesVS.html" : "ConsentStatusConsentShortValues",
     "ValueSet-ConsentStatusRefusalFullValuesVS.html" : "ConsentStatusRefusalFullValues",
-    "ValueSet-ConsentStatusRefusalShortValuesVS.html" : "ConsentStatusRefusalShortValues",
-    "ValueSet-ConsentStatusVS.html" : "ConsentStatus",
-    "ValueSet-ConsentStatusConsentOptOutShortValuesVS.html" : "ConsentStatusConsentOptOutShortValues",
     "ValueSet-ConsentStatusWithdrawalShortValuesVS.html" : "ConsentStatusWithdrawalShortValues"
   },
   {
     "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
-    "version" : "2026.1.0",
+    "version" : "2026.2.0",
     "status" : "active",
     "name" : "Policy",
     "title" : null,

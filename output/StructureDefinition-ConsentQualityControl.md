@@ -1,9 +1,9 @@
-# Consent Quality Control - v2026.1.0
+# Consent Quality Control - v2026.2.0
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2026.1.0 - ci-build  
+ 2026.2.0 - ci-build  
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -13,7 +13,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/gics/VerificationResult/ConsentQualityControl | *Version*:2026.1.0 |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/gics/VerificationResult/ConsentQualityControl | *Version*:2026.2.0 |
 | Active as of 2025-06-12 | *Computable Name*:ConsentQualityControl |
 | **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-ConsentQualityContro
   "resourceType" : "StructureDefinition",
   "id" : "ConsentQualityControl",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/gics/VerificationResult/ConsentQualityControl",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0",
   "name" : "ConsentQualityControl",
   "title" : "Consent Quality Control",
   "status" : "active",

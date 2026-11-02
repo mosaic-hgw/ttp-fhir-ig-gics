@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,33 +7,32 @@
 
 <https://ths-greifswald.de/fhir/gics/Parameters/CurrentConsentForPersonAndTemplate-request-example-1> a fhir:Parameters ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "CurrentConsentForPersonAndTemplate-request-example-1"] ; # 
-  fhir:parameter ( [
-     fhir:name [ fhir:v "personIdentifier" ] ;
-     fhir:value [
-       a fhir:Identifier ;
-       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "dic_1H51T" ]
+  fhir:Resource.id [ fhir:value "CurrentConsentForPersonAndTemplate-request-example-1"] ;
+  fhir:Parameters.parameter [
+     fhir:index 0 ;
+     fhir:Parameters.parameter.name [ fhir:value "personIdentifier" ] ;
+     fhir:Parameters.parameter.valueIdentifier [
+       fhir:Identifier.system [ fhir:value "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym" ] ;
+       fhir:Identifier.value [ fhir:value "dic_1H51T" ]
      ]
-  ] [
-     fhir:name [ fhir:v "domain" ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "MII"
-     ]
-  ] [
-     fhir:name [ fhir:v "template" ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "MII;Patienteneinwilligung MII;1.6.f"
-     ]
-  ] [
-     fhir:name [ fhir:v "ignore-version-number" ] ;
-     fhir:value [
-       a fhir:boolean ;
-       fhir:v false
-     ]
-  ] ) . # 
+  ], [
+     fhir:index 1 ;
+     fhir:Parameters.parameter.name [ fhir:value "domain" ] ;
+     fhir:Parameters.parameter.valueString [ fhir:value "MII" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Parameters.parameter.name [ fhir:value "template" ] ;
+     fhir:Parameters.parameter.valueString [ fhir:value "MII;Patienteneinwilligung MII;1.6.f" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Parameters.parameter.name [ fhir:value "ignore-version-number" ] ;
+     fhir:Parameters.parameter.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/gics/Parameters/CurrentConsentForPersonAndTemplate-request-example-1.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

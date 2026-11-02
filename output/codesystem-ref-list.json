@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents",
-    "version" : "2.0.3",
+    "version" : "2.0.4",
     "status" : "active",
     "name" : "QuestionnaireProfileType",
     "title" : null,
@@ -36,7 +36,7 @@
   },
   {
     "url" : "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType",
-    "version" : "2026.1.0",
+    "version" : "2026.2.0",
     "status" : "active",
     "name" : "BloomfilterType",
     "title" : null,
@@ -47,7 +47,7 @@
   },
   {
     "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentComponentType",
-    "version" : "2026.1.0",
+    "version" : "2026.2.0",
     "status" : "active",
     "name" : "ConsentComponentType",
     "title" : null,
@@ -58,7 +58,7 @@
   },
   {
     "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
-    "version" : "2026.1.0",
+    "version" : "2026.2.0",
     "status" : "active",
     "name" : "ConsentStatus",
     "title" : null,
@@ -66,20 +66,20 @@
     "uses" : {
     },
     "ValueSet-ConsentStatusObjectionFullValuesVS.html" : "ConsentStatusObjectionFullValues",
-    "ValueSet-ConsentStatusWithdrawalFullValuesVS.html" : "ConsentStatusWithdrawalFullValues",
-    "ValueSet-ConsentStatusObjectionShortValuesVS.html" : "ConsentStatusObjectionShortValues",
-    "ValueSet-ConsentStatusConsentFullValuesVS.html" : "ConsentStatusConsentFullValues",
     "ValueSet-ConsentStatusConsentOptOutFullValuesVS.html" : "ConsentStatusConsentOptOutFullValues",
+    "ValueSet-ConsentStatusRefusalShortValuesVS.html" : "ConsentStatusRefusalShortValues",
+    "ValueSet-ConsentStatusConsentFullValuesVS.html" : "ConsentStatusConsentFullValues",
+    "ValueSet-ConsentStatusVS.html" : "ConsentStatus",
+    "ValueSet-ConsentStatusObjectionShortValuesVS.html" : "ConsentStatusObjectionShortValues",
+    "ValueSet-ConsentStatusWithdrawalFullValuesVS.html" : "ConsentStatusWithdrawalFullValues",
+    "ValueSet-ConsentStatusConsentOptOutShortValuesVS.html" : "ConsentStatusConsentOptOutShortValues",
     "ValueSet-ConsentStatusConsentShortValuesVS.html" : "ConsentStatusConsentShortValues",
     "ValueSet-ConsentStatusRefusalFullValuesVS.html" : "ConsentStatusRefusalFullValues",
-    "ValueSet-ConsentStatusRefusalShortValuesVS.html" : "ConsentStatusRefusalShortValues",
-    "ValueSet-ConsentStatusVS.html" : "ConsentStatus",
-    "ValueSet-ConsentStatusConsentOptOutShortValuesVS.html" : "ConsentStatusConsentOptOutShortValues",
     "ValueSet-ConsentStatusWithdrawalShortValuesVS.html" : "ConsentStatusWithdrawalShortValues"
   },
   {
     "url" : "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
-    "version" : "2026.1.0",
+    "version" : "2026.2.0",
     "status" : "active",
     "name" : "Policy",
     "title" : null,

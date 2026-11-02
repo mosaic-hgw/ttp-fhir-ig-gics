@@ -1,4 +1,4 @@
-# ths-greifswald.ttp-fhir-gw.gics#2026.1.0: null
+# ths-greifswald.ttp-fhir-gw.gics#2026.2.0: null
 
 ## Pages
 

@@ -1,9 +1,9 @@
-# ConsentQualityControl-example-1 - v2026.1.0
+# ConsentQualityControl-example-1 - v2026.2.0
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2026.1.0 - ci-build  
+ 2026.2.0 - ci-build  
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -15,7 +15,7 @@ Profile: [Consent Quality Control](StructureDefinition-ConsentQualityControl.md)
 
 **Comment**: Validated. No Errors found.
 
-**target**: [QuestionnaireResponse/0f1ccc50-9b24-4f12-a998-49f80d5285c1](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=http://fhir.org/packages/de.einwilligungsmanagement/QuestionnaireResponse/0f1ccc50-9b24-4f12-a998-49f80d5285c1)
+**target**: [QuestionnaireResponse/0f1ccc50-9b24-4f12-a998-49f80d5285c1](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=http://fhir.org/packages/de.einwilligungsmanagement/QuestionnaireResponse/0f1ccc50-9b24-4f12-a998-49f80d5285c1)
 
 **status**: Validated
 

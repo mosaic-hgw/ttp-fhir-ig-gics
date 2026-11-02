@@ -1,9 +1,9 @@
-# BloomfilterType - v2026.1.0
+# BloomfilterType - v2026.2.0
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2026.1.0 - ci-build  
+ 2026.2.0 - ci-build  
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -13,7 +13,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://ths-greifswald.de/fhir/ValueSet/epix/BloomfilterType | *Version*:2026.1.0 |
+| *Official URL*:https://ths-greifswald.de/fhir/ValueSet/epix/BloomfilterType | *Version*:2026.2.0 |
 | Draft as of 2025-06-12 | *Computable Name*:BloomfilterType |
 | **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
 
@@ -49,7 +49,7 @@
   "resourceType" : "ValueSet",
   "id" : "BloomfilterTypeVS",
   "url" : "https://ths-greifswald.de/fhir/ValueSet/epix/BloomfilterType",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0",
   "name" : "BloomfilterType",
   "status" : "draft",
   "experimental" : false,

@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,65 +7,61 @@
 
 <https://ths-greifswald.de/fhir/gics/Parameters/IsConsented-request-example-1> a fhir:Parameters ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "IsConsented-request-example-1"] ; # 
-  fhir:parameter ( [
-     fhir:name [ fhir:v "personIdentifier" ] ;
-     fhir:value [
-       a fhir:Identifier ;
-       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "dic_1H51T" ]
+  fhir:Resource.id [ fhir:value "IsConsented-request-example-1"] ;
+  fhir:Parameters.parameter [
+     fhir:index 0 ;
+     fhir:Parameters.parameter.name [ fhir:value "personIdentifier" ] ;
+     fhir:Parameters.parameter.valueIdentifier [
+       fhir:Identifier.system [ fhir:value "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym" ] ;
+       fhir:Identifier.value [ fhir:value "dic_1H51T" ]
      ]
-  ] [
-     fhir:name [ fhir:v "domain" ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "num"
+  ], [
+     fhir:index 1 ;
+     fhir:Parameters.parameter.name [ fhir:value "domain" ] ;
+     fhir:Parameters.parameter.valueString [ fhir:value "num" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Parameters.parameter.name [ fhir:value "policy" ] ;
+     fhir:Parameters.parameter.valueCoding [
+       fhir:Coding.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy" ] ;
+       fhir:Coding.code [ fhir:value "MDAT_erheben" ]
      ]
-  ] [
-     fhir:name [ fhir:v "policy" ] ;
-     fhir:value [
-       a fhir:Coding ;
-       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "MDAT_erheben" ]
-     ]
-  ] [
-     fhir:name [ fhir:v "version" ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "1.1"
-     ]
-  ] [
-     fhir:name [ fhir:v "config" ] ;
-     fhir:Parameters.parameter.resource ( [
+  ], [
+     fhir:index 3 ;
+     fhir:Parameters.parameter.name [ fhir:value "version" ] ;
+     fhir:Parameters.parameter.valueString [ fhir:value "1.1" ]
+  ], [
+     fhir:index 4 ;
+     fhir:Parameters.parameter.name [ fhir:value "config" ] ;
+     fhir:Parameters.parameter.resource [
        a fhir:Parameters ;
-       fhir:parameter ( [
-         fhir:name [ fhir:v "idMatchingType" ] ;
-         fhir:value [
-           a fhir:Coding ;
-           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/IdMatchingType"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "AT_LEAST_ONE" ]
+       fhir:Parameters.parameter [
+         fhir:index 0 ;
+         fhir:Parameters.parameter.name [ fhir:value "idMatchingType" ] ;
+         fhir:Parameters.parameter.valueCoding [
+           fhir:Coding.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/IdMatchingType" ] ;
+           fhir:Coding.code [ fhir:value "AT_LEAST_ONE" ]
          ]
-       ] [
-         fhir:name [ fhir:v "ignoreVersionNumber" ] ;
-         fhir:value [
-           a fhir:boolean ;
-           fhir:v false
-         ]
-       ] [
-         fhir:name [ fhir:v "unknownStateIsConsideredAsDecline" ] ;
-         fhir:value [
-           a fhir:boolean ;
-           fhir:v false
-         ]
-       ] [
-         fhir:name [ fhir:v "requestDate" ] ;
-         fhir:value [
-           a fhir:date ;
-           fhir:v "2019-06-30"^^xsd:date
-         ]
-       ] )
-     ] )
-  ] ) . # 
+       ], [
+         fhir:index 1 ;
+         fhir:Parameters.parameter.name [ fhir:value "ignoreVersionNumber" ] ;
+         fhir:Parameters.parameter.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+       ], [
+         fhir:index 2 ;
+         fhir:Parameters.parameter.name [ fhir:value "unknownStateIsConsideredAsDecline" ] ;
+         fhir:Parameters.parameter.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+       ], [
+         fhir:index 3 ;
+         fhir:Parameters.parameter.name [ fhir:value "requestDate" ] ;
+         fhir:Parameters.parameter.valueDate [ fhir:value "2019-06-30"^^xsd:date ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/gics/Parameters/IsConsented-request-example-1.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

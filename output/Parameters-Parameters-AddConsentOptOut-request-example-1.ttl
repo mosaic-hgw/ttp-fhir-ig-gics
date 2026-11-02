@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,45 +7,52 @@
 
 <https://ths-greifswald.de/fhir/gics/Parameters/Parameters-AddConsentOptOut-request-example-1> a fhir:Parameters ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "Parameters-AddConsentOptOut-request-example-1"] ; # 
-  fhir:parameter ( [
-     fhir:name [ fhir:v "patient" ] ;
-     fhir:Parameters.parameter.resource ( [
+  fhir:Resource.id [ fhir:value "Parameters-AddConsentOptOut-request-example-1"] ;
+  fhir:Parameters.parameter [
+     fhir:index 0 ;
+     fhir:Parameters.parameter.name [ fhir:value "patient" ] ;
+     fhir:Parameters.parameter.resource [
        a fhir:Patient ;
-       fhir:id [ fhir:v "1" ] ;
-       fhir:meta [
-         fhir:lastUpdated [ fhir:v "2022-12-20T10:10:54.889+01:00"^^xsd:dateTime ] ;
-         fhir:profile ( [
-           fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/Patient"^^xsd:anyURI ;
+       fhir:Resource.id [ fhir:value "1" ] ;
+       fhir:Resource.meta [
+         fhir:Meta.lastUpdated [ fhir:value "2022-12-20T10:10:54.889+01:00"^^xsd:dateTime ] ;
+         fhir:Meta.profile [
+           fhir:value "http://fhir.de/ConsentManagement/StructureDefinition/Patient" ;
+           fhir:index 0 ;
            fhir:link <http://fhir.de/ConsentManagement/StructureDefinition/Patient>
-         ] )
+         ]
        ] ;
-       fhir:identifier ( [
-         fhir:type [
-           fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-             fhir:code [ fhir:v "ANON" ] ;
-             fhir:display [ fhir:v "Anonymous identifier" ]
-           ] )
+       fhir:Patient.identifier [
+         fhir:index 0 ;
+         fhir:Identifier.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0 ;
+             fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+             fhir:Coding.code [ fhir:value "ANON" ] ;
+             fhir:Coding.display [ fhir:value "Anonymous identifier" ]
+           ]
          ] ;
-         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "studypsn1" ]
-       ] )
-     ] )
-  ] [
-     fhir:name [ fhir:v "domain" ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "MII"
+         fhir:Identifier.system [ fhir:value "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym" ] ;
+         fhir:Identifier.value [ fhir:value "studypsn1" ]
+       ]
      ]
-  ] [
-     fhir:name [ fhir:v "questionnaire" ] ;
-     fhir:value [
-       a fhir:canonical ;
-       fhir:v "https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.f"^^xsd:anyURI ;
+  ], [
+     fhir:index 1 ;
+     fhir:Parameters.parameter.name [ fhir:value "domain" ] ;
+     fhir:Parameters.parameter.valueString [ fhir:value "MII" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Parameters.parameter.name [ fhir:value "questionnaire" ] ;
+     fhir:Parameters.parameter.valueCanonical [
+       fhir:value "https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.f" ;
        fhir:link <https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.f>
      ]
-  ] ) . # 
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/gics/Parameters/Parameters-AddConsentOptOut-request-example-1.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

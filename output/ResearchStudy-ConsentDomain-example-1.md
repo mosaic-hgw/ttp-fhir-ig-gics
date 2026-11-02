@@ -1,9 +1,9 @@
-# MIRACUM - v2026.1.0
+# MIRACUM - v2026.2.0
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2026.1.0 - ci-build  
+ 2026.2.0 - ci-build  
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -15,11 +15,11 @@ Profile: [Consent Domain](StructureDefinition-ConsentDomain.md)
 
 > **Consent Management Kontext-Identifikatoren einer Domain**
 * resourceType: [ResourceType: Patient](http://hl7.org/fhir/R4/codesystem-resource-types.html#resource-types-Patient) (Patient)
-* system: [https://ths-greifswald.de/fhir/gics/identifiers/CaseId](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=https://ths-greifswald.de/fhir/gics/identifiers/CaseId)
+* system: [https://ths-greifswald.de/fhir/gics/identifiers/CaseId](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=https://ths-greifswald.de/fhir/gics/identifiers/CaseId)
 
 > **Consent Management Kontext-Identifikatoren einer Domain**
 * resourceType: [ResourceType: Patient](http://hl7.org/fhir/R4/codesystem-resource-types.html#resource-types-Patient) (Patient)
-* system: [https://ths-greifswald.de/fhir/gics/identifiers/SapId](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=https://ths-greifswald.de/fhir/gics/identifiers/SapId)
+* system: [https://ths-greifswald.de/fhir/gics/identifiers/SapId](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=https://ths-greifswald.de/fhir/gics/identifiers/SapId)
 
 **Policy Version Format**: major.minor
 

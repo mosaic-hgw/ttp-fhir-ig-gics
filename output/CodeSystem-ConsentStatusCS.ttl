@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,155 +7,187 @@
 
 <https://ths-greifswald.de/fhir/gics/CodeSystem/ConsentStatusCS> a fhir:CodeSystem ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "ConsentStatusCS"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ConsentStatusCS</b></p><a name=\"ConsentStatusCS\"> </a><a name=\"hcConsentStatusCS\"> </a><p>This case-sensitive code system <code>https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ACCEPTED<a name=\"ConsentStatusCS-ACCEPTED\"> </a></td><td>ACCEPTED</td></tr><tr><td style=\"white-space:nowrap\">ACCEPTED_OPT_OUT<a name=\"ConsentStatusCS-ACCEPTED_OPT_OUT\"> </a></td><td>ACCEPTED_OPT_OUT</td></tr><tr><td style=\"white-space:nowrap\">DECLINED<a name=\"ConsentStatusCS-DECLINED\"> </a></td><td>DECLINED</td></tr><tr><td style=\"white-space:nowrap\">UNKNOWN<a name=\"ConsentStatusCS-UNKNOWN\"> </a></td><td>UNKNOWN</td></tr><tr><td style=\"white-space:nowrap\">NOT_ASKED<a name=\"ConsentStatusCS-NOT_ASKED\"> </a></td><td>NOT ASKED</td></tr><tr><td style=\"white-space:nowrap\">NOT_CHOSEN<a name=\"ConsentStatusCS-NOT_CHOSEN\"> </a></td><td>NOT CHOSEN</td></tr><tr><td style=\"white-space:nowrap\">WITHDRAWN<a name=\"ConsentStatusCS-WITHDRAWN\"> </a></td><td>WITHDRAWN</td></tr><tr><td style=\"white-space:nowrap\">INVALIDATED<a name=\"ConsentStatusCS-INVALIDATED\"> </a></td><td>INVALIDATED</td></tr><tr><td style=\"white-space:nowrap\">REFUSED<a name=\"ConsentStatusCS-REFUSED\"> </a></td><td>REFUSED</td></tr><tr><td style=\"white-space:nowrap\">EXPIRED<a name=\"ConsentStatusCS-EXPIRED\"> </a></td><td>EXPIRED</td></tr><tr><td style=\"white-space:nowrap\">OBJECTED<a name=\"ConsentStatusCS-OBJECTED\"> </a></td><td>OBJECTED</td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2026.1.0"] ; # 
-  fhir:name [ fhir:v "ConsentStatus"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-06-12"^^xsd:date] ; # 
-  fhir:publisher [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://www.ths-greifswald.de/" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v " consent states are used to depict the participant’s will. Therefore, documentation should allow different status values. Further details from https://doi.org/10.1186/s12967-020-02457-y"] ; # 
-  fhir:copyright [ fhir:v "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ; # 
-  fhir:caseSensitive [ fhir:v true] ; # 
-  fhir:content [ fhir:v "complete"] ; # 
-  fhir:count [ fhir:v "11"^^xsd:nonNegativeInteger] ; # 
-  fhir:concept ( [
-     fhir:code [ fhir:v "ACCEPTED" ] ;
-     fhir:display [ fhir:v "ACCEPTED" ] ;
-     fhir:designation ( [
-       fhir:use [
-         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "consent" ]
+  fhir:Resource.id [ fhir:value "ConsentStatusCS"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ConsentStatusCS</b></p><a name=\"ConsentStatusCS\"> </a><a name=\"hcConsentStatusCS\"> </a><p>This case-sensitive code system <code>https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ACCEPTED<a name=\"ConsentStatusCS-ACCEPTED\"> </a></td><td>ACCEPTED</td></tr><tr><td style=\"white-space:nowrap\">ACCEPTED_OPT_OUT<a name=\"ConsentStatusCS-ACCEPTED_OPT_OUT\"> </a></td><td>ACCEPTED_OPT_OUT</td></tr><tr><td style=\"white-space:nowrap\">DECLINED<a name=\"ConsentStatusCS-DECLINED\"> </a></td><td>DECLINED</td></tr><tr><td style=\"white-space:nowrap\">UNKNOWN<a name=\"ConsentStatusCS-UNKNOWN\"> </a></td><td>UNKNOWN</td></tr><tr><td style=\"white-space:nowrap\">NOT_ASKED<a name=\"ConsentStatusCS-NOT_ASKED\"> </a></td><td>NOT ASKED</td></tr><tr><td style=\"white-space:nowrap\">NOT_CHOSEN<a name=\"ConsentStatusCS-NOT_CHOSEN\"> </a></td><td>NOT CHOSEN</td></tr><tr><td style=\"white-space:nowrap\">WITHDRAWN<a name=\"ConsentStatusCS-WITHDRAWN\"> </a></td><td>WITHDRAWN</td></tr><tr><td style=\"white-space:nowrap\">INVALIDATED<a name=\"ConsentStatusCS-INVALIDATED\"> </a></td><td>INVALIDATED</td></tr><tr><td style=\"white-space:nowrap\">REFUSED<a name=\"ConsentStatusCS-REFUSED\"> </a></td><td>REFUSED</td></tr><tr><td style=\"white-space:nowrap\">EXPIRED<a name=\"ConsentStatusCS-EXPIRED\"> </a></td><td>EXPIRED</td></tr><tr><td style=\"white-space:nowrap\">OBJECTED<a name=\"ConsentStatusCS-OBJECTED\"> </a></td><td>OBJECTED</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"] ;
+  fhir:CodeSystem.version [ fhir:value "2026.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "ConsentStatus"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2025-06-12"^^xsd:date] ;
+  fhir:CodeSystem.publisher [ fhir:value "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.ths-greifswald.de/" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value " consent states are used to depict the participant’s will. Therefore, documentation should allow different status values. Further details from https://doi.org/10.1186/s12967-020-02457-y"] ;
+  fhir:CodeSystem.copyright [ fhir:value "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "11"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ACCEPTED" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ACCEPTED" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.use [
+         fhir:Coding.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse" ] ;
+         fhir:Coding.code [ fhir:value "consent" ]
        ] ;
-       fhir:value [ fhir:v "Ja" ]
-     ] [
-       fhir:use [
-         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "refusal" ]
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Ja" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.designation.use [
+         fhir:Coding.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse" ] ;
+         fhir:Coding.code [ fhir:value "refusal" ]
        ] ;
-       fhir:value [ fhir:v "Einwilligen" ]
-     ] [
-       fhir:use [
-         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "withdrawal" ]
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Einwilligen" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.designation.use [
+         fhir:Coding.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse" ] ;
+         fhir:Coding.code [ fhir:value "withdrawal" ]
        ] ;
-       fhir:value [ fhir:v "Erneut einwilligen" ]
-     ] )
-  ] [
-     fhir:code [ fhir:v "ACCEPTED_OPT_OUT" ] ;
-     fhir:display [ fhir:v "ACCEPTED_OPT_OUT" ] ;
-     fhir:designation ( [
-       fhir:use [
-         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "consent" ]
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Erneut einwilligen" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ACCEPTED_OPT_OUT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ACCEPTED_OPT_OUT" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.use [
+         fhir:Coding.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse" ] ;
+         fhir:Coding.code [ fhir:value "consent" ]
        ] ;
-       fhir:value [ fhir:v "Ja (Opt-Out)" ]
-     ] )
-  ] [
-     fhir:code [ fhir:v "DECLINED" ] ;
-     fhir:display [ fhir:v "DECLINED" ] ;
-     fhir:designation ( [
-       fhir:use [
-         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "consent" ]
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Ja (Opt-Out)" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DECLINED" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DECLINED" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.use [
+         fhir:Coding.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse" ] ;
+         fhir:Coding.code [ fhir:value "consent" ]
        ] ;
-       fhir:value [ fhir:v "Nein" ]
-     ] [
-       fhir:use [
-         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "refusal" ]
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Nein" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.designation.use [
+         fhir:Coding.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse" ] ;
+         fhir:Coding.code [ fhir:value "refusal" ]
        ] ;
-       fhir:value [ fhir:v "Ja" ]
-     ] )
-  ] [
-     fhir:code [ fhir:v "UNKNOWN" ] ;
-     fhir:display [ fhir:v "UNKNOWN" ]
-  ] [
-     fhir:code [ fhir:v "NOT_ASKED" ] ;
-     fhir:display [ fhir:v "NOT ASKED" ] ;
-     fhir:designation ( [
-       fhir:use [
-         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "consent" ]
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Ja" ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "UNKNOWN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "UNKNOWN" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NOT_ASKED" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "NOT ASKED" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.use [
+         fhir:Coding.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse" ] ;
+         fhir:Coding.code [ fhir:value "consent" ]
        ] ;
-       fhir:value [ fhir:v "Nicht gefragt" ]
-     ] [
-       fhir:use [
-         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "refusal" ]
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Nicht gefragt" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.designation.use [
+         fhir:Coding.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse" ] ;
+         fhir:Coding.code [ fhir:value "refusal" ]
        ] ;
-       fhir:value [ fhir:v "Nicht gefragt" ]
-     ] [
-       fhir:use [
-         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "withdrawal" ]
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Nicht gefragt" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.designation.use [
+         fhir:Coding.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse" ] ;
+         fhir:Coding.code [ fhir:value "withdrawal" ]
        ] ;
-       fhir:value [ fhir:v "Nicht gefragt" ]
-     ] )
-  ] [
-     fhir:code [ fhir:v "NOT_CHOSEN" ] ;
-     fhir:display [ fhir:v "NOT CHOSEN" ] ;
-     fhir:designation ( [
-       fhir:use [
-         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "consent" ]
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Nicht gefragt" ]
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NOT_CHOSEN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "NOT CHOSEN" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.use [
+         fhir:Coding.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse" ] ;
+         fhir:Coding.code [ fhir:value "consent" ]
        ] ;
-       fhir:value [ fhir:v "Überspringen" ]
-     ] [
-       fhir:use [
-         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "refusal" ]
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Überspringen" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.designation.use [
+         fhir:Coding.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse" ] ;
+         fhir:Coding.code [ fhir:value "refusal" ]
        ] ;
-       fhir:value [ fhir:v "Nicht gefragt" ]
-     ] [
-       fhir:use [
-         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "withdrawal" ]
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Nicht gefragt" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.designation.use [
+         fhir:Coding.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse" ] ;
+         fhir:Coding.code [ fhir:value "withdrawal" ]
        ] ;
-       fhir:value [ fhir:v "Nein" ]
-     ] )
-  ] [
-     fhir:code [ fhir:v "WITHDRAWN" ] ;
-     fhir:display [ fhir:v "WITHDRAWN" ] ;
-     fhir:designation ( [
-       fhir:use [
-         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "withdrawal" ]
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Nein" ]
+     ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "WITHDRAWN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "WITHDRAWN" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.use [
+         fhir:Coding.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse" ] ;
+         fhir:Coding.code [ fhir:value "withdrawal" ]
        ] ;
-       fhir:value [ fhir:v "Ja" ]
-     ] )
-  ] [
-     fhir:code [ fhir:v "INVALIDATED" ] ;
-     fhir:display [ fhir:v "INVALIDATED" ]
-  ] [
-     fhir:code [ fhir:v "REFUSED" ] ;
-     fhir:display [ fhir:v "REFUSED" ]
-  ] [
-     fhir:code [ fhir:v "EXPIRED" ] ;
-     fhir:display [ fhir:v "EXPIRED" ]
-  ] [
-     fhir:code [ fhir:v "OBJECTED" ] ;
-     fhir:display [ fhir:v "OBJECTED" ] ;
-     fhir:designation ( [
-       fhir:use [
-         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "consent" ]
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Ja" ]
+     ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "INVALIDATED" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "INVALIDATED" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "REFUSED" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "REFUSED" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EXPIRED" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EXPIRED" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "OBJECTED" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "OBJECTED" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.use [
+         fhir:Coding.system [ fhir:value "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse" ] ;
+         fhir:Coding.code [ fhir:value "consent" ]
        ] ;
-       fhir:value [ fhir:v "Widersprechen" ]
-     ] )
-  ] ) . # 
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Widersprechen" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/gics/CodeSystem/ConsentStatusCS.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

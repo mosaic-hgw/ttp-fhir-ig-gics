@@ -1,9 +1,9 @@
-# ConsentStatusObjectionFullValues - v2026.1.0
+# ConsentStatusObjectionFullValues - v2026.2.0
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2026.1.0 - ci-build  
+ 2026.2.0 - ci-build  
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -13,7 +13,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusObjectionFullValues | *Version*:2026.1.0 |
+| *Official URL*:https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusObjectionFullValues | *Version*:2026.2.0 |
 | Active as of 2025-06-12 | *Computable Name*:ConsentStatusObjectionFullValues |
 | **Copyright/Legal**: Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
 
@@ -49,7 +49,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ConsentStatusObjectionFullValuesVS",
   "url" : "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusObjectionFullValues",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0",
   "name" : "ConsentStatusObjectionFullValues",
   "status" : "active",
   "experimental" : false,
